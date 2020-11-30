@@ -1,0 +1,36 @@
+packages:
+  image:
+    SAP-li:
+      - acl
+      - azure-li-services
+      - dracut-kiwi-oem-repart
+      - gconf2
+      - icmpinfo
+      - kernel-firmware
+      - klogd
+      - MozillaFirefox-branding-SLE
+      - ntp
+      - opie
+      - patterns-sap-hana
+      - plymouth
+      - prctl
+      - procinfo
+      - rsh
+      - shim
+      - syslinux
+      - ucode-intel
+      - yast2-isns
+    SAP-li-HANA:
+      - findutils-locate
+      - keyutils-libs
+      - libopenssl1_0_0
+      - libssh2-1
+      - wireshark
+    SAP-li-MS-requests:
+      - java-1_8_0-ibm
+      - perl-TimeDate
+      - prometheus-ha_cluster_exporter
+      - prometheus-hanadb_exporter
+      - prometheus-sap_host_exporter
+      - zlib
+      - zlib-devel

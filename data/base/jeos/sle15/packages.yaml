@@ -1,0 +1,46 @@
+packages:
+  image:
+    jeos:
+      - at
+      - audit
+      - bc
+      - blog
+      - cifs-utils
+      - dosfstools
+      - dracut
+      - glibc-locale
+      - grub2
+      - name: grub2-x86_64-efi
+        arch: x86_64
+      - name: grub2-arm64-efi
+        arch: aarch6
+      - haveged
+      - iputils
+      - iproute2
+      - kdump
+      - nfs-client
+      - openssh
+      - parted
+      - patterns-base-minimal_base
+      - rpm-ndb
+      - rsyslog
+      - sudo
+      - supportutils
+      - supportutils-plugin-suse-public-cloud
+      - suse-build-key
+      - SUSEConnect
+      - system-group-hardware
+      - system-group-wheel
+      - system-user-nobody
+      - systemd
+      - tar
+      - tcpd
+      - tcpdump
+      - terminfo
+      - udev
+      - vim
+      - wget
+      - which
+      - wicked
+      - xfsprogs
+      - zypper-migration-plugin

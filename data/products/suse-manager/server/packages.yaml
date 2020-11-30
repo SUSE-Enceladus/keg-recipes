@@ -1,0 +1,10 @@
+packages:
+  bootstrap:
+    Manager-Server:
+      - SUSE-Manager-Server-release
+  image:
+    Manager-Server:
+      - patterns-suma_server
+      - salt-minion
+      - spacecmd
+      - susemanager-cloud-setup-server

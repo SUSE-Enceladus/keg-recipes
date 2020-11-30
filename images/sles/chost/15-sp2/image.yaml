@@ -1,0 +1,5 @@
+include-suffix: sle15/sp2
+image:
+  name: SLES15-SP2-CHOST-BYOS
+  specification: "SUSE Linux Enterprise Server 15 SP2 BYOS guest image optimized as container host"
+  version: 1.0.42

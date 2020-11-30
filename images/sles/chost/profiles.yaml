@@ -1,0 +1,21 @@
+profiles:
+  common:
+    include:
+      - base/jeos
+      - base/chost
+  Ali:
+    description: Alibaba Cloud configuration
+    include:
+      - csp/ali
+  Azure:
+    description: Azure configuration
+    include:
+      - csp/azure
+  EC2-HVM:
+    description: EC2 HVM configuration
+    include:
+      - csp/ec2
+  GCE:
+    description: GCE configuration
+    include:
+      - csp/gce

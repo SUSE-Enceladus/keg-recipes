@@ -1,0 +1,13 @@
+schema: vm
+image:
+  author: Public Cloud Team
+  contact: public-cloud-dev@susecloud.net
+archs:
+  - x86_64
+  - aarch64
+users:
+  - name: root
+    groups:
+      - root
+    home: /root
+    password: $1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0

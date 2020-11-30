@@ -1,0 +1,21 @@
+packages:
+  images:
+    chost:
+      - ca-certificates
+      - ca-certificates-mozilla
+      - chrony
+      - conntrack-tools
+      - containerd
+      - containerd-ctr
+      - cpupower
+      - docker
+      - docker-img-store-setup
+      - fipscheck
+      - hwinfo
+      - jq
+      - kernel-default
+      - klogd
+      - libnss_usrfiles2
+      - socat
+      - vlan
+      

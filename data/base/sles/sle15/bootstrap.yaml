@@ -1,0 +1,4 @@
+packages:
+  bootstrap:
+    sles-release:
+      - sles-release
