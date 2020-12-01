@@ -1,9 +1,4 @@
 packages:
-  bootstrap:
-    SAP:
-      - sle-ha-release
-      - sle-module-live-patching-release
-      - sle-module-sap-applications-release
   image:
     SAP:
       - bing
