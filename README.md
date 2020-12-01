@@ -3,7 +3,7 @@ keg-recipes
 
 This repository contains recipes that can be used to generate
 various SLES [kiwi](https://github.com/OSInside/kiwi) image descriptions using
-[keg](https://github.com/SUSE-Enceladus/kge).
+[keg](https://github.com/SUSE-Enceladus/keg).
 
 Basics
 ======
