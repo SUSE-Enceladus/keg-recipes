@@ -1,0 +1,15 @@
+schema: vm_singlebuild
+include-paths:
+  - sle15/sp1
+image:
+  name: SLES15-SP1-Azure
+  specification: "SUSE Linux Enterprise Server 15 SP1 guest image for Microsoft Azure"
+  version: 1.0.42
+archs:
+  - x86_64
+contents:
+  include:
+    - base/jeos
+    - base/registration
+    - base/sles
+    - csp/azure/ondemand/basic
