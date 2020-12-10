@@ -1,4 +1,6 @@
-include-suffix: sle15/sp2
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
 image:
   name: SLES15-SP2-SAP-BYOS
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP2 BYOS guest image"

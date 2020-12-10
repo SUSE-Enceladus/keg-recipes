@@ -12,21 +12,25 @@ from jinja2 import Template
 
 
 
-def get_versioned_source_files(src_path, suffix):
+def get_versioned_source_files(src_path, include_paths):
   src_files = glob(os.path.join(src_path, '*.yaml'))
-  if suffix:
-    current_dir = src_path
-    for level_down in Path(suffix).parts:
-      current_dir = os.path.join(current_dir, level_down)
-      src_files += glob(os.path.join(current_dir, '*.yaml'))
+  scanned_dirs=[]
+  if include_paths:
+    for include_path in include_paths:
+      current_dir = src_path
+      if current_dir not in scanned_dirs:
+        scanned_dirs.append(current_dir)
+        for level_down in Path(include_path).parts:
+          current_dir = os.path.join(current_dir, level_down)
+          src_files += glob(os.path.join(current_dir, '*.yaml'))
   return src_files
 
 
-def get_source_files(src_path, suffix=None):
-  src_files = get_versioned_source_files(src_path, suffix)
+def get_source_files(src_path, include_paths=None):
+  src_files = get_versioned_source_files(src_path, include_paths)
   for parent in Path(src_path).parents:
     if parent.name:
-      src_files = get_versioned_source_files(parent, suffix) + src_files
+      src_files = get_versioned_source_files(parent, include_paths) + src_files
   return src_files
   
 
@@ -39,8 +43,8 @@ def rmerge(src, dest):
       dest[key] = value
   return dest
 
-def parse_yaml_tree(name, root, suffix=None):
-  desc_files = get_source_files(os.path.join(root, name), suffix)
+def parse_yaml_tree(name, root, include_paths=None):
+  desc_files = get_source_files(os.path.join(root, name), include_paths)
   #print(desc_files)
   image_description = {}
   for df in desc_files:
@@ -61,16 +65,23 @@ image_data.update(parse_yaml_tree(sys.argv[1], 'images'))
 
 # load profile data
 contents = {}
-suffix = image_data.get('include-suffix')
+include_paths = image_data.get('include-paths')
 for profile_name, profile_data in image_data['profiles'].items():
   profile = {}
   for item, value in profile_data.items():
     if item == 'include':
       for inc in value:
-        rmerge(parse_yaml_tree(inc, 'data', suffix), profile)
+        rmerge(parse_yaml_tree(inc, 'data', include_paths), profile)
     else:
         rmerge({item: value}, profile_data)
   image_data['profiles'][profile_name].update(profile)
+
+# expand unprofiled contents section (for single build)
+if image_data.get('contents'):
+  contents = {}
+  for inc in image_data['contents']['include']:
+    rmerge(parse_yaml_tree(inc, 'data', include_paths), contents)
+  image_data['contents'].update(contents)
 
 #pp = pprint.PrettyPrinter(indent=2)
 #pp.pprint(image_data)

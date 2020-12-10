@@ -1,4 +1,6 @@
-include-suffix: sle15/sp2
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
 image:
   name: SLES15-SP2-Manager-4-1-Server-BYOS
   specification: "SUSE Manager 4.1 Server BYOS guest image"

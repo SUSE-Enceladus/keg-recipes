@@ -2,6 +2,7 @@
   {%- set ns = namespace(spacer="") -%}
   {%- set ns = namespace(listspacer="") -%}
   {%- for pname, pval in pdict.items() %}
+    {%- if pval != "None" %}
     {%- if pval is not iterable or pval is string %}
       {%- set pval = [pval] %}
     {%- endif -%}
@@ -12,6 +13,7 @@
       {%- set ns.listspacer=" %s"|format(pname) -%}
     {%- endfor %}
     {%- set ns.spacer=" " %}
+    {%- endif %}
   {%- endfor -%}
 {%- endmacro -%}
 <?xml version="1.0" encoding="utf-8"?>
