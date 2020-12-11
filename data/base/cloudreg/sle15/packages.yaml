@@ -1,6 +1,6 @@
 packages:
   bootstrap:
-    on-demand:
+    cloudreg:
       - cloud-regionsrv-client
       - regionsrv-certs
       - sle-module-basesystem-release

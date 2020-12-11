@@ -10,6 +10,6 @@ archs:
 contents:
   include:
     - base/jeos
-    - base/registration
+    - base/cloudreg
     - base/sles
     - csp/ec2/ondemand

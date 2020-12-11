@@ -2,7 +2,7 @@ profiles:
   EC2-ECS-HVM:
     include:
       - base/jeos
-      - base/registration
+      - base/cloudreg
       - base/sles
       - csp/ec2/ecs
       - csp/ec2/ondemand
