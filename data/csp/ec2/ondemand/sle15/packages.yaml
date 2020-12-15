@@ -1,0 +1,6 @@
+packages:
+  image:
+    EC2-ondemand:
+      - cloud-regionsrv-client-plugin-ec2
+      - regionServiceClientConfigEC2
+      - regionServiceCertsEC2

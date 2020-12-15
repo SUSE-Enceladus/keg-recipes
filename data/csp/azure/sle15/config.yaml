@@ -1,0 +1,8 @@
+config:
+  services:
+    - chronyd
+    - cloud-init-local
+    - cloud-init
+    - cloud-config
+    - cloud-final
+    - waagent

@@ -1,0 +1,5 @@
+packages:
+  image:
+    cloudreg:
+      - cloud-regionsrv-client
+      - regionsrv-certs

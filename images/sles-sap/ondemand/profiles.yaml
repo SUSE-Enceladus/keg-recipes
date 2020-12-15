@@ -1,0 +1,17 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/jeos
+      - base/sle-modules
+      - base/sles
+      - products/sap/ondemand
+  Azure:
+    include:
+      - csp/azure/ondemand
+  EC2-HVM:
+    include:
+      - csp/ec2/ondemand
+  GCE:
+    include:
+      - csp/gce/ondemand

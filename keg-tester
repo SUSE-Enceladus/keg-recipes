@@ -1,0 +1,93 @@
+#!/usr/bin/python3
+
+from datetime import datetime, timezone
+from glob import glob
+import os
+import pprint
+import sys
+import yaml
+
+from pathlib import Path
+from jinja2 import Template
+
+
+
+def get_versioned_source_files(src_path, include_paths):
+  src_files = glob(os.path.join(src_path, '*.yaml'))
+  scanned_dirs=[]
+  if include_paths:
+    for include_path in include_paths:
+      current_dir = src_path
+      if current_dir not in scanned_dirs:
+        scanned_dirs.append(current_dir)
+        for level_down in Path(include_path).parts:
+          current_dir = os.path.join(current_dir, level_down)
+          src_files += glob(os.path.join(current_dir, '*.yaml'))
+  return src_files
+
+
+def get_source_files(src_path, include_paths=None):
+  src_files = get_versioned_source_files(src_path, include_paths)
+  for parent in Path(src_path).parents:
+    if parent.name:
+      src_files = get_versioned_source_files(parent, include_paths) + src_files
+  return src_files
+  
+
+def rmerge(src, dest):
+  for key, value in src.items():
+    if isinstance(value, dict):
+      node = dest.setdefault(key, {})
+      rmerge(value, node)
+    else:
+      dest[key] = value
+  return dest
+
+def parse_yaml_tree(name, root, include_paths=None):
+  desc_files = get_source_files(os.path.join(root, name), include_paths)
+  #print(desc_files)
+  image_description = {}
+  for df in desc_files:
+    with open(df, 'r') as f:
+      desc_yaml = yaml.safe_load(f.read())
+    rmerge(desc_yaml, image_description) 
+  return image_description
+
+if len(sys.argv) != 2:
+  print("Please specify image to generate.", file=sys.stderr)
+  sys.exit(1)
+
+image_data = {
+  'generator': 'keg-tester 0.1',
+  'timestamp': '{}'.format(datetime.now(timezone.utc))
+}
+image_data.update(parse_yaml_tree(sys.argv[1], 'images'))
+
+# load profile data
+contents = {}
+include_paths = image_data.get('include-paths')
+for profile_name, profile_data in image_data['profiles'].items():
+  profile = {}
+  for item, value in profile_data.items():
+    if item == 'include':
+      for inc in value:
+        rmerge(parse_yaml_tree(inc, 'data', include_paths), profile)
+    else:
+        rmerge({item: value}, profile_data)
+  image_data['profiles'][profile_name].update(profile)
+
+# expand unprofiled contents section (for single build)
+if image_data.get('contents'):
+  contents = {}
+  for inc in image_data['contents']['include']:
+    rmerge(parse_yaml_tree(inc, 'data', include_paths), contents)
+  image_data['contents'].update(contents)
+
+#pp = pprint.PrettyPrinter(indent=2)
+#pp.pprint(image_data)
+with open('schemas/{}.kiwi.templ'.format(image_data['schema']), 'r') as templ:
+  config_kiwi_templ = Template(templ.read())
+config_kiwi = config_kiwi_templ.render(data=image_data)
+
+print(config_kiwi)
+

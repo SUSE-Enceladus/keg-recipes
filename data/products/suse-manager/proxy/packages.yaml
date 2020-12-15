@@ -1,0 +1,10 @@
+packages:
+  bootstrap:
+    Manager-Proxy:
+      - SUSE-Manager-Proxy-release
+  image:
+    Manager-Proxy:
+      - patterns-suma_proxy
+      - salt-minion
+      - spacecmd
+      - susemanager-cloud-setup-proxy

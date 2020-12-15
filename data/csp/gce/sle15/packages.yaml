@@ -1,0 +1,12 @@
+packages:
+  image:
+    GCE:
+      - growpart
+      - growpart-rootgrow
+      - kernel-default
+      - python3-gcemetadata
+      - name: shim
+        arch: x86_64
+      - google-guest-agent
+      - google-guest-configs
+      - google-guest-oslogin

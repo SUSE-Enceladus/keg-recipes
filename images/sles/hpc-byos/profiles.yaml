@@ -1,0 +1,14 @@
+profiles:
+  common:
+    include:
+      - base/hpc
+      - base/jeos
+      - base/sles
+  Azure:
+    description: Azure configuration
+    include:
+      - csp/azure
+  EC2-HVM:
+    description: EC2 HVM configuration
+    include:
+      - csp/ec2

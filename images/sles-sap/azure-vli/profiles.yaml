@@ -1,0 +1,17 @@
+schema: oem
+image:
+  type: oem
+profiles:
+  common:
+    include:
+      - base/jeos
+      - base/sles
+      - products/sap
+  Devel:
+    description: Devel Image Build
+    include:
+      - csp/azure/vli/devel
+  Production:
+    description: Production Image Build
+    include:
+      - csp/azure/vli

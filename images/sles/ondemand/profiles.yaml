@@ -1,0 +1,23 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/jeos
+      - base/sle-module
+      - base/sles
+  Azure-Basic:
+    description: Azure configuration
+    include:
+      - csp/azure/ondemand/basic
+  Azure-Standard:
+    description: Azure configuration
+    include:
+      - csp/azure/ondemand/standard
+  EC2-HVM:
+    description: EC2 HVM configuration
+    include:
+      - csp/ec2/ondemand
+  GCE:
+    description: GCE configuration
+    include:
+      - csp/gce/ondemand

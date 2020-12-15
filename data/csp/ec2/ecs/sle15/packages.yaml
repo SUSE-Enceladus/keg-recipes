@@ -1,0 +1,4 @@
+packages:
+  image:
+    ECS:
+      - amazon-ecs-init

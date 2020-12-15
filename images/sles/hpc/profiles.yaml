@@ -1,0 +1,16 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/hpc
+      - base/jeos
+      - base/sle-modules
+      - base/sles
+  Azure:
+    description: Azure configuration
+    include:
+      - csp/azure/ondemand
+  EC2-HVM:
+    description: EC2 HVM configuration
+    include:
+      - csp/ec2/ondemand

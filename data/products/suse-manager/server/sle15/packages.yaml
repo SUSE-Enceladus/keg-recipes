@@ -1,0 +1,10 @@
+packages:
+  image:
+    Manager-Server-deps:
+      - antlr3-runtime
+      # direct inlcude to avoid picking classpathx-mail instead of
+      # javamail which does not work with spacewalk-java
+      - javamail
+      - log4j12
+      - python3-numpy
+      - python3-PyJWT

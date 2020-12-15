@@ -1,0 +1,16 @@
+schema: vm_singlebuild
+include-paths:
+  - sle15
+image:
+  name: SLES15-EC2-HVM
+  specification: "SUSE Linux Enterprise Server 15 guest image for Amazon EC2"
+  version: 1.0.42
+archs:
+  - x86_64
+contents:
+  include:
+    - base/cloudreg
+    - base/jeos
+    - base/sle-modules
+    - base/sles
+    - csp/ec2/ondemand
