@@ -1,8 +1,9 @@
 profiles:
   common:
     include:
-      - base/jeos
       - base/cloudreg
+      - base/jeos
+      - base/sle-modules
       - base/sles
       - products/sap/ondemand
   Azure:

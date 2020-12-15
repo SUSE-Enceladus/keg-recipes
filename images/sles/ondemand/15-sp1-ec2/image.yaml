@@ -9,7 +9,8 @@ archs:
   - x86_64
 contents:
   include:
-    - base/jeos
     - base/cloudreg
+    - base/jeos
+    - base/sle-module
     - base/sles
     - csp/ec2/ondemand

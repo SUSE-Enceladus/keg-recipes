@@ -1,9 +1,10 @@
 profiles:
   common:
     include:
+      - base/cloudreg
       - base/hpc
       - base/jeos
-      - base/cloudreg
+      - base/sle-modules
       - base/sles
   Azure:
     description: Azure configuration
