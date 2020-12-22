@@ -1,0 +1,30 @@
+config:
+  sysconfig:
+    EC2-sysconfig:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "no"
+  services:
+    EC2-services:
+      - chronyd
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - cloud-netconfig.timer
+  scripts:
+    EC2-config: |-
+      # No Xen based instance types for ARM, no need for custom config
+      if [ "$arch" = "aarch64" ];then
+          rm -rf /etc/dracut.conf.d/07-aws-type-switch.conf
+      fi
+      # Disable password based login via ssh
+      ssh_option=ChallengeResponseAuthentication
+      sed -i "s/#${ssh_option} yes/${ssh_option} no/" \
+          /etc/ssh/sshd_config
+      sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' \
+          /etc/ssh/sshd_config
+

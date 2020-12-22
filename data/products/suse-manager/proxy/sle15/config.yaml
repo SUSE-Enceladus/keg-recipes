@@ -1,0 +1,4 @@
+config:
+  scripts:
+    suse-manager-prodlink: "ln -sf SUSE-Manager-Proxy.prod /etc/products.d/baseproduct"
+      

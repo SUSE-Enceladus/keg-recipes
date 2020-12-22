@@ -1,0 +1,5 @@
+config:
+  scripts:
+    azure-add-variant-id: |-
+      # Track the variant for billing code testing purposes
+      echo 'VARIANT_ID="sles-basic"' >> /etc/os-release
