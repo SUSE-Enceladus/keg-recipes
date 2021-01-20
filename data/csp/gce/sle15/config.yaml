@@ -24,10 +24,8 @@ config:
     GCE-services:
       - chronyd
       - google-guest-agent
-      - google-optimize-local-ssd
       - google-osconfig-agent
-      - google-oslogin-cache
-      - google-set-multiqueue
+      - google-oslogin-cache.timer
       - google-shutdown-scripts
       - google-startup-scripts
       - rootgrow
