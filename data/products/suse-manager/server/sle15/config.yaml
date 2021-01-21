@@ -1,4 +1,0 @@
-config:
-  scripts:
-    suse-manager-prodlink: "ln -sf SUSE-Manager-Server.prod /etc/products.d/baseproduct"
-      

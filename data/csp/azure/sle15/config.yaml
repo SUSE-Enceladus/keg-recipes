@@ -17,25 +17,9 @@ config:
       - cloud-netconfig.timer
       - waagent
   scripts:
-    Azure-config: |-
-      # Need keep alive traffic of Azure disconnects the connection rather quickly
-      sed -i 's/#ClientAliveInterval 0/ClientAliveInterval 180/' \
-          /etc/ssh/sshd_config
-      # Disable agent auto-update
-      sed -i -e 's/AutoUpdate.Enabled=y/AutoUpdate.Enabled=n/' \
-          /etc/waagent.conf
-      # Generate all supported SSH host key types
-      sed -i -e 's/SshHostKeyPairType=rsa/SshHostKeyPairType=auto/' \
-          /etc/waagent.conf
-      # Implement password policy
-      # Length: 6-72 characters long
-      # Contain any combination of 3 of the following:
-      #   - a lowercase character
-      #   - an uppercase character
-      #   - a number
-      #   - a special character
-      pwd_policy="minlen=6 dcredit=1 ucredit=1 lcredit=1 ocredit=1 minclass=3"
-      sed -i "s/pam_cracklib.so/pam_cracklib.so $pwd_policy/" \
-          /etc/pam.d/common-password-pc
-      # Keep the default kernel log level (bsc#1169201)
-      sed -i 's/$klogConsoleLogLevel/#$klogConsoleLogLevel/' /etc/rsyslog.conf
+    Azure-config:
+      - ssh-enable-keep-alive
+      - waagent-disable-auto-update
+      - waagent-enable-all-ssh-host-key-types
+      - set-password-policy
+      - keep-default-kernel-log-level

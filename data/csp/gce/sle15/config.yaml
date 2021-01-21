@@ -30,11 +30,5 @@ config:
       - google-startup-scripts
       - rootgrow
   scripts:
-    GCE-disable-pw-login: |-
-      # Disable password based login via ssh
-      ssh_option=ChallengeResponseAuthentication
-      sed -i "s/#${ssh_option} yes/${ssh_option} no/" \
-          /etc/ssh/sshd_config
-      sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' \
-          /etc/ssh/sshd_config
-
+    GCE-config:
+      - ssh-disable-password-login

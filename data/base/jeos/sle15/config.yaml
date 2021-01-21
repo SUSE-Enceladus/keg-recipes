@@ -20,18 +20,12 @@ config:
           CONSOLE_FONT="lat9w-16.psfu"
           CONSOLE_SCREENMAP="trivial"
   scripts:
-    JeOS-allow-root-console: "egrep -q '^ttyS0$' /etc/securetty || echo ttyS0 >> /etc/securetty"
-    JeOS-no-delta-rpms: "sed -i 's/# download.use_deltarpm = true/download.use_deltarpm = false/' /etc/zypp/zypp.conf"
-    JeOS-polkit: "[ -x /sbin/set_polkit_default_privs ] && /sbin/set_polkit_default_privs"
-    JeOS-prodlink: |-
-      prodfile=(`grep -l '<codestream>' /etc/products.d/*prod`)
-      if [[ ${#prodfile[*]} -ne 1 ]]; then
-          echo "No base product package installed or base product ambiguous." >&2
-          false
-      else
-          ln -sf `basename "${prodfile[0]}"` /etc/products.d/baseproduct
-      fi
-    JeOS-remove-root-pw: "sed -i 's/^root:[^:]*:/root:*:/' /etc/shadow"
+    JeOS-config:
+      - allow-root-console
+      - polkit-set-default-privs
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
   services:
     JeOS-services:
       - boot.device-mapper

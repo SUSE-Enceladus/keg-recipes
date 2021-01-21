@@ -77,8 +77,10 @@ EOF
 {%- endfor %}
 {%- for ns in common_profile['config']['scripts'] %}
 # keg: included from {{ ns }}
-{{ common_profile['config']['scripts'][ns] }}
-{% endfor %}
+{%- for script_name in common_profile['config']['scripts'][ns] %}
+{{ scripts[script_name] }}
+{%- endfor -%}
+{%- endfor %}
 {%- for ns in common_profile['config']['services'] %}
 # keg: included from {{ ns }}
 {{ print_service_cmds(common_profile['config']['services'][ns], "") }}
@@ -102,8 +104,10 @@ EOF
     {%- endfor %}
     {%- for ns in profile_data['config']['scripts'] %}
     # keg: included from {{ ns }}
-{{ profile_data['config']['scripts'][ns]|string|indent(4, true) }}
-    {% endfor %}
+    {%- for script_name in profile_data['config']['scripts'][ns] %}
+{{ scripts[script_name]|string|indent(4, true) }}
+    {%- endfor %}
+    {%- endfor %}
     {%- for ns in profile_data['config']['services'] %}
     # keg: included from {{ ns }}
 {{ print_service_cmds(profile_data['config']['services'][ns], "    ") }}

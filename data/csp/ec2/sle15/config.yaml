@@ -16,15 +16,6 @@ config:
       - cloud-init-local
       - cloud-netconfig.timer
   scripts:
-    EC2-config: |-
-      # No Xen based instance types for ARM, no need for custom config
-      if [ "$arch" = "aarch64" ];then
-          rm -rf /etc/dracut.conf.d/07-aws-type-switch.conf
-      fi
-      # Disable password based login via ssh
-      ssh_option=ChallengeResponseAuthentication
-      sed -i "s/#${ssh_option} yes/${ssh_option} no/" \
-          /etc/ssh/sshd_config
-      sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' \
-          /etc/ssh/sshd_config
-
+    EC2-config:
+      - remove-aws-type-switch-conf
+      - ssh-disable-password-login
