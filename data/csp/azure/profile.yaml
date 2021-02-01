@@ -2,7 +2,7 @@ profile:
   bootloader:
     timeout_style: countdown
   parameters:
-    bootpartition: true
+    bootpartition: "true"
     bootpartsize: 1024
     devicepersistency: by-uuid
     efipartsize: 512

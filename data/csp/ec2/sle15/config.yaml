@@ -1,6 +1,6 @@
 config:
   sysconfig:
-    Azure-config:
+    EC2-sysconfig:
       - file: /etc/sysconfig/network/config
         name: NETCONFIG_MODULES_ORDER
         value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
@@ -8,18 +8,14 @@ config:
         name: DHCLIENT_SET_HOSTNAME
         value: "no"
   services:
-    Azure-config:
+    EC2-services:
       - chronyd
       - cloud-config
       - cloud-final
       - cloud-init
       - cloud-init-local
       - cloud-netconfig.timer
-      - waagent
   scripts:
-    Azure-config:
-      - ssh-enable-keep-alive
-      - waagent-disable-auto-update
-      - waagent-enable-all-ssh-host-key-types
-      - set-password-policy
-      - keep-default-kernel-log-level
+    EC2-config:
+      - remove-aws-type-switch-conf
+      - ssh-disable-password-login

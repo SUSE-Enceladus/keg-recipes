@@ -1,0 +1,67 @@
+config:
+  files:
+    JeOS-sysconfig:
+      - path: /etc/profile
+        append: True
+        content: |-
+          # yast in Public Cloud images fix
+          NCURSES_NO_UTF8_ACS=1
+          export NCURSES_NO_UTF8_ACS
+      - path: /etc/sysconfig/clock
+        append: True
+        content: |-
+          DEFAULT_TIMEZONE="Etc/UTC"
+          HWCLOCK="-u"
+          UTC="true"
+      - path: /etc/sysconfig/console
+        append: True
+        content: |-
+          CONSOLE_ENCODING="UTF-8"
+          CONSOLE_FONT="lat9w-16.psfu"
+          CONSOLE_SCREENMAP="trivial"
+  scripts:
+    JeOS-config:
+      - allow-root-console
+      - polkit-set-default-privs
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
+  services:
+    JeOS-services:
+      - boot.device-mapper
+      - haveged
+      - sshd
+      - name: acpid
+        enable: False
+      - name: boot.efivars
+        enable: False
+      - name: boot.lvm
+        enable: False
+      - name: boot.md
+        enable: False
+      - name: boot.multipath
+        enable: False
+      - name: display-manager
+        enable: False
+      - name: kbd
+        enable: False
+  sysconfig:
+    JeOS-sysconfig:
+      - file: /etc/sysconfig/keyboard
+        name: COMPOSETABLE
+        value: "clear latin1.add"
+      - file: /etc/sysconfig/language
+        name: INSTALLED_LANGUAGES
+        value: ""
+      - file: /etc/sysconfig/language
+        name: RC_LANG
+        value: "C.UTF-8"
+      - file: /etc/sysconfig/security
+        name: POLKIT_DEFAULT_PRIVS
+        value: "restrictive"
+      - file: /etc/sysconfig/windowmanager
+        name: DEFAULT_WM
+        value: ""
+      - file: /etc/sysconfig/windowmanager
+        name: INSTALL_DESKTOP_EXTENSIONS
+        value: "no"
