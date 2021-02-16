@@ -1,6 +1,7 @@
 packages:
   image:
     GCE:
+      - cloud-netconfig-gce
       - growpart
       - growpart-rootgrow
       - kernel-default
