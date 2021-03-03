@@ -15,4 +15,4 @@ profiles:
   GCE:
     description: GCE configuration
     include:
-      - csp/gce
+      - csp/gce/fence-agent-deps
