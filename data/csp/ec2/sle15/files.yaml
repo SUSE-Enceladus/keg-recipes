@@ -1,0 +1,4 @@
+files:
+  EC2-files:
+    - cloud-cfg-ec2
+    - dracut-aws-type-switch
