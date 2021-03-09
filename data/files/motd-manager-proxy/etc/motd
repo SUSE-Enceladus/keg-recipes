@@ -1,0 +1,19 @@
+SUSE Manager {SUMA_VERSION} Proxy
+{OS_PRETTY_NAME} {ARCH} (64-bit)
+
+   ____
+  /@    ~-.
+  \/ __ .- |
+   // // @
+
+To set up SUSE Manager Proxy, register the system with a SUSE Manager
+server and execute: sudo /usr/sbin/configure-proxy.sh
+
+Without registration this instance does not have access to updates and
+security fixes.
+
+Management and Config: https://www.suse.com/suse-in-the-cloud-basics
+Documentation: https://www.suse.com/documentation/sles_manager/
+Forum: https://forums.suse.com/categories/suse-public-cloud
+
+Have a lot of fun...
