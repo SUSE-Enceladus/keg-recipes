@@ -14,7 +14,7 @@ profile:
       processor.max_cstate: 1
       transparent_hugepage: never
       splash: verbose
-    type: oem
+    image: oem
   oemconfig:
     oem-swap: true
     oem-swapsize: 2048
