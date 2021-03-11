@@ -1,0 +1,3 @@
+overlayfiles:
+  ec2-dracut-opts:
+    - dracut-virtio

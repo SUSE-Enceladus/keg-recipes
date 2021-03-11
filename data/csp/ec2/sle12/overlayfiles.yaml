@@ -1,0 +1,10 @@
+overlayfiles:
+  ec2-base:
+    - cloud-cfg-ec2
+    - cloud-cfg-disable-network-config
+    - dracut-aws-type-switch
+    - sysconfig-network-cloud-netconfig
+    - udev-nvme-timeout
+  ec2-dracut-opts:
+    - dracut-ext4
+    - dracut-virtio-scsi

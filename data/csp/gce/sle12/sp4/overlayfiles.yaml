@@ -1,0 +1,3 @@
+overlayfiles:
+  gce-virtio-net:
+    - module-virtio-net

@@ -1,5 +1,0 @@
-overlay:
-  files:
-    EC2:
-      - cloud-cfg-ec2
-      - dracut-aws-type-switch

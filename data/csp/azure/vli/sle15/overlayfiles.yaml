@@ -1,0 +1,8 @@
+overlayfiles:
+  azure-vli-base:
+    - dracut-multipath
+    - efi-startup
+    - modprobe-backlist-azure-vli
+    - sysctl-hana-basenet
+    - sysctl-hana-netapp
+  azure-sysconfig-network: []

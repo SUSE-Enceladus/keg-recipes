@@ -1,0 +1,8 @@
+overlayfiles:
+  azure-li-base:
+    - dracut-multipath
+    - modprobe-backlist-azure-li
+    - selinux-disable
+    - sysconfig-susefirewall2-saphostctrl
+    - sysctl-hana-basenet
+  azure-sysconfig-network: []
