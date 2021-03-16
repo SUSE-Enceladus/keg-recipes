@@ -1,3 +1,4 @@
 overlayfiles:
   azure-ioscheduler:
-    - udev-ioscheduler-none
+    include:
+      - udev-ioscheduler-none

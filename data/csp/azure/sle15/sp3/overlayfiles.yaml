@@ -1,3 +1,4 @@
 overlayfiles:
   azure-emergency-shell:
-    - rescue-force-systemd-sulogin
+    include:
+      - rescue-force-systemd-sulogin

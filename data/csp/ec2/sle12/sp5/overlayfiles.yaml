@@ -1,2 +1,2 @@
 overlayfiles:
-  ec2-dracut-opts: []
+  ec2-dracut-opts: null
