@@ -1,0 +1,6 @@
+overlayfiles:
+  gce-base:
+    include:
+      - gce-boto-hack
+      - hosts-metadata-google
+      - sysconfig-network-cloud-netconfig

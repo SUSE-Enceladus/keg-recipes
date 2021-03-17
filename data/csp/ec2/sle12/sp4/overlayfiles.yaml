@@ -1,0 +1,7 @@
+overlayfiles:
+  ec2-dracut-opts:
+    include:
+      - dracut-virtio
+  ec2-nvme-timeout:
+    include:
+      - nvme-timeout

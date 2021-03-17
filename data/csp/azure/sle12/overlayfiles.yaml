@@ -1,0 +1,11 @@
+overlayfiles:
+  azure-base:
+    include:
+      - cloud-cfg-azure
+      - cloud-cfg-disable-network-config
+  azure-sysconfig-network:
+    include:
+      - sysconfig-network-cloud-netconfig
+  azure-ioscheduler:
+    include:
+      - udev-ioscheduler-noop

@@ -1,0 +1,4 @@
+overlayfiles:
+  azure-li-linkpol:
+    include:
+      - systemd-network-persistent-link-policy
