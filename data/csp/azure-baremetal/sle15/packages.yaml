@@ -1,6 +1,6 @@
 packages:
   image:
-    SAP-li:
+    azure-baremetal:
       - acl
       - azure-li-services
       - dracut-kiwi-oem-repart
@@ -8,10 +8,9 @@ packages:
       - icmpinfo
       - kernel-firmware
       - klogd
-      - MozillaFirefox-branding-SLE
+      - multipath-tools
       - ntp
       - opie
-      - patterns-sap-hana
       - plymouth
       - prctl
       - procinfo
@@ -20,13 +19,16 @@ packages:
       - syslinux
       - ucode-intel
       - yast2-isns
-    SAP-li-HANA:
-      - findutils-locate
+    azure-baremetal-hana-addon:
+      - audit-libs
       - keyutils-libs
       - libopenssl1_0_0
       - libssh2-1
+      - MozillaFirefox-branding-SLE
+      - patterns-sap-hana
       - wireshark
-    SAP-li-MS-requests:
+    azure-baremetal-addon-msft:
+      - golang-github-prometheus-node_exporter
       - java-1_8_0-ibm
       - perl-TimeDate
       - prometheus-ha_cluster_exporter
@@ -34,3 +36,5 @@ packages:
       - prometheus-sap_host_exporter
       - zlib
       - zlib-devel
+    azure-baremetal-depsresolv:
+      - fipscheck

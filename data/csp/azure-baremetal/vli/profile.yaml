@@ -1,4 +1,4 @@
 profile:
   oemparameters:
     kernelcmdline:
-      rd.kiwi.debug: []
+      crashkernel: ["232M,high", "80M,low"]

@@ -1,4 +1,4 @@
 overlayfiles:
-  azure-li-linkpol:
+  azure-baremetal-linkpol:
     include:
       - systemd-network-persistent-link-policy

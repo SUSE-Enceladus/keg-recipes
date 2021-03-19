@@ -1,8 +1,0 @@
-overlayfiles:
-  azure-li-base:
-    include:
-      - dracut-multipath
-      - modprobe-backlist-azure-li
-      - selinux-disable
-      - sysctl-hana-basenet
-  azure-sysconfig-network: null
