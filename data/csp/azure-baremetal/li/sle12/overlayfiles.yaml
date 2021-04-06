@@ -1,9 +1,6 @@
 overlayfiles:
-  azure-li-base:
+  azure-baremetal-li:
     include:
-      - dracut-multipath
       - modprobe-backlist-azure-li
       - selinux-disable
       - sysconfig-susefirewall2-saphostctrl
-      - sysctl-hana-basenet
-  azure-sysconfig-network: null

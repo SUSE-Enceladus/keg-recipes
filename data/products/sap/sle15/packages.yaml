@@ -30,6 +30,7 @@ packages:
       - SAPHanaSR-doc
       - saptune
       - socat
+      - supportutils-plugin-ha-sap
       - system-role-sles4sap
       - tuned
       - xauth

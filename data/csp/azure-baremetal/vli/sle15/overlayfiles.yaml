@@ -1,9 +1,6 @@
 overlayfiles:
-  azure-vli-base:
+  azure-baremetal-vli:
     include:
-      - dracut-multipath
       - efi-startup
       - modprobe-backlist-azure-vli
-      - sysctl-hana-basenet
       - sysctl-hana-netapp
-  azure-sysconfig-network: null

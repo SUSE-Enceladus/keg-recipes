@@ -1,0 +1,5 @@
+overlayfiles:
+  azure-baremetal-common:
+    include:
+      - dracut-multipath
+      - sysctl-hana-basenet
