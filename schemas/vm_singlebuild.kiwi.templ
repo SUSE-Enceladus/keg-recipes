@@ -67,16 +67,18 @@
     {%- for pkg_type in content['packages'] %}
     <packages type="{{ pkg_type }}">
         {%- for namespace, packages in content['packages'][pkg_type].items() %}
-        <!-- Begin include from {{ namespace }} -->
         {%- if namespace == 'archive' %}
-        <archive name="{{ packages['name'] }}"/>
-        {%- else -%}
-        {% for pkg in packages %}
+        {%- for pkg in packages %}
+        <archive name="{{ pkg['name'] }}"/>
+        {%- endfor %}
+        {%- else %}
+        <!-- Begin include from {{ namespace }} -->
+        {%- for pkg in packages %}
         <package name="{{ pkg['name']|default(pkg) }}"
         {%- if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
-        {%- endfor -%}
-        {%- endif %}
+        {%- endfor %}
         <!-- End include from {{ namespace }} -->
+        {%- endif %}
         {%- endfor %}
     </packages>
     {%- endfor %}
