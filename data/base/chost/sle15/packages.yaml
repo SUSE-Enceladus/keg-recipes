@@ -1,5 +1,5 @@
 packages:
-  images:
+  image:
     chost:
       - ca-certificates
       - ca-certificates-mozilla

@@ -56,7 +56,7 @@
     {% if profile != 'common' and profile_data['profile'] -%}
     <preferences{%if multibuild %} profiles="{{ profile }}"{% endif %}>
         <type {%- for key, val in profile_data['profile']['parameters'].items() -%}
-            {%- if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}" 
+            {%- if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}"
             {%- else %} {{ key }}="{{ val }}"
             {%- endif -%}
             {%- endfor -%}>
@@ -84,16 +84,18 @@
         {%- endif -%}
     >
         {%- for namespace, packages in content['packages'][pkg_type].items() %}
-        <!-- Begin include from {{ namespace }} -->
         {%- if namespace == 'archive' %}
-        <archive name="{{ packages['name'] }}"/>
-        {%- else -%}
-        {% for pkg in packages %}
+        {%- for pkg in packages %}
+        <archive name="{{ pkg['name'] }}"/>
+        {%- endfor %}
+        {%- else %}
+        <!-- Begin include from {{ namespace }} -->
+        {%- for pkg in packages %}
         <package name="{{ pkg['name']|default(pkg) }}"
         {%- if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
-        {%- endfor -%}
-        {%- endif %}
+        {%- endfor %}
         <!-- End include from {{ namespace }} -->
+        {%- endif %}
         {%- endfor %}
     </packages>
     {%- endfor %}
