@@ -5,5 +5,6 @@ profiles:
       - base/jeos
       - base/sle-modules
       - base/sles
-      - csp/ec2/ecs
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/addon/ecs
       - csp/ec2/ondemand

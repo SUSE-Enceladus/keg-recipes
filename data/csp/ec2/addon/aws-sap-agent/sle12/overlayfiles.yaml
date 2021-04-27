@@ -1,0 +1,4 @@
+overlayfiles:
+  ec2-addon-aws-sap-agent:
+    include:
+      - script-install-aws-agent

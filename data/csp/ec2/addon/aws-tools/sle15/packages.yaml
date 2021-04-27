@@ -1,0 +1,10 @@
+packages:
+  image:
+    ec2-addon-aws-tools:
+      - amazon-ssm-agent
+      - aws-cli
+    ec2-addon-suse:
+      - cloud-init-config-suse
+      - cloud-netconfig-ec2
+      - python3-ec2imgutils
+      - python3-ec2metadata
