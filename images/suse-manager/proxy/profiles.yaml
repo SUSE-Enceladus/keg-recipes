@@ -10,6 +10,7 @@ profiles:
   EC2-HVM:
     include:
       - csp/ec2
+      - csp/ec2/addon/aws-tools
   GCE:
     include:
       - csp/gce

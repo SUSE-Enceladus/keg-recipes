@@ -1,4 +1,4 @@
 packages:
   image:
-    ECS:
+    ec2-addon-ecs:
       - amazon-ecs-init

@@ -13,4 +13,5 @@ profiles:
   EC2-HVM:
     description: EC2 HVM configuration
     include:
+      - csp/ec2/addon/aws-tools
       - csp/ec2/ondemand

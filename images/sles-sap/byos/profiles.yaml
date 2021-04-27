@@ -12,6 +12,7 @@ profiles:
     description: EC2 HVM configuration
     include:
       - csp/ec2
+      - csp/ec2/addon/aws-tools
   GCE:
     description: GCE configuration
     include:

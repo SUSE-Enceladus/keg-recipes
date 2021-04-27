@@ -11,6 +11,8 @@ profiles:
       - csp/azure/ondemand
   EC2-HVM:
     include:
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/addon/aws-sap-agent
       - csp/ec2/ondemand
   GCE:
     include:
