@@ -75,28 +75,28 @@ suseImportBuildKey
 
 {%- if common_profile and common_profile['config'] %}
 
-{%- for ns in common_profile['config']['config_script']['sysconfig'] %}
-{{ print_sysconf_cmds(common_profile['config']['config_script']['sysconfig'][ns], "", ns) }}
+{%- for ns in common_profile['config']['sysconfig'] %}
+{{ print_sysconf_cmds(common_profile['config']['sysconfig'][ns], "", ns) }}
 {%- endfor %}
 
-{%- for ns in common_profile['config']['config_script']['files'] %}
-{{print_status(common_profile['config']['config_script']['files'][ns], ns)-}}
-{%- for filespec in common_profile['config']['config_script']['files'][ns] %}
+{%- for ns in common_profile['config']['files'] %}
+{{print_status(common_profile['config']['files'][ns], ns)-}}
+{%- for filespec in common_profile['config']['files'][ns] %}
 cat >{{ keg_funcs.ternary(filespec['append'], '>') }} {{ filespec['path'] }} <<EOF
 {{ filespec['content'] }}
 EOF
 {% endfor %}
 {%- endfor %}
 
-{%- for ns in common_profile['config']['config_script'] %}
-{{print_status(common_profile['config']['config_script'][ns], ns)-}}
-{%- for script_name in common_profile['config']['config_script'][ns] %}
+{%- for ns in common_profile['config']['scripts'] %}
+{{print_status(common_profile['config']['scripts'][ns], ns)-}}
+{%- for script_name in common_profile['config']['scripts'][ns] %}
 {{ scripts[script_name] -}}
 {%- endfor -%}
 {%- endfor -%}
 
-{%- for ns in common_profile['config']['config_script']['services'] %}
-{{ print_service_cmds(common_profile['config']['config_script']['services'][ns], "", ns) }}
+{%- for ns in common_profile['config']['services'] %}
+{{ print_service_cmds(common_profile['config']['services'][ns], "", ns) }}
 {%- endfor -%}
 
 {%- endif -%}
@@ -105,30 +105,29 @@ EOF
 
 {%- if profile != "common" and profile_data['config'] %}
 if [[ $kiwi_profiles = {{ profile }} ]]; then
-    {%- for ns in profile_data['config']['config_script']['sysconfig'] %}
-{{ print_sysconf_cmds(profile_data['config']['config_script']['sysconfig'][ns], "    ", ns) }}
+    {%- for ns in profile_data['config']['sysconfig'] %}
+{{ print_sysconf_cmds(profile_data['config']['sysconfig'][ns], "    ", ns) }}
     {%- endfor %}
 
-    {%- for ns in profile_data['config']['config_script']['files'] %}
-    {{print_status(profile_data['config']['config_script']['files'][ns], ns)-}}
-    {%- for filespec in profile_data['config']['config_script']['files'][ns] %}
+    {%- for ns in profile_data['config']['files'] %}
+    {{print_status(profile_data['config']['files'][ns], ns)-}}
+    {%- for filespec in profile_data['config']['files'][ns] %}
     cat >{{ keg_funcs.ternary(filespec['append'], '>') }} {{ filespec['path'] }} <<EOF
 {{ filespec['content'] }}
 EOF
     {% endfor %}
     {%- endfor %}
 
-    {%- for ns in profile_data['config']['config_script'] %}
-    {{print_status(profile_data['config']['config_script'][ns], ns)-}}
-    {%- for script_name in profile_data['config']['config_script'][ns] %}
+    {%- for ns in profile_data['config']['scripts' %}
+    {{print_status(profile_data['config']['scripts'][ns], ns)-}}
+    {%- for script_name in profile_data['config']['scripts'][ns] %}
 {{ scripts[script_name]|string|indent(4, true) }}
     {%- endfor %}
     {%- endfor %}
 
-    {%- for ns in profile_data['config']['config_script']['services'] %}
-{{ print_service_cmds(profile_data['config']['config_script']['services'][ns], "    ", ns) }}
+    {%- for ns in profile_data['config']['services'] %}
+{{ print_service_cmds(profile_data['config']['services'][ns], "    ", ns) }}
     {%- endfor -%}
 fi
 {% endif -%}
 {%- endfor -%}
-

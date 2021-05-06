@@ -1,0 +1,15 @@
+config:
+  scripts:
+    aliyun-config:
+      - ssh-disable-password-login
+  sysconfig:
+    aliyun-sysconfig:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "no"
+  services:
+    aliyun-services:
+      - cloud-config
+      - cloud-init
+      - cloud-init-final
+      - cloud-init-local

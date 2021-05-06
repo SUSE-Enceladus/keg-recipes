@@ -1,6 +1,6 @@
 packages:
   image:
-    EC2:
+    ec2:
       - cloud-init
       - name: grub2-x86_64-xen 
         arch: x86_64

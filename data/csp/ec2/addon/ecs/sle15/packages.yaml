@@ -1,4 +1,26 @@
 packages:
   image:
     ec2-addon-ecs:
+      - aaa_base-extras
       - amazon-ecs-init
+      - blktrace
+      - chrony
+      - crash
+      - cronie
+      - docker
+      - docker-img-store-setup
+      - ethtool
+      - firewalld
+      - irqbalance
+      - krb5-client
+      - lockdev
+      - mozilla-nss-certs
+      - nfs-kernel-server
+      - nscd
+      - openldap2-client
+      - patterns-base-minimal_base
+      - polkit-default-privs
+      - psmisc
+      - quota
+      - release-notes-sles
+      - tcpd

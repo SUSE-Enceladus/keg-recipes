@@ -5,6 +5,7 @@ packages:
       - azure-li-services
       - dracut-kiwi-oem-repart
       - gconf2
+      - hyper-v
       - icmpinfo
       - kernel-firmware
       - klogd
@@ -17,8 +18,12 @@ packages:
       - rsh
       - shim
       - syslinux
+      - targetcli-fb-common
       - ucode-intel
+      - yast2-iscsi-client
+      - yast2-iscsi-lio-server
       - yast2-isns
+      - yast2-journal
     azure-baremetal-hana-addon:
       - audit-libs
       - keyutils-libs
@@ -28,7 +33,6 @@ packages:
       - patterns-sap-hana
       - wireshark
     azure-baremetal-addon-msft:
-      - golang-github-prometheus-node_exporter
       - java-1_8_0-ibm
       - perl-TimeDate
       - prometheus-ha_cluster_exporter

@@ -1,6 +1,7 @@
 packages:
   image:
     chost:
+      - bind-utils
       - ca-certificates
       - ca-certificates-mozilla
       - chrony
@@ -9,13 +10,16 @@ packages:
       - containerd-ctr
       - cpupower
       - docker
-      - docker-img-store-setup
       - fipscheck
       - hwinfo
       - jq
-      - kernel-default
       - klogd
+      - less
       - libnss_usrfiles2
+      - open-iscsi
+      - pciutils
       - socat
       - vlan
-      
+  bootstrap:
+    chost:
+      - sles-release

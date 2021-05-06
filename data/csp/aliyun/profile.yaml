@@ -1,0 +1,12 @@
+profile:
+  parameters:
+    format: qcow2
+    vga: normal
+    kernelcmdline:
+      biosdevname: 0
+      console: ttyS0,115200n8
+      cgroup_enable: memory
+      multipath: off
+      NON_PERSISTENT_DEVICE_NAMES: 1
+      swapaccount: 1
+  size: 20480

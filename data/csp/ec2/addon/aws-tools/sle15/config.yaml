@@ -1,0 +1,4 @@
+config:
+  services:
+    aws-tools:
+      - cloud-netconfig.timer

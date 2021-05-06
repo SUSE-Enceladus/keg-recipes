@@ -2,11 +2,11 @@ profiles:
   common:
     include:
       - base/jeos
-      - base/chost
-  Ali:
+      - products/chost
+  Aliyun:
     description: Alibaba Cloud configuration
     include:
-      - csp/ali
+      - csp/aliyun
   Azure:
     description: Azure configuration
     include:

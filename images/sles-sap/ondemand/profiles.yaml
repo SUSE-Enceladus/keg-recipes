@@ -3,11 +3,12 @@ profiles:
     include:
       - base/cloudreg
       - base/jeos
+      - base/sle
       - base/sle-modules
-      - base/sles
       - products/sap/ondemand
   Azure:
     include:
+      - csp/azure/addon/azure-tools
       - csp/azure/ondemand
   EC2-HVM:
     include:
@@ -16,5 +17,6 @@ profiles:
       - csp/ec2/ondemand
   GCE:
     include:
+      - csp/gce/addon/fence-agent-deps
+      - csp/gce/addon/gce-tools
       - csp/gce/ondemand
-      - csp/gce/fence-agent-deps

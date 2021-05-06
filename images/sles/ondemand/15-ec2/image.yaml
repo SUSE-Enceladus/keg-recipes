@@ -1,4 +1,3 @@
-schema: vm_singlebuild
 include-paths:
   - sle15
 image:
@@ -7,10 +6,13 @@ image:
   version: 1.0.42
 archs:
   - x86_64
-contents:
-  include:
-    - base/cloudreg
-    - base/jeos
-    - base/sle-modules
-    - base/sles
-    - csp/ec2/ondemand
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/jeos
+      - base/sle
+      - base/sle-modules
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand
+      - products/sles

@@ -1,0 +1,4 @@
+config:
+  services:
+    azure-tools-config:
+      - cloud-netconfig.timer

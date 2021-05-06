@@ -1,9 +1,7 @@
 packages:
   image:
     jeos:
-      - at
       - audit
-      - bc
       - blog
       - cifs-utils
       - dosfstools
@@ -21,7 +19,6 @@ packages:
       - nfs-client
       - openssh
       - parted
-      - patterns-base-minimal_base
       - rpm-ndb
       - rsyslog
       - sudo
@@ -34,9 +31,9 @@ packages:
       - system-user-nobody
       - systemd
       - tar
-      - tcpd
       - tcpdump
       - terminfo
+      - timezone
       - udev
       - vim
       - wget
@@ -44,3 +41,7 @@ packages:
       - wicked
       - xfsprogs
       - zypper-migration-plugin
+  bootstrap:
+    jeos:
+      - filesystem
+      - glibc-locale

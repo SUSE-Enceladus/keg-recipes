@@ -5,12 +5,11 @@ packages:
       - sle-module-hpc-release
   image:
     hpc:
-      - pam-modules
-      - release-notes-sle_hpc
-      - firewalld
-      - patterns-ofed-ofed
+      - chrony
       - dapl
       - dapl-devel
+      - docker
+      - firewalld
       - ibacm
       - ibutils
       - libdat2-2
@@ -23,5 +22,8 @@ packages:
       - mpich_3_2_1-gnu-hpc
       - openmpi2-gnu-hpc
       - openmpi_2_1_6-gnu-hpc
+      - pam-modules
+      - patterns-ofed-ofed
+      - release-notes-sle_hpc
       - rdma-core
       - srptools

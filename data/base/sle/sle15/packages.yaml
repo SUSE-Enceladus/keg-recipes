@@ -1,14 +1,17 @@
 packages:
   image:
-    SLES:
+    sle-common:
       - aaa_base-extras
+      - at
       - at-spi2-core
       - attr
       - autofs
+      - bc
       - binutils
       - blktrace
       - command-not-found
       - crash
+      - cronie
       - curl
       - cyrus-sasl
       - cyrus-sasl-digestmd5
@@ -38,7 +41,6 @@ packages:
       - nfsidmap
       - nfs-kernel-server
       - nscd
-      - ntp
       - openldap2-client
       - patterns-base-minimal_base
       - polkit-default-privs
@@ -48,6 +50,7 @@ packages:
       - screen
       - strace
       - systemd-sysvinit
+      - tcpd
       - tcsh
       - telnet
       - yast2
@@ -87,7 +90,6 @@ packages:
       - yast2-samba-server
       - yast2-schema
       - yast2-security
-      - yast2-squid
       - yast2-sudo
       - yast2-support
       - yast2-sysconfig
