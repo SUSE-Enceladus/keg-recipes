@@ -17,3 +17,4 @@ profiles:
     include:
       - csp/gce/addon/fence-agent-deps
       - csp/gce/addon/gce-tools
+      - csp/gce/addon/google-auth
