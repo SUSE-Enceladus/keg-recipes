@@ -118,7 +118,7 @@ EOF
     {% endfor %}
     {%- endfor %}
 
-    {%- for ns in profile_data['config']['scripts' %}
+    {%- for ns in profile_data['config']['scripts'] %}
     {{print_status(profile_data['config']['scripts'][ns], ns)-}}
     {%- for script_name in profile_data['config']['scripts'][ns] %}
 {{ scripts[script_name]|string|indent(4, true) }}
