@@ -1,7 +1,7 @@
 profiles:
   common:
     include:
-      - base/jeos
+      - base/common
       - products/chost
   Aliyun:
     description: Alibaba Cloud configuration

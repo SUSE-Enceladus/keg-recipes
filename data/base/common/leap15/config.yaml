@@ -1,12 +1,13 @@
 config:
-  jeos-config:
-    - allow-root-console
-    - polkit-set-default-privs
-    - remove-root-pw
-    - set-prodlink
-    - zypp-disable-delta-rpms
+  scripts:
+    common-config:
+      - allow-root-console
+      - polkit-set-default-privs
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
   files:
-    jeos-sysconfig:
+    common-sysconfig:
       - path: /etc/profile
         append: True
         content: |-
@@ -26,7 +27,7 @@ config:
           CONSOLE_FONT="lat9w-16.psfu"
           CONSOLE_SCREENMAP="trivial"
   services:
-    jeos-services:
+    common-services:
       - boot.device-mapper
       - haveged
       - sshd
@@ -45,7 +46,7 @@ config:
       - name: kbd
         enable: False
   sysconfig:
-    jeos-sysconfig:
+    common-sysconfig:
       - file: /etc/sysconfig/keyboard
         name: COMPOSETABLE
         value: "clear latin1.add"

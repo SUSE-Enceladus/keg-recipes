@@ -1,7 +1,7 @@
 profiles:
   common:
     include:
-      - base/jeos
+      - base/common
       - base/sle
       - products/sap/byos
   Azure:

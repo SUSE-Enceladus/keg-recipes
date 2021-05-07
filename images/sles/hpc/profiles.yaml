@@ -3,7 +3,7 @@ profiles:
     include:
       - base/cloudreg
       - base/hpc
-      - base/jeos
+      - base/common
       - base/sle-modules
       - base/sle
       - products/hpc

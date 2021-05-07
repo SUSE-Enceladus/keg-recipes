@@ -1,6 +1,6 @@
 packages:
   image:
-    jeos:
+    common:
       - audit
       - blog
       - cifs-utils
@@ -42,6 +42,6 @@ packages:
       - xfsprogs
       - zypper-migration-plugin
   bootstrap:
-    jeos:
+    common:
       - filesystem
       - glibc-locale

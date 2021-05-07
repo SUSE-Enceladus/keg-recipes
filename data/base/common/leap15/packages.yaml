@@ -1,6 +1,6 @@
 packages:
   image:
-    jeos:
+    common:
       - patterns-openSUSE-base
       - vim
       - shim

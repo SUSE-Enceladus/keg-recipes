@@ -2,7 +2,7 @@ profiles:
   common:
     include:
       - base/cloudreg
-      - base/jeos
+      - base/common
       - base/sle-modules
       - csp/ec2/addon/aws-tools
       - csp/ec2/addon/ecs
