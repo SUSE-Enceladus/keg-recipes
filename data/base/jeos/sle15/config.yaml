@@ -1,10 +1,11 @@
 config:
-  jeos-config:
-    - allow-root-console
-    - polkit-set-default-privs
-    - remove-root-pw
-    - set-prodlink
-    - zypp-disable-delta-rpms
+  scripts:
+    jeos-config:
+      - allow-root-console
+      - polkit-set-default-privs
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
   files:
     jeos-sysconfig:
       - path: /etc/profile
