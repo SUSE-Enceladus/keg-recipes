@@ -1,25 +1,24 @@
 config:
-  config_script:
-    Azure-config:
+  scripts:
+    azure-config:
       - ssh-enable-keep-alive
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
       - set-password-policy
       - keep-default-kernel-log-level
-    sysconfig:
-      Azure-config:
-        - file: /etc/sysconfig/network/config
-          name: NETCONFIG_MODULES_ORDER
-          value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
-        - file: /etc/sysconfig/network/dhcp
-          name: DHCLIENT_SET_HOSTNAME
-          value: "no"
-    services:
-      Azure-config:
-        - chronyd
-        - cloud-config
-        - cloud-final
-        - cloud-init
-        - cloud-init-local
-        - cloud-netconfig.timer
-        - waagent
+  sysconfig:
+    azure-config:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "no"
+  services:
+    azure-config:
+      - chronyd
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - waagent

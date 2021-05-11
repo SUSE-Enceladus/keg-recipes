@@ -1,19 +1,16 @@
 packages:
   image:
-    Azure:
-      - azure-cli
+    azure:
       - cloud-init
       - cloud-init-config-suse
-      - cloud-netconfig-azure
       - cryptsetup
       - name: hyper-v
         arch: x86_64
-      - name: kernel-azure
-        arch: x86_64
       - name: kernel-default
         arch: aarch64
-      - lsscsi
-      - python3-azuremetadata
       - name: shim
         arch: x86_64
       - python-azure-agent
+    azure-kernel:
+      - name: kernel-default
+        arch: x86_64

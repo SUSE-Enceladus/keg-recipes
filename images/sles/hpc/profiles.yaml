@@ -3,13 +3,16 @@ profiles:
     include:
       - base/cloudreg
       - base/hpc
-      - base/jeos
+      - base/common
       - base/sle-modules
-      - base/sles
+      - base/sle
+      - products/hpc
   Azure:
     description: Azure configuration
     include:
       - csp/azure/ondemand
+      - csp/azure/addon/azure-kernel
+      - csp/azure/addon/azure-tools
   EC2-HVM:
     description: EC2 HVM configuration
     include:

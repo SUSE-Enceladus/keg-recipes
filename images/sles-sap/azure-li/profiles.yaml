@@ -1,17 +1,14 @@
-schema: oem
-image:
-  type: oem
 profiles:
   common:
     include:
-      - base/jeos
-      - base/sles
-      - products/sap
+      - base/common
+      - base/sle
+      - products/sap/byos
   Devel:
     description: Devel Image Build
     include:
-      - csp/azure/li/devel
+      - csp/azure-baremetal/li/devel
   Production:
     description: Production Image Build
     include:
-      - csp/azure/li
+      - csp/azure-baremetal/li

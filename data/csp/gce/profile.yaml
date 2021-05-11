@@ -1,3 +1,11 @@
 profile:
+  bootloader:
+    console: serial
   parameters:
     format: gce
+    kernelcmdline:
+      cgroup_enable: memory
+      console: ttyS0,38400n8
+      dis_ucode_ldr: []
+      multipath: off
+      swapaccount: 1

@@ -1,0 +1,4 @@
+packages:
+  image:
+    salt-minion:
+      - salt-minion

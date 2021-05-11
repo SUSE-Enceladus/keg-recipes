@@ -1,5 +1,6 @@
 profile:
   bootloader:
+    console: serial
     timeout_style: countdown
   parameters:
     bootpartition: "true"

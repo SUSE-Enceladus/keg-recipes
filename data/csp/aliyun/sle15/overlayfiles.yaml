@@ -1,0 +1,10 @@
+overlayfiles:
+  gce-base:
+    include:
+      - chrony-gce-ntp
+      - hosts-metadata-google
+      - module-virtio-net
+      - sysconfig-network-cloud-netconfig
+  gce-grub:
+    include:
+      - grub-linuxefi

@@ -1,19 +1,20 @@
 profiles:
   common:
     include:
-      - base/jeos
-      - base/sles
+      - base/common
+      - base/sle
       - products/sap/byos
   Azure:
     description: Azure configuration
     include:
-      - csp/azure
+      - csp/azure/addon/azure-tools
   EC2-HVM:
     description: EC2 HVM configuration
     include:
-      - csp/ec2
       - csp/ec2/addon/aws-tools
   GCE:
     description: GCE configuration
     include:
-      - csp/gce/fence-agent-deps
+      - csp/gce/addon/fence-agent-deps
+      - csp/gce/addon/gce-tools
+      - csp/gce/addon/google-auth

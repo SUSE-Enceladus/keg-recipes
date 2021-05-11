@@ -5,3 +5,7 @@ image:
   name: SLES15-SP2-Manager-4-1-Server-BYOS
   specification: "SUSE Manager 4.1 Server BYOS guest image"
   version: 4.1.42
+repositories:
+  - path: obs://SUSE:SLE-15-SP2:Update:Products:Manager41:Update/standard
+  - path: obs://SUSE:SLE-15-SP2:Update:Products:Manager41/standard
+  - path: obsrepositories:/

@@ -1,0 +1,9 @@
+packages:
+  image:
+    sles:
+      - docker
+      - chrony
+      - release-notes-sles
+  bootstrap:
+    sles-release:
+      - sles-release

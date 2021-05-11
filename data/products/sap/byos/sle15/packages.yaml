@@ -1,9 +1,10 @@
 packages:
   image:
-    SAP-byos:
+    sap-byos:
       - drbd-formula
       - habootstrap-formula
       - python-shaptools
       - salt-minion
       - salt-shaptools
       - saphanabootstrap-formula
+      - sapnwbootstrap-formula

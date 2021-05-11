@@ -1,12 +1,14 @@
 profiles:
   common:
     include:
-      - base/jeos
-      - base/sles
+      - base/common
+      - base/salt-minion
+      - base/sle
+      - products/sles
   Azure:
     description: Azure configuration
     include:
-      - csp/azure
+      - csp/azure/addon/azure-tools
   EC2-HVM:
     description: EC2 HVM configuration
     include:
@@ -14,4 +16,4 @@ profiles:
   GCE:
     description: GCE configuration
     include:
-      - csp/gce
+      - csp/gce/addon/gce-tools

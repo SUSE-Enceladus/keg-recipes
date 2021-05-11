@@ -1,20 +1,24 @@
 profile:
-  oemparameters:
+  parameters:
     bootloader: grub2
     bootpartition: "false"
     filesystem: xfs
     firmware: bios
     initrd_system: dracut
     kernelcmdline:
+      console: Null
       crashkernel: ["160M,high", "80M,low"]
       intel_idle.max_cstate: 1
       mce: ignore_ce
+      net.ifnames: 1
       nomodeset: []
       numa_balancing: disable
       processor.max_cstate: 1
       transparent_hugepage: never
       splash: verbose
     image: oem
+  bootloader: Null
+  size: Null
   oemconfig:
     oem-multipath-scan: "true"
     oem-swap: "true"

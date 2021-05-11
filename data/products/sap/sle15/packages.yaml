@@ -1,16 +1,18 @@
 packages:
   image:
-    SAP:
+    sles4sap:
       - bing
       - bonnie
       - cluster-md-kmp-default
       - cpupower
+      - dbus-1-python
       - dlm-kmp-default
       - docker
       - drbd-kmp-default
       - fence-agents
       - findutils-locate
       - gfs2-kmp-default
+      - HANA-Firewall
       - hawk2
       - ipmitool
       - java-1_8_0-ibm
@@ -28,6 +30,7 @@ packages:
       - release-notes-sles-for-sap
       - SAPHanaSR
       - SAPHanaSR-doc
+      - sap-suse-cluster-connector
       - saptune
       - socat
       - supportutils-plugin-ha-sap
@@ -37,7 +40,11 @@ packages:
       - xkbcomp
       - xorg-x11-Xvnc
       - yast2-control-center-qt
+      - yast2-hana-firewall
       - yast2-sap-ha
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
       - yast2-saptune
+  bootstrap:
+    sles4ap-release:
+      - SLES_SAP-release

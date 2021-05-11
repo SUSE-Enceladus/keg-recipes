@@ -1,9 +1,10 @@
 packages:
   bootstrap:
-    Manager-Server:
+    manager-server:
       - SUSE-Manager-Server-release
   image:
-    Manager-Server:
+    manager-server:
+      - jakarta-commons-el
       - patterns-suma_server
       - salt-minion
       - spacecmd

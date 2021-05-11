@@ -1,10 +1,9 @@
 profiles:
-  EC2-ECS-HVM:
+  common:
     include:
       - base/cloudreg
-      - base/jeos
+      - base/common
       - base/sle-modules
-      - base/sles
       - csp/ec2/addon/aws-tools
       - csp/ec2/addon/ecs
       - csp/ec2/ondemand

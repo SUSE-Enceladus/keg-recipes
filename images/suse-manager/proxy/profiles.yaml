@@ -1,16 +1,15 @@
 profiles:
   common:
     include:
-      - base/jeos
-      - base/sles
+      - base/common
+      - base/sle
       - products/suse-manager/proxy
   Azure:
     include:
-      - csp/azure
+      - csp/azure/addon/azure-tools
   EC2-HVM:
     include:
-      - csp/ec2
       - csp/ec2/addon/aws-tools
   GCE:
     include:
-      - csp/gce
+      - csp/gce/addon/gce-tools

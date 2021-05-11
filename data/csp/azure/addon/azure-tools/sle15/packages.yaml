@@ -1,0 +1,7 @@
+packages:
+  image:
+    azure-tools:
+      - azure-cli
+      - cloud-netconfig-azure
+      - lsscsi
+      - python3-azuremetadata

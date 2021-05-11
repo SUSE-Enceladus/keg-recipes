@@ -1,0 +1,5 @@
+packages:
+  image:
+    aliyun:
+      - cloud-init
+      - kernel-default
