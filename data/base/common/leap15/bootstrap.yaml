@@ -1,6 +1,6 @@
 packages:
   bootstrap:
-    jeos:
+    common:
       - openSUSE-release
       - ca-certificates-mozilla
       - ca-certificates
