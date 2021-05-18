@@ -7,7 +7,7 @@ profiles:
   Azure:
     include:
       - csp/azure/addon/azure-tools
-  EC2-HVM:
+  EC2:
     include:
       - csp/ec2/addon/aws-tools
   GCE:

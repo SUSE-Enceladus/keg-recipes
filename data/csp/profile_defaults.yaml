@@ -12,3 +12,10 @@ profile:
       console: ttyS0
       net.ifnames: 0
   size: 10240
+packages:
+  image:
+    bootloader-efi:
+      - name: grub2-x86_64-efi
+        arch: x86_64
+      - name: grub2-arm64-efi
+        arch: aarch64

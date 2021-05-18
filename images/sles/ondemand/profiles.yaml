@@ -18,8 +18,8 @@ profiles:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/ondemand/standard
-  EC2-HVM:
-    description: EC2 HVM configuration
+  EC2:
+    description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
       - csp/ec2/ondemand

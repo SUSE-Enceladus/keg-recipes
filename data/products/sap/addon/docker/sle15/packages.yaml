@@ -1,0 +1,4 @@
+packages:
+  image:
+    sles4sap-docker:
+      - docker

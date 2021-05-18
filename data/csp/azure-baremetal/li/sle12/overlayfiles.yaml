@@ -1,6 +1,0 @@
-overlayfiles:
-  azure-baremetal-li:
-    include:
-      - modprobe-backlist-azure-li
-      - selinux-disable
-      - sysconfig-susefirewall2-saphostctrl

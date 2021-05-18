@@ -1,0 +1,4 @@
+overlayfiles:
+  sles-motd-byos:
+    include:
+      - motd-addon-byos

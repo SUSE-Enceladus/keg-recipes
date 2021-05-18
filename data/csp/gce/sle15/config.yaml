@@ -1,15 +1,20 @@
 config:
   scripts:
     gce-config:
+      - ssh-disable-challenge-response-auth
       - ssh-disable-password-login
   files:
     gce-config:
       - path: /etc/boto.cfg
         append: True
-        content: "  ca_certificates_file = system"
+        content: |-
+          [Boto]
+          ca_certificates_file = system
       - path: /etc/boto.cfg.template
         append: True
-        content: "  ca_certificates_file = system"
+        content: |-
+          [Boto]
+          ca_certificates_file = system
       - path: /etc/default/instance_configs.cfg.distro
         append: True
         content: |-
@@ -17,15 +22,11 @@ config:
           set_boto_config = false
   sysconfig:
     gce-sysconfig:
-      - file: /etc/sysconfig/network/config
-        name: NETCONFIG_MODULES_ORDER
-        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "yes"
   services:
     gce-services:
-      - chronyd
       - google-guest-agent
       - google-osconfig-agent
       - google-oslogin-cache.timer

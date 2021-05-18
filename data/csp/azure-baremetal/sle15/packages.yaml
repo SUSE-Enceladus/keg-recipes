@@ -20,6 +20,9 @@ packages:
       - syslinux
       - targetcli-fb-common
       - ucode-intel
+      - xauth
+      - xkbcomp
+      - xorg-x11-Xvnc
       - yast2-iscsi-client
       - yast2-iscsi-lio-server
       - yast2-isns

@@ -2,4 +2,6 @@ overlayfiles:
   azure-baremetal-common:
     include:
       - dracut-multipath
+      - modprobe-backlist-azure-li
+      - selinux-disable
       - sysctl-hana-basenet

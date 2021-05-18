@@ -1,10 +1,7 @@
 overlayfiles:
-  gce-base:
+  aliyun-base:
     include:
-      - chrony-gce-ntp
-      - hosts-metadata-google
-      - module-virtio-net
-      - sysconfig-network-cloud-netconfig
-  gce-grub:
-    include:
-      - grub-linuxefi
+      - chrony-aliyun-ntp
+      - cloud-cfg-aliyun
+      - cloud-cfg-disable-network-config
+      - sysconfig-network-plain

@@ -1,0 +1,4 @@
+As "root" (sudo or sudo -i) use the:
+  - zypper command for package management
+  - yast command for configuration management
+

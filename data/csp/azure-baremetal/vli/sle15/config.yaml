@@ -1,0 +1,6 @@
+config:
+  azure-baremetal-vli:
+    sysconfig:
+      - file: /etc/sysconfig/storage
+        name: USED_FS_LIST
+        value: ext4

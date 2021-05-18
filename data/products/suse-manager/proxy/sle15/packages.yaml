@@ -8,5 +8,5 @@ packages:
       - salt-minion
       - susemanager-cloud-setup-proxy
     manager-proxy-sles:
-      - chrony
+      - docker
       - release-notes-sles

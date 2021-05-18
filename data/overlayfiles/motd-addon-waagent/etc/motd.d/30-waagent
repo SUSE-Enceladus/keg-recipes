@@ -1,4 +1,0 @@
-If you are using extensions consider to enable the auto-update feature
-of the extension agent and restarting the service. As root execute:
-  - sed -i s/AutoUpdate.Enabled=n/AutoUpdate.Enabled=y/ /etc/waagent.conf
-  - rcwaagent restart

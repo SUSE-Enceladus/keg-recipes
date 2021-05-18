@@ -1,13 +1,11 @@
 packages:
   image:
-    sles4sap:
+    sap:
       - bing
       - bonnie
       - cluster-md-kmp-default
       - cpupower
-      - dbus-1-python
       - dlm-kmp-default
-      - docker
       - drbd-kmp-default
       - fence-agents
       - findutils-locate
@@ -46,5 +44,5 @@ packages:
       - yast2-sap-scp-prodlist
       - yast2-saptune
   bootstrap:
-    sles4ap-release:
+    sap-release:
       - SLES_SAP-release

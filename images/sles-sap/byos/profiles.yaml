@@ -3,13 +3,15 @@ profiles:
     include:
       - base/common
       - base/sle
+      - products/sap/addon/docker
+      - products/sap/addon/salt-minion
       - products/sap/byos
   Azure:
     description: Azure configuration
     include:
       - csp/azure/addon/azure-tools
-  EC2-HVM:
-    description: EC2 HVM configuration
+  EC2:
+    description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
   GCE:

@@ -1,7 +1,7 @@
 config:
   scripts:
     common-config:
-      - allow-root-console
+      - generate-motd
       - polkit-set-default-privs
       - remove-root-pw
       - set-prodlink
@@ -29,6 +29,7 @@ config:
   services:
     common-services:
       - boot.device-mapper
+      - chronyd
       - haveged
       - sshd
       - name: acpid
