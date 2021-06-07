@@ -66,11 +66,6 @@ set -e
 #--------------------------------------
 echo "Configure image: [$kiwi_iname]..."
 
-#======================================
-# Setup the build keys
-#--------------------------------------
-suseImportBuildKey
-
 {% set common_profile = data['profiles']['common'] %}
 
 {%- if common_profile and common_profile['config'] %}
