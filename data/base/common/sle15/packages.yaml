@@ -40,6 +40,7 @@ packages:
       - which
       - wicked
       - xfsprogs
+      - zypper-lifecycle-plugin
       - zypper-migration-plugin
   bootstrap:
     common:
