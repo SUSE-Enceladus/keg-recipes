@@ -1,0 +1,6 @@
+profile:
+  parameters:
+    firmware: bios
+    kernelcmdline:
+      console: Null
+      mce: ignore_ce

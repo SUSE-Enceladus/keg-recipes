@@ -1,0 +1,22 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/hpc
+      - base/common
+      - base/sle-modules
+      - base/sle
+      - products/hpc/ondemand
+  Azure:
+    description: Azure configuration
+    include:
+      - csp/azure/ondemand
+      - csp/azure/addon/azure-kernel
+      - csp/azure/addon/azure-tools
+      - csp/azure/addon/kvp
+      - csp/azure/addon/waagent-rdma
+  EC2:
+    description: EC2 configuration
+    include:
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand

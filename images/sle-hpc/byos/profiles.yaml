@@ -1,0 +1,17 @@
+profiles:
+  common:
+    include:
+      - base/hpc
+      - base/common
+      - base/salt-minion
+      - base/sle
+      - products/hpc/byos
+  Azure:
+    description: Azure configuration
+    include:
+      - csp/azure/addon/azure-tools
+      - csp/azure/addon/waagent-rdma
+  EC2:
+    description: EC2 configuration
+    include:
+      - csp/ec2/addon/aws-tools

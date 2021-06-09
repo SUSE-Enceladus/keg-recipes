@@ -1,0 +1,4 @@
+overlayfiles:
+  azure-kvp:
+    include:
+      - cloud-cfg-azure-kvp

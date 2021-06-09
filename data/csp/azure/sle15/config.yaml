@@ -1,22 +1,18 @@
 config:
   scripts:
     azure-config:
+      - set-password-policy
       - ssh-enable-keep-alive
+      - ssh-disable-challenge-response-auth
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
-      - set-password-policy
-      - keep-default-kernel-log-level
   sysconfig:
     azure-config:
-      - file: /etc/sysconfig/network/config
-        name: NETCONFIG_MODULES_ORDER
-        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "no"
   services:
     azure-config:
-      - chronyd
       - cloud-config
       - cloud-final
       - cloud-init

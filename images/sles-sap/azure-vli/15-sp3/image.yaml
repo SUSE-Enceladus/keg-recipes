@@ -6,3 +6,5 @@ image:
   name: SLES15-SP3-SAP-Azure-VLI-BYOS
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP3 Azure VLI BYOS guest image"
   version: 0.9.1
+archs:
+  - x86_64

@@ -12,8 +12,9 @@ server and execute: sudo /usr/sbin/configure-proxy.sh
 Without registration this instance does not have access to updates and
 security fixes.
 
+{INCLUDES}
 Management and Config: https://www.suse.com/suse-in-the-cloud-basics
-Documentation: https://www.suse.com/documentation/sles_manager/
+Documentation: https://www.suse.com/documentation/suse_manager/
 Forum: https://forums.suse.com/categories/suse-public-cloud
 
 Have a lot of fun...

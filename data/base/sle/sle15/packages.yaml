@@ -90,6 +90,7 @@ packages:
       - yast2-samba-server
       - yast2-schema
       - yast2-security
+      - yast2-squid
       - yast2-sudo
       - yast2-support
       - yast2-sysconfig

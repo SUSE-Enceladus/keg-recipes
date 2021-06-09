@@ -4,7 +4,6 @@ packages:
       - bind-utils
       - ca-certificates
       - ca-certificates-mozilla
-      - chrony
       - conntrack-tools
       - containerd
       - containerd-ctr

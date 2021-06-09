@@ -1,7 +1,6 @@
 config:
   scripts:
     common-config:
-      - allow-root-console
       - polkit-set-default-privs
       - remove-root-pw
       - set-prodlink

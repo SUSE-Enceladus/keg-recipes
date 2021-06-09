@@ -4,10 +4,8 @@ packages:
       - aaa_base-extras
       - amazon-ecs-init
       - blktrace
-      - chrony
       - crash
       - cronie
-      - docker
       - docker-img-store-setup
       - ethtool
       - firewalld
@@ -18,9 +16,10 @@ packages:
       - nfs-kernel-server
       - nscd
       - openldap2-client
+      - pam-modules
       - patterns-base-minimal_base
       - polkit-default-privs
       - psmisc
       - quota
-      - release-notes-sles
+      - rsync
       - tcpd

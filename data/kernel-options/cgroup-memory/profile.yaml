@@ -1,0 +1,5 @@
+profile:
+  parameters:
+    kernelcmdline:
+      cgroup_enable: memory
+      swapaccount: 1

@@ -1,7 +1,7 @@
 include-paths:
   - sle15
 image:
-  name: SLES15-EC2-HVM
+  name: SLES15-EC2
   specification: "SUSE Linux Enterprise Server 15 guest image for Amazon EC2"
   version: 1.0.42
 archs:

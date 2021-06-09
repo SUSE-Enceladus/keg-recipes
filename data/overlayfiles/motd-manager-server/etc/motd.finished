@@ -17,6 +17,7 @@ to register the instance with SCC
 Without registration this instance does not have access to updates and
 security fixes.
 
+{INCLUDES}
 Management and Config: https://www.suse.com/suse-in-the-cloud-basics
 Documentation: https://www.suse.com/documentation/suse_manager/
 Forum: https://forums.suse.com/categories/suse-public-cloud

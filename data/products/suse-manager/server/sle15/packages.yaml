@@ -10,7 +10,6 @@ packages:
       - spacecmd
       - susemanager-cloud-setup-server
     manager-server-sles:
-      - chrony
       - docker
       - release-notes-sles
     manager-server-deps:

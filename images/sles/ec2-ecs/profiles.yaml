@@ -7,3 +7,4 @@ profiles:
       - csp/ec2/addon/aws-tools
       - csp/ec2/addon/ecs
       - csp/ec2/ondemand
+      - products/sles

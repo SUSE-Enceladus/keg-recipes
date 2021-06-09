@@ -10,6 +10,6 @@ config:
   services:
     aliyun-services:
       - cloud-config
+      - cloud-final
       - cloud-init
-      - cloud-init-final
       - cloud-init-local

@@ -1,20 +1,18 @@
 packages:
   bootstrap:
-    hpc:
+    hpc-release:
       - SLE_HPC-release
-      - sle-module-hpc-release
   image:
     hpc:
-      - chrony
       - dapl
       - dapl-devel
       - docker
-      - firewalld
       - ibacm
       - ibutils
       - libdat2-2
       - libibverbs1
-      - libibverbs1-32bit
+      - name: libibverbs1-32bit
+        arch: x86_64
       - librdmacm1
       - mpiP_3_4_1-gnu-mpich-hpc
       - mpich-gnu-hpc
@@ -22,7 +20,6 @@ packages:
       - mpich_3_2_1-gnu-hpc
       - openmpi2-gnu-hpc
       - openmpi_2_1_6-gnu-hpc
-      - pam-modules
       - patterns-ofed-ofed
       - release-notes-sle_hpc
       - rdma-core

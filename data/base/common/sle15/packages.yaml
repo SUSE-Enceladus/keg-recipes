@@ -3,15 +3,12 @@ packages:
     common:
       - audit
       - blog
+      - chrony
       - cifs-utils
       - dosfstools
       - dracut
       - glibc-locale
       - grub2
-      - name: grub2-x86_64-efi
-        arch: x86_64
-      - name: grub2-arm64-efi
-        arch: aarch64
       - haveged
       - iputils
       - iproute2
