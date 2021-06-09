@@ -19,7 +19,6 @@ packages:
       - libgtk-2_0-0
       - libjpeg62
       - libpng12-0
-      - libvirt-client
       - libyui-qt
       - ocfs2-kmp-default
       - patterns-ha-ha_sles
