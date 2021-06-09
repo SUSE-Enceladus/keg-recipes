@@ -45,3 +45,5 @@ packages:
       - zlib-devel
     azure-baremetal-depsresolv:
       - fipscheck
+    azure-baremetal-firewall:
+      - SuSEfirewall2
