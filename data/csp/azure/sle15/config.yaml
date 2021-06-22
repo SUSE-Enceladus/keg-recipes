@@ -6,6 +6,7 @@ config:
       - ssh-disable-challenge-response-auth
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
+      - waagent-disable-ephemeral-disk-handling
   sysconfig:
     azure-config:
       - file: /etc/sysconfig/network/dhcp
