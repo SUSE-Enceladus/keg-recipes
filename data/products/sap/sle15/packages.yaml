@@ -14,6 +14,7 @@ packages:
       - hawk2
       - ipmitool
       - java-1_8_0-ibm
+      - libatomic1
       - libdlm
       - libgthread-2_0-0
       - libgtk-2_0-0
