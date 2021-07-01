@@ -1,0 +1,4 @@
+packages:
+  image:
+    common-rpm:
+      - rpm-ndb
