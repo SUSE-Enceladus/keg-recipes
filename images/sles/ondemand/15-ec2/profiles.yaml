@@ -1,0 +1,14 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/common
+      - base/sle-modules
+      - base/sle
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand
+      - products/sles
+  Azure-Basic: Null
+  Azure-Standard: Null
+  EC2: Null
+  GCE: Null
