@@ -23,3 +23,8 @@ profiles:
     include:
       - csp/gce
       - kernel-options/cgroup-memory
+  OpenStack:
+    description: OpenStack configuration
+    include:
+      - csp/openstack
+      - kernel-options/cgroup-memory
