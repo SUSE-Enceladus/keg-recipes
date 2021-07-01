@@ -13,4 +13,4 @@ contents:
     - base/common
     - base/sle-modules
     - base/sles
-    - csp/azure/ondemand/basic
+    - csp/azure/ondemand/basic/variant-id

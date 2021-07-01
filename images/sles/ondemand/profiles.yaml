@@ -11,7 +11,7 @@ profiles:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
-      - csp/azure/ondemand/basic
+      - csp/azure/ondemand/basic/variant-id
   Azure-Standard:
     description: Azure configuration
     include:
