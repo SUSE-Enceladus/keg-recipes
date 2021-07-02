@@ -36,7 +36,6 @@ packages:
       - which
       - wicked
       - xfsprogs
-      - zypper-lifecycle-plugin
       - zypper-migration-plugin
     common-rpm:
       - rpm
