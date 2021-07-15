@@ -1,0 +1,5 @@
+packages:
+  image:
+    openstack:
+      - cloud-init
+      - kernel-default

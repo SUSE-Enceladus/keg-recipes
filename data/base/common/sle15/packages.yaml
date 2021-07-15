@@ -16,7 +16,6 @@ packages:
       - nfs-client
       - openssh
       - parted
-      - rpm-ndb
       - rsyslog
       - sudo
       - supportutils
@@ -37,8 +36,9 @@ packages:
       - which
       - wicked
       - xfsprogs
-      - zypper-lifecycle-plugin
       - zypper-migration-plugin
+    common-rpm:
+      - rpm
   bootstrap:
     common:
       - filesystem

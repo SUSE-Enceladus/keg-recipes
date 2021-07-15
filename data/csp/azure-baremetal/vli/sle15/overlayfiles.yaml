@@ -3,4 +3,3 @@ overlayfiles:
     include:
       - efi-startup
       - modprobe-backlist-azure-vli
-      - sysctl-hana-netapp

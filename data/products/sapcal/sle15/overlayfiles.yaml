@@ -1,0 +1,4 @@
+overlayfiles:
+  motd-sapcal:
+    include:
+      - motd-caption-sapcal

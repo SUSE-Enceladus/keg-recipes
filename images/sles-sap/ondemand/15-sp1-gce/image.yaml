@@ -1,0 +1,23 @@
+include-paths:
+  - sle15/sp1
+image:
+  name: SLES15-SP1-SAP-GCE
+  specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP1 BYOS guest image for Google Compute Engine"
+  version: 1.0.42
+archs:
+  - x86_64
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/gce/addon/fence-agent-deps
+      - csp/gce/addon/gce-tools
+      - csp/gce/addon/google-auth
+      - csp/gce/ondemand
+      - products/sap/addon/docker
+      - products/sap/addon/salt-minion
+      - products/sap/byos
+  Azure: Null
+  EC2: Null
+  GCE: Null

@@ -1,0 +1,71 @@
+packages:
+  image:
+    sapcal:
+      - apache2
+      - cairo-devel
+      - cpupower
+      - dbus-1-x11
+      - firewalld
+      - gcc-c++
+      - gcc-fortran
+      - name: glibc-32bit
+        arch: x86_64
+      - glibc-devel
+      - icewm
+      - insserv-compat
+      - java-1_8_0-ibm
+      - java-1_8_0-ibm-devel
+      - java-1_8_0-ibm-fonts
+      - java-1_8_0-ibm-plugin
+      - name: krb5-32bit
+        arch: x86_64
+      - name: libcom_err2-32bit
+        arch: x86_64
+      - libcurl-devel
+      - libidn-tools
+      - libpng12-0
+      - libgcc_s1
+      - name: libgcc_s1-32bit
+        arch: x86_64
+      - libstdc++6
+      - name: libstdc++6-32bit
+        arch: x86_64
+      - libstdc++6-locale
+      - libssh2-1
+      - libtool
+      - libxml2-devel
+      - opie
+      - python2-pycrypto
+      - python-pyOpenSSL
+      - readline-devel
+      - rpm-build
+      - samba
+      - samba-client
+      - samba-client-32bit
+      - sapconf
+      - sysstat
+      - tack
+      - tuned
+      - unrar
+      - uuidd
+      - uuid-runtime
+      - x11-tools
+      - xauth
+      - xorg-x11-devel
+      - xorg-x11-driver-input
+      - xorg-x11-driver-video
+      - xorg-x11-fonts
+      - xorg-x11-server
+      - name: xorg-x11-libX11-32bit
+        arch: x86_64
+      - name: xorg-x11-libXau-32bit
+        arch: x86_64
+      - name: xorg-x11-libXdmcp-32bit
+        arch: x86_64
+      - name: xorg-x11-libXext-32bit
+        arch: x86_64
+      - name: xorg-x11-libxcb-32bit
+        arch: x86_64
+      - xrdp
+      - name: zlib-32bit
+        arch: x86_64
