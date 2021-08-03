@@ -42,13 +42,15 @@
         {{ macros.print_preferences(profile_data['profile']) }}
     </preferences>
     {%-     endif -%}
+    {%    endfor -%}
+    {%- endif -%}
+    {%- for group in data['users'] %}
+    <users group="{{ group['group'] }}">
+    {%-   for user in group['users'] %}
+        <user name="{{ user['name'] }}" password="{{ user['password'] }}" home="{{ user['home'] }}"/>
     {%-   endfor %}
-    {%- endif %}
-    <users>
-    {%- for user in data['users'] %}
-        <user name="{{ user['name'] }}" groups="{{ ','.join(user['groups']) }}" password="{{ user['password'] }}" home="{{ user['home'] }}"/>
-    {%- endfor %}
     </users>
+    {%- endfor %}
     {%- if not data['repositories'] %}
     <repository type="rpm-md" >
         <source path='obsrepositories:/'/>

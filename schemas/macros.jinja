@@ -16,3 +16,23 @@
     {%- endif %}
   {%- endfor -%}
 {%- endmacro -%}
+{% macro print_preferences(profile) -%}
+        <type {%- for key, val in profile['parameters'].items() -%}
+            {%- if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}"
+            {%- else %} {{ key }}="{{ val }}"
+            {%- endif -%}
+            {%- endfor -%}>
+            {%- if profile['bootloader'] %}
+            <bootloader {%- for key, val in profile['bootloader'].items() %} {{ key }}="{{ val }}" {%- endfor -%}/>
+            {%- endif %}
+            {%- if profile['size'] %}
+            <size unit="M">{{ profile['size'] }}</size>
+            {%- endif %}
+            {%- if profile['oemconfig'] %}
+            <oemconfig>
+              <oem-swap>{{ profile['oemconfig']['oem-swap'] }}</oem-swap>
+              <oem-swapsize>{{ profile['oemconfig']['oem-swapsize'] }}</oem-swapsize>
+            </oemconfig>
+            {%- endif %}
+        </type>
+{%- endmacro -%}
