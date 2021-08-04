@@ -13,7 +13,6 @@ profiles:
       - csp/azure/ondemand
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
-      - csp/azure/addon/kvp
       - csp/azure/addon/waagent-rdma
   EC2:
     description: EC2 configuration
