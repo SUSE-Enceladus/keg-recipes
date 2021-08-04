@@ -1,0 +1,4 @@
+packages:
+  image:
+    sles-byos-salt-minion:
+      - salt-minion
