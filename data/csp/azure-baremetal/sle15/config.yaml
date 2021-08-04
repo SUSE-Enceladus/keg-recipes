@@ -17,6 +17,7 @@ config:
       - increase-idmapd-verbosity
       - ssh-enable-keep-alive
       - sudo-disable-targetpw
+      - systemd-set-default-target-multi-user
   services:
     azure-baremetal:
       - azure-li-call
