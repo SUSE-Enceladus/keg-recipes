@@ -15,7 +15,6 @@ packages:
       - haveged
       - iproute2
       - iputils
-      - kdump
       - libnettle4
       - libnl1
       - lvm2

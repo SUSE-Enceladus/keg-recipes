@@ -7,7 +7,6 @@ packages:
       - crash
       - cronie
       - ethtool
-      - irqbalance
       - lockdev
       - mozilla-nss-certs
       - nscd
@@ -17,6 +16,7 @@ packages:
       - rsync
       - strace
       - tcpd
+      - yp-tools
     ec2-addon-ecs-aws-tools:
       - amazon-ssm-agent
       - aws-cli

@@ -28,6 +28,7 @@ packages:
       - glibc-i18ndata
       - icmpinfo
       - irqbalance
+      - kdump
       - krb5-client
       - ksh
       - libyui-ncurses-pkg
