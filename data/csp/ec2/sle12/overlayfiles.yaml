@@ -5,7 +5,6 @@ overlayfiles:
       - cloud-cfg-disable-network-config
       - dracut-aws-type-switch
       - sysconfig-network-cloud-netconfig
-      - udev-nvme-timeout
   ec2-dracut-opts:
     include:
       - dracut-ext4
