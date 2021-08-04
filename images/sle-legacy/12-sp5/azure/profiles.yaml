@@ -30,6 +30,7 @@ profiles:
     description: SLES HPC On-Demand image
     include:
       - base/cloudreg
+      - base/sle-modules
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
