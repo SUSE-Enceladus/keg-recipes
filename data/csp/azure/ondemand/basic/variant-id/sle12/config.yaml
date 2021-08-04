@@ -1,0 +1,6 @@
+config:
+  files:
+    azure-ondemand-basic-track-variant:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="sles-basic"

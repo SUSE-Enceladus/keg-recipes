@@ -1,0 +1,6 @@
+packages:
+  image:
+    gce-ondemand:
+      - cloud-regionsrv-client-plugin-gce
+      - regionServiceClientConfigGCE
+      - regionServiceCertsGCE

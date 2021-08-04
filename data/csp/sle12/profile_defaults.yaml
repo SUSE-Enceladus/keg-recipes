@@ -1,0 +1,12 @@
+profile:
+  parameters:
+    bootloader: grub2
+    boottimeout: 1
+    firmware: uefi
+    devicepersistency: by-label
+    filesystem: xfs
+    image: vmx
+    kernelcmdline:
+      console: ttyS0
+      net.ifnames: 0
+  size: 10240

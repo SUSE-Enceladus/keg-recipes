@@ -1,0 +1,6 @@
+packages:
+  image:
+    sles-ondemand-docker:
+      - docker
+      - ruby2.1-rubygem-sle2docker
+      - yast2-docker

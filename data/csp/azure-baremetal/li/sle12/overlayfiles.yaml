@@ -1,0 +1,4 @@
+overlayfiles:
+  susefirewall-rules:
+    include:
+      - sysconfig-susefirewall2-saphostctrl

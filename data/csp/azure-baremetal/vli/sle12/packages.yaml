@@ -1,0 +1,6 @@
+packages:
+  image:
+    azure-vli:
+      - libxml2
+      - name: libxml2-32bit
+        arch: x86_64

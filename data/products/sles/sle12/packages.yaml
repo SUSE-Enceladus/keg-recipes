@@ -1,0 +1,8 @@
+packages:
+  image:
+    sles:
+      - release-notes-sles
+  bootstrap:
+    sles-release:
+      - sles-release
+      - sles-release-POOL

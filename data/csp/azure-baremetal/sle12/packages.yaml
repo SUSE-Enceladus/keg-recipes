@@ -1,0 +1,25 @@
+packages:
+  image:
+    azure-baremetal:
+      - azure-li-services
+      - gconf2
+      - hyper-v
+      - kernel-default
+      - kernel-firmware
+      - multipath-tools
+      - plymouth
+      - shim
+      - syslinux
+      - ucode-intel
+    azure-baremetal-hana-addon:
+      - audit-libs
+      - keyutils-libs
+      - libopenssl1_0_0
+      - libssh2-1
+      - MozillaFirefox-branding-SLE
+      - patterns-sap-hana
+      - wireshark
+    azure-baremetal-addon-msft:
+      - perl-TimeDate
+      - zlib
+      - zlib-devel

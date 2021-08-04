@@ -1,0 +1,8 @@
+include-paths:
+  - sle12/sp3
+  - sle12/sp4
+  - sle12/sp5
+image:
+  name: SLES12-SP5-GCE
+  specification: "SUSE Linux Enterprise Server 12 Service Pack 5 guest image for Google Compute Engine"
+  version: 1.0.42

@@ -1,0 +1,4 @@
+profile:
+  parameters:
+    bootpartition: "false"
+    initrd_system: dracut

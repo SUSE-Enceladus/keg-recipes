@@ -1,0 +1,14 @@
+schema: vm7
+include-paths:
+  - sle12/sp3
+image:
+  name: SLES12-SP3-SAP-EC2-HVM
+  specification: "SUSE Linux Enterprise Server 12 Service Pack 3 for SAP Applications guest image for Amazon EC2 for HVM"
+archs:
+  - x86_64
+users:
+  - group: root
+    users:
+      - name: root
+        home: /root
+        password: $1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0

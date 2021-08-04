@@ -1,0 +1,53 @@
+packages:
+  image:
+    common:
+      - acl
+      - blog
+      - cifs-utils
+      - command-not-found
+      - cryptconfig
+      - dracut
+      - fipscheck
+      - fontconfig
+      - fonts-config
+      - gettext-runtime
+      - grub2
+      - haveged
+      - iproute2
+      - iputils
+      - kdump
+      - libnettle4
+      - libnl1
+      - lvm2
+      - ntp
+      - openssh
+      - pam-modules
+      - parted
+      - patterns-sles-Minimal
+      - procinfo
+      - rpm
+      - rsyslog
+      - sg3_utils
+      - sudo
+      - supportutils
+      - supportutils-plugin-suse-public-cloud
+      - suse-build-key
+      - SUSEConnect
+      - systemd
+      - tar
+      - tcpdump
+      - timezone
+      - udev
+      - vim
+      - wget
+      - which
+      - wicked
+      - xfsprogs
+      - xinetd
+      - xtables-plugins
+    common-klogd:
+      - klogd
+  bootstrap:
+    common:
+      - filesystem
+      - glibc-locale

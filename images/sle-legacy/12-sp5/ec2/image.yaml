@@ -1,0 +1,8 @@
+include-paths:
+  - sle12/sp3
+  - sle12/sp4
+  - sle12/sp5
+image:
+  name: SLES12-SP5-EC2
+  specification: "SUSE Linux Enterprise Server 12 Service Pack 5 guest image for Amazon EC2"
+  version: 1.0.42

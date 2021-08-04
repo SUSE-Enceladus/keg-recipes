@@ -1,0 +1,7 @@
+packages:
+  image:
+    azure-baremetal-sp3:
+      - cisco-fnic
+      - cisco-fnic-kmp-default
+      - cisco-enic-usnic-kmp-default
+      - sapconf

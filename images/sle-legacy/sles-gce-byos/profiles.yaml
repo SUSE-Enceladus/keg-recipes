@@ -1,0 +1,7 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/gce/addon/gce-tools
+      - products/sles/byos

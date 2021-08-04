@@ -1,0 +1,4 @@
+overlayfiles:
+  sap-motd-byos:
+    include:
+      - motd-addon-byos

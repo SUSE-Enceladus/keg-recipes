@@ -1,0 +1,5 @@
+packages:
+  image:
+    sles-ondemand:
+      - sle-module-hpc-release
+      - sle-module-hpc-release-POOL

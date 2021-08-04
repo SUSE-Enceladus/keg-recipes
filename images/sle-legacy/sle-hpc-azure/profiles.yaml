@@ -1,0 +1,8 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/azure/addon/azure-tools
+      - csp/azure/addon/waagent-rdma
+      - products/hpc/byos

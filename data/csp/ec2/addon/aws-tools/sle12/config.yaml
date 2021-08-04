@@ -1,0 +1,9 @@
+config:
+  services:
+    aws-tools:
+      - cloud-netconfig.timer
+  sysconfig:
+    aws-tools:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"

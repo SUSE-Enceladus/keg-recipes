@@ -3,6 +3,7 @@ overlayfiles:
     include:
       - cloud-cfg-azure
       - cloud-cfg-disable-network-config
+      - motd-addon-waagent
   azure-sysconfig-network:
     include:
       - sysconfig-network-cloud-netconfig
