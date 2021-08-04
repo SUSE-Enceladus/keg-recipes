@@ -3,7 +3,6 @@ profiles:
     include:
       - base/hpc
       - base/common
-      - base/salt-minion
       - base/sle
       - products/hpc/byos
   Azure:

@@ -43,6 +43,8 @@ packages:
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
       - yast2-saptune
+    sap-docker:
+      - docker
   bootstrap:
     sap-release:
       - SLES_SAP-release
