@@ -1,0 +1,9 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+image:
+  name: SLES15-SP4-EC2-ECS-HVM
+  specification: "SUSE Linux Enterprise Server 15 SP4 ECS guest image for Amazon EC2 with HVM"
+  version: 0.9.1

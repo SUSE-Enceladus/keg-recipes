@@ -1,0 +1,11 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+image:
+  name: SLES15-SP4-SAP-Azure-VLI-BYOS
+  specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP4 Azure VLI BYOS guest image"
+  version: 0.9.1
+archs:
+  - x86_64
