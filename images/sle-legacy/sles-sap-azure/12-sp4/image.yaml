@@ -1,0 +1,8 @@
+include-paths:
+  - sle12/sp3
+  - sle12/sp4
+image:
+  name: SLES12-SP4-SAP-Azure
+  specification: "SUSE Linux Enterprise Server 12 Service Pack 4 for SAP Applications guest image for Microsoft Azure"
+archs:
+  - x86_64

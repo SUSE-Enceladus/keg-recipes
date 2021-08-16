@@ -1,0 +1,20 @@
+packages:
+  image:
+    azure:
+      - cloud-init
+      - cloud-init-config-suse
+      - hyper-v
+      - name: kernel-default
+        arch: aarch64
+      - python-azure-agent
+    azure-cryptsetup:
+      - cryptsetup
+    azure-kernel:
+      - name: kernel-default
+        arch: x86_64
+    bootloader-efi:
+      - name: grub2-x86_64-efi
+        arch: x86_64
+      - name: grub2-arm64-efi
+        arch: aarch64
+

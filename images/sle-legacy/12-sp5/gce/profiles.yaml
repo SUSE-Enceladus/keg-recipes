@@ -1,0 +1,31 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+  BYOS:
+    description: SLES GCE On-Demand configuration
+    include:
+      - csp/gce/addon/gce-tools
+      - products/sles/byos
+  On-Demand:
+    description: SLES GCE BYOS configuration
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
+      - products/sles/ondemand
+  SAP-BYOS:
+    description: SLES of SAP GCE BYOS configuration
+    include:
+      - csp/gce/addon/gce-tools
+      - products/sap/byos
+  SAP-On-Demand:
+    description: SLES of SAP GCE On-Demand configuration
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
+      - products/sap/ondemand

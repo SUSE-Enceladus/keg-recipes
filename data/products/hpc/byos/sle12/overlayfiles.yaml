@@ -1,0 +1,4 @@
+overlayfiles:
+  hpc-motd-byos:
+    include:
+      - motd-addon-byos

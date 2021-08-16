@@ -1,0 +1,12 @@
+schema: vm7
+include-paths:
+  - sle12/sp3
+image:
+  name: SLES12-SP3-GCE-BYOS
+  specification: "SUSE Linux Enterprise Server 12 Service Pack 3 guest image for Google Compute Engine configured for BYOS"
+users:
+  - group: root
+    users:
+      - name: root
+        home: /root
+        password: $1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0

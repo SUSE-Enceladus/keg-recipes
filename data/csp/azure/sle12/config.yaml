@@ -1,0 +1,22 @@
+config:
+  scripts:
+    azure-config:
+      - set-password-policy
+      - ssh-enable-keep-alive
+      - sudo-disable-targetpw
+      - waagent-disable-auto-update
+      - waagent-enable-all-ssh-host-key-types
+      - waagent-disable-ephemeral-disk-handling
+  sysconfig:
+    azure-config-set-hostname:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"
+  services:
+    azure-config:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - haveged
+      - waagent

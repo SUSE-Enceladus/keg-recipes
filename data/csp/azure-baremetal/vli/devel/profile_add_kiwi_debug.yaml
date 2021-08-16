@@ -1,4 +1,4 @@
 profile:
-  oemparameters:
+  parameters:
     kernelcmdline:
-      rd.kiwi.debug: None
+      rd.kiwi.debug: []

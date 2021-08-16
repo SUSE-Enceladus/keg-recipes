@@ -1,0 +1,10 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/common
+      - base/sle
+      - base/sle-modules
+      - csp/azure/addon/azure-tools
+      - csp/azure/ondemand
+      - products/sap/ondemand

@@ -1,0 +1,5 @@
+packages:
+  image:
+    gce-tools:
+      - cloud-netconfig-gce
+      - python3-gcemetadata

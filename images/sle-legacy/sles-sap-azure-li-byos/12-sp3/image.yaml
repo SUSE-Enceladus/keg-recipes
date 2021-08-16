@@ -1,0 +1,18 @@
+schema: vm7
+include-paths:
+  - sle12/sp3
+image:
+  name: SLES12-SP3-SAP-Azure-LI-BYOS
+  specification: "SUSE Linux Enterprise Server for SAP Applications 12 SP3 Azure LI BYOS guest image"
+archs:
+  - x86_64
+repositories:
+  - path: obs://SUSE.com:PLDP:Cisco:fnic/SLE_12_SP3_RL
+  - path: obs://SUSE.com:PLDP:Cisco:enic/SLE_12_SP3_RL
+  - path: obsrepositories:/
+users:
+  - group: root
+    users:
+      - name: root
+        home: /root
+        password: $1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0

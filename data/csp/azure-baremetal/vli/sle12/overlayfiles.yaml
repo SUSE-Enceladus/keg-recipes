@@ -4,4 +4,3 @@ overlayfiles:
       - efi-startup
       - modprobe-backlist-azure-vli
       - sysconfig-susefirewall2-saphostctrl-ssh-dns
-      - sysctl-hana-netapp

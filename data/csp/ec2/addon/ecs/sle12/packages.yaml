@@ -1,0 +1,23 @@
+packages:
+  image:
+    ec2-addon-ecs:
+      - aaa_base-extras
+      - amazon-ecs-init
+      - blktrace
+      - crash
+      - cronie
+      - ethtool
+      - lockdev
+      - mozilla-nss-certs
+      - nscd
+      - polkit-default-privs
+      - psmisc
+      - quota
+      - rsync
+      - strace
+      - tcpd
+      - yp-tools
+    ec2-addon-ecs-aws-tools:
+      - amazon-ssm-agent
+      - aws-cli
+      - python3-ec2metadata

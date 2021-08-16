@@ -1,0 +1,42 @@
+packages:
+  image:
+    sap:
+      - bing
+      - bonnie
+      - cluster-md-kmp-default
+      - cpupower
+      - dlm-kmp-default
+      - drbd-kmp-default
+      - fence-agents
+      - findutils-locate
+      - gfs2-kmp-default
+      - hawk2
+      - ipmitool
+      - java-1_7_1-ibm
+      - libdlm
+      - libgthread-2_0-0
+      - libgtk-2_0-0
+      - libjpeg62
+      - libopenssl0_9_8
+      - libpng12-0
+      - libvirt-client
+      - libyui-qt6
+      - ocfs2-kmp-default
+      - patterns-ha-ha_sles
+      - patterns-sles-base
+      - patterns-sles-sap_server
+      - release-notes-sles-for-sap
+      - SAPHanaSR
+      - SAPHanaSR-doc
+      - supportutils-plugin-ha-sap
+      - tuned
+      - xauth
+      - xkbcomp
+      - xorg-x11-Xvnc
+      - yast2-control-center-qt
+      - yast2-sap-scp
+      - yast2-sap-scp-prodlist
+  bootstrap:
+    sap-release:
+      - SLES_SAP-release
+      - SLES_SAP-release-POOL

@@ -1,0 +1,5 @@
+profile:
+  parameters:
+    boot: Null
+    bootpartition: "false"
+    filesystem: xfs

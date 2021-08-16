@@ -1,0 +1,11 @@
+profiles:
+  common:
+    include:
+      - base/cloudreg
+      - base/common
+      - base/sle
+      - base/sle-modules
+      - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
+      - products/sap/addon/hana-net
+      - products/sap/ondemand

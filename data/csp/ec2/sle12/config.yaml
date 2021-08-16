@@ -1,0 +1,19 @@
+config:
+  files:
+    ec2-ntp:
+      - path: /etc/ntp.conf
+        append: True
+        content: "server 169.254.169.123 iburst"
+  scripts:
+    ec2-config:
+      - ntp-disable-auth-keys
+      - ssh-disable-challenge-response-auth
+  services:
+    ec2-services:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - haveged
+    ec2-time-sync:
+      - ntpd

@@ -9,6 +9,7 @@ packages:
       - docker-img-store-setup
       - ethtool
       - firewalld
+      - iproute2
       - irqbalance
       - krb5-client
       - lockdev

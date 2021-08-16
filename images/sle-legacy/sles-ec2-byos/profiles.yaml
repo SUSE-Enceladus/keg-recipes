@@ -1,0 +1,7 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/ec2/addon/aws-tools
+      - products/sles/byos

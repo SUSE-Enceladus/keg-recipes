@@ -1,0 +1,10 @@
+overlayfiles:
+  chost-base:
+    include:
+      - sysctl-enable-ip-forward
+      - sysctl-enable-rp-filter
+  motd:
+    include:
+      - motd-addon-byos-chost
+      - motd-caption-chost
+      - motd-default

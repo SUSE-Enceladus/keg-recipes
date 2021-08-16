@@ -7,3 +7,5 @@ packages:
       - salt-shaptools
       - saphanabootstrap-formula
       - sapnwbootstrap-formula
+    sap-salt-minion:
+      - salt-minion

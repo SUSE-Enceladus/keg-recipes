@@ -1,0 +1,37 @@
+profiles:
+  common:
+    include:
+      - base/common
+  BYOS:
+    include:
+      - base/sle
+      - csp/ec2/addon/aws-tools
+      - products/sles/byos
+  ECS-On-Demand:
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/ec2/addon/ecs
+      - csp/ec2/ondemand
+      - products/sles/ondemand
+  On-Demand:
+    include:
+      - base/cloudreg
+      - base/sle
+      - base/sle-modules
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand
+      - products/sles/ondemand
+  SAP-BYOS:
+    include:
+      - base/sle
+      - csp/ec2/addon/aws-tools
+      - products/sap/byos
+  SAP-On-Demand:
+    include:
+      - base/cloudreg
+      - base/sle
+      - base/sle-modules
+      - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand
+      - products/sap/ondemand

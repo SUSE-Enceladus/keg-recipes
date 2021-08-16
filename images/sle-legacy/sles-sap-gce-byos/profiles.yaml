@@ -1,0 +1,8 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/gce/addon/gce-tools
+      - products/sap/addon/hana-net
+      - products/sap/byos

@@ -2,7 +2,6 @@ profiles:
   common:
     include:
       - base/common
-      - base/salt-minion
       - base/sle
       - products/sles/byos
   Azure:

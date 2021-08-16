@@ -1,0 +1,57 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+  Basic-On-Demand:
+    description: SLES Basic On-Demand image
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/azure/addon/azure-kernel
+      - csp/azure/addon/azure-tools
+      - csp/azure/ondemand/basic
+      - products/sles/ondemand
+  Standard-On-Demand:
+    description: SLES Standard On-Demand image
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/azure/addon/azure-kernel
+      - csp/azure/addon/azure-tools
+      - csp/azure/ondemand
+      - products/sles/ondemand
+  BYOS:
+    description: SLES BYOS image
+    include:
+      - csp/azure/addon/azure-tools
+      - products/sles/byos
+  HPC-On-Demand:
+    description: SLES HPC On-Demand image
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/azure/addon/azure-kernel
+      - csp/azure/addon/azure-tools
+      - csp/azure/addon/waagent-rdma
+      - csp/azure/ondemand
+      - products/hpc/ondemand
+  HPC-BYOS:
+    description: SLES HPC BYOS image
+    include:
+      - csp/azure/addon/azure-tools
+      - csp/azure/addon/waagent-rdma
+      - products/hpc/byos
+  SAP-On-Demand:
+    description: SLES for SAP On-Demand image
+    include:
+      - base/cloudreg
+      - base/sle-modules
+      - csp/azure/addon/azure-tools
+      - csp/azure/ondemand
+      - products/sap/ondemand
+  SAP-BYOS:
+    description: SLES for SAP BYOS image
+    include:
+      - csp/azure/addon/azure-tools
+      - products/sap/byos

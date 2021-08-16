@@ -1,0 +1,20 @@
+profile:
+  parameters:
+    bootloader: grub2
+    boottimeout: Null
+    kernelcmdline:
+      crashkernel: ["160M,high", "80M,low"]
+      intel_idle.max_cstate: 1
+      loglevel: 3
+      net.ifnames: 1
+      nomodeset: []
+      numa_balancing: disable
+      processor.max_cstate: 1
+      transparent_hugepage: never
+      splash: verbose
+    image: oem
+  size: Null
+  oemconfig:
+    oem-multipath-scan: "true"
+    oem-swap: "true"
+    oem-swapsize: 2048

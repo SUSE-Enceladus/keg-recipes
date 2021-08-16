@@ -1,0 +1,9 @@
+profiles:
+  common:
+    include:
+      - base/common
+      - base/sle
+      - csp/ec2/addon/aws-sap
+      - csp/ec2/addon/aws-tools
+      - products/sap/addon/hana-net
+      - products/sap/byos

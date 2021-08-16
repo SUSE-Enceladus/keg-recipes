@@ -1,0 +1,9 @@
+overlayfiles:
+  azure-barematal-kiwi-hooks:
+    archivename: kiwi-hooks
+    include:
+      - kiwi-hook-handle-machine-id
+  azure-barematal-multipath:
+    archivename: multipath-setup
+    include:
+      - template-multipath-conf

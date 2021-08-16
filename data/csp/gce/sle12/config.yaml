@@ -1,0 +1,39 @@
+config:
+  files:
+    gce-ntp:
+      - path: /etc/boto.cfg
+        append: True
+        content: |-
+          [Boto]
+          ca_certificates_file = system
+      - path: /etc/boto.cfg.template
+        append: True
+        content: |-
+          [Boto]
+          ca_certificates_file = system
+      - path: /etc/ntp.conf
+        append: True
+        content: "server metadata.google.internal iburst"
+  scripts:
+    gce-config:
+      - ntp-disable-auth-keys
+      - ssh-disable-challenge-response-auth
+      - ssh-disable-password-login
+  sysconfig:
+    gce-sysconfig:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"
+      - file: /etc/sysconfig/network/dhcp
+        name: WRITE_HOSTNAME_TO_HOSTS
+        value: "no"
+  services:
+    gce-services:
+      - haveged
+      - ntpd
+      - google-guest-agent
+      - google-osconfig-agent
+      - google-oslogin-cache.timer
+      - google-shutdown-scripts
+      - google-startup-scripts
+      - rootgrow

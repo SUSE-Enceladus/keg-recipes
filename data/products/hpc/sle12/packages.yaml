@@ -1,0 +1,22 @@
+packages:
+  bootstrap:
+    hpc-release:
+      - SLE-HPC-release
+      - SLE-HPC-release-POOL
+  image:
+    hpc:
+      - dapl
+      - dapl-devel
+      - ibacm
+      - ibutils
+      - ibvexdmtools
+      - libdat2-2
+      - libibverbs1
+      - name: libibverbs1-32bit
+        arch: x86_64
+      - librdmacm1
+      - openmpi
+      - patterns-sles-ofed
+      - rdma-core
+      - release-notes-sles
+      - srptools

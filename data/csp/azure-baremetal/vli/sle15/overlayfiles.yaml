@@ -3,3 +3,6 @@ overlayfiles:
     include:
       - efi-startup
       - modprobe-backlist-azure-vli
+  susefirewall-rules:
+    include:
+      - sysconfig-susefirewall2-saphostctrl-ssh-dns

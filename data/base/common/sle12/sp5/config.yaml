@@ -1,0 +1,9 @@
+config:
+  files:
+    common-sysconfig-ncurses:
+      - path: /etc/profile
+        append: True
+        content: |-
+          # yast in Public Cloud images fix
+          NCURSES_NO_UTF8_ACS=1
+          export NCURSES_NO_UTF8_ACS

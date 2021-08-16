@@ -1,0 +1,5 @@
+packages:
+  bootstrap:
+    hpc-ondemand:
+      - sle-module-hpc-release
+      - sle-module-hpc-release-POOL

@@ -1,3 +1,20 @@
 profile:
+  bootloader:
+    console: serial
+    timeout_style: countdown
   parameters:
+    bootpartition: "true"
+    bootpartsize: 1024
+    devicepersistency: by-uuid
+    efipartsize: 512
     firmware: uefi
+    format: vhd-fixed
+    formatoptions: force_size
+    kernelcmdline:
+      dis_ucode_ldr: []
+      earlyprintk: ttyS0
+      multipath: "off"
+      rootdelay: 300
+      scsi_mod.use_blk_mq: 1
+      USE_BY_UUID_DEVICE_NAMES: 1
+  size: 30720

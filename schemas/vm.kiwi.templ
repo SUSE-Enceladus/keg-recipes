@@ -17,11 +17,11 @@
     </description>
     {%- if multibuild %}
     <profiles>
-    {%- for profile_name, profile_data in data['profiles'].items() -%}
+    {%-   for profile_name, profile_data in data['profiles'].items() -%}
         {%- if profile_name != "common" and profile_data['profile'] %}
         <profile name="{{ profile_name }}" description="{{ profile_data['description'] }}"/>
         {%- endif -%}
-    {%- endfor %}
+    {%-   endfor %}
     </profiles>
     {%- endif %}
     <preferences>
@@ -31,68 +31,56 @@
         <locale>en_US</locale>
         <keytable>us.map.gz</keytable>
         <timezone>UTC</timezone>
+    {%- if not multibuild %}
+        {{ macros.print_preferences(data['profiles']['common']['profile']) }}
+    {%- endif %}
     </preferences>
+    {%- if multibuild %}
+    {%-   for profile, profile_data in data['profiles'].items() %}
+    {%-     if profile_data['profile'] %}
+    <preferences profiles="{{ profile }}">
+        {{ macros.print_preferences(profile_data['profile']) }}
+    </preferences>
+    {%-     endif -%}
+    {%-   endfor %}
+    {%- endif %}
     <users>
     {%- for user in data['users'] %}
         <user name="{{ user['name'] }}" groups="{{ ','.join(user['groups']) }}" password="{{ user['password'] }}" home="{{ user['home'] }}"/>
     {%- endfor %}
     </users>
-    {%- for profile, profile_data in data['profiles'].items() %}
-    {%- if profile_data['profile'] %}
-    <preferences{%if multibuild %} profiles="{{ profile }}"{% endif %}>
-        <type {%- for key, val in profile_data['profile']['parameters'].items() -%}
-            {%- if val is mapping %} {{ key }}="{{ macros.dict_to_param_string(val) }}"
-            {%- else %} {{ key }}="{{ val }}"
-            {%- endif -%}
-            {%- endfor -%}>
-            {%- if profile_data['profile']['bootloader'] %}
-            <bootloader {%- for key, val in profile_data['profile']['bootloader'].items() %} {{ key }}="{{ val }}" {%- endfor -%}/>
-            {%- endif %}
-            {%- if profile_data['profile']['size'] %}
-            <size unit="M">{{ profile_data['profile']['size'] }}</size>
-            {%- endif %}
-            {%- if profile_data['profile']['oemconfig'] %}
-            <oemconfig>
-              <oem-swap>{{ profile_data['profile']['oemconfig']['oem-swap'] }}</oem-swap>
-              <oem-swapsize>{{ profile_data['profile']['oemconfig']['oem-swapsize'] }}</oem-swapsize>
-            </oemconfig>
-            {%- endif %}
-        </type>
-    </preferences>
-    {%- endif -%}
-    {% endfor -%}
     {%- if not data['repositories'] %}
     <repository type="rpm-md" >
         <source path='obsrepositories:/'/>
     </repository>
     {%- else %}
-    {%- for repo in data['repositories'] %}
+    {%-   for repo in data['repositories'] %}
     <repository type="{{ repo['type']|default('rpm-md') }}">
         <source path="{{ repo['path'] }}"/>
     </repository>
-    {%- endfor %}
+    {%-   endfor %}
     {%- endif -%}
     {%- for profile, content in data['profiles'].items() -%}
-    {%- for pkg_type in content['packages'] %}
+    {%-   for pkg_type in content['packages'] %}
     <packages type="{{ pkg_type }}"
         {%- if profile != 'common' and multibuild == True %} profiles="{{ profile }}"
         {%- endif -%}
     >
         {%- for namespace, packages in content['packages'][pkg_type].items() %}
-        {%- if namespace == 'archive' %}
-        {%- for pkg in packages %}
+        {%-   if namespace == 'archive' %}
+        {%-     for pkg in packages %}
         <archive name="{{ pkg['name'] }}"/>
-        {%- endfor %}
-        {%- else %}
+        {%-     endfor %}
+        {%-   else %}
         <!-- Begin include from {{ namespace }} -->
-        {%- for pkg in packages %}
+        {%-     for pkg in packages %}
         <package name="{{ pkg['name']|default(pkg) }}"
-        {%- if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
-        {%- endfor %}
+        {%-       if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
+        {%-     endfor %}
         <!-- End include from {{ namespace }} -->
-        {%- endif %}
+        {%-   endif %}
         {%- endfor %}
     </packages>
-    {%- endfor %}
+    {%-   endfor %}
     {%- endfor %}
 </image>

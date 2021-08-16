@@ -1,0 +1,14 @@
+config:
+  files:
+    gce-systemd-max-tasks:
+      - path: /etc/systemd/system.conf
+        append: True
+        content: "DefaultTasksMax=65536"
+  sysconfig:
+    gce-time-sync:
+      - file: /etc/sysconfig/ntp
+        name: NTPD_FORCE_SYNC_ON_STARTUP
+        value: "yes"
+      - file: /etc/sysconfig/ntp
+        name: NTPD_FORCE_SYNC_HWCLOCK_ON_STARTUP
+        value: "yes"

@@ -1,0 +1,23 @@
+packages:
+  image:
+    chost:
+      - bind-utils
+      - ca-certificates
+      - ca-certificates-mozilla
+      - conntrack-tools
+      - containerd
+      - containerd-ctr
+      - cpupower
+      - docker
+      - fipscheck
+      - hwinfo
+      - jq
+      - less
+      - libnss_usrfiles2
+      - open-iscsi
+      - pciutils
+      - socat
+      - vlan
+  bootstrap:
+    chost:
+      - sles-release
