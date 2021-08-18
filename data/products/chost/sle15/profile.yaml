@@ -1,3 +1,4 @@
+# this really only works with single-build
 profile:
   parameters:
     kernelcmdline:
