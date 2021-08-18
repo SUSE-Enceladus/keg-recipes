@@ -7,5 +7,4 @@ profiles:
       - base/sle-modules
       - csp/gce/addon/gce-tools
       - csp/gce/ondemand
-      - products/sap/addon/hana-net
       - products/sap/ondemand
