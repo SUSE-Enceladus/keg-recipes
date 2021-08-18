@@ -9,6 +9,7 @@ packages:
       - containerd-ctr
       - cpupower
       - docker
+      - docker-img-store-setup
       - fipscheck
       - hwinfo
       - jq
@@ -19,6 +20,11 @@ packages:
       - pciutils
       - socat
       - vlan
+    chost-btrfsprogs:
+      - btrfsmaintenance
+      - btrfsprogs
+    chost-fcoe-utils:
+      - fcoe-utils
   bootstrap:
     chost:
       - sles-release

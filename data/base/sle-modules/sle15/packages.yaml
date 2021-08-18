@@ -8,6 +8,5 @@ packages:
       - sle-module-development-tools-release
       - sle-module-legacy-release
       - sle-module-public-cloud-release
-      - sle-module-python2-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release

@@ -1,4 +1,4 @@
 profile:
   parameters:
     kernelcmdline:
-      memhp_default_state: None
+      memhp_default_state: offline

@@ -6,5 +6,8 @@ packages:
     ec2-addon-suse:
       - cloud-init-config-suse
       - cloud-netconfig-ec2
-      - python3-ec2imgutils
       - python3-ec2metadata
+    ec2-img-utils:
+      - python3-ec2deprecateimg
+      - python3-ec2publishimg
+      - python3-ec2uploadimg

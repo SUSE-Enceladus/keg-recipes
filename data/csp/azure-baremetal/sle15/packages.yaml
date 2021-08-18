@@ -29,6 +29,8 @@ packages:
       - yast2-journal
     azure-baremetal-hana-addon:
       - audit-libs
+      - fio
+      - gcc7
       - keyutils-libs
       - libopenssl1_0_0
       - libssh2-1
@@ -36,6 +38,7 @@ packages:
       - patterns-sap-hana
       - wireshark
     azure-baremetal-addon-msft:
+      - golang-github-prometheus-node_exporter
       - java-1_8_0-ibm
       - perl-TimeDate
       - prometheus-ha_cluster_exporter

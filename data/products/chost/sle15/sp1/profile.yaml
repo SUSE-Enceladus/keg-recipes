@@ -1,0 +1,4 @@
+profile:
+  parameters:
+    kernelcmdline:
+      memhp_default_state: Null
