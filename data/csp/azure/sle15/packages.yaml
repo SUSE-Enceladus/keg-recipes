@@ -6,8 +6,6 @@ packages:
       - hyper-v
       - name: kernel-default
         arch: aarch64
-      - name: shim
-        arch: x86_64
       - python-azure-agent
     azure-cryptsetup:
       - cryptsetup

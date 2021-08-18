@@ -1,0 +1,3 @@
+profile:
+  bootloader:
+    timeout_style: countdown

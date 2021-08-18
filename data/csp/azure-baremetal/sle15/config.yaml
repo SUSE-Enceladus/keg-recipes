@@ -34,6 +34,7 @@ config:
         enable: False
       - kdump
       - multipathd
+    vm-services: Null
   sysconfig:
     azure-baremetal:
       - file: /etc/sysconfig/network/dhcp

@@ -1,0 +1,4 @@
+packages:
+  image:
+    ec2-img-utils:
+      - python3-ec2imgutils

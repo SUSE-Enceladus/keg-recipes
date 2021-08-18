@@ -1,0 +1,9 @@
+include-paths:
+  - sle15
+image:
+  name: SLES15-EC2-BYOS
+  specification: "SUSE Linux Enterprise Server 15 BYOS guest image for Amazon EC2"
+  version: 1.0.42
+archs:
+  - aarch64
+  - x86_64

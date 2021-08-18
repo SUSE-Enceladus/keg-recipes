@@ -29,7 +29,6 @@ config:
   services:
     common-services:
       - boot.device-mapper
-      - chronyd
       - haveged
       - sshd
       - name: acpid
