@@ -7,13 +7,6 @@ config:
       - set-prodlink
       - zypp-disable-delta-rpms
   files:
-    common-sysconfig:
-      - path: /etc/sysconfig/clock
-        append: True
-        content: |-
-          DEFAULT_TIMEZONE="Etc/UTC"
-          HWCLOCK="-u"
-          UTC="true"
     common-sysconfig-keyboard:
       - path: /etc/sysconfig/console
         append: True
@@ -21,13 +14,6 @@ config:
           CONSOLE_ENCODING="UTF-8"
           CONSOLE_FONT="lat9w-16.psfu"
           CONSOLE_SCREENMAP="trivial"
-      - path: /etc/sysconfig/keyboard
-        append: True
-        content: |-
-          
-          # The YaST-internal identifier of the attached keyboard.
-          #
-          YAST_KEYBOARD="english-us,pc104"
   services:
     common-services:
       - sshd
