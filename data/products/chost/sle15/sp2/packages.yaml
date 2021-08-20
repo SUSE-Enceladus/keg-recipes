@@ -1,6 +1,4 @@
 packages:
   image:
     chost-btrfsprogs: Null
-      - btrfsmaintenance
-      - btrfsprogs
     chost-fcoe-utils: Null
