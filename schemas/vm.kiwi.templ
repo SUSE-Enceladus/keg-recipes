@@ -61,9 +61,10 @@
     {%-   endfor %}
     {%- endif -%}
     {%- for profile, content in data['profiles'].items() -%}
+    {%-   set pkg_profiles = content['nested_profiles']|default([profile])|join(',') %}
     {%-   for pkg_type in content['packages'] %}
     <packages type="{{ pkg_type }}"
-        {%- if profile != 'common' and multibuild == True %} profiles="{{ profile }}"
+        {%- if profile != 'common' and multibuild == True %} profiles="{{ pkg_profiles }}"
         {%- endif -%}
     >
         {%- for namespace, packages in content['packages'][pkg_type].items() %}

@@ -6,18 +6,18 @@ profiles:
       - base/sle-modules
       - base/sle
       - products/sles
-  Azure-Basic:
-    description: Azure configuration
+  Azure:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
-      - csp/azure/ondemand/basic/variant-id
-  Azure-Standard:
-    description: Azure configuration
-    include:
-      - csp/azure/addon/azure-kernel
-      - csp/azure/addon/azure-tools
-      - csp/azure/ondemand/standard
+    Azure-Basic:
+      description: Azure configuration
+      include:
+        - csp/azure/ondemand/basic/variant-id
+    Azure-Standard:
+      description: Azure configuration
+      include:
+        - csp/azure/ondemand/standard
   EC2:
     description: EC2 configuration
     include:
