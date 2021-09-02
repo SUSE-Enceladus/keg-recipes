@@ -2,6 +2,7 @@ profile:
   parameters:
     bootloader: grub2
     boottimeout: Null
+    devicepersistency: Null
     kernelcmdline:
       crashkernel: ["160M,high", "80M,low"]
       intel_idle.max_cstate: 1
