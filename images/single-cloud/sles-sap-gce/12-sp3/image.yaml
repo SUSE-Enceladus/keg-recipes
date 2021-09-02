@@ -4,8 +4,6 @@ include-paths:
 image:
   name: SLES12-SP3-SAP-GCE
   specification: "SUSE Linux Enterprise Server 12 Service Pack 3 for SAP Applications guest image for Google Compute Engine"
-archs:
-  - x86_64
 users:
   - group: root
     users:

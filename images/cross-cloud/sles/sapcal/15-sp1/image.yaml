@@ -4,5 +4,3 @@ image:
   name: SLES15-SP1-SAPCAL
   specification: "SUSE Linux Enterprise Server 15 SP1 BYOS guest image for SAP Cloud Application Library"
   version: 1.0.42
-archs:
-  - x86_64

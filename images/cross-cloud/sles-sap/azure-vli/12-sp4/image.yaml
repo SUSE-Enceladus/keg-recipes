@@ -5,5 +5,3 @@ image:
   name: SLES12-SP4-SAP-Azure-LI-BYOS
   specification: "SUSE Linux Enterprise Server for SAP Applications 12 SP4 Azure VLI BYOS guest image"
   version: 1.0.42
-archs:
-  - x86_64

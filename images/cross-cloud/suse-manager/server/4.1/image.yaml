@@ -5,8 +5,6 @@ image:
   name: SUSE-Manager-Server-BYOS
   specification: "SUSE Manager 4.1 Server BYOS guest image"
   version: 4.1.42
-archs:
-  - x86_64
 repositories:
   - path: obs://SUSE:SLE-15-SP2:Update:Products:Manager41:Update/standard
   - path: obs://SUSE:SLE-15-SP2:Update:Products:Manager41/standard

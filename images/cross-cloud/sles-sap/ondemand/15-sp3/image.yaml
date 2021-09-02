@@ -6,5 +6,3 @@ image:
   name: SLES15-SP3-SAP
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP3 guest image"
   version: 0.9.1
-archs:
-  - x86_64

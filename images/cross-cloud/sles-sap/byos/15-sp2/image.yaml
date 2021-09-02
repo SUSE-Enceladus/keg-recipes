@@ -5,5 +5,3 @@ image:
   name: SLES15-SP2-SAP-BYOS
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP2 BYOS guest image"
   version: 1.0.42
-archs:
-  - x86_64
