@@ -2,9 +2,9 @@ profile:
   parameters:
     bootloader: grub2
     boottimeout: 1
-    firmware: uefi
     devicepersistency: by-label
     filesystem: xfs
+    firmware: uefi
     image: vmx
     kernelcmdline:
       console: ttyS0
