@@ -2,7 +2,10 @@ config:
   files:
     hana-net:
       - path: /etc/HOSTNAME
+        content: "imdbmaster.local"
+      - path: /etc/hosts
         content: "10.0.1.2 imdbmaster imdbmaster.local"
+        append: True
       - path: /etc/ntp.conf
         append: True
         content: |-
