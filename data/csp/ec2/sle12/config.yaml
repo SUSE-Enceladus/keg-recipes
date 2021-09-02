@@ -4,6 +4,9 @@ config:
       - path: /etc/ntp.conf
         append: True
         content: "server 169.254.169.123 iburst"
+    ec2-modprobe-xen:
+      - path: /etc/modprobe.d/xen_platform
+        content: 'options xen_platform_pci dev_unplug=ide-disks,nics'
   scripts:
     ec2-config:
       - ntp-disable-auth-keys
