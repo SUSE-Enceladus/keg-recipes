@@ -30,8 +30,9 @@
             {%- endif %}
             {%- if profile['oemconfig'] %}
             <oemconfig>
-              <oem-swap>{{ profile['oemconfig']['oem-swap'] }}</oem-swap>
-              <oem-swapsize>{{ profile['oemconfig']['oem-swapsize'] }}</oem-swapsize>
+              {%- for cfg, val in profile['oemconfig'].items() %}
+              <{{ cfg }}>{{ val }}</{{ cfg }}>
+              {%- endfor %}
             </oemconfig>
             {%- endif %}
         </type>
