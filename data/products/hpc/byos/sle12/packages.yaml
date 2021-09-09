@@ -1,0 +1,4 @@
+packages:
+  image:
+    hpc-salt-minion:
+      - salt-minion
