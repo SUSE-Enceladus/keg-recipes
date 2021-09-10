@@ -7,8 +7,8 @@
 {%- set multibuild = True -%}
 {%- endif -%}
 
-{%- if data.get('schema-comments') %}
-{%    for ns, comment in data['schema-comments'].items() %}
+{%- if data.get('image-config-comments') %}
+{%    for ns, comment in data['image-config-comments'].items() %}
 <!-- {{ comment }} -->
 {%-   endfor %}
 {%- endif %}
