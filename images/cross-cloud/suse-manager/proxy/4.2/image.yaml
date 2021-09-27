@@ -6,8 +6,6 @@ image:
   name: SUSE-Manager-Proxy-BYOS
   specification: "SUSE Manager 4.2 Proxy BYOS guest image"
   version: 4.2.0
-archs:
-  - x86_64
 repositories:
   - path: obs://SUSE:SLE-15-SP3:Update:Products:Manager42:Update/standard
   - path: obs://SUSE:SLE-15-SP3:Update:Products:Manager42/standard

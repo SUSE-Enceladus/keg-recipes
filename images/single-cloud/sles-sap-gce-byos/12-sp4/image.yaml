@@ -4,5 +4,3 @@ include-paths:
 image:
   name: SLES12-SP4-SAP-GCE-BYOS
   specification: "SUSE Linux Enterprise Server 12 Service Pack 4 for SAP Applications guest image for Google Compute Engine - Bring Your Own Subscription"
-archs:
-  - x86_64

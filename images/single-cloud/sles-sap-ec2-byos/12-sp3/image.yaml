@@ -4,8 +4,6 @@ include-paths:
 image:
   name: SLES12-SP3-SAP-EC2-HVM
   specification: "SUSE Linux Enterprise Server 12 Service Pack 3 for SAP Applications guest image for Amazon EC2 for HVM with BYOS"
-archs:
-  - x86_64
 users:
   - group: root
     users:
