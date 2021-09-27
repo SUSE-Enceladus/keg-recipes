@@ -2,6 +2,7 @@ profile:
   parameters:
     bootloader: grub2
     bootpartition: "false"
+    devicepersistency: Null
     initrd_system: dracut
     kernelcmdline:
       crashkernel: ["160M,high", "80M,low"]

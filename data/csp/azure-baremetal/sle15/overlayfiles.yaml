@@ -5,3 +5,6 @@ overlayfiles:
       - modprobe-backlist-azure-li
       - selinux-disable
       - sysctl-hana-basenet
+  azure-baremetal-linkpol:
+    include:
+      - systemd-network-persistent-link-policy-match
