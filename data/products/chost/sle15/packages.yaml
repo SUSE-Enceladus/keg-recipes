@@ -18,6 +18,7 @@ packages:
       - libnss_usrfiles2
       - open-iscsi
       - pciutils
+      - runc
       - socat
       - vlan
     chost-btrfsprogs:
