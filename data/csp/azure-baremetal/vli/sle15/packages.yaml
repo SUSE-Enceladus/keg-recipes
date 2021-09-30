@@ -1,0 +1,4 @@
+packages:
+  image:
+    azure-vli-patch:
+      - patch

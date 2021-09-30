@@ -26,7 +26,6 @@ packages:
       - yast2-iscsi-client
       - yast2-iscsi-lio-server
       - yast2-isns
-      - yast2-journal
     azure-baremetal-hana-addon:
       - audit-libs
       - fio
