@@ -1,0 +1,9 @@
+config:
+  services:
+    vm-services:
+      - haveged
+    openstack-cloud-init:
+      - cloud-init-local
+      - cloud-init
+      - cloud-config
+      - cloud-final

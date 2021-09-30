@@ -2,7 +2,3 @@ packages:
   bootstrap:
     hpc-ondemand:
       - sle-module-hpc-release
-  image:
-    hpc-ondmenad:
-      - firewalld
-      - pam-modules

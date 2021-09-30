@@ -4,11 +4,14 @@ profiles:
       - base/common
       - base/sle
       - products/sap/byos/baremetal-tweaks
-  Devel:
-    description: Devel Image Build
-    include:
-      - csp/azure-baremetal/li/devel
-  Production:
-    description: Production Image Build
+  azure-li:
     include:
       - csp/azure-baremetal/li
+    Devel:
+      description: Devel Image Build
+      include:
+        - csp/azure-baremetal/li/devel
+    Production:
+      description: Production Image Build
+      include:
+        - csp/azure-baremetal/li

@@ -1,6 +1,6 @@
 include-paths:
   - sle15
 image:
-  name: SLES15-SP1-EC2-CHOST-HVM-BYOS
+  name: SLES15-EC2-CHOST-HVM-BYOS
   specification: "SUSE Linux Enterprise Server 15 BYOS guest image optimized as container host"
   version: 1.0.42

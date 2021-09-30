@@ -6,7 +6,7 @@ profile:
     bootpartsize: 1024
     devicepersistency: by-uuid
     efipartsize: 512
-    firmware: uefi
+    firmware: efi
     format: vhd-fixed
     formatoptions: force_size
     kernelcmdline:
