@@ -19,3 +19,8 @@ profiles:
     include:
       - csp/ec2/addon/aws-tools
       - csp/ec2/ondemand
+  GCE:
+    description: GCE configuration
+    include:
+      - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
