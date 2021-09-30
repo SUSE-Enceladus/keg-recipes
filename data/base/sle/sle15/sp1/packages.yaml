@@ -1,4 +1,0 @@
-packages:
-  image:
-    firewalld:
-      - firewalld
