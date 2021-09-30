@@ -4,6 +4,9 @@ overlayfiles:
       - cloud-cfg-azure
       - cloud-cfg-disable-network-config
       - motd-addon-waagent
+  azure-emergency-shell:
+    include:
+      - rescue-force-sulogin
   azure-sysconfig-network:
     include:
       - sysconfig-network-cloud-netconfig
