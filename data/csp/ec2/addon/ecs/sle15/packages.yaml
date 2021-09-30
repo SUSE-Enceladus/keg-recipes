@@ -8,7 +8,6 @@ packages:
       - cronie
       - docker-img-store-setup
       - ethtool
-      - firewalld
       - iproute2
       - irqbalance
       - krb5-client
@@ -17,7 +16,6 @@ packages:
       - nfs-kernel-server
       - nscd
       - openldap2-client
-      - pam-modules
       - patterns-base-minimal_base
       - polkit-default-privs
       - psmisc
