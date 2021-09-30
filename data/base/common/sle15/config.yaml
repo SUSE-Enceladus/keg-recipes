@@ -14,12 +14,6 @@ config:
           # yast in Public Cloud images fix
           NCURSES_NO_UTF8_ACS=1
           export NCURSES_NO_UTF8_ACS
-      - path: /etc/sysconfig/clock
-        append: True
-        content: |-
-          DEFAULT_TIMEZONE="Etc/UTC"
-          HWCLOCK="-u"
-          UTC="true"
       - path: /etc/sysconfig/console
         append: True
         content: |-
