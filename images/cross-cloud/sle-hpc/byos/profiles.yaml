@@ -14,3 +14,7 @@ profiles:
     description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
+  GCE:
+    description: GCE configuration
+    include:
+      - csp/gce/addon/gce-tools
