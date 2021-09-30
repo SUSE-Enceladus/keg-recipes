@@ -1,3 +1,5 @@
 profile:
   bootloader:
     timeout_style: countdown
+  parameters:
+    firmware: uefi
