@@ -17,4 +17,3 @@ packages:
         arch: x86_64
       - name: grub2-arm64-efi
         arch: aarch64
-

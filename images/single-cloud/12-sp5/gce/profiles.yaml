@@ -9,12 +9,10 @@ profiles:
     BYOS:
       description: SLES GCE On-Demand configuration
       include:
-        - csp/gce/addon/gce-tools
         - products/sles/byos
     SAP-BYOS:
       description: SLES of SAP GCE BYOS configuration
       include:
-        - csp/gce/addon/gce-tools
         - products/sap/byos
   Base-On-Demand:
     include:
@@ -25,10 +23,8 @@ profiles:
     On-Demand:
       description: SLES GCE BYOS configuration
       include:
-        - csp/gce/ondemand
         - products/sles/ondemand
     SAP-On-Demand:
       description: SLES of SAP GCE On-Demand configuration
       include:
-        - csp/gce/ondemand
         - products/sap/ondemand
