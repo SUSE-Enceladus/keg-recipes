@@ -19,6 +19,7 @@ profiles:
       description: SLES Standard On-Demand image
       include:
         - csp/azure/addon/azure-kernel
+        - csp/azure/ondemand/standard
         - products/sles/ondemand
     HPC-On-Demand:
       description: SLES HPC On-Demand image
@@ -28,11 +29,12 @@ profiles:
     SAP-On-Demand:
       description: SLES for SAP On-Demand image
       include:
-        - csp/azure/addon/azure-tools
+        - csp/azure/addon/default-kernel
         - products/sap/ondemand
   Base-BYOS:
     include:
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/default-kernel
     BYOS:
       description: SLES BYOS image
       include:
