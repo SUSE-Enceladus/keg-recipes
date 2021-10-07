@@ -12,6 +12,7 @@ profiles:
     description: Azure configuration
     include:
       - csp/azure/addon/chost-tweaks
+      - csp/azure/byos/sles
       - kernel-options/cgroup-memory
   EC2:
     description: EC2 configuration
@@ -21,7 +22,7 @@ profiles:
   GCE:
     description: GCE configuration
     include:
-      - csp/gce
+      - csp/gce/byos/sles
       - kernel-options/cgroup-memory
   OpenStack:
     description: OpenStack configuration

@@ -13,7 +13,7 @@ profiles:
     Azure-Basic:
       description: Azure configuration
       include:
-        - csp/azure/ondemand/basic/variant-id
+        - csp/azure/ondemand/basic
     Azure-Standard:
       description: Azure configuration
       include:
@@ -27,4 +27,4 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand
+      - csp/gce/ondemand/sles

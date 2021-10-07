@@ -5,4 +5,5 @@ profiles:
       - base/sle
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
+      - csp/azure/byos/hpc
       - products/hpc/byos

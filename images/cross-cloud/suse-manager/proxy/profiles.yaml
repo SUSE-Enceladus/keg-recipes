@@ -13,3 +13,4 @@ profiles:
   GCE:
     include:
       - csp/gce/addon/gce-tools
+      - csp/gce/byos/suma-proxy

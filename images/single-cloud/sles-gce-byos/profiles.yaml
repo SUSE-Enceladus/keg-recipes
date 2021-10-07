@@ -4,4 +4,5 @@ profiles:
       - base/common
       - base/sle
       - csp/gce/addon/gce-tools
+      - csp/gce/byos/sles
       - products/sles/byos

@@ -11,7 +11,7 @@ profiles:
     description: Azure configuration
     include:
       - csp/azure/addon/azure-tools
-      - csp/azure/ondemand/basic
+      - csp/azure/ondemand/sapcal
   EC2:
     description: EC2 configuration
     include:
@@ -21,4 +21,4 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand
+      - csp/gce/ondemand/sapcal

@@ -6,5 +6,5 @@ profiles:
       - base/sle
       - base/sle-modules
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand
+      - csp/gce/ondemand/sap
       - products/sap/ondemand
