@@ -10,7 +10,7 @@ profiles:
   Azure:
     description: Azure configuration
     include:
-      - csp/azure/ondemand
+      - csp/azure/ondemand/hpc
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
@@ -23,4 +23,4 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand
+      - csp/gce/ondemand/hpc
