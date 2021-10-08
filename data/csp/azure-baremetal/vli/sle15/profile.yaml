@@ -9,3 +9,4 @@ profile:
       intel_pstate: "disable"
       nohz: "off"
       skew_tick: 1
+      tsc: "reliable"
