@@ -1,9 +1,8 @@
 profile:
-  bootloader:
-    name: grub2
-    timeout: 1
   parameters:
+    bootloader: grub2
     bootpartition: "false"
+    boottimeout: 1
     firmware: uefi
     devicepersistency: by-label
     filesystem: xfs

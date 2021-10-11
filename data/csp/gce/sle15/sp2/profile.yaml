@@ -1,7 +1,5 @@
 profile:
   bootloader:
     console: serial
-    timeout_style: countdown
   parameters:
     bootloader_console: Null
-    firmware: uefi

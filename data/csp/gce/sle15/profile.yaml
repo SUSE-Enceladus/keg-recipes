@@ -1,7 +1,6 @@
 profile:
-  bootloader:
-    console: serial
   parameters:
+    bootloader_console: serial
     format: gce
     kernelcmdline:
       console: ttyS0,38400n8
