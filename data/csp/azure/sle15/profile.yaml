@@ -1,7 +1,6 @@
 profile:
-  bootloader:
-    console: serial
   parameters:
+    bootloader_console: serial
     bootpartition: "true"
     bootpartsize: 1024
     devicepersistency: by-uuid
