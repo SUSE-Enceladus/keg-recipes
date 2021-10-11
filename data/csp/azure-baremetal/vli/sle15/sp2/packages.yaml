@@ -1,3 +1,4 @@
 packages:
   image:
     azure-vli-patch: Null
+    azure-vli-libxml: Null
