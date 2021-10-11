@@ -2,3 +2,6 @@ packages:
   image:
     azure-vli-patch:
       - patch
+    azure-vli-libxml:
+      - libxml2
+      - libxml2-32bit
