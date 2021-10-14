@@ -1,8 +1,10 @@
 profile:
   parameters:
     bootloader: grub2
+    bootpartition: "false"
     boottimeout: Null
     devicepersistency: Null
+    initrd_system: dracut
     kernelcmdline:
       crashkernel: ["160M,high", "80M,low"]
       intel_idle.max_cstate: 1

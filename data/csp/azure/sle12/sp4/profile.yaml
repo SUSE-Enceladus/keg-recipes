@@ -1,6 +1,0 @@
-profile:
-  parameters:
-    bootloader_console: serial
-    efipartsize: 512
-    kernelcmdline:
-      scsi_mod.use_blk_mq: 1
