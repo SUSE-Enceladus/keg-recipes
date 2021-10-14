@@ -1,4 +1,0 @@
-profile:
-  parameters:
-    boot: "vmxboot/suse-SLES12"
-    filesystem: ext4

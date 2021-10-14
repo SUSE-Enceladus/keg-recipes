@@ -1,13 +1,5 @@
 packages:
   image:
-    azure-baremetal-sp4:
-      - dracut-kiwi-oem-repart
-      - fio
-      - gcc7
-      - prometheus-ha_cluster_exporter
-      - prometheus-hanadb_exporter
-      - prometheus-sap_host_exporter
     azure-baremetal-legacy:
       - libyui-qt-pkg7
       - numad
-    azure-baremetal-sp3: Null

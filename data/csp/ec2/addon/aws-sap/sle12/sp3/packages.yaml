@@ -1,4 +1,0 @@
-packages:
-  image:
-    aws-vpc-move-ip:
-      - aws-vpc-move-ip

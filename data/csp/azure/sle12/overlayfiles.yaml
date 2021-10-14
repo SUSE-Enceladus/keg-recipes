@@ -12,4 +12,4 @@ overlayfiles:
       - sysconfig-network-cloud-netconfig
   azure-ioscheduler:
     include:
-      - udev-ioscheduler-noop
+      - udev-ioscheduler-none

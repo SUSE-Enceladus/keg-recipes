@@ -2,12 +2,18 @@ packages:
   image:
     azure-baremetal:
       - azure-li-services
+      - dracut-kiwi-oem-repart
+      - fio
+      - gcc7
       - gconf2
       - hyper-v
       - kernel-default
       - kernel-firmware
       - multipath-tools
       - plymouth
+      - prometheus-ha_cluster_exporter
+      - prometheus-hanadb_exporter
+      - prometheus-sap_host_exporter
       - shim
       - syslinux
       - ucode-intel
