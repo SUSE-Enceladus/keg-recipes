@@ -1,0 +1,3 @@
+profile:
+  parameters:
+    firmware: uefi
