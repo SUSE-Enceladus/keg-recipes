@@ -20,7 +20,6 @@ packages:
       - libgtk-2_0-0
       - libjpeg62
       - libpng12-0
-      - libvirt-client
       - libyui-qt
       - ocfs2-kmp-default
       - patterns-ha-ha_sles
@@ -46,6 +45,9 @@ packages:
       - yast2-saptune
     sap-docker:
       - docker
+    sap-libvirt:
+      # needed for fence_virsh of fence-agents
+      - libvirt-client
   bootstrap:
     sap-release:
       - SLES_SAP-release
