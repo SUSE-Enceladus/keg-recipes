@@ -1,4 +1,4 @@
 packages:
   image:
-    sap-salt-minion: Null
     sap-docker: Null
+    sap-libvirt: Null

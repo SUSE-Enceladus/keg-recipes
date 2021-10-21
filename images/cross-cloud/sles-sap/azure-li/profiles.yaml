@@ -3,7 +3,7 @@ profiles:
     include:
       - base/common
       - base/sle
-      - products/sap/byos/baremetal-tweaks
+      - products/sap/azure-baremetal
   azure-li:
     include:
       - csp/azure-baremetal/li

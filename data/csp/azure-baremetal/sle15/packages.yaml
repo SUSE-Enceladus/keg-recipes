@@ -28,7 +28,6 @@ packages:
       - yast2-isns
     azure-baremetal-hana-addon:
       - audit-libs
-      - fio
       - gcc7
       - keyutils-libs
       - libopenssl1_0_0
