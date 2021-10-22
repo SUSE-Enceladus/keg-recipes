@@ -1,0 +1,4 @@
+config:
+  scripts:
+    waagent-enable-custom-data:
+      - waagent-enable-custom-data

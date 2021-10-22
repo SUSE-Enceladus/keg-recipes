@@ -1,4 +1,8 @@
 config:
+  scripts:
+    openstack-config:
+      - ssh-disable-challenge-response-auth
+      - ssh-disable-password-login
   services:
     vm-services:
       - haveged
