@@ -1,6 +1,7 @@
 profile:
   parameters:
     bootloader: grub2
+    bootpartition: "false"
     boottimeout: 1
     devicepersistency: by-label
     filesystem: xfs
