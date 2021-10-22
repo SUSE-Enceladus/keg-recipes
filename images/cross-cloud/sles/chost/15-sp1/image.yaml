@@ -4,3 +4,10 @@ image:
   name: SLES15-SP1-CHOST-BYOS
   specification: "SUSE Linux Enterprise Server 15 SP1 BYOS guest image optimized as container host"
   version: 1.0.42
+profiles:
+  Ali:
+    description: Alibaba Cloud configuration
+    include:
+      - csp/aliyun
+      - kernel-options/cgroup-memory
+  Aliyun: Null

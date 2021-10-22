@@ -1,0 +1,4 @@
+overlayfiles:
+  ec2-sysconfig-network:
+    include:
+      - sysconfig-network-cloud-netconfig

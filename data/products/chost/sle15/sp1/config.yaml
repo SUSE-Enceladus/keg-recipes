@@ -1,0 +1,4 @@
+config:
+  scripts:
+    chost-enable-docker-driver:
+      - enable-docker-overlay2-driver

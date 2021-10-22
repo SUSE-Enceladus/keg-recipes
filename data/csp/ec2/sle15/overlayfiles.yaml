@@ -8,5 +8,7 @@ overlayfiles:
       - dracut-ext4
       - dracut-xfs
       - modprobe-nvme-options
-      - sysconfig-network-cloud-netconfig
       - udev-nvme-timeout
+  ec2-sysconfig-network:
+    include:
+      - sysconfig-network-plain

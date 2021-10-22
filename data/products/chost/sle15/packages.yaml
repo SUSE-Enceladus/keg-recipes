@@ -9,7 +9,6 @@ packages:
       - containerd-ctr
       - cpupower
       - docker
-      - docker-img-store-setup
       - fipscheck
       - hwinfo
       - jq
@@ -24,6 +23,7 @@ packages:
     chost-btrfsprogs:
       - btrfsmaintenance
       - btrfsprogs
+      - docker-img-store-setup
     chost-fcoe-utils:
       - fcoe-utils
   bootstrap:

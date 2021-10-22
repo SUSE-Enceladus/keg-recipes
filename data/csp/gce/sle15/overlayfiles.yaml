@@ -4,7 +4,9 @@ overlayfiles:
       - chrony-gce-ntp
       - hosts-metadata-google
       - module-virtio-net
-      - sysconfig-network-cloud-netconfig
   gce-grub:
     include:
       - grub-linuxefi
+  gce-sysconfig-network:
+    include:
+      - sysconfig-network-plain

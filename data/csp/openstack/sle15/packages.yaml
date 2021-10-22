@@ -3,3 +3,4 @@ packages:
     openstack:
       - cloud-init
       - kernel-default
+    bootloader-efi: Null
