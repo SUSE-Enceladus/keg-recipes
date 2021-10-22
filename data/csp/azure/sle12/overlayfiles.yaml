@@ -9,7 +9,7 @@ overlayfiles:
       - rescue-force-sulogin
   azure-sysconfig-network:
     include:
-      - sysconfig-network-cloud-netconfig
+      - sysconfig-network-plain
   azure-ioscheduler:
     include:
       - udev-ioscheduler-none

@@ -1,0 +1,4 @@
+overlayfiles:
+  azure-sysconfig-network:
+    include:
+      - sysconfig-network-cloud-netconfig

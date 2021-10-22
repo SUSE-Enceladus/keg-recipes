@@ -1,0 +1,4 @@
+overlayfiles:
+  gce-sysconfig-network:
+    include:
+      - sysconfig-network-cloud-netconfig

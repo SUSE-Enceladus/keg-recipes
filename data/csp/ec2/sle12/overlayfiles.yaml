@@ -4,8 +4,10 @@ overlayfiles:
       - cloud-cfg-ec2
       - cloud-cfg-disable-network-config
       - dracut-aws-type-switch
-      - sysconfig-network-cloud-netconfig
   ec2-dracut-opts:
     include:
       - dracut-ext4
       - dracut-virtio-scsi
+  ec2-sysconfig-network:
+    include:
+      - sysconfig-network-cloud-netconfig
