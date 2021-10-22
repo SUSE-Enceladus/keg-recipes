@@ -1,0 +1,5 @@
+config:
+  services:
+    hpc-iscsid:
+      - name: iscsid
+        enable: False
