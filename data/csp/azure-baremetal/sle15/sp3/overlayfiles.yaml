@@ -1,0 +1,4 @@
+overlayfiles:
+  azure-baremetal-firewalld:
+    include:
+      - azure-baremetal-firewalld-conf
