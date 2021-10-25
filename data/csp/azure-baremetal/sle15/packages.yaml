@@ -5,6 +5,8 @@ packages:
       - azure-li-services
       - dracut-kiwi-oem-repart
       - gconf2
+      - name: grub2-x86_64-efi
+        arch: x86_64
       - hyper-v
       - icmpinfo
       - kernel-default
