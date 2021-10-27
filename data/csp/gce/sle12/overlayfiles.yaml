@@ -4,4 +4,5 @@ overlayfiles:
       - gce-boto-hack
       - hosts-metadata-google
   gce-sysconfig-network:
+    include:
       - sysconfig-network-plain
