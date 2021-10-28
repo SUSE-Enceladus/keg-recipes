@@ -1,0 +1,4 @@
+packages:
+  image:
+    gce-hpc:
+      - tuned

@@ -1,0 +1,9 @@
+overlayfiles:
+  gce-virtio-net:
+    include:
+      - module-virtio-net-no-napitx
+  gce-hpc-byos:
+    include:
+      - security-limits-gce-hpc
+      - sysctl-gce-hpc
+      - tuned-profile-network-latency
