@@ -1,0 +1,5 @@
+profile:
+  parameters:
+    kernelcmdline:
+      skew_tick: 1
+      nosmt: []

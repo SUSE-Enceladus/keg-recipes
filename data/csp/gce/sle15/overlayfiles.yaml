@@ -3,10 +3,12 @@ overlayfiles:
     include:
       - chrony-gce-ntp
       - hosts-metadata-google
-      - module-virtio-net
   gce-grub:
     include:
       - grub-linuxefi
   gce-sysconfig-network:
     include:
       - sysconfig-network-plain
+  gce-virtio-net:
+    include:
+      - module-virtio-net
