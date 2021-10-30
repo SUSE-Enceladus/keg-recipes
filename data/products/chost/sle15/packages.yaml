@@ -1,6 +1,7 @@
 packages:
   image:
     chost:
+      - apparmor-parser
       - bind-utils
       - ca-certificates
       - ca-certificates-mozilla

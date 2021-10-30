@@ -1,6 +1,7 @@
 packages:
   image:
     sles:
+      - apparmor-parser
       - docker
       - release-notes-sles
   bootstrap:
