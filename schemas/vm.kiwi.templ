@@ -35,6 +35,11 @@
         <locale>en_US</locale>
         <keytable>us.map.gz</keytable>
         <timezone>UTC</timezone>
+    {%- if data['profiles']['common'] %}
+    {%-     for pref in data['profiles']['common']['preferences'] %}
+        <{{ pref }}>{{ data['profiles']['common']['preferences'][pref] }}</{{ pref }}>
+    {%-     endfor %}
+    {%- endif %}
     {%- if not multibuild %}
         {{ macros.print_preferences(data['profiles']['common']['profile']) }}
     {%- endif %}
