@@ -1,7 +1,7 @@
 profile:
   parameters:
     bootprofile: xen
-    firmware: ec2
+    firmware: uefi
     kernelcmdline:
       8250.nr_uarts: 4
       dis_ucode_ldr: []
