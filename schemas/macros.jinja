@@ -37,3 +37,27 @@
             {%- endif %}
         </type>
 {%- endmacro -%}
+{% macro print_packages(profile, content, multibuild) -%}
+    {%- set pkg_profiles = content['nested_profiles']|default([profile])|join(',') %}
+    {%- for pkg_type in content['packages'] %}
+    <packages type="{{ pkg_type }}"
+        {%- if profile != 'common' and multibuild == True %} profiles="{{ pkg_profiles }}"
+        {%- endif -%}
+    >
+        {%- for namespace, packages in content['packages'][pkg_type].items() %}
+        {%-   if namespace == 'archive' %}
+        {%-     for pkg in packages %}
+        <archive name="{{ pkg['name'] }}"/>
+        {%-     endfor %}
+        {%-   else %}
+        <!-- Begin include from {{ namespace }} -->
+        {%-     for pkg in packages %}
+        <package name="{{ pkg['name']|default(pkg) }}"
+        {%-       if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
+        {%-     endfor %}
+        <!-- End include from {{ namespace }} -->
+        {%-   endif %}
+        {%- endfor %}
+    </packages>
+    {%- endfor %}
+{%- endmacro -%}
