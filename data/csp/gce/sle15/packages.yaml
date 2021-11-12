@@ -8,8 +8,6 @@ packages:
       - growpart
       - growpart-rootgrow
       - kernel-default
-      - name: shim
-        arch: x86_64
     gce-patch:
       # bsc#1165960
       - patch

@@ -12,3 +12,4 @@ packages:
     azure-kernel:
       - name: kernel-default
         arch: x86_64
+    bootloader-shim: Null

@@ -4,3 +4,4 @@ packages:
       - cloud-init
       - kernel-default
     bootloader-efi: Null
+    bootloader-shim: Null
