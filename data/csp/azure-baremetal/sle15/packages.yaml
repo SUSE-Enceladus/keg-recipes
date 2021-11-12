@@ -17,7 +17,6 @@ packages:
       - prctl
       - procinfo
       - rsh
-      - shim
       - syslinux
       - targetcli-fb-common
       - ucode-intel
