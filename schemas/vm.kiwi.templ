@@ -21,7 +21,7 @@
     </description>
     {%- if multibuild %}
     <profiles>
-    {%-   for profile_name, profile_data in data['profiles'].items() -%}
+    {%-   for profile_name, profile_data in data['profiles']|dictsort -%}
         {%- if profile_name != "common" and profile_data['profile'] %}
         <profile name="{{ profile_name }}" description="{{ profile_data['description'] }}"/>
         {%- endif -%}
@@ -45,7 +45,7 @@
     {%- endif %}
     </preferences>
     {%- if multibuild %}
-    {%-   for profile, profile_data in data['profiles'].items() %}
+    {%-   for profile, profile_data in data['profiles']|dictsort %}
     {%-     if profile_data['profile'] %}
     <preferences profiles="{{ profile }}">
         {{ macros.print_preferences(profile_data['profile']) }}
@@ -69,28 +69,12 @@
     </repository>
     {%-   endfor %}
     {%- endif -%}
-    {%- for profile, content in data['profiles'].items() -%}
-    {%-   set pkg_profiles = content['nested_profiles']|default([profile])|join(',') %}
-    {%-   for pkg_type in content['packages'] %}
-    <packages type="{{ pkg_type }}"
-        {%- if profile != 'common' and multibuild == True %} profiles="{{ pkg_profiles }}"
-        {%- endif -%}
-    >
-        {%- for namespace, packages in content['packages'][pkg_type].items() %}
-        {%-   if namespace == 'archive' %}
-        {%-     for pkg in packages %}
-        <archive name="{{ pkg['name'] }}"/>
-        {%-     endfor %}
-        {%-   else %}
-        <!-- Begin include from {{ namespace }} -->
-        {%-     for pkg in packages %}
-        <package name="{{ pkg['name']|default(pkg) }}"
-        {%-       if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
-        {%-     endfor %}
-        <!-- End include from {{ namespace }} -->
-        {%-   endif %}
-        {%- endfor %}
-    </packages>
-    {%-   endfor %}
+    {%- if 'common' in data['profiles'].keys() -%}
+    {{    macros.print_packages('common', data['profiles']['common'], multibuild) }}
+    {%- endif %}
+    {%- for profile, content in data['profiles']|dictsort %}
+    {%-   if profile != 'common' -%}
+    {{      macros.print_packages(profile, content, multibuild) }}
+    {%-   endif -%}
     {%- endfor %}
 </image>
