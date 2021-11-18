@@ -10,6 +10,7 @@ profiles:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
+      - csp/azure/ondemand
     Azure-Basic:
       description: Azure configuration
       include:
