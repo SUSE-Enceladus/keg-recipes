@@ -1,3 +1,5 @@
+# Start generate /etc/motd
+#
 source /etc/os-release
 
 OS_PRETTY_NAME="$PRETTY_NAME"
@@ -46,3 +48,5 @@ done
 
 test -d /etc/motd.d && rm -r /etc/motd.d
 test -f /etc/motd-caption && rm /etc/motd-caption
+#
+# End generate /etc/motd
