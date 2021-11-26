@@ -13,7 +13,7 @@
 {%-   endfor %}
 {%- endif %}
 
-<image schemaversion="6.2" name="{{ data['image']['name']}}" displayname="{{ data['image']['name'] }}">
+<image schemaversion="{{ data['schemaversion'] }}" name="{{ data['image']['name']}}" displayname="{{ data['image']['name'] }}">
     <description type="system">
         <author>{{ data['image']['author'] }}</author>
         <contact>{{ data['image']['contact'] }}</contact>
@@ -59,7 +59,7 @@
     {%- endfor %}
     </users>
     {%- if not data['repositories'] %}
-    <repository type="rpm-md" >
+    <repository type="rpm-md">
         <source path='obsrepositories:/'/>
     </repository>
     {%- else %}
