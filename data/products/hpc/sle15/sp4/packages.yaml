@@ -1,0 +1,4 @@
+packages:
+  image:
+    hpc-compiler:
+      - gnu11-compilers-hpc-devel

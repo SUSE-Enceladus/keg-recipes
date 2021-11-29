@@ -1,0 +1,29 @@
+packages:
+  image:
+    hpc:
+      - dapl
+      - dapl-devel
+      - docker
+      - ibacm
+      - ibutils
+      - libdat2-2
+      - libibverbs1
+      - name: libibverbs1-32bit
+        arch: x86_64
+      - librdmacm1
+      - mvapich2-gnu-hpc-devel
+      - mvapich2-gnu-hpc-doc
+      - mvapich2-psm-gnu-hpc-devel
+      - mvapich2-psm-gnu-hpc-doc
+      - mvapich2-psm2-gnu-hpc-devel
+      - mvapich2-psm2-gnu-hpc-doc
+      - openmpi3-gnu-hpc-devel
+      - openmpi3-gnu-hpc-docs
+      - openmpi4-gnu-hpc-devel
+      - openmpi4-gnu-hpc-docs
+      - patterns-ofed-ofed
+      - release-notes-sle_hpc
+      - rdma-core
+      - srptools
+    hpc-compiler:
+      - gnu10-compilers-hpc-devel
