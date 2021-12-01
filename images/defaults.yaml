@@ -1,4 +1,5 @@
 schema: vm
+schmaversion: 6.2
 image:
   author: Public Cloud Team
   contact: public-cloud-dev@susecloud.net
