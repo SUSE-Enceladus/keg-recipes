@@ -1,6 +1,0 @@
-packages:
-  image:
-    azure-ondemand:
-      - cloud-regionsrv-client-plugin-azure
-      - regionServiceClientConfigAzure
-      - regionServiceCertsAzure

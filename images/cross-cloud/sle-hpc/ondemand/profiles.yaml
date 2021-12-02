@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/cloudreg
       - base/hpc
       - base/common
       - base/sle-modules
@@ -10,7 +9,6 @@ profiles:
   Azure:
     description: Azure configuration
     include:
-      - csp/azure/ondemand/hpc
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
@@ -18,9 +16,7 @@ profiles:
     description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
-      - csp/ec2/ondemand
   GCE:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand/hpc

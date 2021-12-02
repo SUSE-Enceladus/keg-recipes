@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/cloudreg
       - base/common
       - base/sle-modules
       - base/sle
@@ -10,7 +9,6 @@ profiles:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
-      - csp/azure/ondemand
     Azure-Basic:
       description: Azure configuration
       include:
@@ -23,9 +21,7 @@ profiles:
     description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
-      - csp/ec2/ondemand
   GCE:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/ondemand/sles
