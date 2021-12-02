@@ -1,11 +1,16 @@
-If you desire in place updates of the host please register this instance
-using your existing SUSE entitlement.
+If you desire in place updates of the host please and have not yet registered
+the instance, please register this instance using your existing SUSE
+entitlement.
 
 As "root" (sudo or sudo -i) use either one of the following commands:
  - SUSEConnect --url=https://scc.suse.com  -e company@example.com -r YOUR_CODE
  - yast scc
 
 to register the instance with SCC
+
+ - registercloudguest -r YOUR_CODE
+
+to register the instance against the SUSE update infrastructure.
 
 Without registration this instance does not have access to updates and
 security fixes.
