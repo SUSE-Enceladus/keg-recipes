@@ -1,0 +1,4 @@
+packages:
+  image:
+    sap-support-config-plugin:
+      - supportutils-plugin-ha-sap

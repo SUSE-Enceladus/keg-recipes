@@ -3,6 +3,7 @@ profiles:
     include:
       - base/common
       - base/sle
+      - products/sap
       - products/sap/azure-baremetal
   azure-vli:
     include:

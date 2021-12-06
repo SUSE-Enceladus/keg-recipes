@@ -5,6 +5,7 @@ profiles:
       - base/common
       - base/sle
       - base/sle-modules
+      - products/sap
       - products/sap/ondemand
   Azure:
     include:

@@ -3,6 +3,7 @@ profiles:
     include:
       - base/common
       - base/sle
+      - products/sap
       - products/sap/byos
   Azure:
     description: Azure configuration
