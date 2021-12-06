@@ -12,11 +12,16 @@ profiles:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
+      - csp/gce/ondemand
+      - csp/azure/ondemand/hpc
   EC2:
     description: EC2 configuration
     include:
       - csp/ec2/addon/aws-tools
+      - csp/ec2/ondemand
   GCE:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
+      - csp/gce/ondemand/hpc
