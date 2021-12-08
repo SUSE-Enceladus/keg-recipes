@@ -2,6 +2,7 @@ include-paths:
   - sle15/sp1
   - sle15/sp2
   - sle15/sp3
+schemaversion: 7.2
 image:
   name: SUSE-Manager-Server-BYOS
   specification: "SUSE Manager 4.1 Server BYOS guest image"
