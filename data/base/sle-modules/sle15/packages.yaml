@@ -2,7 +2,6 @@ packages:
   bootstrap:
     sle-modules:
       - sle-module-basesystem-release
-      - sle-module-cap-tools-release
       - sle-module-containers-release
       - sle-module-desktop-applications-release
       - sle-module-development-tools-release
@@ -10,3 +9,5 @@ packages:
       - sle-module-public-cloud-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release
+    sle-module-cap-tools:
+      - sle-module-cap-tools-release
