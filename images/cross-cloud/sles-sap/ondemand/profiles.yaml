@@ -8,7 +8,6 @@ profiles:
   Azure:
     include:
       - csp/azure/addon/azure-tools
-      - csp/azure/ondemand
       - csp/azure/ondemand/sap
   EC2:
     include:
@@ -19,5 +18,4 @@ profiles:
       - csp/gce/addon/fence-agent-deps
       - csp/gce/addon/gce-tools
       - csp/gce/addon/google-auth
-      - csp/gce/ondemand
       - csp/gce/ondemand/sap
