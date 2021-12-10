@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/cloudreg
       - base/hpc
       - base/common
       - base/sle-modules
@@ -10,10 +9,10 @@ profiles:
   Azure:
     description: Azure configuration
     include:
-      - csp/azure/ondemand/hpc
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
       - csp/azure/addon/waagent-rdma
+      - csp/azure/ondemand/hpc
   EC2:
     description: EC2 configuration
     include:

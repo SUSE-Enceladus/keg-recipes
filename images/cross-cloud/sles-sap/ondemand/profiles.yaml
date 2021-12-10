@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/cloudreg
       - base/common
       - base/sle
       - base/sle-modules

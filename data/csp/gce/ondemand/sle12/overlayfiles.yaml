@@ -1,0 +1,4 @@
+overlayfiles:
+  motd-ondemand:
+    include:
+      - motd-addon-mgmt

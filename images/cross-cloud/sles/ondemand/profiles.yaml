@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/cloudreg
       - base/common
       - base/sle-modules
       - base/sle
@@ -28,4 +27,5 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
+      - csp/gce/ondemand
       - csp/gce/ondemand/sles
