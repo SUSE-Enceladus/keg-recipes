@@ -1,4 +1,7 @@
 packages:
+  bootstrap:
+    sle-module-public-cloud:
+      - sle-module-public-cloud-release
   image:
     sle-common:
       - aaa_base-extras

@@ -7,8 +7,6 @@ packages:
       - sle-module-containers-release-POOL
       - sle-module-legacy-release
       - sle-module-legacy-release-POOL
-      - sle-module-public-cloud-release
-      - sle-module-public-cloud-release-POOL
       - sle-module-toolchain-release
       - sle-module-toolchain-release-POOL
       - sle-module-web-scripting-release
