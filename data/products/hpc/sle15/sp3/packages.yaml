@@ -13,12 +13,14 @@ packages:
       - librdmacm1
       - mvapich2-gnu-hpc-devel
       - mvapich2-gnu-hpc-doc
-      - mvapich2-psm-gnu-hpc-devel
-      - mvapich2-psm-gnu-hpc-doc
-      - mvapich2-psm2-gnu-hpc-devel
-      - mvapich2-psm2-gnu-hpc-doc
-      - openmpi3-gnu-hpc-devel
-      - openmpi3-gnu-hpc-docs
+      - name: mvapich2-psm-gnu-hpc-devel
+        arch: x86_64
+      - name: mvapich2-psm-gnu-hpc-doc
+        arch: x86_64
+      - name: mvapich2-psm2-gnu-hpc-devel
+        arch: x86_64
+      - name: mvapich2-psm2-gnu-hpc-doc
+        arch: x86_64
       - openmpi4-gnu-hpc-devel
       - openmpi4-gnu-hpc-docs
       - patterns-ofed-ofed
