@@ -13,7 +13,7 @@ packages:
       - patch
     gce-registration:
       - cloud-regionsrv-client
-      - regionsrv-certs
       - cloud-regionsrv-client-plugin-gce
+      - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
