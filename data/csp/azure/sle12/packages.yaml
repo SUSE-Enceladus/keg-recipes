@@ -19,7 +19,8 @@ packages:
         arch: aarch64
     azure-registration:
       - cloud-regionsrv-client
-      - regionsrv-certs
+      - cloud-regionsrv-client-addon-azure
       - cloud-regionsrv-client-plugin-azure
+      - regionsrv-certs
       - regionServiceClientConfigAzure
       - regionServiceCertsAzure
