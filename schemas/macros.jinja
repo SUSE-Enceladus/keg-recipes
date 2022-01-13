@@ -35,6 +35,9 @@
               {%- endfor %}
             </oemconfig>
             {%- endif %}
+            {%- if profile['machine'] %}
+            <machine {%- for key, val in profile['machine'].items() %} {{ key }}="{{ val }}" {%- endfor -%}/>
+            {%- endif %}
         </type>
 {%- endmacro -%}
 {% macro print_packages(profile, content, multibuild) -%}
