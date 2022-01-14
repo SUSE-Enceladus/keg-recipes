@@ -1,0 +1,6 @@
+profile:
+  parameters:
+    kernelcmdline:
+      cgroup_enable: memory
+      cgroup.memory: nokmem
+      swapaccount: 1
