@@ -7,3 +7,5 @@ profile:
       multipath: "off"
       nvme_core.admin_timeout: 4294967295
       nvme_core.io_timeout: 4294967295
+  machine:
+    xen_loader: hvmloader
