@@ -1,5 +1,4 @@
 profile:
   parameters:
     kernelcmdline:
-      cgroup_enable: memory
-      swapaccount: 1
+      cgroup.memory: Null
