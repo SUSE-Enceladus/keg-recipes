@@ -1,6 +1,7 @@
 config:
   scripts:
     azure-config:
+      - dhclient-increase-timeout
       - set-password-policy
       - ssh-enable-keep-alive
       - sudo-disable-targetpw
