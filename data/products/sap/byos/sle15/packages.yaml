@@ -3,6 +3,7 @@ packages:
     sap-byos:
       - drbd-formula
       - habootstrap-formula
+      - iscsi-formula
       - python3-shaptools
       - salt-shaptools
       - saphanabootstrap-formula
