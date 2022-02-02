@@ -2,10 +2,11 @@ include-paths:
   - sle15/sp1
   - sle15/sp2
   - sle15/sp3
+  - sle15/sp4
 schemaversion: 7.2
 image:
-  name: SUSE-Manager-Proxy-BYOS
-  specification: "SUSE Manager 4.2 Proxy BYOS guest image"
-  version: 4.2.0
+  name: SUSE-Manager-Server-BYOS
+  specification: "SUSE Manager 4.3 Server BYOS guest image"
+  version: 4.3.0
 repositories:
   - path: obsrepositories:/
