@@ -30,8 +30,6 @@ config:
       - boot.device-mapper
       - haveged
       - sshd
-      - name: acpid
-        enable: False
       - name: boot.efivars
         enable: False
       - name: boot.lvm
