@@ -9,9 +9,3 @@ packages:
       - growpart-rootgrow
       - grub2-x86_64-efi
       - kernel-default
-    gce-registration:
-      - cloud-regionsrv-client
-      - cloud-regionsrv-client-plugin-gce
-      - regionsrv-certs
-      - regionServiceClientConfigGCE
-      - regionServiceCertsGCE

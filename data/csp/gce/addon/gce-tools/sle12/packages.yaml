@@ -3,3 +3,9 @@ packages:
     gce-tools:
       - cloud-netconfig-gce
       - python3-gcemetadata
+    gce-registration:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-gce
+      - regionsrv-certs
+      - regionServiceClientConfigGCE
+      - regionServiceCertsGCE

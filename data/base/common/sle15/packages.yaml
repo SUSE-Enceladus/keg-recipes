@@ -24,7 +24,6 @@ packages:
       - system-group-wheel
       - system-user-nobody
       - systemd
-      - tar
       - tcpdump
       - terminfo
       - timezone
