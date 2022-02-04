@@ -11,9 +11,3 @@ packages:
     gce-patch:
       # bsc#1165960
       - patch
-    gce-registration:
-      - cloud-regionsrv-client
-      - cloud-regionsrv-client-plugin-gce
-      - regionsrv-certs
-      - regionServiceClientConfigGCE
-      - regionServiceCertsGCE

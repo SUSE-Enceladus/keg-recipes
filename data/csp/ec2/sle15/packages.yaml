@@ -9,9 +9,3 @@ packages:
         arch: x86_64
       - name: xen-tools-domU
         arch: x86_64
-    ec2-registration:
-      - cloud-regionsrv-client
-      - cloud-regionsrv-client-plugin-ec2
-      - regionsrv-certs
-      - regionServiceClientConfigEC2
-      - regionServiceCertsEC2
