@@ -33,7 +33,6 @@ packages:
       - suse-build-key
       - SUSEConnect
       - systemd
-      - tar
       - tcpdump
       - timezone
       - udev
