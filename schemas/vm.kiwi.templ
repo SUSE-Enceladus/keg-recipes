@@ -60,7 +60,7 @@
     </users>
     {%- if not data['repositories'] %}
     <repository type="rpm-md">
-        <source path='obsrepositories:/'/>
+        <source path="obsrepositories:/"/>
     </repository>
     {%- else %}
     {%-   for repo in data['repositories'] %}
