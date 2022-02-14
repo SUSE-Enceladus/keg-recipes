@@ -18,5 +18,5 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
-      - csp/gce/addon/hpc-tweaks
+      - csp/gce/addon/hpc-settings
       - csp/gce/byos/hpc
