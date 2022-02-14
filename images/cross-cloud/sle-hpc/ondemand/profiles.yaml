@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/hpc
       - base/common
       - base/sle-modules
       - base/sle
