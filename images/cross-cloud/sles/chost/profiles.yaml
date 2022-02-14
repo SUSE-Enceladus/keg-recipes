@@ -11,7 +11,7 @@ profiles:
   Azure:
     description: Azure configuration
     include:
-      - csp/azure/addon/chost-tweaks
+      - csp/azure/addon/chost-settings
       - csp/azure/byos/sles
       - kernel-options/cgroup-memory
   EC2:
