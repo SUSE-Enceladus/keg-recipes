@@ -1,7 +1,6 @@
 profiles:
   common:
     include:
-      - base/hpc
       - base/common
       - base/sle
       - products/hpc/byos
@@ -19,4 +18,5 @@ profiles:
     description: GCE configuration
     include:
       - csp/gce/addon/gce-tools
+      - csp/gce/addon/hpc-settings
       - csp/gce/byos/hpc
