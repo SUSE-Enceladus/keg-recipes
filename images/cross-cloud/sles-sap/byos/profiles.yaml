@@ -8,6 +8,7 @@ profiles:
     description: Azure configuration
     include:
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/byos/sap
   EC2:
     description: EC2 configuration

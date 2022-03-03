@@ -8,6 +8,7 @@ profiles:
       - base/cloudreg
       - base/sle-modules
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/ondemand
     Basic-On-Demand:
       description: SLES Basic On-Demand image
@@ -37,6 +38,7 @@ profiles:
   Base-BYOS:
     include:
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/addon/default-kernel
     BYOS:
       description: SLES BYOS image

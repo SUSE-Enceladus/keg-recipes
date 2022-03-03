@@ -2,7 +2,6 @@ config:
   services:
     azure-tools-config:
       - cloud-netconfig.timer
-      - regionsrv-enabler-azure.timer
   sysconfig:
     azure-tools-sysconfig:
       - file: /etc/sysconfig/network/config

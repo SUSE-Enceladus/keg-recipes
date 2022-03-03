@@ -9,6 +9,7 @@ profiles:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/ondemand
     Azure-Basic:
       description: Azure configuration
