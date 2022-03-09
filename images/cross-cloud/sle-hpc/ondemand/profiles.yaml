@@ -10,6 +10,7 @@ profiles:
     include:
       - csp/azure/addon/azure-kernel
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/addon/waagent-rdma
       - csp/azure/ondemand/hpc
   EC2:

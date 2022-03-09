@@ -1,0 +1,4 @@
+packages:
+  image:
+    azure-addon-cloudreg:
+      - cloud-regionsrv-client-addon-azure

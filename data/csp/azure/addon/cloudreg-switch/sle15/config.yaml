@@ -1,0 +1,4 @@
+config:
+  services:
+    azure-addon-cloudreg:
+      - regionsrv-enabler-azure.timer

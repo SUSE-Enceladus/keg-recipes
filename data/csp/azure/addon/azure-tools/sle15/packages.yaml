@@ -7,7 +7,6 @@ packages:
       - python3-azuremetadata
     azure-registration:
       - cloud-regionsrv-client
-      - cloud-regionsrv-client-addon-azure
       - cloud-regionsrv-client-plugin-azure
       - regionsrv-certs
       - regionServiceClientConfigAzure

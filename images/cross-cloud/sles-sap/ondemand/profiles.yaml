@@ -8,6 +8,7 @@ profiles:
   Azure:
     include:
       - csp/azure/addon/azure-tools
+      - csp/azure/addon/cloudreg-switch
       - csp/azure/ondemand/sap
   EC2:
     include:
