@@ -41,7 +41,8 @@ packages:
       - rpm-build
       - samba
       - samba-client
-      - samba-client-32bit
+      - name: samba-client-32bit
+        arch: x86_64
       - sapconf
       - sysstat
       - tack
