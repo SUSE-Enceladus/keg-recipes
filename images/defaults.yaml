@@ -3,6 +3,7 @@ schemaversion: 6.2
 image:
   author: Public Cloud Team
   contact: public-cloud-dev@susecloud.net
+  version: 0.9.0
 users:
   - name: root
     groups:

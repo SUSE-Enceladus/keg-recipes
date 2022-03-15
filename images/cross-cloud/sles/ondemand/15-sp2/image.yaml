@@ -5,4 +5,3 @@ schemaversion: 7.2
 image:
   name: SLES15-SP2
   specification: "SUSE Linux Enterprise Server 15 SP2 guest image"
-  version: 1.0.42
