@@ -6,6 +6,7 @@ overlayfiles:
       - cloud-cfg-disable-network-config
       - dracut-aws-type-switch
       - dracut-ext4
+      - dracut-resume
       - dracut-xfs
       - modprobe-nvme-options
       - udev-nvme-timeout
