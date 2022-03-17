@@ -3,4 +3,3 @@ include-paths:
 image:
   name: SLES15-GCE-BYOS
   specification: "SUSE Linux Enterprise Server 15 BYOS guest image for Google Compute Engine"
-  version: 1.0.42

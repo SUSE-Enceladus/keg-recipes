@@ -3,4 +3,3 @@ include-paths:
 image:
   name: SLES15-SAP-EC2
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 BYOS guest image for Amazon EC2"
-  version: 1.0.42

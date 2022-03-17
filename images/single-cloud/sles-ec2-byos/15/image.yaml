@@ -3,4 +3,3 @@ include-paths:
 image:
   name: SLES15-EC2-BYOS
   specification: "SUSE Linux Enterprise Server 15 BYOS guest image for Amazon EC2"
-  version: 1.0.42

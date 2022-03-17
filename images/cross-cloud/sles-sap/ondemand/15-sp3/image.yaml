@@ -6,4 +6,3 @@ schemaversion: 7.2
 image:
   name: SLES15-SP3-SAP
   specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP3 guest image"
-  version: 0.9.1
