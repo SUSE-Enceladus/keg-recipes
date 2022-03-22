@@ -51,3 +51,4 @@ packages:
   bootstrap:
     sap-release:
       - SLES_SAP-release
+      - sle-ha-release

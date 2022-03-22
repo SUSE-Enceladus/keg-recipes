@@ -1,6 +1,5 @@
 packages:
   bootstrap:
     sles4sap-ondemand:
-      - sle-ha-release
       - sle-module-live-patching-release
       - sle-module-sap-applications-release
