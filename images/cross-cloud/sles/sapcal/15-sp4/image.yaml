@@ -5,4 +5,4 @@ include-paths:
   - sle15/sp4
 image:
   name: SLES15-SP4-SAPCAL
-  specification: "SUSE Linux Enterprise Server 15 SP4 BYOS guest image for SAP Cloud Application Library"
+  specification: "SUSE Linux Enterprise Server 15 SP4 BYOS guest image for SAP Cloud Appliance Library"
