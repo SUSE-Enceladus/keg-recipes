@@ -33,9 +33,10 @@ packages:
       - which
       - wicked
       - xfsprogs
-      - zypper-migration-plugin
     common-rpm:
       - rpm
+    common-zypper-migration:
+      - zypper-migration-plugin
   bootstrap:
     common:
       - filesystem
