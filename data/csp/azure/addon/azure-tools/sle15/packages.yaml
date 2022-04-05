@@ -4,6 +4,7 @@ packages:
       - azure-cli
       - cloud-netconfig-azure
       - lsscsi
+      - python3-azure-sdk
       - python3-azuremetadata
     azure-registration:
       - cloud-regionsrv-client
