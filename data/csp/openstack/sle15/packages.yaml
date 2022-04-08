@@ -3,5 +3,7 @@ packages:
     openstack:
       - cloud-init
       - kernel-default
-    bootloader-efi: Null
+    bootloader-efi:
+      - name: grub2-arm64-efi
+        arch: aarch64
     bootloader-shim: Null
