@@ -1,3 +1,5 @@
 packages:
   bootstrap:
     sle-module-cap-tools: Null
+    sle-module-python:
+      - sle-module-python3-release
