@@ -1,9 +1,6 @@
 packages:
-  bootstrap:
-    sle-module-public-cloud:
-      - sle-module-public-cloud-release
-  image:
-    sle-common:
+  _namespace_sle_common:
+    package:
       - aaa_base-extras
       - at
       - at-spi2-core
@@ -51,12 +48,14 @@ packages:
       - quota
       - rsync
       - screen
+      - sle-module-public-cloud-release
       - strace
       - system-user-mail
       - systemd-sysvinit
       - tcpd
       - tcsh
       - telnet
+      - vim
       - yast2
       - yast2-add-on
       - yast2-audit-laf
@@ -110,3 +109,5 @@ packages:
       - yp-tools
       - zip
       - zsh
+  package:
+    - p2

@@ -1,5 +1,7 @@
-profile:
-  bootloader:
-    console: serial
-  parameters:
-    bootloader_console: Null
+preferences:
+  type:
+    _attributes:
+      bootloader_console: Null
+    bootloader:
+      _attributes:
+        console: serial

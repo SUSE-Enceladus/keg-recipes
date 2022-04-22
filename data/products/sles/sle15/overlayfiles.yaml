@@ -1,4 +1,4 @@
-overlayfiles:
+archive:
   motd:
-    include:
+    overlay:
       - motd-default

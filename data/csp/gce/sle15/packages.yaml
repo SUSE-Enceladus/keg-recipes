@@ -1,6 +1,6 @@
 packages:
-  image:
-    gce-init:
+  _namespace_gce_init:
+    package:
       - google-guest-agent
       - google-guest-configs
       - google-guest-oslogin
@@ -8,6 +8,8 @@ packages:
       - growpart
       - growpart-rootgrow
       - kernel-default
-    gce-patch:
-      # bsc#1165960
-      - patch
+  _namespace_gce_patch:
+    package:
+      _comment: bsc#1165960
+      _attributes:
+        name: patch

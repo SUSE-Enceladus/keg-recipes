@@ -1,5 +1,6 @@
 packages:
-  image:
-    azure-shim:
-      - name: shim
-        arch: x86_64
+  _namespace_azure_shim:
+    package:
+      - _attributes:
+          name: shim
+          arch: x86_64

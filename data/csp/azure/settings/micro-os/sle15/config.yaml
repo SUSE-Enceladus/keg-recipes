@@ -1,0 +1,11 @@
+config:
+  scripts:
+    azure-waagent: Null
+  services:
+    azure-config: Null
+  sysconfig:
+    azure-config:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"
+

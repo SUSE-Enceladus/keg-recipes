@@ -1,6 +1,6 @@
 archive:
   _namespace_azure_base:
-    overlay:
+    _overlayfiles:
       - chrony-azure-ptp
       - cloud-cfg-azure
       - cloud-cfg-disable-network-config
@@ -8,8 +8,8 @@ archive:
       - udev-hyperv-ptp
       - udev-ioscheduler-none
   _namespace_azure_emergency_shell:
-    overlay:
+    _overlayfiles:
       - rescue-force-sulogin
   _namespace_azure_sysconfig_network:
-    overlay:
+    _overlayfiles:
       - sysconfig-network-plain

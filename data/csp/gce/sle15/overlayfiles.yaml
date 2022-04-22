@@ -1,14 +1,14 @@
-overlayfiles:
+archive:
   gce-base:
-    include:
+    overlay:
       - chrony-gce-ntp
       - hosts-metadata-google
   gce-grub:
-    include:
+    overlay:
       - grub-linuxefi
   gce-sysconfig-network:
-    include:
+    overlay:
       - sysconfig-network-plain
   gce-virtio-net:
-    include:
+    overlay:
       - module-virtio-net

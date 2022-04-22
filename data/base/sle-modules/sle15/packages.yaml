@@ -1,6 +1,6 @@
 packages:
-  bootstrap:
-    sle-modules:
+  _namespace_sle_modules:
+    package:
       - sle-module-basesystem-release
       - sle-module-containers-release
       - sle-module-desktop-applications-release
@@ -8,5 +8,6 @@ packages:
       - sle-module-legacy-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release
-    sle-module-cap-tools:
+  _namespace_sle_module-cap-tools:
+    package:
       - sle-module-cap-tools-release

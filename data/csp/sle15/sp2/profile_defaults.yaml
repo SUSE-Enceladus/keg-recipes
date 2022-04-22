@@ -1,7 +1,9 @@
-profile:
-  bootloader:
-    name: grub2
-    timeout: 1
-  parameters:
-    bootloader: Null
-    boottimeout: Null
+preferences:
+  type:
+    _attributes:
+      bootloader: Null
+      boottimeout: Null
+    bootloader:
+      _attributes:
+        name: grub2
+        timeout: 1

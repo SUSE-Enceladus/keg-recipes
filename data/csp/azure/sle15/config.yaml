@@ -5,6 +5,7 @@ config:
       - set-password-policy
       - ssh-enable-keep-alive
       - ssh-disable-challenge-response-auth
+    azure-waagent:
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
       - waagent-disable-ephemeral-disk-handling

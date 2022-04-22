@@ -1,0 +1,8 @@
+config:
+  services:
+    ec2-services: Null
+  sysconfig:
+    ec2-sysconfig:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"

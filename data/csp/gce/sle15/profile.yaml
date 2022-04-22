@@ -1,8 +1,9 @@
-profile:
-  parameters:
-    bootloader_console: serial
-    format: gce
-    kernelcmdline:
-      console: ttyS0,38400n8
-      dis_ucode_ldr: []
-      multipath: "off"
+preferences:
+  type:
+    _attributes:
+      bootloader_console: serial
+      format: gce
+      kernelcmdline:
+        console: ttyS0,38400n8
+        dis_ucode_ldr: []
+        multipath: "off"

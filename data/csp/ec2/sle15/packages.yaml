@@ -1,11 +1,14 @@
 packages:
-  image:
-    ec2:
+  _namespace_ec2_base:
+    package:
       - cloud-init
-      - name: grub2-x86_64-xen 
-        arch: x86_64
+      - _attributes:
+          name: grub2-x86_64-xen 
+          arch: x86_64
       - kernel-default
-      - name: xen-libs
-        arch: x86_64
-      - name: xen-tools-domU
-        arch: x86_64
+      - _attributes:
+          name: xen-libs
+          arch: x86_64
+      - _attributes:
+          name: xen-tools-domU
+          arch: x86_64

@@ -1,6 +1,6 @@
-overlayfiles:
+archive:
   ec2-base:
-    include:
+    overlay:
       - chrony-ec2-ntp
       - cloud-cfg-ec2
       - cloud-cfg-disable-network-config
@@ -11,5 +11,5 @@ overlayfiles:
       - modprobe-nvme-options
       - udev-nvme-timeout
   ec2-sysconfig-network:
-    include:
+    overlay:
       - sysconfig-network-plain

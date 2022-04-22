@@ -1,6 +1,6 @@
 packages:
-  image:
-    common:
+  _namespace_common:
+    package:
       - audit
       - blog
       - chrony
@@ -33,11 +33,11 @@ packages:
       - which
       - wicked
       - xfsprogs
-    common-rpm:
+  _namespace_common_rpm:
+    package:
       - rpm
-    common-zypper-migration:
+  _namespace_common_zypper_migration:
+    package:
       - zypper-migration-plugin
-  bootstrap:
-    common:
-      - filesystem
-      - glibc-locale
+  package:
+    - p1
