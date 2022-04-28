@@ -6,6 +6,7 @@ config:
       - remove-root-pw
       - set-prodlink
       - zypp-disable-delta-rpms
+      - zypp-disable-multiver-kernel
   files:
     common-sysconfig:
       - path: /etc/profile
