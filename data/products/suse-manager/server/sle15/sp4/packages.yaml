@@ -1,0 +1,5 @@
+packages:
+  image:
+    manager-server-deps:
+      # avoid log4j12-mini
+      - log4j12
