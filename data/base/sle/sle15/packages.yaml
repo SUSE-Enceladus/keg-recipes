@@ -52,6 +52,7 @@ packages:
       - rsync
       - screen
       - strace
+      - system-user-mail
       - systemd-sysvinit
       - tcpd
       - tcsh
