@@ -43,8 +43,6 @@ packages:
       - xfsprogs
       - xinetd
       - xtables-plugins
-    common-klogd:
-      - klogd
   bootstrap:
     common:
       - filesystem

@@ -6,7 +6,6 @@ packages:
       - ca-certificates-mozilla
       - conntrack-tools
       - containerd
-      - containerd-ctr
       - cpupower
       - docker
       - fipscheck
