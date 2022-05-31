@@ -9,7 +9,6 @@ packages:
       - icmpinfo
       - kernel-default
       - kernel-firmware
-      - klogd
       - multipath-tools
       - ntp
       - opie
