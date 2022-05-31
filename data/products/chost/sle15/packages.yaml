@@ -12,7 +12,6 @@ packages:
       - fipscheck
       - hwinfo
       - jq
-      - klogd
       - less
       - libnss_usrfiles2
       - open-iscsi
