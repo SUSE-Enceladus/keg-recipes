@@ -1,4 +1,7 @@
 packages:
+  bootstrap:
+    ec2-ecs-pubcloud-release:
+      - sle-module-public-cloud-release
   image:
     ec2-addon-ecs:
       - aaa_base-extras
