@@ -1,0 +1,15 @@
+packages:
+  _namespace_sle_modules:
+    package:
+      - sle-module-adv-systems-management-release
+      - sle-module-adv-systems-management-release-POOL
+      - sle-module-containers-release
+      - sle-module-containers-release-POOL
+      - sle-module-legacy-release
+      - sle-module-legacy-release-POOL
+      - sle-module-toolchain-release
+      - sle-module-toolchain-release-POOL
+      - sle-module-web-scripting-release
+      - sle-module-web-scripting-release-POOL
+      - sle-sdk-release
+      - sle-sdk-release-POOL

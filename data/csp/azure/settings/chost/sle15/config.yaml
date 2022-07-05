@@ -1,4 +1,10 @@
 config:
   scripts:
+    azure-cloud-netconfig: Null
+    azure-default-kernel-log-level:
     waagent-enable-custom-data:
       - waagent-enable-custom-data
+  services:
+    azure-regionsrv-timer: Null
+  sysconfig:
+    azure-cloud-netconfig: Null

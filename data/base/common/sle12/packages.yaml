@@ -1,6 +1,6 @@
 packages:
-  image:
-    common:
+  _namespace_common_base:
+    package:
       - acl
       - blog
       - cifs-utils
@@ -43,7 +43,3 @@ packages:
       - xfsprogs
       - xinetd
       - xtables-plugins
-  bootstrap:
-    common:
-      - filesystem
-      - glibc-locale

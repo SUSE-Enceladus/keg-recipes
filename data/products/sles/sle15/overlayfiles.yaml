@@ -1,4 +1,0 @@
-archive:
-  motd:
-    overlay:
-      - motd-default

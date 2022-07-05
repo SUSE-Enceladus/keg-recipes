@@ -1,3 +1,2 @@
 packages:
-  image:
-    gce-patch: Null
+  _namespace_gce_patch: Null

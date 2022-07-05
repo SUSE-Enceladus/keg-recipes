@@ -1,8 +1,0 @@
-profiles:
-  common:
-    include:
-      - base/common
-      - base/hardened
-      - base/sle
-      - base/sle-modules
-      - products/sap/ondemand

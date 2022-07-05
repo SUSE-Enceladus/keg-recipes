@@ -1,5 +1,0 @@
-include-paths:
-  - sle15
-image:
-  name: SLES15-SAP-GCE
-  specification: "SUSE Linux Enterprise Server for SAP Applications 15 BYOS guest image for Google Compute Engine"

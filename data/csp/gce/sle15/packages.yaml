@@ -1,4 +1,7 @@
 packages:
+  _namespace_gce_cloud_netconfig:
+    package:
+      - cloud-netconfig-gce
   _namespace_gce_init:
     package:
       - google-guest-agent
@@ -10,6 +13,16 @@ packages:
       - kernel-default
   _namespace_gce_patch:
     package:
-      _comment: bsc#1165960
-      _attributes:
-        name: patch
+      - _comment: bsc#1165960
+        _attributes:
+          name: patch
+  _namespace_gce_tools:
+    package:
+      - python3-gcemetadata
+  _namespace_gce_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-gce
+      - regionsrv-certs
+      - regionServiceClientConfigGCE
+      - regionServiceCertsGCE

@@ -1,0 +1,100 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure-Basic
+          description: Azure configration
+      - _attributes:
+          name: Azure-Standard
+          description: Azure configration
+      - _attributes:
+          name: EC2
+          description: EC2 configration
+      - _attributes:
+          name: GCE
+          description: GCE configration
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure-Basic]
+      _include:
+        - csp/azure/sles/basic
+    - _attributes:
+        profiles: [Azure-Standard]
+      _include:
+        - csp/azure/sles/ondemand
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/sles/ondemand
+    - _attributes:
+        profiles: [GCE]
+      _include: csp/gce/sles
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - products/sles/ondemand
+    - _attributes:
+        type: image
+        profiles: [Azure-Basic,Azure-Standard]
+      _include:
+        - csp/azure/settings/sles
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - products/sles
+  - profiles: [Azure-Basic]
+    _include:
+      - csp/azure/settings/sles/basic
+  - profiles: [Azure-Standard]
+    _include:
+      - csp/azure/settings/sles/ondemand
+  - profiles: [EC2]
+    _include:
+      - csp/ec2
+  - profiles: [GCE]
+    _include:
+      - csp/gce
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - products/sles
+  - name: azure.tar.gz
+    _include:
+      - csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2
+  - name: gce.tar.gz
+    _include:
+      - csp/gce

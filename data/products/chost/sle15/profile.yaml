@@ -1,5 +1,0 @@
-# this really only works with single-build
-profile:
-  parameters:
-    kernelcmdline:
-      memhp_default_state: offline

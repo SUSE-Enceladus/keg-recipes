@@ -1,9 +1,6 @@
 packages:
-  bootstrap:
-    hpc-release:
-      - SLE_HPC-release
-  image:
-    hpc:
+  _namespace_hpc_base:
+    package:
       - dapl
       - dapl-devel
       - docker
@@ -11,8 +8,9 @@ packages:
       - ibutils
       - libdat2-2
       - libibverbs1
-      - name: libibverbs1-32bit
-        arch: x86_64
+      - _attributes:
+          name: libibverbs1-32bit
+          arch: x86_64
       - librdmacm1
       - mpiP_3_4_1-gnu-mpich-hpc
       - mpich-gnu-hpc
@@ -24,3 +22,6 @@ packages:
       - release-notes-sle_hpc
       - rdma-core
       - srptools
+  _namespace_hpc_release:
+    package:
+      - SLE_HPC-release

@@ -1,6 +1,0 @@
-profile:
-  parameters:
-    bootpartsize: Null
-    filesystem: btrfs
-    kernelcmdline:
-      ignition.platform.id: aws

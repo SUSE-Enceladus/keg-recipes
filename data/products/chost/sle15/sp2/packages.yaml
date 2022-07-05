@@ -1,7 +1,7 @@
 packages:
-  image:
-    chost-apparmor:
+  _namespace_chost_apparmor:
+    package:
       - apparmor-abstractions
       - apparmor-parser
-    chost-btrfsprogs: Null
-    chost-fcoe-utils: Null
+  _namespace_chost_btrfsprogs: Null
+  _namespace_chost_fcoe_utils: Null

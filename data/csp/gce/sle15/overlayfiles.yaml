@@ -1,14 +1,14 @@
 archive:
-  gce-base:
-    overlay:
+  _namespace_gce_base:
+    _include_overlays:
       - chrony-gce-ntp
       - hosts-metadata-google
-  gce-grub:
-    overlay:
+  _namespace_gce_grub:
+    _include_overlays:
       - grub-linuxefi
-  gce-sysconfig-network:
-    overlay:
-      - sysconfig-network-plain
-  gce-virtio-net:
-    overlay:
+  _namespace_gce_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig
+  _namespace_gce_virtio_net:
+    _include_overlays:
       - module-virtio-net

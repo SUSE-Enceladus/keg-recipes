@@ -1,6 +1,6 @@
 packages:
-  image:
-    azure-baremetal:
+  _namespace_azure_baremetal_base:
+    package:
       - acl
       - azure-li-services
       - dracut-kiwi-oem-repart
@@ -24,7 +24,8 @@ packages:
       - yast2-iscsi-client
       - yast2-iscsi-lio-server
       - yast2-isns
-    azure-baremetal-hana-addon:
+  _namespace_azure_baremetal_hana_addon:
+    package:
       - audit-libs
       - gcc7
       - keyutils-libs
@@ -33,7 +34,8 @@ packages:
       - MozillaFirefox-branding-SLE
       - patterns-sap-hana
       - wireshark
-    azure-baremetal-addon-msft:
+  _namespace_azure_baremetal_addon_msft:
+    package:
       - golang-github-prometheus-node_exporter
       - java-1_8_0-ibm
       - perl-TimeDate
@@ -42,7 +44,9 @@ packages:
       - prometheus-sap_host_exporter
       - zlib
       - zlib-devel
-    azure-baremetal-depsresolv:
+  _namespace_azure_baremetal_depsresolv:
+    package:
       - fipscheck
-    azure-baremetal-firewall:
+  _namespace_azure_baremetal_firewall:
+    package:
       - SuSEfirewall2

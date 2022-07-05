@@ -1,6 +1,6 @@
 packages:
-  image:
-    azure-baremetal:
+  _namespace_azure_baremetal_base:
+    package:
       - azure-li-services
       - dracut-kiwi-oem-repart
       - fio
@@ -17,7 +17,8 @@ packages:
       - shim
       - syslinux
       - ucode-intel
-    azure-baremetal-hana-addon:
+  _namespace_azure_baremetal_hana_addon:
+    package:
       - audit-libs
       - keyutils-libs
       - libopenssl1_0_0
@@ -25,7 +26,8 @@ packages:
       - MozillaFirefox-branding-SLE
       - patterns-sap-hana
       - wireshark
-    azure-baremetal-addon-msft:
+  _namespace_azure_baremetal_addon_msft:
+    package:
       - perl-TimeDate
       - zlib
       - zlib-devel

@@ -1,0 +1,28 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - csp/ec2/settings/sles/ondemand
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/ondemand
+        - csp/ec2/settings/sles/ondemand
+        - products/sles/ondemand
+config:
+  - _include:
+      - base/common
+      - base/ondemand
+      - products/sles/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - csp/ec2/settings/sles/ondemand
+      - base/ondemand
+      - products/sles/ondemand

@@ -1,19 +1,34 @@
 packages:
-  image:
-    azure:
+  _namespace_azure_base:
+    package:
       - cloud-init
       - cloud-init-config-suse
       - hyper-v
-      - name: kernel-default
-        arch: aarch64
+      - _attributes:
+          name: kernel-default
+          arch: aarch64
       - python-azure-agent
-    azure-cryptsetup:
+  _namespace_azure_cryptsetup:
+    package:
       - cryptsetup
-    azure-kernel:
-      - name: kernel-default
-        arch: x86_64
-    bootloader-efi:
-      - name: grub2-x86_64-efi
-        arch: x86_64
-      - name: grub2-arm64-efi
-        arch: aarch64
+  _namespace_azure_kernel:
+    package:
+      - _attributes:
+         name: kernel-default
+         arch: x86_64
+  _namespace_azure_cloud_netconfig:
+    package:
+      - cloud-netconfig-azure
+  _namespace_azure_tools:
+    package:
+      - azure-cli
+      - lsscsi
+      - python3-azure-sdk
+      - python3-azuremetadata
+  _namespace_azure_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-azure
+      - regionsrv-certs
+      - regionServiceClientConfigAzure
+      - regionServiceCertsAzure

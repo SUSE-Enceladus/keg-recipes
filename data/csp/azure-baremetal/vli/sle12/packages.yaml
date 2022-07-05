@@ -1,7 +1,8 @@
 packages:
-  image:
-    azure-vli:
+  _namespace_azure_vli_base:
+    package:
       - patch
       - libxml2
-      - name: libxml2-32bit
-        arch: x86_64
+      - _attributes:
+          name: libxml2-32bit
+          arch: x86_64

@@ -1,7 +1,0 @@
-profiles:
-  common:
-    include:
-      - base/common
-      - base/sle
-      - csp/azure-baremetal/li
-      - products/sap/byos/baremetal-tweaks

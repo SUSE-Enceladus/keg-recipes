@@ -1,5 +1,5 @@
 packages:
-  _namespace_sles:
+  _namespace_sles_base:
     package:
       - docker
       - release-notes-sles

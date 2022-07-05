@@ -1,5 +1,0 @@
-packages:
-  image:
-    azure-shim:
-      - name: shim
-        arch: x86_64

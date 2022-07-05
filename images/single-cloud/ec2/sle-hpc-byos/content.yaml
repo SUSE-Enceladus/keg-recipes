@@ -1,0 +1,22 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - base/csp
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/common
+        - csp/ec2/settings/hpc/byos
+        - products/hpc/byos
+config:
+  - _include:
+      - base/common
+      - csp/ec2/settings/hpc/byos
+      - products/hpc/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - csp/ec2/settings/hpc/byos
+      - products/hpc/byos

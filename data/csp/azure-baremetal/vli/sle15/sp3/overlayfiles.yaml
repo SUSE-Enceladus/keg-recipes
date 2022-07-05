@@ -1,2 +1,2 @@
-overlayfiles:
-  susefirewall-rules: Null
+archive:
+  _namespace_azure_vli_susefirewall_rules: Null

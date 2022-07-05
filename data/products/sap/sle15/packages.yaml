@@ -1,6 +1,6 @@
 packages:
-  image:
-    sap:
+  _namespace_sap_base:
+    package:
       - bing
       - bonnie
       - cluster-md-kmp-default
@@ -43,11 +43,6 @@ packages:
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
       - yast2-saptune
-    sap-docker:
-      - docker
-    sap-libvirt:
-      # needed for fence_virsh of fence-agents
-      - libvirt-client
-  bootstrap:
-    sap-release:
+  _namespace_sap_release:
+    package:
       - SLES_SAP-release

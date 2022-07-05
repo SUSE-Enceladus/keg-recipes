@@ -1,10 +1,10 @@
-overlayfiles:
-  azure-baremetal-common:
-    include:
+archive:
+  _namespace_azure_baremetal_common:
+    _include_overlays:
       - dracut-multipath
       - modprobe-backlist-azure-li
       - selinux-disable
       - sysctl-hana-basenet
-  azure-baremetal-linkpol:
-    include:
+  _namespace_azure_baremetal_linkpol:
+    _include_overlays:
       - systemd-network-persistent-link-policy-match

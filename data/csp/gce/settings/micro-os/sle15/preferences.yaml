@@ -1,0 +1,9 @@
+preferences:
+  type:
+    _attributes:
+      bootpartsize: Null
+      filesystem: btrfs
+      kernelcmdline:
+        debug: []
+        ignition.platform.id: gcp
+        rd.debug: []

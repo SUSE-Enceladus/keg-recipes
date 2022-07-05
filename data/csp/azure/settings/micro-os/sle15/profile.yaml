@@ -1,7 +1,0 @@
-profile:
-  parameters:
-    bootpartition: Null
-    bootpartsize: Null
-    filesystem: btrfs
-    kernelcmdline:
-      ignition.platform.id: azure

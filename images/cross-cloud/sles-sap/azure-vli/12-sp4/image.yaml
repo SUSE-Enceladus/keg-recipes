@@ -1,6 +1,0 @@
-include-paths:
-  - sle12/sp3
-  - sle12/sp4
-image:
-  name: SLES12-SP4-SAP-Azure-VLI-BYOS
-  specification: "SUSE Linux Enterprise Server for SAP Applications 12 SP4 Azure VLI BYOS guest image"

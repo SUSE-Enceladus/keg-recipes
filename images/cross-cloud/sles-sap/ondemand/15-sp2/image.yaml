@@ -1,7 +1,10 @@
 include-paths:
   - sle15/sp1
   - sle15/sp2
-schemaversion: 7.2
 image:
-  name: SLES15-SP2-SAP
-  specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP2 guest image"
+  _attributes:
+    schemaversion: "7.2"
+    name: SLES15-SP2-SAP
+    displayname: SLES15-SP2-SAP
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP2 guest image"

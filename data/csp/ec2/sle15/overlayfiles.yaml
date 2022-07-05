@@ -1,6 +1,6 @@
 archive:
-  ec2-base:
-    overlay:
+  _namespace_ec2_base:
+    _include_overlays:
       - chrony-ec2-ntp
       - cloud-cfg-ec2
       - cloud-cfg-disable-network-config
@@ -10,6 +10,6 @@ archive:
       - dracut-xfs
       - modprobe-nvme-options
       - udev-nvme-timeout
-  ec2-sysconfig-network:
-    overlay:
-      - sysconfig-network-plain
+  _namespace_ec2_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig

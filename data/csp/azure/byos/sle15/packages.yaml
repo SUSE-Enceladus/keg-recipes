@@ -1,0 +1,4 @@
+packages:
+  _namespace_azure_regionsrv_client_addon:
+    package:
+      - cloud-regionsrv-client-addon-azure

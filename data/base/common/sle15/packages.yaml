@@ -39,5 +39,3 @@ packages:
   _namespace_common_zypper_migration:
     package:
       - zypper-migration-plugin
-  package:
-    - p1

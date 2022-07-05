@@ -1,0 +1,44 @@
+packages:
+  _namespace_sle_micro:
+    package:
+      - afterburn
+      - afterburn-dracut
+      - btrfsmaintenance
+      - btrfsprogs
+      - ca-certificates
+      - ca-certificates-mozilla
+      - cockpit-system
+      - cockpit-ws
+      - cockpit
+      - cockpit-wicked
+      - cockpit-dashboard
+      - conntrack-tools
+      - container-selinux
+      - cracklib-dict-small
+      - distribution-release
+      - glibc-locale-base
+      - growpart-generator
+      - ignition
+      - ignition-dracut-grub2
+      - issue-generator
+      - health-checker
+      - health-checker-plugins-MicroOS
+      - hwinfo
+      - less
+      - libnss_usrfiles2
+      - microos-tools
+      - parted
+      - pkgconfig
+      - policycoreutils
+      - rebootmgr
+      - rollback-helper
+      - selinux-policy-targeted
+      - selinux-tools
+      - systemd-presets-branding-SMO
+      - systemd-default-settings-branding-SLE-Micro
+      - SUSE-MicroOS-release
+      - transactional-update
+      - transactional-update-zypp-config
+      - vim-small
+      - yast2-logs
+      - zypper-needs-restarting

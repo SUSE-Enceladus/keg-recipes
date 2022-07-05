@@ -1,0 +1,26 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - csp/ec2/settings/sap/byos
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include: base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - csp/ec2/settings/sap/byos
+        - prodcuts/sap/byos
+config:
+  - _include:
+      - base/common
+      - csp/ec2/settings/sap/byos
+      - products/sap/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - csp/ec2/settings/sap/byos
+      - products/sap/byos

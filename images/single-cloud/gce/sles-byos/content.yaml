@@ -1,0 +1,28 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - csp/gce/settings/sles/byos
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - csp/gce/settings/sles/byos
+        - products/sles/byos
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - csp/gce/settings/sles/byos
+      - products/sles/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - csp/gce/settings/sles/byos
+      - products/sles/byos

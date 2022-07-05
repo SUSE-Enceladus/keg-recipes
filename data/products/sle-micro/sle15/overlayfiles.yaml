@@ -1,0 +1,9 @@
+archive:
+  _namespace_sle_micro_base:
+    _include_overlays:
+      - dracut-growfs
+      - sysctl-enable-ip-forward
+  _namespace_sle_micro_motd:
+    _include_overlays:
+      - motd-addon-byos-chost
+      - motd-caption-chost

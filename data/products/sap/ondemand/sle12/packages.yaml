@@ -1,6 +1,6 @@
 packages:
-  bootstrap:
-    sles4sap-ondemand:
+  _namespace_sap_release:
+    package:
       - sle-live-patching-release
       - sle-live-patching-release-POOL
       - sle-module-hpc-release

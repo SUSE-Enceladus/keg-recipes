@@ -1,4 +1,0 @@
-packages:
-  image:
-    ec2-addon-ecs-docker:
-      - docker-img-store-setup

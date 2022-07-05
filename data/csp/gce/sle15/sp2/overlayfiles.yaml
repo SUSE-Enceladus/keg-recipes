@@ -1,2 +1,2 @@
-overlayfiles:
-  gce-grub: null
+archive:
+  _namespace_gce_grub: null

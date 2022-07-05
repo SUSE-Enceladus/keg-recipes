@@ -1,4 +1,5 @@
-profile:
-  parameters:
-    kernelcmdline:
-      rd.kiwi.debug: None
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        rd.kiwi.debug: []

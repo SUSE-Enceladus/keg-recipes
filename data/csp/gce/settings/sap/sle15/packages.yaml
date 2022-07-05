@@ -1,0 +1,14 @@
+packages:
+  _namespace_gce_google_auth:
+    package:
+      - python3-google-api-python-client
+      - python3-google-auth
+      - python3-google-auth-httplib2
+      - python3-pyroute2
+  _namespace_gce_fence_agents_deps:
+    package:
+      - python3-fasteners
+      - python3-monotonic
+      - python3-oauth2client
+      - python3-oauth2client-gce
+      - python3-pycryptodome

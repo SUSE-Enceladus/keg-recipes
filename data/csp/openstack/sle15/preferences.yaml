@@ -1,0 +1,11 @@
+preferences:
+  type:
+    _attributes:
+      devicepersistency: Null
+      format: qcow2
+      firmware: Null
+      kernelcmdline:
+        console: ["ttyS0,115200n8", "tty0"]
+        NON_PERSISTENT_DEVICE_NAMES: 1
+        multipath: "off"
+      vga: normal
