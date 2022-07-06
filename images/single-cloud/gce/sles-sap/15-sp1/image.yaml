@@ -1,9 +1,8 @@
 include-paths:
   - sle15/sp1
-  - ondemand/sle15/sp1
 image:
   _attributes:
-    name: SLES15-SP1-SAP-Azure
-    displayname: SLES15-SP1-SAP-Azure
+    name: SLES15-SP1-SAP-GCE
+    displayname: SLES15-SP1-SAP-GCE
   description:
     specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP1 guest image for Google Compute Engine"

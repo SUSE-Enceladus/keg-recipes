@@ -1,6 +1,5 @@
 include-paths:
   - sle15
-  - ondemand/sle15
 image:
   _attributes:
     name: SLES15-SAP-Azure
