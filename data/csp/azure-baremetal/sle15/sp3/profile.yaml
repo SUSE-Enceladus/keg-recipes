@@ -1,5 +1,0 @@
-profile:
-  parameters:
-    bootloader: Null
-  bootloader:
-    name: grub2

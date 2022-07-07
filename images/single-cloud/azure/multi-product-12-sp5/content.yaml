@@ -1,0 +1,159 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Basic-On-Demand
+          description: SLES Basic On-Demand image
+      - _attributes:
+          name: Standard-On-Demand
+          description: SLES Standard On-Demand image
+      - _attributes:
+          name: BYOS
+          description: SLES BYOS image
+      - _attributes:
+          name: HPC-On-Demand
+          description: SLES HPC On-Demand image
+      - _attributes:
+          name: HPC-BYOS
+          description: SLES HPC On-Demand image
+      - _attributes:
+          name: SAP-On-Demand
+          description: SLES SAP On-Demand image
+      - _attributes:
+          name: SAP-BYOS
+          description: SLES SAP BYOS image
+  preferences:
+    - _include:
+      - base/common
+    - _attributes:
+        profiles: [Basic-On-Demand]
+      _include:
+        - csp/azure/settings/sles/basic
+    - _attributes:
+        profiles: [Standard-On-Demand]
+      _include:
+        - csp/azure/settings/sles/ondemand
+    - _attributes:
+        profiles: [HPC-On-Demand]
+      _include:
+        - csp/azure/settings/hpc/ondemand
+    - _attributes:
+        profiles: [HPC-BYOS]
+      _include:
+        - csp/azure/settings/hpc/byos
+    - _attributes:
+        profiles: [SAP-On-Demand]
+      _include:
+        - csp/azure/settings/sap/ondemand
+    - _attributes:
+        profiles: [SAP-BYOS]
+      _include:
+        - csp/azure/settings/sap/byos
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+    - _attributes:
+        type: image
+        profiles:
+          - Basic-On-Demand
+          - Standard-On-Demand
+          - HPC-On-Demand
+          - SAP-On-Demand
+      _include:
+        - base/ondemand
+      archive:
+        - _attributes:
+            name: on-demand.tar.gz
+    - _attributes:
+        type: image
+        profiles: [Basic-On-Demand,Standard-On-Demand]
+      _include:
+        - products/sles/ondemand
+    - _attributes:
+        type: image
+        profiles: [Basic-On-Demand]
+      _include:
+        - csp/azure/settings/sles/basic
+    - _attributes:
+        type: image
+        profiles: [Standard-On-Demand]
+      _include:
+        - csp/azure/settings/sles/ondemand
+    - _attributes:
+        type: image
+        profiles: [BYOS]
+      _include:
+        - csp/azure/settings/sles/byos
+        - products/sles/byos
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+    - _attributes:
+        type: image
+        profiles: [HPC-On-Demand]
+      _include:
+        - csp/azure/settings/hpc/ondemand
+        - products/hpc/ondemand
+    - _attributes:
+        type: image
+        profiles: [HPC-BYOS]
+      _include:
+        - csp/azure/settings/hpc/byos
+        - products/hpc/byos
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+    - _attributes:
+        type: image
+        profiles: [SAP-On-Demand]
+      _include:
+        - csp/azure/settings/sap/ondemand
+        - products/sap/ondemand
+    - _attributes:
+        type: image
+        profiles: [SAP-BYOS]
+      _include:
+        - csp/azure/settings/sap/byos
+        - products/sap/byos
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+config:
+  - _include:
+      - base/common
+  - profiles: [Basic-On-Demand]
+    _include:
+      - csp/azure/settings/sles/basic
+  - profiles: [Standard-On-Demand]
+    _include:
+      - csp/azure/settings/sles/ondemand
+  - profiles: [HPC, HPC-On-Demand]
+    _include:
+      - csp/azure/settings/hpc
+  - profiles: [BYOS, SAP-On-Demand, SAP-BYOS]
+    _include:
+      - csp/azure
+  - profiles:
+      - Basic-On-Demand
+      - Standard-On-Demand
+      - HPC-On-Demand
+      - SAP-On-Demand
+    _include:
+      - base/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - csp/azure
+  - name: on-demand.tar.gz
+    _include:
+      - base/ondemand
+  - name: byos.tar.gz
+    _include:
+      - products/sles/byos

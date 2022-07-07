@@ -1,0 +1,8 @@
+include-paths:
+  - sle15
+image:
+  _attributes:
+    name: SLES15-SAP-Azure
+    displayname: SLES15-SAP-Azure
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 15 guest image for Microsoft Azure"

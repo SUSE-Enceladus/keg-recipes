@@ -1,0 +1,25 @@
+packages:
+  _namespace_hardened_base:
+    package:
+      - aide
+      - audit-audispd-plugins
+      - cloud-remediation
+      - firewalld-lang
+      - libfreebl3-hmac
+      - libopenscap25
+      - libpcsclite1
+      - librdkafka1
+      - libsoftokn3-hmac
+      - libxmlsec1-1
+      - libxmlsec1-openssl1
+      - opensc
+      - openscap
+      - openscap-utils
+      - pam_apparmor
+      - pam_pkcs11
+      - pcsc-ccid
+      - pcsc-lite
+      - pcsc-tools
+      - perl-pcsc
+      - scap-security-guide
+      - pcsc-lite

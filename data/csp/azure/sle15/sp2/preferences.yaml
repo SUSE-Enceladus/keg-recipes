@@ -1,0 +1,9 @@
+preferences:
+  type:
+    _attributes:
+      bootloader_console: Null
+      firmware: uefi
+    bootloader:
+      _attributes:
+        console: serial
+        timeout_style: countdown

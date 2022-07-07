@@ -1,6 +1,6 @@
 packages:
-  image:
-    chost:
+  _namespace_chost_base:
+    package:
       - bind-utils
       - ca-certificates
       - ca-certificates-mozilla
@@ -18,13 +18,16 @@ packages:
       - pciutils
       - runc
       - socat
+      - vim
       - vlan
-    chost-btrfsprogs:
+  _namespace_chost_btrfsprogs:
+    package:
       - btrfsmaintenance
       - btrfsprogs
       - docker-img-store-setup
-    chost-fcoe-utils:
+  _namespace_chost_fcoe_utils:
+    package:
       - fcoe-utils
-  bootstrap:
-    chost:
+  _namespace_chost_release:
+    package:
       - sles-release

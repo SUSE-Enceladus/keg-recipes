@@ -1,0 +1,89 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure
+          description: Azure Guest Image
+      - _attributes:
+          name: EC2
+          description: EC2 Guest Image
+      - _attributes:
+          name: GCE
+          description: GCE Guest Image
+  preferences:
+    - _include: base/common
+    - _attributes:
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/sle-micro
+        - products/sle-micro
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/sle-micro
+        - products/sle-micro
+    - _attributes:
+        profiles: [GCE]
+      _include: 
+        - csp/gce/settings/sle-micro
+        - products/sle-micro
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - products/sle-micro
+    - _attributes:
+        type: image
+        profiles: [Azure-Basic, Azure-Standard]
+      _include:
+        - csp/azure/settings/sle-micro
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - products/sle-micro
+  - _profiles: [Azure]
+    _include:
+      - csp/azure/settings/micro-os
+  - _profiles: [EC2]
+    _include:
+      - csp/ec2/settings/micro-os
+  - _profiles: [GCE]
+    _include:
+      - csp/gce/settings/micro-os
+archive:
+  - name: root.tar.gz
+    _include:
+      - products/sle-micro
+  - name: azure.tar.gz
+    _include:
+      - csp/azure/settings/micro-os
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2/settings/micro-os
+  - name: gce.tar.gz
+    _include:
+      - csp/gce/settings/micro-os

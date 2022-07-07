@@ -1,8 +1,6 @@
 packages:
-  image:
-    sles:
+  _namespace_sles_base:
+    package:
       - release-notes-sles
-  bootstrap:
-    sles-release:
       - sles-release
       - sles-release-POOL

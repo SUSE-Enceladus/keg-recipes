@@ -1,23 +1,33 @@
 packages:
-  image:
-    sapcal-addon-x86:
-      - name: glibc-locale-32bit
-        arch: x86_64
-      - name: libcurl4-32bit
-        arch: x86_64
-      - name: libidn11-32bit
-        arch: x86_64
-      - name: libnghttp2-14-32bit
-        arch: x86_64
-      - name: libpsl5-32bit
-        arch: x86_64
-      - name: libssh4-32bit
-        arch: x86_64
-      - name: libuuid1-32bit
-        arch: x86_64
-      - name: libodbc2
-        arch: x86_64
-      - name: libopenssl1_0_0
-        arch: x86_64
-      - name: unixODBC
-        arch: x86_64
+  _namespace_sapcal_addon_x86:
+    package:
+      - _attributes:
+          name: glibc-locale-32bit
+          arch: x86_64
+      - _attributes:
+          name: libcurl4-32bit
+          arch: x86_64
+      - _attributes:
+          name: libidn11-32bit
+          arch: x86_64
+      - _attributes:
+          name: libnghttp2-14-32bit
+          arch: x86_64
+      - _attributes:
+          name: libpsl5-32bit
+          arch: x86_64
+      - _attributes:
+          name: libssh4-32bit
+          arch: x86_64
+      - _attributes:
+          name: libuuid1-32bit
+          arch: x86_64
+      - _attributes:
+          name: libodbc2
+          arch: x86_64
+      - _attributes:
+          name: libopenssl1_0_0
+          arch: x86_64
+      - _attributes:
+          name: unixODBC
+          arch: x86_64

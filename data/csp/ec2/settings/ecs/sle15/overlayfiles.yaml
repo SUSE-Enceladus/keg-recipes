@@ -1,0 +1,4 @@
+archive:
+  _namespace_ecs_motd:
+    _include_overlays:
+      - motd-caption-ecs

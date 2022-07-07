@@ -1,7 +1,8 @@
 packages:
-  image:
-    azure-vli-patch:
+  _namespace_azure_vli_patch:
+    package:
       - patch
-    azure-vli-libxml:
+  _namespace_azure_vli_libxml:
+     package:
       - libxml2
       - libxml2-32bit

@@ -1,0 +1,9 @@
+archive:
+  _namespace_gce_virtio_net:
+    _include_overlays:
+      - module-virtio-net-no-napitx
+  _namespace_gce_hpc_byos:
+    _include_overlays:
+      - security-limits-gce-hpc
+      - sysctl-gce-hpc
+      - tuned-profile-network-latency

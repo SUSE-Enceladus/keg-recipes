@@ -1,4 +1,4 @@
-overlayfiles:
-  susefirewall-rules:
-    include:
+archive:
+  _namespace_azure_li_susefirewall_rules:
+    _include_overlays:
       - sysconfig-susefirewall2-saphostctrl

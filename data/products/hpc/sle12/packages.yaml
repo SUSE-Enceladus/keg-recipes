@@ -1,10 +1,10 @@
 packages:
-  bootstrap:
-    hpc-release:
+  _namespace_hpc_release:
+    package:
       - SLE-HPC-release
       - SLE-HPC-release-POOL
-  image:
-    hpc:
+  _namespace_hpc_base:
+    package:
       - dapl
       - dapl-devel
       - ibacm
@@ -12,8 +12,9 @@ packages:
       - ibvexdmtools
       - libdat2-2
       - libibverbs1
-      - name: libibverbs1-32bit
-        arch: x86_64
+      - _attributes:
+          name: libibverbs1-32bit
+          arch: x86_64
       - librdmacm1
       - openmpi
       - patterns-sles-ofed

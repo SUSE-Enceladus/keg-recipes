@@ -1,8 +1,6 @@
 packages:
-  image:
-    sles:
+  _namespace_sles_base:
+    package:
       - docker
       - release-notes-sles
-  bootstrap:
-    sles-release:
       - sles-release

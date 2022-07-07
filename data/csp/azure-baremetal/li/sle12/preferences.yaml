@@ -1,0 +1,8 @@
+preferences:
+  type:
+    _attributes:
+      bootloader_console: Null
+      firmware: bios
+      kernelcmdline:
+        console: Null
+        mce: ignore_ce

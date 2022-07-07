@@ -1,7 +1,0 @@
-profiles:
-  common:
-    include:
-      - base/common
-      - base/hardened
-      - base/sle
-      - products/sap/byos

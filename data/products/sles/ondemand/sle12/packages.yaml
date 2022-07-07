@@ -1,5 +1,5 @@
 packages:
-  image:
-    sles-ondemand:
+  _namespace_sles_ondemand_base:
+    package:
       - sle-module-hpc-release
       - sle-module-hpc-release-POOL

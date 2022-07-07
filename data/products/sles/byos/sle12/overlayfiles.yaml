@@ -1,4 +1,4 @@
-overlayfiles:
-  sles-motd-byos:
-    include:
+archive:
+  _namespace_sles_motd_byos:
+    _include_overlays:
       - motd-addon-byos

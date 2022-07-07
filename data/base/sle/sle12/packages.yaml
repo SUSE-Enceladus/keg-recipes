@@ -1,10 +1,6 @@
 packages:
-  bootstrap:
-    sle-module-public-cloud:
-      - sle-module-public-cloud-release
-      - sle-module-public-cloud-release-POOL
-  image:
-    sle-common:
+  _namespace_sle_base:
+    package:
       - aaa_base-extras
       - at
       - at-spi2-core
@@ -122,3 +118,7 @@ packages:
       - zip
       - zsh
       - zypper-migration-plugin
+  _namespace_sle_module_public_cloud:
+    package:
+      - sle-module-public-cloud-release
+      - sle-module-public-cloud-release-POOL

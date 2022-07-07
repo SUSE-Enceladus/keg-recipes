@@ -1,0 +1,5 @@
+config:
+  services:
+    gce-cloud-netconfig: Null
+  sysconfig:
+    gce-cloud-netconfig: Null

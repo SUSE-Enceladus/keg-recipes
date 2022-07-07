@@ -1,7 +1,0 @@
-profile:
-  parameters:
-    bootloader_console: serial
-    devicepersistency: by-label
-    firmware: uefi
-    kernelcmdline:
-      NON_PERSISTENT_DEVICE_NAMES: Null

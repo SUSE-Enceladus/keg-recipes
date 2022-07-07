@@ -1,4 +1,4 @@
 packages:
-  image:
-    sap-salt-minion:
+  _namespace_sap_salt_minion:
+    package:
       - salt-minion

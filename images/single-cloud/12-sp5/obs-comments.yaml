@@ -1,3 +1,0 @@
-image-config-comments:
-  obs-multibuild: "OBS-Profiles: @BUILD_FLAVOR@"
-  obs-archs: "OBS-ExclusiveArch: x86_64"

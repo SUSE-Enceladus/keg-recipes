@@ -1,8 +1,0 @@
-packages:
-  image:
-    gce-fence-agents-deps:
-      - python3-fasteners
-      - python3-monotonic
-      - python3-oauth2client
-      - python3-oauth2client-gce
-      - python3-pycryptodome

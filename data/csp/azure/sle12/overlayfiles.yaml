@@ -1,15 +1,15 @@
-overlayfiles:
-  azure-base:
-    include:
+archive:
+  _namespace_azure_base:
+    _include_overlays:
       - cloud-cfg-azure
       - cloud-cfg-disable-network-config
       - motd-addon-waagent
-  azure-emergency-shell:
-    include:
+  _namespace_azure_emergency_shell:
+    _include_overlays:
       - rescue-force-sulogin
-  azure-sysconfig-network:
-    include:
-      - sysconfig-network-plain
-  azure-ioscheduler:
-    include:
+  _namespace_azure_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig
+  _namespace_azure_ioscheduler:
+    _include_overlays:
       - udev-ioscheduler-none

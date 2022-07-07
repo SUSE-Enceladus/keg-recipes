@@ -1,0 +1,17 @@
+config:
+  scripts:
+    sle-micro:
+      - chost-strip-image
+      - microos-add-variant
+      - snapper-microos-config
+      - zypp-disable-multiversion
+      - zypp-set-excludedocs
+      - zypp-set-onlyrequires
+  services:
+    sle-micro:
+      - afterburn-checkin
+      - afterburn-firstboot-checkin
+      - afterburn-sshkeys@
+      - afterburn-sshkeys.target
+      - boot.device-mapper
+      - docker

@@ -1,0 +1,4 @@
+packages:
+  _namespace_ec2_ecs_docker:
+    package:
+      - docker-img-store-setup

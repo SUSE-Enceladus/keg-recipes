@@ -1,0 +1,29 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - csp/azure/settings/sap/ondemand
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include: base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - base/ondemand
+        - csp/azure/settings/sap/ondemand
+        - prodcuts/sap/ondemand
+config:
+  - _include:
+      - base/common
+      - base/ondemand
+      - csp/azure/settings/sap/ondemand
+      - products/sap/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/ondemand
+      - csp/azure/settings/sap/ondemand
+      - products/sap/ondemand

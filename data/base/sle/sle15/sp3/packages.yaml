@@ -1,4 +1,4 @@
 packages:
-  image:
-    zypper-lifecycle-plugin:
+  _namespace_zypper_lifecycle_plugin:
+    package:
       - zypper-lifecycle-plugin

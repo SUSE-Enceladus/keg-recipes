@@ -8,7 +8,7 @@ config:
       - zypp-disable-delta-rpms
       - zypp-disable-multiver-kernel
   files:
-    common-sysconfig:
+    common-files:
       - path: /etc/profile
         append: True
         content: |-

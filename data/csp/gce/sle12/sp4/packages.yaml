@@ -1,4 +1,4 @@
 packages:
-  image:
-    gce-shim:
+  _namespace_gce_shim:
+    package:
       - shim

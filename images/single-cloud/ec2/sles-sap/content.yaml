@@ -1,0 +1,29 @@
+image:
+  preferences:
+    _include:
+      - base/common
+      - csp/ec2/settings/sap/ondemand
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include: base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/ondemand
+        - base/sle
+        - csp/ec2/settings/sap/ondemand
+        - prodcuts/sap/ondemand
+config:
+  - _include:
+      - base/common
+      - base/ondemand
+      - csp/ec2/settings/sap/ondemand
+      - products/sap/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/ondemand
+      - csp/ec2/settings/sap/ondemand
+      - products/sap/ondemand

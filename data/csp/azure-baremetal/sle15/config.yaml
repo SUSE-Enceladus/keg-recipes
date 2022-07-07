@@ -1,6 +1,6 @@
 config:
   files:
-    azure-baremetal:
+    azure-baremetal-config:
       - path: /etc/modprobe.d/sunrpc.conf
         content: |-
           # Module for sunrpc
@@ -12,14 +12,14 @@ config:
           * soft nofile 32768
           * hard nofile 65536
   scripts:
-    azure-baremetal:
+    azure-baremetal-scripts:
       - azure-li-create-service-triggers
       - increase-idmapd-verbosity
       - ssh-enable-keep-alive
       - sudo-disable-targetpw
       - systemd-set-default-target-multi-user
   services:
-    azure-baremetal:
+    azure-baremetal-services:
       - azure-li-call
       - azure-li-cleanup
       - azure-li-config-lookup
@@ -36,7 +36,7 @@ config:
       - multipathd
     vm-services: Null
   sysconfig:
-    azure-baremetal:
+    azure-baremetal-set-hostname:
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "yes"

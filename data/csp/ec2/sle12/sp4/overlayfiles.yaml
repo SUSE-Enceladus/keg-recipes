@@ -1,7 +1,7 @@
-overlayfiles:
-  ec2-dracut-opts:
-    include:
+archive:
+  _namespace_ec2_dracut_opts:
+    _include_overlays:
       - dracut-virtio-scsi
-  ec2-nvme-timeout:
-    include:
+  _namespace_ec2_nvme_timeout:
+    _include_overlays:
       - udev-nvme-timeout

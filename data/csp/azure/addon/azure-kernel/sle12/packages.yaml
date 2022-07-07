@@ -1,5 +1,0 @@
-packages:
-  image:
-    azure-kernel:
-      - name: kernel-azure
-        arch: x86_64
