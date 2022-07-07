@@ -16,14 +16,14 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure
+        - csp/azure/settings/sles/byos
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/sles/byos
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce
+      _include: csp/gce/settings/sles/byos
   packages:
     - _attributes:
        type: bootstrap
@@ -78,7 +78,7 @@ archive:
     _include:
       - base/common
       - base/sle
-      - products/sles
+      - products/sles/byos
   - name: azure.tar.gz
     _include:
       - csp/azure

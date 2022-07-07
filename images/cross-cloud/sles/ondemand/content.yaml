@@ -19,18 +19,18 @@ image:
     - _attributes:
         profiles: [Azure-Basic]
       _include:
-        - csp/azure/sles/basic
+        - csp/azure/settings/sles/basic
     - _attributes:
         profiles: [Azure-Standard]
       _include:
-        - csp/azure/sles/ondemand
+        - csp/azure/settings/sles/ondemand
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/sles/ondemand
+        - csp/ec2/settings/sles/ondemand
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/sles
+      _include: csp/gce/settings/sles/ondemand
   packages:
     - _attributes:
        type: bootstrap
@@ -46,7 +46,7 @@ image:
         type: image
         profiles: [Azure-Basic,Azure-Standard]
       _include:
-        - csp/azure/settings/sles
+        - csp/azure/settings/sles/ondemand
       archive:
         - _attributes:
             name: azure.tar.gz
