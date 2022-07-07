@@ -1,0 +1,8 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        console: [tty1,console=ttyAMA0]
+        dis_ucode_ldr: Null
+        earlycon: "pl011,0xeffeb000"
+        initcall_blacklist: arm_pmu_acpi_init
