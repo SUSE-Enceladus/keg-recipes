@@ -16,14 +16,14 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure
+        - csp/azure/settings/suma-proxy/byos
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/suma-proxy/byos
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce
+      _include: csp/gce/settings/suma-proxy/byos
   packages:
     - _attributes:
        type: bootstrap

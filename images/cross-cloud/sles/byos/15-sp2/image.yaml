@@ -7,4 +7,4 @@ image:
     name: SLES15-SP2-BYOS
     displayname: SLES15-SP2-BYOS
   description:
-    specification: "SUSE Linux Enterprise Service 15 SP2 BYOS guest image"
+    specification: "SUSE Linux Enterprise Server 15 SP2 BYOS guest image"

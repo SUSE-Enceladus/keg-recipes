@@ -5,6 +5,7 @@ config:
       - set-password-policy
       - ssh-enable-keep-alive
       - ssh-disable-challenge-response-auth
+      - sudo-disable-targetpw
     azure-default-kernel-log-level:
       - keep-default-kernel-log-level
     azure-waagent:

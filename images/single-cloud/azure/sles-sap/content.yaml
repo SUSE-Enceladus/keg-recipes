@@ -14,7 +14,7 @@ image:
         - base/sle
         - base/ondemand
         - csp/azure/settings/sap/ondemand
-        - prodcuts/sap/ondemand
+        - products/sap/ondemand
 config:
   - _include:
       - base/common

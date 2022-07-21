@@ -13,7 +13,7 @@ image:
         - base/common
         - base/sle
         - csp/ec2/settings/sap/byos
-        - prodcuts/sap/byos
+        - products/sap/byos
 config:
   - _include:
       - base/common

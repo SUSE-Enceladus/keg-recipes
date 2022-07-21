@@ -9,4 +9,4 @@ image:
     name: SLES15-SP4-BYOS
     displayname: SLES15-SP4-BYOS
   description:
-    specification: "SUSE Linux Enterprise Service 15 SP4 BYOS guest image"
+    specification: "SUSE Linux Enterprise Server 15 SP4 BYOS guest image"

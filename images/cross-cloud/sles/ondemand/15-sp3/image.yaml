@@ -8,4 +8,4 @@ image:
     name: SLES15-SP3
     displayname: SLES15-SP3
   description:
-    specification: "SUSE Linux Enterprise Service 15 SP3 guest image"
+    specification: "SUSE Linux Enterprise Server 15 SP3 guest image"
