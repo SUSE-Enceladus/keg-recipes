@@ -2,7 +2,7 @@ include-paths:
   - sle15/sp1
 image:
   _attributes:
-    name: SLES15-SP1-SAP-Azure-BYOS
-    displayname: SLES15-SP1-SAP-Azure-BYOS
+    name: SLES15-SP1-SAP-GCE-BYOS
+    displayname: SLES15-SP1-SAP-GCE-BYOS
   description:
     specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP1 BYOS guest image for Google Compute Engine"

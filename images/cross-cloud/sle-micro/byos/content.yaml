@@ -15,17 +15,17 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure/settings/sle-micro
+        - csp/azure/settings/micro-os
         - products/sle-micro
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/settings/sle-micro
+        - csp/ec2/settings/micro-os
         - products/sle-micro
     - _attributes:
         profiles: [GCE]
       _include: 
-        - csp/gce/settings/sle-micro
+        - csp/gce/settings/micro-os
         - products/sle-micro
   packages:
     - _attributes:

@@ -16,14 +16,14 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure/settings/sapcal
+        - csp/azure/settings/sapcal/ondemand
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/settings/sapcal
+        - csp/ec2/settings/sapcal/ondemand
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/sapcal
+      _include: csp/gce/settings/sapcal/ondemand
   packages:
     - _attributes:
        type: bootstrap

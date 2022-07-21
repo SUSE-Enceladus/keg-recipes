@@ -19,6 +19,7 @@ config:
   - _include:
       - base/common
       - base/ondemand
+      - csp/ec2/settings/sles/ondemand
       - products/sles/ondemand
 archive:
   - name: root.tar.gz

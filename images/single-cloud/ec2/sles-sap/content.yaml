@@ -14,7 +14,7 @@ image:
         - base/ondemand
         - base/sle
         - csp/ec2/settings/sap/ondemand
-        - prodcuts/sap/ondemand
+        - products/sap/ondemand
 config:
   - _include:
       - base/common

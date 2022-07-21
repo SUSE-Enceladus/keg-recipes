@@ -17,7 +17,7 @@ image:
     - _attributes:
         profiles: [Production]
       _include:
-        - csp/azure-baremetal/li/devel
+        - csp/azure-baremetal/li
   packages:
     - _attributes:
        type: bootstrap
@@ -32,6 +32,7 @@ image:
         - products/sap
 config:
   - _include:
+      - base/common
       - csp/azure-baremetal/li
       - products/sap
 archive:

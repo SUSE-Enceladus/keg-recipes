@@ -9,4 +9,4 @@ image:
     name: SLES15-SP4
     displayname: SLES15-SP4
   description:
-    specification: "SUSE Linux Enterprise Service 15 SP4 guest image"
+    specification: "SUSE Linux Enterprise Server 15 SP4 guest image"

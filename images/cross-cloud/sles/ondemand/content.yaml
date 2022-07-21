@@ -3,16 +3,16 @@ image:
     profile:
       - _attributes:
           name: Azure-Basic
-          description: Azure configration
+          description: Azure configuration
       - _attributes:
           name: Azure-Standard
-          description: Azure configration
+          description: Azure configuration
       - _attributes:
           name: EC2
-          description: EC2 configration
+          description: EC2 configuration
       - _attributes:
           name: GCE
-          description: GCE configration
+          description: GCE configuration
   preferences:
     - _include:
         - base/common
