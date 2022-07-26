@@ -27,6 +27,10 @@ image:
       _include:
         - csp/gce/settings/sles/ondemand
     - _attributes:
+        profiles: [BYOS]
+      _include:
+        - csp/gce/settings/sles/byos
+    - _attributes:
         profiles: [HPC-On-Demand]
       _include:
         - csp/gce/settings/hpc/ondemand
