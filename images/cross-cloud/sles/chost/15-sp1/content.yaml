@@ -35,6 +35,9 @@ image:
     - _attributes:
         profiles: [GCE]
       _include: csp/gce/settings/chost
+    - _attributes:
+        profiles: [OpenStack]
+      _include: csp/openstack/settings/chost
   packages:
     - _attributes:
        type: bootstrap
@@ -77,6 +80,11 @@ image:
       archive:
         - _attributes:
             name: gce.tar.gz
+    - _attributes:
+        type: image
+        profiles: [OpenStack]
+      _include:
+        - csp/openstack/settings/chost
 config:
   - _include:
       - base/common
@@ -93,6 +101,9 @@ config:
   - profiles: [GCE]
     _include:
       - csp/gce/settings/chost
+  - profiles: [OpenStack]
+    _include:
+      - csp/openstack/settings/chost
 archive:
   - name: root.tar.gz
     _include:
