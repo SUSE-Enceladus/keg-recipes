@@ -39,7 +39,7 @@ image:
         - products/sle-micro
     - _attributes:
         type: image
-        profiles: [Azure-Basic, Azure-Standard]
+        profiles: [Azure]
       _include:
         - csp/azure/settings/sle-micro
       archive:
