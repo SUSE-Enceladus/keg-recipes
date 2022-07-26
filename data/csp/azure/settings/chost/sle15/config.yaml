@@ -5,6 +5,7 @@ config:
     waagent-enable-custom-data:
       - waagent-enable-custom-data
   services:
+    azure-cloud-netconfig: Null
     azure-regionsrv-timer: Null
   sysconfig:
     azure-cloud-netconfig: Null
