@@ -2,6 +2,7 @@ config:
   scripts:
     azure-waagent: Null
     azure-default-kernel-log-level: Null
+    azure-dhclient-timeout: Null
   services:
     azure-afterburn-checkin:
       - afterburn-checkin

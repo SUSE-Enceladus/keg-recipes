@@ -23,7 +23,6 @@ packages:
     package:
       - azure-cli
       - lsscsi
-      - python3-azure-sdk
       - python3-azuremetadata
   _namespace_azure_registration:
     package:

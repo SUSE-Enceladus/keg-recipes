@@ -1,12 +1,13 @@
 config:
   scripts:
     azure-scripts:
-      - dhclient-increase-timeout
       - set-password-policy
       - ssh-enable-keep-alive
       - ssh-disable-challenge-response-auth
     azure-default-kernel-log-level:
       - keep-default-kernel-log-level
+    azure-dhclient-timeout:
+      - dhclient-increase-timeout
     azure-waagent:
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types

@@ -25,3 +25,6 @@ image:
     - _attributes:
         profiles: [GCE]
       _include: csp/gce/settings/chost
+    - _attributes:
+        profiles: [OpenStack]
+      _include: csp/openstack/settings/chost

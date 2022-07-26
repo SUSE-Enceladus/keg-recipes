@@ -34,6 +34,10 @@ image:
       _include:
         - csp/azure/settings/sles/ondemand
     - _attributes:
+        profiles: [BYOS]
+      _include:
+        - csp/azure/settings/sles/byos
+    - _attributes:
         profiles: [HPC-On-Demand]
       _include:
         - csp/azure/settings/hpc/ondemand
