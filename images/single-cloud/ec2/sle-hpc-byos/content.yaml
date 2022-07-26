@@ -3,6 +3,7 @@ image:
     _include:
       - base/common
       - base/csp
+      - csp/ec2/settings/hpc/byos
   packages:
     - _attributes:
         type: bootstrap
