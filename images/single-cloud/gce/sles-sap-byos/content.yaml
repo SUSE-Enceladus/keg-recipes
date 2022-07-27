@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/gce/settings/sap/byos
+    - _include:
+        - base/common
+        - csp/gce/settings/sap/byos
   packages:
     - _attributes:
         type: bootstrap

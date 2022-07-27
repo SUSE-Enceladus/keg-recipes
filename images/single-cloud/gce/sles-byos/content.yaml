@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/gce/settings/sles/byos
+    - _include:
+        - base/common
+        - csp/gce/settings/sles/byos
   packages:
     - _attributes:
         type: bootstrap

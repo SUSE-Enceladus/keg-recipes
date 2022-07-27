@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/azure/settings/sap/byos
+    - _include:
+        - base/common
+        - csp/azure/settings/sap/byos
   packages:
     - _attributes:
         type: bootstrap

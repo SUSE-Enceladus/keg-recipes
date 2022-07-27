@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/azure/settings/sles/byos
+    - _include:
+        - base/common
+        - csp/azure/settings/sles/byos
   packages:
     - _attributes:
         type: bootstrap
