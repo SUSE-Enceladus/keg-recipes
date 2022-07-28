@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-       - base/common
-       - csp/ec2/settings/chost
+    - _include:
+        - base/common
+        - csp/ec2/settings/chost
   packages:
     - _attributes:
         type: bootstrap
@@ -20,7 +20,7 @@ config:
       - csp/ec2/settings/chost
       - products/chost
 archive:
-  - _name: root.tar.gz
+  - name: root.tar.gz
     _include:
       - csp/ec2/settings/chost
       - products/chost

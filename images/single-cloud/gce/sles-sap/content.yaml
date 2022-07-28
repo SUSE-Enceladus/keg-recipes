@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/gce/settings/sap/ondemand
+    - _include:
+        - base/common
+        - csp/gce/settings/sap/ondemand
   packages:
     - _attributes:
         type: bootstrap

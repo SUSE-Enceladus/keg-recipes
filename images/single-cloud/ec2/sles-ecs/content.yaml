@@ -1,8 +1,8 @@
 image:
   preferences:
-    _include:
-      - base/common
-      - csp/ec2/settings/sles/ondemand
+    - _include:
+        - base/common
+        - csp/ec2/settings/sles/ondemand
   packages:
     - _attributes:
         type: bootstrap
