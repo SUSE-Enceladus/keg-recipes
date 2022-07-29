@@ -33,6 +33,7 @@ image:
         type: image
       _include:
         - base/common
+        - base/ondemand
         - base/sle
         - products/sapcal
         - products/sles/byos
@@ -63,6 +64,7 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sapcal
       - products/sles/byos
@@ -79,6 +81,7 @@ archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sapcal
       - products/sles/byos
