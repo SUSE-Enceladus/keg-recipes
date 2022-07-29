@@ -33,6 +33,7 @@ image:
         type: image
       _include:
         - base/common
+        - base/ondemand
         - base/sle
         - products/sap/ondemand
     - _attributes:
@@ -62,6 +63,7 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sap/ondemand
   - profiles: [Azure]
@@ -77,6 +79,7 @@ archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sap/ondemand
   - name: azure.tar.gz
