@@ -8,6 +8,6 @@ packages:
       - sle-module-legacy-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release
-  _namespace_sle_module-cap-tools:
+  _namespace_sle_module_cap_tools:
     package:
       - sle-module-cap-tools-release
