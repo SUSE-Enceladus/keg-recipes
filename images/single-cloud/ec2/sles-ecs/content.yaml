@@ -13,17 +13,17 @@ image:
       _include:
         - base/common
         - base/ondemand
-        - csp/ec2/settings/sles/ondemand
+        - csp/ec2/settings/ecs/ondemand
         - products/sles/ondemand
 config:
   - _include:
       - base/common
       - base/ondemand
-      - csp/ec2/settings/sles/ondemand
+      - csp/ec2/settings/ecs/ondemand
       - products/sles/ondemand
 archive:
   - name: root.tar.gz
     _include:
-      - csp/ec2/settings/sles/ondemand
+      - csp/ec2/settings/ecs/ondemand
       - base/ondemand
       - products/sles/ondemand
