@@ -63,7 +63,7 @@ config:
   - _include:
       - base/common
       - base/sle
-      - products/hpc
+      - products/hpc/byos
   - profiles: [Azure]
     _include:
       - csp/azure/settings/hpc/byos

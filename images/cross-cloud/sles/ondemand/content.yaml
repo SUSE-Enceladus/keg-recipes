@@ -72,7 +72,7 @@ config:
       - base/common
       - base/ondemand
       - base/sle
-      - products/sles
+      - products/sles/ondemand
   - profiles: [Azure-Basic]
     _include:
       - csp/azure/settings/sles/basic
@@ -91,7 +91,7 @@ archive:
       - base/common
       - base/ondemand
       - base/sle
-      - products/sles
+      - products/sles/ondemand
   - name: azure.tar.gz
     _include:
       - csp/azure
