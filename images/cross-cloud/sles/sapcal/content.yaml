@@ -36,7 +36,7 @@ image:
         - base/ondemand
         - base/sle
         - products/sapcal
-        - products/sles/byos
+        - products/sles
     - _attributes:
         type: image
         profiles: [Azure]
@@ -67,7 +67,7 @@ config:
       - base/ondemand
       - base/sle
       - products/sapcal
-      - products/sles/byos
+      - products/sles
   - profiles: [Azure]
     _include:
       - csp/azure/settings/sapcal
