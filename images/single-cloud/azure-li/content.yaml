@@ -39,4 +39,4 @@ archive:
   - name: root.tar.gz
     _include:
       - csp/azure-baremetal/li
-      - products/sap/byos
+      - products/sap
