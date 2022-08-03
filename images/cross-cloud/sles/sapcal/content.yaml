@@ -84,7 +84,7 @@ archive:
       - base/ondemand
       - base/sle
       - products/sapcal
-      - products/sles/byos
+      - products/sles
   - name: azure.tar.gz
     _include:
       - csp/azure/settings/sapcal
