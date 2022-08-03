@@ -2,7 +2,6 @@ image:
   preferences:
     - _include:
         - base/common
-        - products/chost
     - _attributes:
         profiles: [Aliyun]
       _include:
@@ -24,7 +23,9 @@ image:
         - csp/ec2/settings/chost
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/chost
+      _include:
+        - csp/gce/settings/chost
     - _attributes:
         profiles: [OpenStack]
-      _include: csp/openstack/settings/chost
+      _include:
+        - csp/openstack/settings/chost

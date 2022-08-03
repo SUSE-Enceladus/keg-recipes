@@ -19,7 +19,6 @@ image:
   preferences:
     - _include:
         - base/common
-        - products/chost
     - _attributes:
         profiles: [Aliyun]
       _include:
