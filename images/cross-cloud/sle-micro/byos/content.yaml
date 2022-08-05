@@ -41,7 +41,7 @@ image:
         type: image
         profiles: [Azure]
       _include:
-        - csp/azure/settings/sle-micro
+        - csp/azure/settings/micro-os
       archive:
         - _attributes:
             name: azure.tar.gz
@@ -49,7 +49,7 @@ image:
         type: image
         profiles: [EC2]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/micro-os
       archive:
         - _attributes:
             name: ec2.tar.gz
@@ -57,7 +57,7 @@ image:
         type: image
         profiles: [GCE]
       _include:
-        - csp/gce
+        - csp/gce/settings/micro-os
       archive:
         - _attributes:
             name: gce.tar.gz
