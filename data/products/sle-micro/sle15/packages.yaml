@@ -1,5 +1,8 @@
 packages:
   _namespace_sle_micro:
+    namedCollection:
+      - _attributes:
+          name: microos-salt_minion
     package:
       - afterburn
       - afterburn-dracut
