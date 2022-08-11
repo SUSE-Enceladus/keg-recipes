@@ -3,6 +3,6 @@ archive:
     _include_overlays:
       - efi-startup
       - modprobe-backlist-azure-vli
-  _namespace_azure_vli_susefirewallrules:
+  _namespace_azure_vli_susefirewall_rules:
     _include_overlays:
       - sysconfig-susefirewall2-saphostctrl-ssh-dns

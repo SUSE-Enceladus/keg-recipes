@@ -33,9 +33,10 @@ image:
         type: image
       _include:
         - base/common
+        - base/ondemand
         - base/sle
         - products/sapcal
-        - products/sles/byos
+        - products/sles
     - _attributes:
         type: image
         profiles: [Azure]
@@ -63,9 +64,10 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sapcal
-      - products/sles/byos
+      - products/sles
   - profiles: [Azure]
     _include:
       - csp/azure/settings/sapcal
@@ -79,9 +81,10 @@ archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/sapcal
-      - products/sles/byos
+      - products/sles
   - name: azure.tar.gz
     _include:
       - csp/azure/settings/sapcal

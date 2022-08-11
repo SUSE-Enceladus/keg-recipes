@@ -30,3 +30,5 @@ config:
       - cloud-init
       - cloud-init-local
       - waagent
+    azure-regionsrv-timer:
+      - regionsrv-enabler-azure.timer

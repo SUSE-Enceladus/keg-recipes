@@ -1,5 +1,5 @@
 packages:
-  _namespace_sap_release:
+  _namespace_sap_ondemand_release:
     package:
       - sle-ha-release
       - sle-module-live-patching-release

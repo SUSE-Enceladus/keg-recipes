@@ -40,6 +40,7 @@ image:
         type: image
       _include:
         - base/common
+        - base/ondemand
         - base/sle
         - products/sles/ondemand
     - _attributes:
@@ -69,8 +70,9 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
-      - products/sles
+      - products/sles/ondemand
   - profiles: [Azure-Basic]
     _include:
       - csp/azure/settings/sles/basic
@@ -87,8 +89,9 @@ archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/ondemand
       - base/sle
-      - products/sles
+      - products/sles/ondemand
   - name: azure.tar.gz
     _include:
       - csp/azure

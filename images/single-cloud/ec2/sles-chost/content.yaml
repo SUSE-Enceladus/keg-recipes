@@ -3,6 +3,7 @@ image:
     - _include:
         - base/common
         - csp/ec2/settings/chost
+        - products/chost
   packages:
     - _attributes:
         type: bootstrap

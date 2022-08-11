@@ -4,5 +4,6 @@ preferences:
       kernelcmdline:
         console: [tty1, ttyAMA0]
         dis_ucode_ldr: Null
-        earlycon: "pl011,0xeffeb000"
+        earlycon: "pl011,0xeffec000"
+        earlyprintk: Null
         initcall_blacklist: arm_pmu_acpi_init

@@ -63,6 +63,7 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/hpc/ondemand
   - profiles: [Azure]
@@ -78,6 +79,7 @@ archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/hpc/ondemand
   - name: azure.tar.gz

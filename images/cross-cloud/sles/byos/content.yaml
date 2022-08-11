@@ -34,7 +34,7 @@ image:
       _include:
         - base/common
         - base/sle
-        - products/sles
+        - products/sles/byos
     - _attributes:
         type: image
         profiles: [Azure]
@@ -63,7 +63,7 @@ config:
   - _include:
       - base/common
       - base/sle
-      - products/sles
+      - products/sles/byos
   - profiles: [Azure]
     _include:
       - csp/azure

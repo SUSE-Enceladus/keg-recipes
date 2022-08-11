@@ -16,14 +16,14 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure/settings/suma-proxy/byos
+        - csp/azure/settings/suma-proxy
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/settings/suma-proxy/byos
+        - csp/ec2/settings/suma-proxy
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/suma-proxy/byos
+      _include: csp/gce/settings/suma-proxy
   packages:
     - _attributes:
        type: bootstrap
@@ -39,7 +39,7 @@ image:
         type: image
         profiles: [Azure]
       _include:
-        - csp/azure
+        - csp/azure/settings/suma-proxy
       archive:
         - _attributes:
             name: azure.tar.gz
@@ -66,7 +66,7 @@ config:
       - products/suse-manager/proxy
   - profiles: [Azure]
     _include:
-      - csp/azure
+      - csp/azure/settings/suma-proxy
   - profiles: [EC2]
     _include:
       - csp/ec2

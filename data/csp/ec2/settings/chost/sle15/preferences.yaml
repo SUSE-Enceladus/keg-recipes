@@ -2,6 +2,4 @@ preferences:
   type:
     _attributes:
       kernelcmdline:
-        cgroup_enable: memory
         memhp_default_state: offline
-        swapaccount: 1

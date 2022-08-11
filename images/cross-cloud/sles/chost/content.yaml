@@ -19,25 +19,31 @@ image:
   preferences:
     - _include:
         - base/common
-        - products/chost
     - _attributes:
         profiles: [Aliyun]
       _include:
         - csp/aliyun/settings/chost
+        - products/chost
     - _attributes:
         profiles: [Azure]
       _include:
         - csp/azure/settings/chost
+        - products/chost
     - _attributes:
         profiles: [EC2]
       _include:
         - csp/ec2/settings/chost
+        - products/chost
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/chost
+      _include:
+        - csp/gce/settings/chost
+        - products/chost
     - _attributes:
         profiles: [OpenStack]
-      _include: csp/openstack/settings/chost
+      _include:
+        - csp/openstack/settings/chost
+        - products/chost
   packages:
     - _attributes:
        type: bootstrap

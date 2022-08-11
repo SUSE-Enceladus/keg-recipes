@@ -16,14 +16,14 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure/settings/suma-server/byos
+        - csp/azure/settings/suma-server
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/settings/suma-server/byos
+        - csp/ec2/settings/suma-server
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/suma-server/byos
+      _include: csp/gce/settings/suma-server
   packages:
     - _attributes:
        type: bootstrap
@@ -39,7 +39,7 @@ image:
         type: image
         profiles: [Azure]
       _include:
-        - csp/azure
+        - csp/azure/settings/suma-server
       archive:
         - _attributes:
             name: azure.tar.gz
@@ -66,7 +66,7 @@ config:
       - products/suse-manager/server
   - profiles: [Azure]
     _include:
-      - csp/azure
+      - csp/azure/settings/suma-server
   - profiles: [EC2]
     _include:
       - csp/ec2
