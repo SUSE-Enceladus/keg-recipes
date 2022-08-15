@@ -9,6 +9,7 @@ packages:
       - bc
       - binutils
       - blktrace
+      - cifs-utils
       - command-not-found
       - crash
       - cronie
@@ -39,6 +40,7 @@ packages:
       - mozilla-nss-certs
       - netcat-openbsd
       - nfsidmap
+      - nfs-client
       - nfs-kernel-server
       - nscd
       - openldap2-client
@@ -50,9 +52,11 @@ packages:
       - screen
       - sle-module-public-cloud-release
       - strace
+      - supportutils-plugin-suse-public-cloud
       - system-user-mail
       - systemd-sysvinit
       - tcpd
+      - tcpdump
       - tcsh
       - telnet
       - vim

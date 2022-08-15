@@ -4,6 +4,7 @@ packages:
       - bind-utils
       - ca-certificates
       - ca-certificates-mozilla
+      - cifs-utils
       - conntrack-tools
       - containerd
       - containerd-ctr
@@ -14,10 +15,13 @@ packages:
       - jq
       - less
       - libnss_usrfiles2
+      - nfs-client
       - open-iscsi
       - pciutils
       - runc
       - socat
+      - supportutils-plugin-suse-public-cloud
+      - tcpdump
       - vim
       - vlan
   _namespace_chost_btrfsprogs:
