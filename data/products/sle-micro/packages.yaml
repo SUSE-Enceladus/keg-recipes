@@ -5,7 +5,6 @@ packages:
           name: microos-salt_minion
     package:
       - afterburn
-      - afterburn-dracut
       - btrfsmaintenance
       - btrfsprogs
       - ca-certificates
@@ -14,11 +13,11 @@ packages:
       - cockpit-ws
       - cockpit
       - cockpit-wicked
-      - cockpit-dashboard
       - conntrack-tools
       - container-selinux
       - cracklib-dict-small
       - distribution-release
+      - docker
       - glibc-locale-base
       - growpart-generator
       - ignition
@@ -43,5 +42,6 @@ packages:
       - transactional-update
       - transactional-update-zypp-config
       - vim-small
+      - vlan
       - yast2-logs
       - zypper-needs-restarting

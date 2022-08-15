@@ -1,6 +1,6 @@
 config:
   scripts:
-    sle-micro:
+    sle-micro-scripts:
       - chost-strip-image
       - microos-add-variant
       - snapper-microos-config
@@ -8,10 +8,15 @@ config:
       - zypp-set-excludedocs
       - zypp-set-onlyrequires
   services:
-    sle-micro:
+    sle-micro-services:
       - afterburn-checkin
       - afterburn-firstboot-checkin
       - afterburn-sshkeys@
       - afterburn-sshkeys.target
       - boot.device-mapper
       - docker
+  sysconfig:
+    sle-micro-sysconig:
+      - file: /etc/sysconfig/network/config
+        name: WICKED_DEBUG
+        value: "ifconfig,dhcp,autoip,ipv4,ipv6"
