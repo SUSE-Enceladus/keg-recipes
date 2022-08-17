@@ -1,0 +1,13 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+  - sle15/sp5
+image:
+  _attributes:
+    schemaversion: "7.2"
+    name: SLES15-SP5-CHOST-BYOS
+    displayname: SLES15-SP5-CHOST-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP5 BYOS guest image optimized as container host"
