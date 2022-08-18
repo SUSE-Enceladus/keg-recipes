@@ -3,3 +3,8 @@ packages:
     manager-server-deps:
       # avoid log4j12-mini
       - log4j12
+      # direct inlcude to avoid picking classpathx-mail instead of
+      # javamail which does not work with spacewalk-java
+      - javamail
+      # needed but is only recommend
+      - libtcnative-1-0
