@@ -14,7 +14,7 @@ packages:
       - release-notes-sles
     manager-server-deps:
       - antlr3-runtime
-      # direct inlcude to avoid picking classpathx-mail instead of
+      # direct include to avoid picking classpathx-mail instead of
       # javamail which does not work with spacewalk-java
       - javamail
       - log4j12
