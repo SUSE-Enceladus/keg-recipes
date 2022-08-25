@@ -7,7 +7,7 @@ include-paths:
 image:
   _attributes:
     schemaversion: "7.2"
-    name: SLES15-SP4-BYOS-Hardened
-    displayname: SLES15-SP4-BYOS-Hardended
+    name: SLES15-SP4-Hardened-BYOS
+    displayname: SLES15-SP4-Hardended-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 15 SP4 BYOS hardened guest image"
