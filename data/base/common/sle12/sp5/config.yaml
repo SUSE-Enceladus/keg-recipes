@@ -7,13 +7,6 @@ config:
           # yast in Public Cloud images fix
           NCURSES_NO_UTF8_ACS=1
           export NCURSES_NO_UTF8_ACS
-      - path: /etc/zypp/locks
-        append: True
-        content: |-
-          type: package
-          match_type: glob
-          case_sensitive: on
-          solvable_name: plymouth*
 setup:
   scripts:
     remove-dbus-machine-id:

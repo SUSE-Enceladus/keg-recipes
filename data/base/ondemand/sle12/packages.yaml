@@ -5,6 +5,8 @@ packages:
       - sle-module-adv-systems-management-release-POOL
       - sle-module-containers-release
       - sle-module-containers-release-POOL
+      - sle-module-hpc-release
+      - sle-module-hpc-release-POOL
       - sle-module-legacy-release
       - sle-module-legacy-release-POOL
       - sle-module-toolchain-release
