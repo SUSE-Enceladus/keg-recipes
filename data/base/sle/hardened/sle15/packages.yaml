@@ -3,7 +3,6 @@ packages:
     package:
       - aide
       - audit-audispd-plugins
-      - cloud-remediation
       - firewalld-lang
       - libfreebl3-hmac
       - libopenscap25
