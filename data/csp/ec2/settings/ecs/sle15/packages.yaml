@@ -8,6 +8,7 @@ packages:
       - cronie
       - docker-img-store-setup
       - ethtool
+      - hostinfo
       - iproute2
       - irqbalance
       - krb5-client
