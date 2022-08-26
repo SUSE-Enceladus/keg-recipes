@@ -3,6 +3,7 @@ config:
     common-config:
       - generate-motd
       - polkit-set-default-privs
+      - remove-iscsi-config
       - remove-root-pw
       - set-prodlink
       - zypp-disable-delta-rpms

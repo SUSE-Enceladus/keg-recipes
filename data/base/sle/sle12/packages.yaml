@@ -26,6 +26,7 @@ packages:
       - expect
       - fping
       - glibc-i18ndata
+      - hostinfo
       - icmpinfo
       - irqbalance
       - kdump

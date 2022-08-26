@@ -28,6 +28,7 @@ packages:
       - fonts-config
       - fping
       - glibc-i18ndata
+      - hostinfo
       - iproute2
       - irqbalance
       - krb5-client
