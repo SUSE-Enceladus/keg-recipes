@@ -1,0 +1,4 @@
+packages:
+  _namespace_hardened_sle15:
+    package:
+      - pam_apparmor
