@@ -63,6 +63,7 @@ image:
       _include:
         - base/common
         - base/sle
+        - csp/azure
     - _attributes:
         type: image
         profiles:
@@ -77,72 +78,60 @@ image:
             name: on-demand.tar.gz
     - _attributes:
         type: image
-        profiles: [Basic-On-Demand,Standard-On-Demand]
+        profiles: [Basic-On-Demand, Standard-On-Demand]
       _include:
         - products/sles/ondemand
     - _attributes:
         type: image
-        profiles: [Basic-On-Demand]
-      _include:
-        - csp/azure/settings/sles/basic
-    - _attributes:
-        type: image
-        profiles: [Standard-On-Demand]
-      _include:
-        - csp/azure/settings/sles/ondemand
-    - _attributes:
-        type: image
         profiles: [BYOS]
       _include:
-        - csp/azure/settings/sles/byos
-        - products/sles/byos
+        - products/sles
+    - _attributes:
+        type: image
+        profiles: [Basic-On-Demand, Standard-On-Demand, HPC-On-Demand]
+      _namespace_kernel_azure:
+        package:
+          - _attributes:
+              name: kernel-azure
+    - _attributes:
+        type: image
+        profiles: [BYOS, HPC-BYOS, SAP-BYOS, SAP-On-Demand]
+      _namespace_kernel_default:
+        package:
+          - _attributes:
+              name: kernel-default
+    - _attributes:
+        type: image
+        profiles: [BYOS, HPC-BYOS, SAP-BYOS]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: salt-minion
       archive:
         - _attributes:
             name: byos.tar.gz
     - _attributes:
         type: image
-        profiles: [HPC-On-Demand]
+        profiles: [HPC-BYOS, HPC-On-Demand]
       _include:
-        - csp/azure/settings/hpc/ondemand
-        - products/hpc/ondemand
+        - products/hpc
     - _attributes:
         type: image
-        profiles: [HPC-BYOS]
+        profiles: [SAP-BYOS, SAP-On-Demand]
       _include:
-        - csp/azure/settings/hpc/byos
-        - products/hpc/byos
-      archive:
-        - _attributes:
-            name: byos.tar.gz
+        - products/sap
     - _attributes:
         type: image
         profiles: [SAP-On-Demand]
-      _include:
-        - csp/azure/settings/sap/ondemand
-        - products/sap/ondemand
-    - _attributes:
-        type: image
-        profiles: [SAP-BYOS]
-      _include:
-        - csp/azure/settings/sap/byos
-        - products/sap/byos
-      archive:
-        - _attributes:
-            name: byos.tar.gz
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: sle-live-patching-release
+          - _attributes:
+              name: sle-live-patching-release-POOL
 config:
   - _include:
       - base/common
-  - profiles: [Basic-On-Demand]
-    _include:
-      - csp/azure/settings/sles/basic
-  - profiles: [Standard-On-Demand]
-    _include:
-      - csp/azure/settings/sles/ondemand
-  - profiles: [HPC, HPC-On-Demand]
-    _include:
-      - csp/azure/settings/hpc
-  - profiles: [BYOS, SAP-On-Demand, SAP-BYOS]
-    _include:
       - csp/azure
   - profiles:
       - Basic-On-Demand
@@ -151,13 +140,27 @@ config:
       - SAP-On-Demand
     _include:
       - base/ondemand
+  - profiles: [Basic-On-Demand]
+    files:
+      azure-ondemand-basic-track-variant:
+        - path: /etc/os-release
+          append: True
+          content: VARIANT_ID="sles-basic"
+  - profiles: [HPC-BYOS, HPC-On-Demand]
+    _include:
+      - products/hpc
+  - profiles: [SAP-On-Demand, SAP-BYOS]
+    _include:
+      - products/sap
 archive:
   - name: root.tar.gz
     _include:
+      - base/common
       - csp/azure
   - name: on-demand.tar.gz
     _include:
       - base/ondemand
   - name: byos.tar.gz
-    _include:
-      - products/sles/byos
+    _namespace_sles_motd_byos:
+      _include_overlays:
+        - motd-addon-byos

@@ -13,16 +13,15 @@ image:
       _include:
         - base/common
         - base/sle
-        - csp/azure/settings/sles/byos
+        - csp/azure
         - products/sles/byos
 config:
   - _include:
       - base/common
       - base/sle
-      - csp/azure/settings/sles/byos
-      - products/sles/byos
+      - csp/azure
 archive:
   - name: root.tar.gz
     _include:
-      - csp/azure/settings/sles/byos
+      - csp/azure
       - products/sles/byos

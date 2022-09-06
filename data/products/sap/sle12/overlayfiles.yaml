@@ -1,4 +1,0 @@
-archive:
-  _namespace_sap_ha_license:
-    _include_overlays:
-      - license-ha-sle12-sp3
