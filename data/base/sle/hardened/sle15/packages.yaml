@@ -14,7 +14,6 @@ packages:
       - opensc
       - openscap
       - openscap-utils
-      - pam_apparmor
       - pam_pkcs11
       - pcsc-ccid
       - pcsc-lite
