@@ -24,5 +24,6 @@ config:
 archive:
   - name: root.tar.gz
     _include:
+      - base/common
       - csp/gce/settings/sles/byos
       - products/sles/byos

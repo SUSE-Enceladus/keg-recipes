@@ -22,5 +22,6 @@ config:
 archive:
   - name: root.tar.gz
     _include:
+      - base/common
       - csp/azure/settings/sap/byos
       - products/sap/byos
