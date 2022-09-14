@@ -4,7 +4,7 @@ include-paths:
   - sle12/sp5
 image:
   _attributes:
-    name: SLES12-SP5-Azure
-    displayname: SLES12-SP5-Azure
+    name: SLES12-SP5-GCE
+    displayname: SLES12-SP5-GCE
   description:
-    specification: "SUSE Linux Enterprise Server 12 Service Pack 5 guest image for Microsoft Azure"
+    specification: "SUSE Linux Enterprise Server 12 Service Pack 5 guest image for Google Compute Engine"
