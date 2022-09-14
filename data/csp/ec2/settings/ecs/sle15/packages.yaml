@@ -1,9 +1,11 @@
 packages:
+  _namespace_default_shim: Null
   _namespace_ec2_ecs:
     package:
       - aaa_base-extras
       - amazon-ecs-init
       - blktrace
+      - cifs-utils
       - crash
       - cronie
       - docker-img-store-setup
@@ -14,6 +16,7 @@ packages:
       - krb5-client
       - lockdev
       - mozilla-nss-certs
+      - nfs-client
       - nfs-kernel-server
       - nscd
       - openldap2-client
@@ -22,7 +25,10 @@ packages:
       - psmisc
       - quota
       - rsync
+      - supportutils-plugin-suse-public-cloud
       - tcpd
+      - tcpdump
+      - vim
   _namespace_ec2_ecs_pubcloud_release:
     package:
       - sle-module-public-cloud-release
