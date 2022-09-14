@@ -56,11 +56,11 @@ image:
       _include:
         - base/common
         - base/sle
+        - csp/gce
     - _attributes:
-        type: bootstrap
+        type: image
         profiles:
-          - Basic-On-Demand
-          - Standard-On-Demand
+          - On-Demand
           - HPC-On-Demand
           - SAP-On-Demand
       _include:
@@ -72,69 +72,64 @@ image:
         type: image
         profiles: [On-Demand]
       _include:
-        - csp/gce/settings/sles/ondemand
         - products/sles/ondemand
     - _attributes:
         type: image
         profiles: [BYOS]
       _include:
-        - csp/gce/settings/sles/byos
-        - products/sles/byos
+        - products/sles
+    - _attributes:
+        type: image
+        profiles: [HPC-BYOS, HPC-On-Demand]
+      _include:
+        - products/hpc
       archive:
         - _attributes:
             name: byos.tar.gz
     - _attributes:
         type: image
-        profiles: [HPC-On-Demand]
+        profiles: [SAP-BYOS, SAP-On-Demand]
       _include:
-        - csp/gce/settings/hpc/ondemand
-        - products/hpc/ondemand
+        - products/sap
     - _attributes:
         type: image
-        profiles: [HPC-BYOS]
-      _include:
-        - csp/gce/settings/hpc/byos
-        - products/hpc/byos
+        profiles: [BYOS, HPC-BYOS, SAP-BYOS]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: salt-minion
       archive:
         - _attributes:
             name: byos.tar.gz
     - _attributes:
         type: image
         profiles: [SAP-On-Demand]
-      _include:
-        - csp/gce/settings/sap/ondemand
-        - products/sap/ondemand
-    - _attributes:
-        type: image
-        profiles: [SAP-BYOS]
-      _include:
-        - csp/gce/settings/sap/byos
-        - products/sap/byos
-      archive:
-        - _attributes:
-            name: byos.tar.gz
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: sle-live-patching-release
+          - _attributes:
+              name: sle-live-patching-release-POOL
 config:
   - _include:
       - base/common
-  - profiles: [On-Demand]
-    _include:
-      - csp/gce/settings/sles/ondemand
-  - profiles: [HPC, HPC-On-Demand]
-    _include:
-      - csp/gce/settings/hpc
-  - profiles: [BYOS, SAP-On-Demand, SAP-BYOS]
-    _include:
       - csp/gce
   - profiles:
-      - Basic-On-Demand
-      - Standard-On-Demand
+      - On-Demand
       - HPC-On-Demand
       - SAP-On-Demand
     _include:
       - base/ondemand
+  - profiles: [HPC-BYOS, HPC-On-Demand]
+    _include:
+      - products/hpc
+  - profiles: [SAP-On-Demand, SAP-BYOS]
+    _include:
+      - products/sap
 archive:
   - name: root.tar.gz
     _include:
+      - base/common
       - csp/gce
   - name: on-demand.tar.gz
     _include:

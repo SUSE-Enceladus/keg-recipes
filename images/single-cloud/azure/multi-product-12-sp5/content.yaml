@@ -161,6 +161,5 @@ archive:
     _include:
       - base/ondemand
   - name: byos.tar.gz
-    _namespace_sles_motd_byos:
-      _include_overlays:
-        - motd-addon-byos
+    _include:
+      - products/sles/byos
