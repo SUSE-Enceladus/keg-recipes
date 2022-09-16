@@ -11,6 +11,9 @@ packages:
       - _attributes:
           name: xen-tools-domU
           arch: x86_64
+      - _attributes:
+          name: shim
+          arch: x86_64
   _namespace_ec2_cloud_netconfig:
     package:
       - cloud-netconfig-ec2

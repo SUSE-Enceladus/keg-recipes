@@ -1,4 +1,10 @@
 packages:
+  _namespace_ec2_cloud_netconfig: Null
+  _namespace_ec2_tools:
+    package:
+      - amazon-ssm-agent
+      - aws-cli
+      - cloud-init-config-suse
   _namespace_ec2_ecs:
     package:
       - aaa_base-extras

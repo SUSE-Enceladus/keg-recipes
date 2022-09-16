@@ -24,6 +24,7 @@ config:
 archive:
   - name: root.tar.gz
     _include:
+      - base/common
       - base/ondemand
       - csp/azure/settings/sap/ondemand
       - products/sap/ondemand

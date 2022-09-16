@@ -3,7 +3,7 @@ include-paths:
   - sle12/sp4
 image:
   _attributes:
-    name: SLES12-SP4-Azure-BYOS
-    displayname: SLES12-SP4-Azure-BYOS
+    name: SLES12-SP4-GCE-BYOS
+    displayname: SLES12-SP4-GCE-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 12 Service Pack 4 guest image for Google Compute Engine configured for BYOS"

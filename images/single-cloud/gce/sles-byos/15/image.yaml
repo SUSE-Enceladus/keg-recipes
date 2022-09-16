@@ -2,7 +2,7 @@ include-paths:
   - sle15
 image:
   _attributes:
-    name: SLES15-Azure-BYOS
-    displayname: SLES15-Azure-BYOS
+    name: SLES15-GCE-BYOS
+    displayname: SLES15-GCE-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 15 BYOS guest image for Google Compute Engine"
