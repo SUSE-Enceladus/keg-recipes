@@ -1,4 +1,4 @@
 packages:
-  image:
-    common-rpm:
+  _namespace_common_rpm:
+    package:
       - rpm-ndb

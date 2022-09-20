@@ -1,0 +1,22 @@
+image:
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure]
+        arch: x86_64
+      _include:
+        - csp/azure/settings/hpc/byos
+    - _attributes:
+        profiles: [Azure]
+        arch: aarch64
+      _include:
+        - csp/azure/settings/aarch64
+        - csp/azure/settings/hpc/byos
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/hpc/byos
+    - _attributes:
+        profiles: [GCE]
+      _include: csp/gce/settings/hpc

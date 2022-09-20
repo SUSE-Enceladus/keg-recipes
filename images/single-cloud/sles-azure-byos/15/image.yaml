@@ -1,5 +1,0 @@
-include-paths:
-  - sle15
-image:
-  name: SLES15-Azure-BYOS
-  specification: "SUSE Linux Enterprise Server 15 BYOS guest image for Microsoft Azure BYOS configuration"

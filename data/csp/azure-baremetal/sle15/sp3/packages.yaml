@@ -1,3 +1,2 @@
 packages:
-  image:
-    azure-baremetal-firewall: Null
+  _namespace_azure_baremetal_firewall: Null

@@ -1,0 +1,4 @@
+packages:
+  _namespace_sap_salt_minion:
+    package:
+      - salt-minion

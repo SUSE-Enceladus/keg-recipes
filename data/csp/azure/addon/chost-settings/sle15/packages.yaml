@@ -1,5 +1,0 @@
-packages:
-  image:
-    azure-rootgrow:
-      - growpart-rootgrow
-    azure-cryptsetup: Null

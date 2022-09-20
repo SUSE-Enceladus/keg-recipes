@@ -3,6 +3,7 @@ config:
     common-config:
       - generate-motd
       - polkit-set-default-privs
+      - remove-iscsi-config
       - remove-root-pw
       - set-prodlink
       - zypp-disable-delta-rpms
@@ -15,6 +16,14 @@ config:
           CONSOLE_ENCODING="UTF-8"
           CONSOLE_FONT="lat9w-16.psfu"
           CONSOLE_SCREENMAP="trivial"
+    common-sysconfig-zypp-locks:
+      - path: /etc/zypp/locks
+        append: True
+        content: |-
+          type: package
+          match_type: glob
+          case_sensitive: on
+          solvable_name: plymouth*
   services:
     common-services:
       - sshd

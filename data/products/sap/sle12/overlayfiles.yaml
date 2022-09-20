@@ -1,7 +1,0 @@
-overlayfiles:
-  motd:
-    include:
-      - motd-default
-  ha-license:
-    include:
-      - license-ha-sle12-sp3

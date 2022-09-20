@@ -1,7 +1,0 @@
-profile:
-  parameters:
-    bootloader_console: Null
-    firmware: bios
-    kernelcmdline:
-      console: Null
-      mce: ignore_ce

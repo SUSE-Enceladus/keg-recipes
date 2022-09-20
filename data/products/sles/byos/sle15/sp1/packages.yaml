@@ -1,4 +1,4 @@
 packages:
-  image:
-    sles-byos-salt-minion:
+  _namespace_sles_byos_salt_minion:
+    package:
       - salt-minion

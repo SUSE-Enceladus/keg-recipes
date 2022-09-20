@@ -1,0 +1,93 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure
+          description: Azure configuration
+      - _attributes:
+          name: EC2
+          description: EC2 configuration
+      - _attributes:
+          name: GCE
+          description: GCE configuration
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/hpc/ondemand
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/hpc/ondemand
+    - _attributes:
+        profiles: [GCE]
+      _include: csp/gce/settings/hpc/ondemand
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/ondemand
+        - base/sle
+        - products/hpc/ondemand
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/hpc/ondemand
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/hpc/ondemand
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce/settings/hpc/ondemand
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/ondemand
+      - base/sle
+      - products/hpc/ondemand
+  - profiles: [Azure]
+    _include:
+      - csp/azure/settings/hpc/ondemand
+  - profiles: [EC2]
+    _include:
+      - csp/ec2/settings/hpc/ondemand
+  - profiles: [GCE]
+    _include:
+      - csp/gce/settings/hpc/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/ondemand
+      - base/sle
+      - products/hpc/ondemand
+  - name: azure.tar.gz
+    _include:
+      - csp/azure/settings/hpc/ondemand
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2/settings/hpc/ondemand
+  - name: gce.tar.gz
+    _include:
+      - csp/gce/settings/hpc/ondemand

@@ -21,7 +21,11 @@ config:
           [InstanceSetup]
           set_boto_config = false
   sysconfig:
-    gce-sysconfig:
+    gce-sysconfig-netconfig:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
+    gce-set-hostname:
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "yes"

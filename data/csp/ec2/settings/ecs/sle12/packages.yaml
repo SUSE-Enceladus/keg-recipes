@@ -1,0 +1,30 @@
+packages:
+  _namespace_ec2_cloud_netconfig: Null
+  _namespace_ec2_tools:
+    package:
+      - amazon-ssm-agent
+      - aws-cli
+      - cloud-init-config-suse
+  _namespace_ec2_ecs:
+    package:
+      - aaa_base-extras
+      - amazon-ecs-init
+      - blktrace
+      - crash
+      - cronie
+      - ethtool
+      - hostinfo
+      - lockdev
+      - mozilla-nss-certs
+      - nscd
+      - polkit-default-privs
+      - psmisc
+      - quota
+      - rsync
+      - strace
+      - tcpd
+      - yp-tools
+  _namespace_ec2_ecs_public_cloud_release:
+    package:
+      - sle-module-public-cloud-release
+      - sle-module-public-cloud-release-POOL

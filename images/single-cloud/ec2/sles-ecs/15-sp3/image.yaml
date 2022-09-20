@@ -1,0 +1,11 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+image:
+  _attributes:
+    schemaversion: "7.2"
+    name: SLES15-SP3-EC2-ECS-HVM
+    displayname: SLES15-SP3-EC2-ECS-HVM
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP3 ECS guest image for Amazon EC2 with HVM"

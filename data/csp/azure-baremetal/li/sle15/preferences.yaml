@@ -1,0 +1,7 @@
+preferences:
+  type:
+    _attributes:
+      firmware: bios
+      kernelcmdline:
+        console: Null
+        mce: ignore_ce

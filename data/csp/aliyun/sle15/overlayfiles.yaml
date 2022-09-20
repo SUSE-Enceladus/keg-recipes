@@ -1,6 +1,6 @@
-overlayfiles:
-  aliyun-base:
-    include:
+archive:
+  _namespace_aliyun_base:
+    _include_overlays:
       - chrony-aliyun-ntp
       - cloud-cfg-aliyun
       - cloud-cfg-disable-network-config

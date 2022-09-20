@@ -1,0 +1,10 @@
+preferences:
+  type:
+    _attributes:
+      firmware: efi
+      format: gce
+      kernelcmdline:
+        console: ttyS0,38400n8
+        dis_ucode_ldr: []
+        multipath: "off"
+        NON_PERSISTENT_DEVICE_NAMES: 1

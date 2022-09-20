@@ -1,0 +1,4 @@
+archive:
+  _namespace_gce_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-plain

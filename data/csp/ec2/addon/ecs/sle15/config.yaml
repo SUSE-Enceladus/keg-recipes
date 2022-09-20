@@ -1,6 +1,0 @@
-config:
-  services:
-    ecs-services:
-      - amazon-ecs
-      - docker
-      - docker-img-store-setup

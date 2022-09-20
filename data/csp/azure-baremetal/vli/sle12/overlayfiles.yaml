@@ -1,6 +1,6 @@
-overlayfiles:
-  azure-baremetal-vli:
-    include:
+archive:
+  _namespace_azure_vli:
+    _include_overlays:
       - efi-startup
       - modprobe-backlist-azure-vli
       - sysconfig-susefirewall2-saphostctrl-ssh-dns

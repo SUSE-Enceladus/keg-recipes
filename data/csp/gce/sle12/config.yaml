@@ -20,13 +20,17 @@ config:
       - ssh-disable-challenge-response-auth
       - ssh-disable-password-login
   sysconfig:
-    gce-sysconfig:
+    gce-sysconfig-hostname:
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "yes"
       - file: /etc/sysconfig/network/dhcp
         name: WRITE_HOSTNAME_TO_HOSTS
         value: "no"
+    gce-sysconfig-network:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
   services:
     gce-services:
       - haveged

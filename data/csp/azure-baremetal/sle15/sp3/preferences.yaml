@@ -1,0 +1,7 @@
+preferences:
+  type:
+    _attributes:
+      bootloader: Null
+    bootloader:
+      _attributes:
+        name: grub2

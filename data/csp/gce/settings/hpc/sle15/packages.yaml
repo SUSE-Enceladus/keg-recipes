@@ -1,0 +1,4 @@
+packages:
+  _namespace_gce_hpc:
+    package:
+      - tuned

@@ -1,4 +1,5 @@
-overlayfiles:
-  motd:
-    include:
+archive:
+  _namespace_default_motd: Null
+  _namespace_suma_server_motd:
+    _include_overlays:
       - motd-manager-server

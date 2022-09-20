@@ -1,6 +1,6 @@
 packages:
-  image:
-    sap:
+  _namespace_sap_base:
+    package:
       - bing
       - bonnie
       - cluster-md-kmp-default
@@ -36,7 +36,7 @@ packages:
       - yast2-control-center-qt
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
-  bootstrap:
-    sap-release:
+  _namespace_sap_release:
+    package:
       - SLES_SAP-release
       - SLES_SAP-release-POOL

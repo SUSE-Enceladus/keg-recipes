@@ -1,0 +1,26 @@
+image:
+  preferences:
+    - _include:
+        - base/common
+        - csp/azure/settings/hpc/byos
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/common
+        - base/sle
+        - csp/azure/settings/hpc/byos
+        - products/hpc/byos
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - csp/azure/settings/hpc/byos
+      - products/hpc/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - csp/azure/settings/hpc/byos
+      - products/hpc/byos

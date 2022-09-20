@@ -1,4 +1,0 @@
-packages:
-  bootstrap:
-    sle-module-python:
-      - sle-module-python2-release

@@ -1,5 +1,5 @@
 packages:
-  image:
-    azure-baremetal-legacy:
+  _namespace_azure_baremetal_legacy:
+    package:
       - libyui-qt-pkg7
       - numad

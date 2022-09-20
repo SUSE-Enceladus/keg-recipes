@@ -1,3 +1,0 @@
-image-config-comments:
-  obs-archs: "OBS-ExclusiveArch: x86_64 aarch64"
-  obs-multibuild: Null

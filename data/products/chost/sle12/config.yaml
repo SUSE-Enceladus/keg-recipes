@@ -1,9 +1,0 @@
-config:
-  scripts:
-    chost-scripts:
-      - chost-add-variant
-      - chost-strip-image
-      - enable-docker-overlay2-driver
-  services:
-    chost-services:
-      - docker

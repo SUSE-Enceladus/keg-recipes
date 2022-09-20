@@ -1,0 +1,12 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+image:
+  _attributes:
+    schemaversion: "7.2"
+    name: SLES15-SP4-Micro-5-3-BYOS
+    displayname: SLES15-SP4-Micro-5-3-BYOS
+  description:
+    specification: SUSE Linux Enterprise Micro 5.3 guest image

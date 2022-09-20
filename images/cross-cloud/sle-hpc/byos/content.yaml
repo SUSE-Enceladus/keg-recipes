@@ -1,0 +1,90 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure
+          description: Azure configuration
+      - _attributes:
+          name: EC2
+          description: EC2 configuration
+      - _attributes:
+          name: GCE
+          description: GCE configuration
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/hpc/byos
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/hpc/byos
+    - _attributes:
+        profiles: [GCE]
+      _include: csp/gce/settings/hpc/byos
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - products/hpc/byos
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/hpc/byos
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/hpc/byos
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce/settings/hpc/byos
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - products/hpc/byos
+  - profiles: [Azure]
+    _include:
+      - csp/azure/settings/hpc/byos
+  - profiles: [EC2]
+    _include:
+      - csp/ec2/settings/hpc/byos
+  - profiles: [GCE]
+    _include:
+      - csp/gce/settings/hpc/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - products/hpc/byos
+  - name: azure.tar.gz
+    _include:
+      - csp/azure/settings/hpc/byos
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2/settings/hpc/byos
+  - name: gce.tar.gz
+    _include:
+      - csp/gce/settings/hpc/byos

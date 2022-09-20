@@ -1,3 +1,2 @@
 packages:
-  image:
-    azure-baremetal-legacy: Null
+  _namespace_azure_baremetal_legacy: Null

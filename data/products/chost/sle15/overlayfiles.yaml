@@ -1,9 +1,8 @@
-overlayfiles:
-  chost-base:
-    include:
+archive:
+  _namespace_chost_base:
+    _include_overlays:
       - sysctl-enable-ip-forward
-  motd:
-    include:
+  _namespace_chost_motd:
+    _include_overlays:
       - motd-addon-byos-chost
       - motd-caption-chost
-      - motd-default

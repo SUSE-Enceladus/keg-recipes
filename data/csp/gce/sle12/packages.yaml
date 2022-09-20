@@ -1,6 +1,9 @@
 packages:
-  image:
-    gce:
+  _namespace_gce_cloud_netconfig:
+    package:
+      - cloud-netconfig-gce
+  _namespace_gce_init:
+    package:
       - google-guest-agent
       - google-guest-configs
       - google-guest-oslogin
@@ -9,3 +12,13 @@ packages:
       - growpart-rootgrow
       - grub2-x86_64-efi
       - kernel-default
+  _namespace_gce_tools:
+    package:
+      - python3-gcemetadata
+  _namespace_gce_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-gce
+      - regionsrv-certs
+      - regionServiceClientConfigGCE
+      - regionServiceCertsGCE

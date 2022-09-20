@@ -1,0 +1,24 @@
+{
+  "ignition": { "version": "3.1.0" },
+  "storage": {
+      "filesystems": [
+          {
+              "path": "/home",
+              "device": "/dev/disk/by-label/ROOT",
+              "format": "btrfs",
+              "wipeFilesystem": false,
+              "mountOptions": [
+                  "subvol=/@/home"
+              ]
+          }
+      ]
+  },
+  "passwd": {
+      "users": [
+          {
+              "name": "suse",
+              "uid": 1000
+          }
+      ]
+  }
+}

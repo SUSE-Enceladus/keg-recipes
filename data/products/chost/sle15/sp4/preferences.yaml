@@ -1,0 +1,5 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        cgroup.memory: Null

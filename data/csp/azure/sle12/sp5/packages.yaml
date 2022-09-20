@@ -1,3 +1,2 @@
 packages:
-  image:
-    azure-kernel: Null
+  _namespace_azure_kernel: Null

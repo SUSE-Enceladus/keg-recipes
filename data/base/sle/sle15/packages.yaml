@@ -1,9 +1,6 @@
 packages:
-  bootstrap:
-    sle-module-public-cloud:
-      - sle-module-public-cloud-release
-  image:
-    sle-common:
+  _namespace_sle_common:
+    package:
       - aaa_base-extras
       - at
       - at-spi2-core
@@ -12,6 +9,7 @@ packages:
       - bc
       - binutils
       - blktrace
+      - cifs-utils
       - command-not-found
       - crash
       - cronie
@@ -30,6 +28,7 @@ packages:
       - fonts-config
       - fping
       - glibc-i18ndata
+      - hostinfo
       - iproute2
       - irqbalance
       - krb5-client
@@ -42,6 +41,7 @@ packages:
       - mozilla-nss-certs
       - netcat-openbsd
       - nfsidmap
+      - nfs-client
       - nfs-kernel-server
       - nscd
       - openldap2-client
@@ -51,12 +51,16 @@ packages:
       - quota
       - rsync
       - screen
+      - sle-module-public-cloud-release
       - strace
+      - supportutils-plugin-suse-public-cloud
       - system-user-mail
       - systemd-sysvinit
       - tcpd
+      - tcpdump
       - tcsh
       - telnet
+      - vim
       - yast2
       - yast2-add-on
       - yast2-audit-laf

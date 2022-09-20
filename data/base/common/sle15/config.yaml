@@ -3,12 +3,13 @@ config:
     common-config:
       - generate-motd
       - polkit-set-default-privs
+      - remove-iscsi-config
       - remove-root-pw
       - set-prodlink
       - zypp-disable-delta-rpms
       - zypp-disable-multiver-kernel
   files:
-    common-sysconfig:
+    common-files:
       - path: /etc/profile
         append: True
         content: |-

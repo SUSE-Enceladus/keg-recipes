@@ -1,18 +1,18 @@
 packages:
-  bootstrap:
-    manager-server:
-      - SUSE-Manager-Server-release
-  image:
-    manager-server:
+  _namespace_manager_server_base:
+    package:
+      - docker
       - jakarta-commons-el
       - patterns-suma_server
       - salt-minion
       - spacecmd
       - susemanager-cloud-setup-server
-    manager-server-sles:
-      - docker
       - release-notes-sles
-    manager-server-deps:
+  _namespace_manager_server_release:
+    package:
+      - SUSE-Manager-Server-release
+  _namespace_manager_server_deps:
+    package:
       - antlr3-runtime
       # direct include to avoid picking classpathx-mail instead of
       # javamail which does not work with spacewalk-java

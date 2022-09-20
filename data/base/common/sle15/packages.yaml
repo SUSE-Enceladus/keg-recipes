@@ -1,43 +1,36 @@
 packages:
-  image:
-    common:
+  _namespace_common:
+    package:
       - audit
       - blog
       - chrony
-      - cifs-utils
       - dosfstools
       - dracut
       - grub2
       - haveged
       - iputils
       - kdump
-      - nfs-client
       - openssh
       - parted
       - rsyslog
       - sudo
       - supportutils
-      - supportutils-plugin-suse-public-cloud
       - suse-build-key
       - SUSEConnect
       - system-group-hardware
       - system-group-wheel
       - system-user-nobody
       - systemd
-      - tcpdump
       - terminfo
       - timezone
       - udev
-      - vim
       - wget
       - which
       - wicked
       - xfsprogs
-    common-rpm:
+  _namespace_common_rpm:
+    package:
       - rpm
-    common-zypper-migration:
+  _namespace_common_zypper_migration:
+    package:
       - zypper-migration-plugin
-  bootstrap:
-    common:
-      - filesystem
-      - glibc-locale

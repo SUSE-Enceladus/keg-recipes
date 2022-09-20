@@ -1,9 +1,0 @@
-profiles:
-  common:
-    include:
-      - base/common
-      - base/sle
-      - csp/azure/addon/azure-tools
-      - csp/azure/addon/cloudreg-switch
-      - csp/azure/byos/sles
-      - products/sles/byos

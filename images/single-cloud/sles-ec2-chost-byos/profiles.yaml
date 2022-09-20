@@ -1,6 +1,0 @@
-profiles:
-  common:
-    include:
-      - base/common
-      - csp/ec2
-      - products/chost

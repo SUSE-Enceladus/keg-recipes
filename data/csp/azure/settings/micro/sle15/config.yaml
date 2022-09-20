@@ -1,0 +1,15 @@
+config:
+  scripts:
+    azure-waagent: Null
+    azure-default-kernel-log-level: Null
+    azure-dhclient-timeout: Null
+  services:
+    azure-afterburn-checkin:
+      - afterburn-checkin
+    azure-services: Null
+    azure-regionsrv-timer: Null
+  sysconfig:
+    azure-set-hostname:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"

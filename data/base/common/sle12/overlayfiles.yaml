@@ -1,0 +1,4 @@
+archive:
+  _namespace_default_motd:
+    _include_overlays:
+      - motd-default

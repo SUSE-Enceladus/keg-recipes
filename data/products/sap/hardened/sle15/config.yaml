@@ -1,0 +1,4 @@
+config:
+  scripts:
+    hardened-config:
+      - pcs-sap-hardening

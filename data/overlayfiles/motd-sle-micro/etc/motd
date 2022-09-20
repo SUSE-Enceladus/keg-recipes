@@ -1,0 +1,10 @@
+{OS_PRETTY_NAME} {ARCH} (64-bit)
+{CAPTION}
+
+{INCLUDES}
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Documentation: https://www.suse.com/documentation/sle-micro/{VERSION}
+Community: https://community.suse.com/
+
+Have a lot of fun...

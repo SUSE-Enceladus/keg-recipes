@@ -1,6 +1,6 @@
 packages:
-  image:
-    sapcal:
+  _namespace_sapcal_base:
+    package:
       - apache2
       - cairo-devel
       - cpupower
@@ -8,8 +8,9 @@ packages:
       - firewalld
       - gcc-c++
       - gcc-fortran
-      - name: glibc-32bit
-        arch: x86_64
+      - _attributes:
+          name: glibc-32bit
+          arch: x86_64
       - glibc-devel
       - icewm
       - insserv-compat
@@ -17,19 +18,23 @@ packages:
       - java-1_8_0-ibm-devel
       - java-1_8_0-ibm-fonts
       - java-1_8_0-ibm-plugin
-      - name: krb5-32bit
-        arch: x86_64
-      - name: libcom_err2-32bit
-        arch: x86_64
+      - _attributes:
+          name: krb5-32bit
+          arch: x86_64
+      - _attributes:
+          name: libcom_err2-32bit
+          arch: x86_64
       - libcurl-devel
       - libidn-tools
       - libpng12-0
       - libgcc_s1
-      - name: libgcc_s1-32bit
-        arch: x86_64
+      - _attributes:
+          name: libgcc_s1-32bit
+          arch: x86_64
       - libstdc++6
-      - name: libstdc++6-32bit
-        arch: x86_64
+      - _attributes:
+          name: libstdc++6-32bit
+          arch: x86_64
       - libstdc++6-locale
       - libssh2-1
       - libtool
@@ -41,8 +46,9 @@ packages:
       - rpm-build
       - samba
       - samba-client
-      - name: samba-client-32bit
-        arch: x86_64
+      - _attributes:
+          name: samba-client-32bit
+          arch: x86_64
       - sapconf
       - sysstat
       - tack
@@ -57,16 +63,22 @@ packages:
       - xorg-x11-driver-video
       - xorg-x11-fonts
       - xorg-x11-server
-      - name: xorg-x11-libX11-32bit
-        arch: x86_64
-      - name: xorg-x11-libXau-32bit
-        arch: x86_64
-      - name: xorg-x11-libXdmcp-32bit
-        arch: x86_64
-      - name: xorg-x11-libXext-32bit
-        arch: x86_64
-      - name: xorg-x11-libxcb-32bit
-        arch: x86_64
+      - _attributes:
+          name: xorg-x11-libX11-32bit
+          arch: x86_64
+      - _attributes:
+          name: xorg-x11-libXau-32bit
+          arch: x86_64
+      - _attributes:
+          name: xorg-x11-libXdmcp-32bit
+          arch: x86_64
+      - _attributes:
+          name: xorg-x11-libXext-32bit
+          arch: x86_64
+      - _attributes:
+          name: xorg-x11-libxcb-32bit
+          arch: x86_64
       - xrdp
-      - name: zlib-32bit
-        arch: x86_64
+      - _attributes:
+          name: zlib-32bit
+          arch: x86_64

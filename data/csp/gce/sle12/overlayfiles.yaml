@@ -1,8 +1,8 @@
-overlayfiles:
-  gce-base:
-    include:
+archive:
+  _namespace_gce_base:
+    _include_overlays:
       - gce-boto-hack
       - hosts-metadata-google
-  gce-sysconfig-network:
-    include:
-      - sysconfig-network-plain
+  _namespace_gce_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig

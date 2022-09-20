@@ -1,3 +1,2 @@
 packages:
-  image:
-    common-zypper-migration: Null
+  _namespace_common_zypper_migration: Null

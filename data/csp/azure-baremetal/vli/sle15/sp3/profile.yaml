@@ -1,5 +1,0 @@
-profile:
-  parameters:
-    bootloader_console: Null
-  bootloader:
-    console: console

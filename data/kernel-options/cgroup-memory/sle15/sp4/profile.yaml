@@ -1,4 +1,0 @@
-profile:
-  parameters:
-    kernelcmdline:
-      cgroup.memory: Null
