@@ -20,7 +20,6 @@ image:
         type: image
       _include:
         - base/common
-        - products/sles/byos
         - products/rancher-setup
     - _attributes:
         type: image

@@ -21,6 +21,7 @@ packages:
       - nscd
       - polkit-default-privs
       - psmisc
+      - sles-release
       - sle-module-public-cloud-release
       - supportutils-plugin-suse-public-cloud
       - strace
@@ -33,4 +34,3 @@ packages:
   _namespace_rancher_setup:
     package:
       - suse-rancher-setup
-  _namespace_sles_byos_salt_minion: Null
