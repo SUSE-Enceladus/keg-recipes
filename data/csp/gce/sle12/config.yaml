@@ -33,7 +33,6 @@ config:
         value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
   services:
     gce-services:
-      - haveged
       - ntpd
       - google-guest-agent
       - google-osconfig-agent

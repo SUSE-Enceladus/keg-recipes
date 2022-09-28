@@ -26,6 +26,7 @@ config:
           solvable_name: plymouth*
   services:
     common-services:
+      - haveged
       - sshd
   sysconfig:
     common-sysconfig:

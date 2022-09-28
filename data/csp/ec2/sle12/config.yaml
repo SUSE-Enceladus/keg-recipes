@@ -17,7 +17,6 @@ config:
       - cloud-final
       - cloud-init
       - cloud-init-local
-      - haveged
     ec2-time-sync:
       - ntpd
     ec2-cloud-netconfig:
