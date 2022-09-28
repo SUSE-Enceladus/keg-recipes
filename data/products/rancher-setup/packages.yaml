@@ -1,0 +1,36 @@
+packages:
+  _namespace_jeos:
+    package:
+      - patterns-base-minimal_base
+      - gio-branding-SLE
+  _namespace_sle_common:
+    package:
+      - attr
+      - autofs
+      - binutils
+      - cronie
+      - curl
+      - dhcp-client
+      - ethtool
+      - fontconfig
+      - fonts-config
+      - glibc-i18ndata
+      - iproute2
+      - irqbalance
+      - mozilla-nss-certs
+      - nscd
+      - polkit-default-privs
+      - psmisc
+      - sle-module-public-cloud-release
+      - supportutils-plugin-suse-public-cloud
+      - strace
+      - systemd-sysvinit
+      - tar
+      - tcpd
+      - tcpdump
+      - vim
+      - zip
+  _namespace_rancher_setup:
+    package:
+      - suse-rancher-setup
+  _namespace_sles_byos_salt_minion: Null
