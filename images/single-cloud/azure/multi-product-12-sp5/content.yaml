@@ -149,6 +149,9 @@ config:
   - profiles: [HPC-BYOS, HPC-On-Demand]
     _include:
       - products/hpc
+    scripts:
+      waagent-rdma:
+        - waagent-enable-rdma
   - profiles: [SAP-On-Demand, SAP-BYOS]
     _include:
       - products/sap
