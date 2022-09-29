@@ -12,7 +12,6 @@ packages:
       - cockpit-system
       - cockpit-ws
       - cockpit
-      - cockpit-wicked
       - conntrack-tools
       - container-selinux
       - cracklib-dict-small
@@ -45,3 +44,7 @@ packages:
       - vlan
       - yast2-logs
       - zypper-needs-restarting
+  _namespace_sle_micro_network_mgmt:
+    package:
+      - cockpit-wicked
+      - wicked

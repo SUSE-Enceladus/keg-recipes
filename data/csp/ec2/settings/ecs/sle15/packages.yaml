@@ -29,6 +29,7 @@ packages:
       - tcpd
       - tcpdump
       - vim
+      - wicked
   _namespace_ec2_ecs_pubcloud_release:
     package:
       - sle-module-public-cloud-release

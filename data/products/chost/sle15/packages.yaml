@@ -24,6 +24,7 @@ packages:
       - tcpdump
       - vim
       - vlan
+      - wicked
   _namespace_chost_btrfsprogs:
     package:
       - btrfsmaintenance

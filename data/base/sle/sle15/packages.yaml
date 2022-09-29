@@ -61,6 +61,7 @@ packages:
       - tcsh
       - telnet
       - vim
+      - wicked
       - yast2
       - yast2-add-on
       - yast2-audit-laf
