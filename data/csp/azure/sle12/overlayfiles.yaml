@@ -3,6 +3,7 @@ archive:
     _include_overlays:
       - cloud-cfg-azure
       - cloud-cfg-disable-network-config
+      - modprobe-blacklist-azure-vm
       - motd-addon-waagent
   _namespace_azure_emergency_shell:
     _include_overlays:
