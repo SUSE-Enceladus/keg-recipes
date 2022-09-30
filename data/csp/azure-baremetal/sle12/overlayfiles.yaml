@@ -2,7 +2,7 @@ archive:
   _namespace_azure_baremetal_common:
     _include_overlays:
       - dracut-multipath
-      - modprobe-backlist-azure-li
+      - modprobe-blacklist-azure-li
       - selinux-disable
       - sysctl-hana-basenet
   _namespace_azure_baremetal_linkpol:
