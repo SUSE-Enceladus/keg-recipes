@@ -26,7 +26,6 @@ packages:
       - udev
       - wget
       - which
-      - wicked
       - xfsprogs
   _namespace_common_rpm:
     package:

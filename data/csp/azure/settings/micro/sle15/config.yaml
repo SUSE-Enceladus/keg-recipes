@@ -3,6 +3,7 @@ config:
     azure-waagent: Null
     azure-default-kernel-log-level: Null
     azure-dhclient-timeout: Null
+    azure-sshd-config: Null
   services:
     azure-afterburn-checkin:
       - afterburn-checkin
