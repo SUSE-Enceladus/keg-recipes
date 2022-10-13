@@ -1,0 +1,45 @@
+config:
+  scripts:
+    oci_scripts:
+      - ssh-disable-password-login
+      - disable-memory-hotplug
+      - iscsid-setup
+  files:
+    oci-config:
+      - path: /etc/iscsi/iscsid.conf
+        append: True
+        content: |-
+          node.conn[0].timeo.noop_out_interval = 0
+          node.conn[0].timeo.noop_out_timeout = 0
+          node.session.timeo.replacement_timeout = 6000
+      - path: /etc/sysconfig/bootloader
+        append: True
+        content: |-
+          SECURE_BOOT="yes"
+          TRUSTED_BOOT="no"
+  sysconfig:
+    oci-set-hostname:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "no"
+  services:
+    oci-services:
+      - chronyd
+      - cloud-init-local
+      - cloud-init
+      - cloud-config
+      - cloud-final
+      - firewalld
+      - iscsid.service
+      - iscsiuio.service
+  drivers:
+    _namepsace_oci:
+      file:
+        - _attribute
+          name: ixgbe
+      file:
+        - _attribute
+          name: ixgbevf
+      file:
+        - _attribute
+          name: bnxt_en
