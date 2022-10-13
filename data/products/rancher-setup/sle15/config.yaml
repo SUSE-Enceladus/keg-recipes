@@ -4,6 +4,3 @@ config:
       - suse-rancher-setup
       - nginx
       - set-http-basic-credentials
-    ssh-access:
-      - name: sshd
-        enable: false
