@@ -4,6 +4,3 @@ config:
       - suse-rancher-setup
       - nginx
       - set-http-basic-credentials
-    common-services:
-      - name: sshd
-        enable: false
