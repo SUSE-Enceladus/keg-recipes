@@ -11,6 +11,7 @@ packages:
       - libsoftokn3-hmac
       - libxmlsec1-1
       - libxmlsec1-openssl1
+      - mozilla-nss-tools
       - opensc
       - openscap
       - openscap-utils
