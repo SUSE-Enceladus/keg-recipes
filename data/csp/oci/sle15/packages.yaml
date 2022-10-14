@@ -1,6 +1,6 @@
 packages:
   _namespace_oci_base:
-    parckage:
+    package:
       - firewalld
       - libselinux1
       - open-iscsi
