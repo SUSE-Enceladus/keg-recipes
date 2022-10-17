@@ -1,0 +1,11 @@
+drivers:
+  _namespace_oci:
+    file:
+      - _attribute
+        name: ixgbe
+    file:
+      - _attribute
+        name: ixgbevf
+    file:
+      - _attribute
+        name: bnxt_en
