@@ -20,6 +20,7 @@ packages:
       - libopenssl0_9_8
       - libpng12-0
       - libvirt-client
+      - libxml2-tools
       - libyui-qt6
       - ocfs2-kmp-default
       - patterns-ha-ha_sles
