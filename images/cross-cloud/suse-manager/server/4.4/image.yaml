@@ -7,7 +7,7 @@ include-paths:
 image:
   _attributes:
     schemaversion: "7.2"
-    name: SLES15-SP5-SUSE-Manager-Server-4-4-BYOS
-    displayname: SLES15-SP5-SUSE-Manager-Server-4-4-BYOS
+    name: SLES15-SP5-Manager-Server-4-4-BYOS
+    displayname: SLES15-SP5-Manager-Server-4-4-BYOS
   description:
     specification: "SUSE Manager Server 4.4 BYOS guest image"
