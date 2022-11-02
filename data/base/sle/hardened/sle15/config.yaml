@@ -1,0 +1,6 @@
+config:
+  files:
+    hardened_variant_id:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="hardened"
