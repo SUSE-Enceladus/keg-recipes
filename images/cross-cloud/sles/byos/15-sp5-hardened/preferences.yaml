@@ -19,4 +19,5 @@ image:
         - csp/ec2/settings/sles/byos
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/sles/byos
+      _include:
+        - csp/gce/settings/sles/byos
