@@ -19,4 +19,5 @@ image:
         - csp/ec2/settings/hpc/byos
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/hpc
+      _include:
+        - csp/gce/settings/hpc/byos
