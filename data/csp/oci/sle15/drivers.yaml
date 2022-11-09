@@ -1,9 +1,6 @@
 drivers:
   _namespace_oci:
     file:
-      - _attribute
-        name: ixgbe
-      - _attribute
-        name: ixgbevf
-      - _attribute
-        name: bnxt_en
+      - ixgbe
+      - ixgbevf
+      - bnxt_en
