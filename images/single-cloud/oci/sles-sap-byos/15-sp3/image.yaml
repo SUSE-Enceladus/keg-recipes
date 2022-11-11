@@ -1,0 +1,8 @@
+include-paths:
+  - sle15/sp3
+image:
+  _attributes:
+    name: SLES15-SP3-SAP-OCI-BYOS
+    displayname: SLES15-SP3-SAP-OCI-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP3 BYOS guest image for Oracle Cloud"
