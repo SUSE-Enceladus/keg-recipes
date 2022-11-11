@@ -1,0 +1,10 @@
+packages:
+  _namespace_oci_base:
+    package:
+      - SuSEfirewall2
+      - libselinux1
+      - open-iscsi
+      - selinux-tools
+  _namespace_oci_init:
+    package:
+      - cloud-init

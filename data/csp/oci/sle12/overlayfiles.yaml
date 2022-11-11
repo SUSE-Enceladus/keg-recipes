@@ -1,0 +1,5 @@
+archive:
+  _namespace_oci_base:
+    _include_overlays:
+      - module-iscsi
+      - cloud-cfg-oci
