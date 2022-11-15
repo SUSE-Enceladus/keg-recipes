@@ -1,2 +1,4 @@
 packages:
   _map_attribute: name
+drivers:
+  _map_attribute: name
