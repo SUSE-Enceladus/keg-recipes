@@ -33,6 +33,9 @@ packages:
       - libssh2-1
       - MozillaFirefox-branding-SLE
       - patterns-sap-hana
+      # 'ed' is needed as dependency of
+      # 'postfix' <- clamsap <- patterns-sap-hana (bsc#1205457)
+      - ed        
       - wireshark
   _namespace_azure_baremetal_addon_msft:
     package:
