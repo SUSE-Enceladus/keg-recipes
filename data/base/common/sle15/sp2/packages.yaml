@@ -1,4 +1,2 @@
 packages:
-  _namespace_common_rpm:
-    package:
-      - rpm-ndb
+  _namespace_common_rpm: Null
