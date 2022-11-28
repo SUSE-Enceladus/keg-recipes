@@ -5,6 +5,7 @@ packages:
       - libselinux1
       - open-iscsi
       - selinux-tools
+      - shim
   _namespace_oci_init:
     package:
       - cloud-init
