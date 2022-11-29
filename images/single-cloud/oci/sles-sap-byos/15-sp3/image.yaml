@@ -1,4 +1,6 @@
 include-paths:
+  - sle15/sp1
+  - sle15/sp2
   - sle15/sp3
 image:
   _attributes:
