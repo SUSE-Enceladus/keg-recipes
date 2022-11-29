@@ -1,0 +1,20 @@
+preferences:
+  type:
+    _attributes:
+      bootloader_console: serial
+      boottimeout: 1
+      devicepersistency: by-uuid
+      format: qcow2
+      kernelcmdline:
+        console: [tty0,"ttyS0,9600"]
+        ip: dhcp
+        net.ifnames: 1
+        rd.iscsi.firmware: 1
+        rd.iscsi.initiator: iqn.2015-02.oracle.boot:instance
+        rd.neednet: 1
+        rd.iscsi.param: node.session.timeo.replacement_timeout=6000
+        security: selinux
+        selinux: 1
+        enforcing: 0
+        transparent_hugepage: never
+        root: /dev/sda3
