@@ -15,6 +15,9 @@ image:
         - base/sle
         - csp/oci/settings/sles/byos
         - products/sles/byos
+  drivers:
+    - _include:
+      - csp/oci
 config:
   - _include:
       - base/common

@@ -14,6 +14,9 @@ image:
         - base/sle
         - csp/oci/settings/sap/byos
         - products/sap/byos
+  drivers:
+    - _include:
+      - csp/oci
 config:
   - _include:
       - base/common
