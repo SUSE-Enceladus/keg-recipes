@@ -25,10 +25,12 @@ packages:
       - psmisc
       - quota
       - rsync
+      - rsyslog
       - supportutils-plugin-suse-public-cloud
       - tcpd
       - tcpdump
       - vim
+      - wget
       - wicked
   _namespace_ec2_ecs_pubcloud_release:
     package:

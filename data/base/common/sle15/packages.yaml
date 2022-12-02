@@ -12,7 +12,6 @@ packages:
       - kdump
       - openssh
       - parted
-      - rsyslog
       - sudo
       - supportutils
       - suse-build-key
@@ -24,7 +23,6 @@ packages:
       - terminfo
       - timezone
       - udev
-      - wget
       - which
       - xfsprogs
   _namespace_common_rpm:
