@@ -50,6 +50,7 @@ packages:
       - psmisc
       - quota
       - rsync
+      - rsyslog
       - screen
       - sle-module-public-cloud-release
       - strace
@@ -61,6 +62,7 @@ packages:
       - tcsh
       - telnet
       - vim
+      - wget
       - wicked
       - yast2
       - yast2-add-on
@@ -97,14 +99,12 @@ packages:
       - yast2-registration
       - yast2-samba-client
       - yast2-samba-server
-      - yast2-schema
       - yast2-security
       - yast2-squid
       - yast2-sudo
       - yast2-support
       - yast2-sysconfig
       - yast2-tftp-server
-      - yast2-trans-en_US
       - yast2-transfer
       - yast2-trans-stats
       - yast2-tune
@@ -115,3 +115,6 @@ packages:
       - yp-tools
       - zip
       - zsh
+  _namespace_sle_common_yast2_trans:
+    package:
+      - yast2-trans-en_US

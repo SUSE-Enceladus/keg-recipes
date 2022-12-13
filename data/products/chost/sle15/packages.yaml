@@ -18,12 +18,14 @@ packages:
       - nfs-client
       - open-iscsi
       - pciutils
+      - rsyslog
       - runc
       - socat
       - supportutils-plugin-suse-public-cloud
       - tcpdump
       - vim
       - vlan
+      - wget
       - wicked
   _namespace_chost_btrfsprogs:
     package:
