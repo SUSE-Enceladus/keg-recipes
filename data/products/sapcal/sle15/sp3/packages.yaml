@@ -2,9 +2,6 @@ packages:
   _namespace_sapcal_addon_x86:
     package:
       - _attributes:
-          name: glibc-locale-32bit
-          arch: x86_64
-      - _attributes:
           name: libcurl4-32bit
           arch: x86_64
       - _attributes:
