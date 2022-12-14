@@ -37,4 +37,7 @@ packages:
       - fcoe-utils
   _namespace_chost_release:
     package:
+      - sle-module-basesystem-release
+      - sle-module-containers-release
+      - sle-module-public-cloud-release
       - sles-release
