@@ -9,3 +9,6 @@ packages:
       - release-notes-sles
       - salt-minion
       - susemanager-cloud-setup-proxy
+  _namespace_manager_proxy_modules:
+    package:
+      - sle-module-containers-release
