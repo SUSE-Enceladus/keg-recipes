@@ -1,0 +1,48 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: EC2
+          description: EC2 configuration
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/rancher-setup
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - products/rancher-setup
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/rancher-setup
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - products/rancher-setup
+  - profiles: [EC2]
+    _include:
+      - csp/ec2
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - products/rancher-setup
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2

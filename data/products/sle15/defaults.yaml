@@ -1,0 +1,8 @@
+archive:
+  _namespace_default_motd:
+    _include_overlays:
+      - motd-default
+packages:
+  _namespace_yast2_schema:
+    package:
+      - yast2-schema

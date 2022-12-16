@@ -1,0 +1,9 @@
+packages:
+  _namespace_azure_cryptsetup: Null
+  _namespace_azure_init: Null
+  _namespace_azure_tools: Null
+  _namespace_azure_regionsrv_client_addon: Null
+  _namespace_azure_registration: Null
+  _namespace_azure_micro_os:
+    package:
+      - afterburn-dracut

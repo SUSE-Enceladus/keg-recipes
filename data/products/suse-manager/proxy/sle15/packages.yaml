@@ -1,10 +1,14 @@
 packages:
-  bootstrap:
-    Manager-Proxy:
+  _namespace_manager_proxy_release:
+    package:
       - SUSE-Manager-Proxy-release
-  image:
-    Manager-Proxy:
+  _namespace_manager_proxy_base:
+    package:
+      - docker
       - patterns-suma_proxy
+      - release-notes-sles
       - salt-minion
-      - spacecmd
       - susemanager-cloud-setup-proxy
+  _namespace_manager_proxy_modules:
+    package:
+      - sle-module-containers-release

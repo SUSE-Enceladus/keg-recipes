@@ -1,0 +1,68 @@
+config:
+  scripts:
+    common-config:
+      - generate-motd
+      - polkit-set-default-privs
+      - remove-iscsi-config
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
+      - zypp-disable-multiver-kernel
+  files:
+    common-files:
+      - path: /etc/profile
+        append: True
+        content: |-
+          # yast in Public Cloud images fix
+          NCURSES_NO_UTF8_ACS=1
+          export NCURSES_NO_UTF8_ACS
+      - path: /etc/sysconfig/console
+        append: True
+        content: |-
+          CONSOLE_ENCODING="UTF-8"
+          CONSOLE_FONT="lat9w-16.psfu"
+          CONSOLE_SCREENMAP="trivial"
+      - path: /etc/zypp/locks
+        append: True
+        content: |-
+          type: package
+          match_type: glob
+          case_sensitive: on
+          solvable_name: plymouth*
+  services:
+    common-services:
+      - boot.device-mapper
+      - haveged
+      - sshd
+      - name: boot.efivars
+        enable: False
+      - name: boot.lvm
+        enable: False
+      - name: boot.md
+        enable: False
+      - name: boot.multipath
+        enable: False
+      - name: display-manager
+        enable: False
+      - name: kbd
+        enable: False
+  sysconfig:
+    common-sysconfig:
+      - file: /etc/sysconfig/keyboard
+        name: COMPOSETABLE
+        value: "clear latin1.add"
+      - file: /etc/sysconfig/language
+        name: INSTALLED_LANGUAGES
+        value: ""
+      - file: /etc/sysconfig/language
+        name: RC_LANG
+        value: "C.UTF-8"
+      - file: /etc/sysconfig/security
+        name: POLKIT_DEFAULT_PRIVS
+        value: "restrictive"
+      - file: /etc/sysconfig/windowmanager
+        name: DEFAULT_WM
+        value: ""
+      - file: /etc/sysconfig/windowmanager
+        name: INSTALL_DESKTOP_EXTENSIONS
+        value: "no"

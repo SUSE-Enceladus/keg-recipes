@@ -1,0 +1,125 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: On-Demand
+          description: SLES HVM On-Demand image
+      - _attributes:
+          name: BYOS
+          description: SLES HVM BYOS image
+      - _attributes:
+          name: ECS-On-Demand
+          description: SLES ECS On-Demand image
+      - _attributes:
+          name: SAP-On-Demand
+          description: SLES for SAP HVM On-Demand image
+      - _attributes:
+          name: SAP-BYOS
+          description: SLES for SAP HVM BYOS image
+  preferences:
+    - _include:
+      - base/common
+      - csp/ec2
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+    - _attributes:
+        type: image
+        profiles:
+          - On-Demand
+          - ECS-On-Demand
+          - SAP-On-Demand
+      _include:
+        - base/ondemand
+      archive:
+        - _attributes:
+            name: on-demand.tar.gz
+    - _attributes:
+        type: image
+        profiles: [BYOS, SAP-BYOS]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: salt-minion
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+    - _attributes:
+        type: image
+        profiles:
+          - On-Demand
+          - BYOS
+          - SAP-On-Demand
+          - SAP-BYOS
+      _include:
+        - base/sle
+        - csp/ec2
+    - _attributes:
+        type: image
+        profiles: [BYOS]
+      _include:
+        - products/sles
+    - _attributes:
+        type: image
+        profiles: [On-Demand, ECS-On-Demand]
+      _include:
+        - products/sles/ondemand
+    - _attributes:
+        type: image
+        profiles: [ECS-On-Demand]
+      _include:
+        - csp/ec2/settings/ecs
+    - _attributes:
+        type: image
+        profiles: [SAP-BYOS, SAP-On-Demand]
+      _include:
+        - products/sap
+    - _attributes:
+        type: image
+        profiles: [SAP-On-Demand]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: sle-live-patching-release
+          - _attributes:
+              name: sle-live-patching-release-POOL
+config:
+  - _include:
+      - base/common
+  - profiles:
+    - On-Demand
+    - BYOS
+    - SAP-On-Demand
+    - SAP-BYOS
+    _include:
+      - csp/ec2
+  - profiles: [SAP-On-Demand, SAP-BYOS]
+    _include:
+      - products/sap
+  - profiles: [On-Demand, ECS-On-Demand, SAP-On-Demand]
+    _include:
+      - base/ondemand
+  - profiles: [ECS-On-Demand]
+    _include:
+      - csp/ec2/settings/ecs
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - csp/ec2
+  - name: on-demand.tar.gz
+    _include:
+      - base/ondemand
+  - name: byos.tar.gz
+    _include:
+      - products/sles/byos
+  - name: ecs.tar.gz
+    _namespace_ecs:
+      _include_overlays:
+        - motd-caption-ecs

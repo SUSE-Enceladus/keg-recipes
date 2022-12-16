@@ -1,0 +1,3 @@
+config:
+  sysconfig:
+    gce-sysconfig-netconfig: Null

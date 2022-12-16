@@ -1,9 +1,0 @@
-include-paths:
-  - base/jeos/leap15
-image:
-  name: Leap15.2-JeOS
-  specification: "Leap 15.2 guest image"
-  version: 1.15.2
-repositories:
-  -
-    path: obs://openSUSE:Leap:15.2/standard

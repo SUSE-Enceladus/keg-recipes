@@ -1,0 +1,4 @@
+packages:
+ _namespace_rpm_ndb:
+   package:
+     - rpm-ndb

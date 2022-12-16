@@ -1,0 +1,43 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Devel
+          description: Devel Image Build
+      - _attributes:
+          name: Production
+          description: Production Image Build
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Devel]
+      _include:
+        - csp/azure-baremetal/li/devel
+    - _attributes:
+        profiles: [Production]
+      _include:
+        - csp/azure-baremetal/li
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - csp/azure-baremetal/li
+        - products/sap
+config:
+  - _include:
+      - base/common
+      - csp/azure-baremetal/li
+      - products/sap
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - csp/azure-baremetal/li
+      - products/sap

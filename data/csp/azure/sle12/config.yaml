@@ -1,0 +1,33 @@
+config:
+  scripts:
+    azure-scripts:
+      - dhclient-increase-timeout
+      - set-password-policy
+      - ssh-enable-keep-alive
+      - sudo-disable-targetpw
+    azure-default-kernel-log-level:
+      - keep-default-kernel-log-level
+    azure-waagent:
+      - waagent-disable-auto-update
+      - waagent-enable-all-ssh-host-key-types
+      - waagent-disable-ephemeral-disk-handling
+  sysconfig:
+    azure-cloud-netconfig:
+      - file: /etc/sysconfig/network/config
+        name: NETCONFIG_MODULES_ORDER
+        value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
+    azure-set-hostname:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"
+  services:
+    azure-cloud-netconfig:
+      - cloud-netconfig.timer
+    azure-services:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - waagent
+    azure-regionsrv-timer:
+      - regionsrv-enabler-azure.timer

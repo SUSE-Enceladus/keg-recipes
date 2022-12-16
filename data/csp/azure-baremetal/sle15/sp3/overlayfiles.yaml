@@ -1,0 +1,4 @@
+archive:
+  _namespace_azure_baremetal_firewalld:
+    _include_overlays:
+      - azure-baremetal-firewalld-conf

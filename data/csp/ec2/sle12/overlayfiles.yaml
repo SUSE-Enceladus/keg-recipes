@@ -1,12 +1,13 @@
-overlayfiles:
-  ec2-base:
-    include:
+archive:
+  _namespace_ec2_base:
+    _include_overlays:
       - cloud-cfg-ec2
       - cloud-cfg-disable-network-config
       - dracut-aws-type-switch
-      - sysconfig-network-cloud-netconfig
-      - udev-nvme-timeout
-  ec2-dracut-opts:
-    include:
+  _namespace_ec2_dracut_opts:
+    _include_overlays:
       - dracut-ext4
       - dracut-virtio-scsi
+  _namespace_ec2_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig

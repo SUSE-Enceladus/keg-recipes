@@ -1,0 +1,4 @@
+packages:
+  _namespace_hpc_compiler:
+    package:
+      - gnu11-compilers-hpc-devel

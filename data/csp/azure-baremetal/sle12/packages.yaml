@@ -1,0 +1,33 @@
+packages:
+  _namespace_azure_baremetal_base:
+    package:
+      - azure-li-services
+      - dracut-kiwi-oem-repart
+      - fio
+      - gcc7
+      - gconf2
+      - hyper-v
+      - kernel-default
+      - kernel-firmware
+      - multipath-tools
+      - plymouth
+      - prometheus-ha_cluster_exporter
+      - prometheus-hanadb_exporter
+      - prometheus-sap_host_exporter
+      - shim
+      - syslinux
+      - ucode-intel
+  _namespace_azure_baremetal_hana_addon:
+    package:
+      - audit-libs
+      - keyutils-libs
+      - libopenssl1_0_0
+      - libssh2-1
+      - MozillaFirefox-branding-SLE
+      - patterns-sap-hana
+      - wireshark
+  _namespace_azure_baremetal_addon_msft:
+    package:
+      - perl-TimeDate
+      - zlib
+      - zlib-devel

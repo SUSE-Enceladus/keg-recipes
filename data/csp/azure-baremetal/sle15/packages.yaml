@@ -1,0 +1,55 @@
+packages:
+  _namespace_azure_baremetal_base:
+    package:
+      - acl
+      - azure-li-services
+      - dracut-kiwi-oem-repart
+      - gconf2
+      - hyper-v
+      - icmpinfo
+      - kernel-default
+      - kernel-firmware
+      - multipath-tools
+      - ntp
+      - opie
+      - plymouth
+      - prctl
+      - procinfo
+      - rsh
+      - syslinux
+      - targetcli-fb-common
+      - ucode-intel
+      - xauth
+      - xkbcomp
+      - yast2-iscsi-client
+      - yast2-iscsi-lio-server
+      - yast2-isns
+  _namespace_azure_baremetal_hana_addon:
+    package:
+      - audit-libs
+      - gcc7
+      - keyutils-libs
+      - libopenssl1_0_0
+      - libssh2-1
+      - MozillaFirefox-branding-SLE
+      - patterns-sap-hana
+      # 'ed' is needed as dependency of
+      # 'postfix' <- clamsap <- patterns-sap-hana (bsc#1205457)
+      - ed        
+      - wireshark
+  _namespace_azure_baremetal_addon_msft:
+    package:
+      - golang-github-prometheus-node_exporter
+      - java-1_8_0-ibm
+      - perl-TimeDate
+      - prometheus-ha_cluster_exporter
+      - prometheus-hanadb_exporter
+      - prometheus-sap_host_exporter
+      - zlib
+      - zlib-devel
+  _namespace_azure_baremetal_depsresolv:
+    package:
+      - fipscheck
+  _namespace_azure_baremetal_firewall:
+    package:
+      - SuSEfirewall2

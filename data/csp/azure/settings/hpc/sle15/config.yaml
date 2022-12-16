@@ -1,0 +1,4 @@
+config:
+  scripts:
+    waagent-rdma:
+      - waagent-enable-rdma

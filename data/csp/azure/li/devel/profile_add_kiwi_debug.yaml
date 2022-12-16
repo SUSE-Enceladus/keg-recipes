@@ -1,4 +1,0 @@
-profile:
-  parameters:
-    kernelcmdline:
-      rd.kiwi.debug: None

@@ -1,0 +1,6 @@
+packages:
+  _namespace_sles_base:
+    package:
+      - release-notes-sles
+      - sles-release
+      - sles-release-POOL

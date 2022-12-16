@@ -1,6 +1,6 @@
 config:
   files:
-    SAP-track-variant:
+    sles4sap-variant:
       - path: /etc/os-release
         append: True
         content: VARIANT_ID="sles-sap"

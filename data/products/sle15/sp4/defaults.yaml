@@ -1,0 +1,4 @@
+packages:
+  _namespace_yast2_schema:
+    package:
+      - yast2-schema-default

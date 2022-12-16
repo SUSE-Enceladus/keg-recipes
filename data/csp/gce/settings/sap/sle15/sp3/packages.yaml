@@ -1,0 +1,8 @@
+packages:
+  _namespace_gce_fence_agents_deps:
+    package:
+      - python3-fasteners
+      - python3-monotonic
+      - python3-oauth2client
+      - python3-oauth2client-gce
+      - python3-pycryptodome

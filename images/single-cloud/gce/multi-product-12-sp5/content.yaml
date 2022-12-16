@@ -1,0 +1,139 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: On-Demand
+          description: SLES HVM On-Demand image
+      - _attributes:
+          name: BYOS
+          description: SLES HVM BYOS image
+      - _attributes:
+          name: HPC-On-Demand
+          description: SLES HPC On-Demand image
+      - _attributes:
+          name: HPC-BYOS
+          description: SLES HPC On-Demand image
+      - _attributes:
+          name: SAP-On-Demand
+          description: SLES for SAP HVM On-Demand image
+      - _attributes:
+          name: SAP-BYOS
+          description: SLES for SAP HVM BYOS image
+  preferences:
+    - _include:
+      - base/common
+    - _attributes:
+        profiles: [On-Demand]
+      _include:
+        - csp/gce/settings/sles/ondemand
+    - _attributes:
+        profiles: [BYOS]
+      _include:
+        - csp/gce/settings/sles/byos
+    - _attributes:
+        profiles: [HPC-On-Demand]
+      _include:
+        - csp/gce/settings/hpc/ondemand
+    - _attributes:
+        profiles: [HPC-BYOS]
+      _include:
+        - csp/gce/settings/hpc/byos
+    - _attributes:
+        profiles: [SAP-On-Demand]
+      _include:
+        - csp/gce/settings/sap/ondemand
+    - _attributes:
+        profiles: [SAP-BYOS]
+      _include:
+        - csp/gce/settings/sap/byos
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - csp/gce
+    - _attributes:
+        type: image
+        profiles:
+          - On-Demand
+          - HPC-On-Demand
+          - SAP-On-Demand
+      _include:
+        - base/ondemand
+      archive:
+        - _attributes:
+            name: on-demand.tar.gz
+    - _attributes:
+        type: image
+        profiles: [On-Demand]
+      _include:
+        - products/sles/ondemand
+    - _attributes:
+        type: image
+        profiles: [BYOS]
+      _include:
+        - products/sles
+    - _attributes:
+        type: image
+        profiles: [HPC-BYOS, HPC-On-Demand]
+      _include:
+        - products/hpc
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+    - _attributes:
+        type: image
+        profiles: [SAP-BYOS, SAP-On-Demand]
+      _include:
+        - products/sap
+    - _attributes:
+        type: image
+        profiles: [BYOS, HPC-BYOS, SAP-BYOS]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: salt-minion
+      archive:
+        - _attributes:
+            name: byos.tar.gz
+    - _attributes:
+        type: image
+        profiles: [SAP-On-Demand]
+      _namespace_salt_minion:
+        package:
+          - _attributes:
+              name: sle-live-patching-release
+          - _attributes:
+              name: sle-live-patching-release-POOL
+config:
+  - _include:
+      - base/common
+      - csp/gce
+  - profiles:
+      - On-Demand
+      - HPC-On-Demand
+      - SAP-On-Demand
+    _include:
+      - base/ondemand
+  - profiles: [HPC-BYOS, HPC-On-Demand]
+    _include:
+      - products/hpc
+  - profiles: [SAP-On-Demand, SAP-BYOS]
+    _include:
+      - products/sap
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - csp/gce
+  - name: on-demand.tar.gz
+    _include:
+      - base/ondemand
+  - name: byos.tar.gz
+    _include:
+      - products/sles/byos

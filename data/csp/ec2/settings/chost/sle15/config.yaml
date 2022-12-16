@@ -1,0 +1,5 @@
+config:
+  services:
+    ec2-cloud-netconfig: Null
+  sysconfig:
+    ec2-cloud-netconfig: Null

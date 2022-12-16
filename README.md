@@ -2,15 +2,19 @@ keg-recipes
 ===========
 
 This repository contains recipes that can be used to generate
-various SLES [kiwi](https://github.com/OSInside/kiwi) image descriptions using
+various [kiwi](https://github.com/OSInside/kiwi) image descriptions using
 [keg](https://github.com/SUSE-Enceladus/keg).
+
+The "released" branch reflects the image descriptions as they are used to
+build images maintained and published by SUSE. Details about how changes are
+applied are provided in CONTRIBUTING.md
 
 Basics
 ======
 
 Keg recipes contain three types of input data, the image recipe in the `images`
-sub directory, the image data in the `data` sub directoy, and the schema
-definition in the `schemas` sub direcory. The recipe and data configuration is
+sub directory, the image data in the `data` sub directory, and the schema
+definition in the `schemas` sub directory. The recipe and data configuration is
 in YAML format, the schemas are Jinja2 templates.
 
 The schema defines the structure of the output, namely the kiwi configuration

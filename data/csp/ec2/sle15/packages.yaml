@@ -1,16 +1,36 @@
 packages:
-  image:
-    EC2:
-      - aws-cli
+  _namespace_ec2_base:
+    package:
+      - _attributes:
+          name: grub2-x86_64-xen 
+          arch: x86_64
+      - _attributes:
+          name: xen-libs
+          arch: x86_64
+      - _attributes:
+          name: xen-tools-domU
+          arch: x86_64
+  _namespace_ec2_cloud_netconfig:
+    package:
+      - cloud-netconfig-ec2
+  _namespace_ec2_init:
+    package:
       - cloud-init
       - cloud-init-config-suse
-      - cloud-netconfig-ec2
-      - name: grub2-x86_64-xen 
-        arch: x86_64
-      - kernel-default
-      - python3-ec2imgutils
+  _namespace_ec2_tools:
+    package:
+      - amazon-ssm-agent
+      - aws-cli
       - python3-ec2metadata
-      - name: xen-libs
-        arch: x86_64
-      - name: xen-tools-domU
-        arch: x86_64
+  _namespace_ec2_image_utils:
+    package:
+      - python3-ec2deprecateimg
+      - python3-ec2publishimg
+      - python3-ec2uploadimg
+  _namespace_ec2_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-ec2
+      - regionsrv-certs
+      - regionServiceClientConfigEC2
+      - regionServiceCertsEC2

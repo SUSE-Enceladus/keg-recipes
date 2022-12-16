@@ -1,6 +1,11 @@
 packages:
-  bootstrap:
-    SAP-ondemand:
+  _namespace_sap_ondemand_release:
+    package:
       - sle-ha-release
       - sle-module-live-patching-release
       - sle-module-sap-applications-release
+  _namespace_sap_extra:
+    package:
+      - docker
+      # needed for fence_virsh of fence-agents
+      - libvirt-client

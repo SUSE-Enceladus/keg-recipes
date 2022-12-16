@@ -1,0 +1,9 @@
+config:
+  files:
+    hpc-variant:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="sles-hpc"
+    hpc-memlock-unlimited:
+      - path: /etc/security/limits.d/hpc.conf
+        content: "*               -       memlock         unlimited"

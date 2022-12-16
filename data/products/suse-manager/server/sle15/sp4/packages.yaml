@@ -1,0 +1,10 @@
+packages:
+  _namespace_manager_server_deps:
+    package:
+      # avoid log4j12-mini
+      - log4j12
+      # direct include to avoid picking classpathx-mail instead of
+      # javamail which does not work with spacewalk-java
+      - javamail
+      # needed but is only recommend
+      - libtcnative-1-0

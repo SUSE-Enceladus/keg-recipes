@@ -1,9 +1,0 @@
-profiles:
-  EC2-ECS-HVM:
-    include:
-      - base/cloudreg
-      - base/jeos
-      - base/sle-modules
-      - base/sles
-      - csp/ec2/ecs
-      - csp/ec2/ondemand

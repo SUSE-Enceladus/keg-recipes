@@ -1,0 +1,43 @@
+packages:
+  _namespace_chost_base:
+    package:
+      - bind-utils
+      - ca-certificates
+      - ca-certificates-mozilla
+      - cifs-utils
+      - conntrack-tools
+      - containerd
+      - containerd-ctr
+      - cpupower
+      - docker
+      - fipscheck
+      - hwinfo
+      - jq
+      - less
+      - libnss_usrfiles2
+      - nfs-client
+      - open-iscsi
+      - pciutils
+      - rsyslog
+      - runc
+      - socat
+      - supportutils-plugin-suse-public-cloud
+      - tcpdump
+      - vim
+      - vlan
+      - wget
+      - wicked
+  _namespace_chost_btrfsprogs:
+    package:
+      - btrfsmaintenance
+      - btrfsprogs
+      - docker-img-store-setup
+  _namespace_chost_fcoe_utils:
+    package:
+      - fcoe-utils
+  _namespace_chost_release:
+    package:
+      - sle-module-basesystem-release
+      - sle-module-containers-release
+      - sle-module-public-cloud-release
+      - sles-release

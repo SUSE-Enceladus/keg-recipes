@@ -1,0 +1,8 @@
+packages:
+  _namespace_sle_micro_network_mgmt:
+    package:
+      - NetworkManager
+      - NetworkManager-branding-SLE
+  _namespace_yast2_schema:
+    package:
+      - yast2-schema-micro

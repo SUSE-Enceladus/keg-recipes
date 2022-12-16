@@ -1,0 +1,3 @@
+config:
+  services:
+    azure-regionsrv-timer: Null

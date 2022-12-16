@@ -1,0 +1,4 @@
+archive:
+  _namespace_motd_sapcal:
+    _include_overlays:
+      - motd-caption-sapcal

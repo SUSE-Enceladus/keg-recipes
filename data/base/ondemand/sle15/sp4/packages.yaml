@@ -1,0 +1,5 @@
+packages:
+  _namespace_sle_module_cap_tools: Null
+  _namespace_sle_module_python:
+    package:
+      - sle-module-python3-release

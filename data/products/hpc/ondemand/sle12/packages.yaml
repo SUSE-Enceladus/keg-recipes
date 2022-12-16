@@ -1,0 +1,5 @@
+packages:
+  _namespace_sle_module_hpc_release:
+    package:
+      - sle-module-hpc-release
+      - sle-module-hpc-release-POOL

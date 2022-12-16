@@ -1,0 +1,9 @@
+config:
+  files:
+    sles4sap-variant:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="sles-sap-hardened"
+  scripts:
+    hardened-config:
+      - pcs-sap-hardening

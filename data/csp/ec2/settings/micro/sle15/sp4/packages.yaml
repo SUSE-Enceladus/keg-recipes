@@ -1,0 +1,11 @@
+packages:
+  _namespace_ec2_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-ec2
+      - regionsrv-certs
+      - regionServiceClientConfigEC2
+      - regionServiceCertsEC2
+  _namespace_ec2_imgutils:
+    package:
+      - python3-ec2imgutils

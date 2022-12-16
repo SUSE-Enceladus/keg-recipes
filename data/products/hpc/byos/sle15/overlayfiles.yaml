@@ -1,0 +1,4 @@
+archive:
+  _namespace_hpc_motd_byos:
+    _include_overlays:
+      - motd-addon-byos

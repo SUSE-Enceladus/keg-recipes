@@ -1,0 +1,66 @@
+{% macro dict_to_param_string(pdict) -%}
+  {%- set ns = namespace(spacer="") -%}
+  {%- set ns = namespace(listspacer="") -%}
+  {%- for pname, pval in pdict.items() %}
+    {%- if pval != "None" %}
+    {%- if pval is not iterable or pval is string %}
+      {%- set pval = [pval] %}
+    {%- endif -%}
+    {{ ns.spacer }}{{ pname }}
+    {%- set ns.listspacer="" %}
+    {%- for item in pval -%}
+      {{ ns.listspacer }}={{ item }}
+      {%- set ns.listspacer=" %s"|format(pname) -%}
+    {%- endfor %}
+    {%- set ns.spacer=" " %}
+    {%- endif %}
+  {%- endfor -%}
+{%- endmacro -%}
+{% macro print_preferences(profile) -%}
+        <type {%- for key, val in profile['parameters'].items() -%}
+            {%- if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}"
+            {%- else %} {{ key }}="{{ val }}"
+            {%- endif -%}
+            {%- endfor -%}>
+            {%- if profile['bootloader'] %}
+            <bootloader {%- for key, val in profile['bootloader'].items() %} {{ key }}="{{ val }}" {%- endfor -%}/>
+            {%- endif %}
+            {%- if profile['size'] %}
+            <size unit="M">{{ profile['size'] }}</size>
+            {%- endif %}
+            {%- if profile['oemconfig'] %}
+            <oemconfig>
+              {%- for cfg, val in profile['oemconfig'].items() %}
+              <{{ cfg }}>{{ val }}</{{ cfg }}>
+              {%- endfor %}
+            </oemconfig>
+            {%- endif %}
+            {%- if profile['machine'] %}
+            <machine {%- for key, val in profile['machine'].items() %} {{ key }}="{{ val }}" {%- endfor -%}/>
+            {%- endif %}
+        </type>
+{%- endmacro -%}
+{% macro print_packages(profile, content, multibuild) -%}
+    {%- set pkg_profiles = content['nested_profiles']|default([profile])|join(',') %}
+    {%- for pkg_type in content['packages'] %}
+    <packages type="{{ pkg_type }}"
+        {%- if profile != 'common' and multibuild == True %} profiles="{{ pkg_profiles }}"
+        {%- endif -%}
+    >
+        {%- for namespace, packages in content['packages'][pkg_type].items() %}
+        {%-   if namespace == 'archive' %}
+        {%-     for pkg in packages %}
+        <archive name="{{ pkg['name'] }}"/>
+        {%-     endfor %}
+        {%-   else %}
+        <!-- Begin include from {{ namespace }} -->
+        {%-     for pkg in packages %}
+        <package name="{{ pkg['name']|default(pkg) }}"
+        {%-       if pkg['arch'] %} arch="{{ pkg['arch'] }}"{% endif %}/>
+        {%-     endfor %}
+        <!-- End include from {{ namespace }} -->
+        {%-   endif %}
+        {%- endfor %}
+    </packages>
+    {%- endfor %}
+{%- endmacro -%}

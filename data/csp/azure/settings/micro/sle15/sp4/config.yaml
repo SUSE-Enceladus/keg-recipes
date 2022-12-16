@@ -1,0 +1,4 @@
+config:
+  services:
+    azure-regionsrv-timer:
+      - regionsrv-enabler-azure.timer

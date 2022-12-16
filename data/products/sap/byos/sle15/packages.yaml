@@ -1,9 +1,22 @@
 packages:
-  image:
-    SAP-byos:
+  _namespace_sap_byos:
+    package:
       - drbd-formula
       - habootstrap-formula
-      - python-shaptools
-      - salt-minion
+      - iscsi-formula
+      - python3-shaptools
       - salt-shaptools
       - saphanabootstrap-formula
+      - sapnwbootstrap-formula
+      - salt-minion
+  _namespace_sap_extra:
+    package:
+      - docker
+      # needed for fence_virsh of fence-agents
+      - libvirt-client
+  _namespace_sap_byos_modules:
+    package:
+      - sle-ha-release
+      - sle-module-development-tools-release
+      - sle-module-containers-release
+      - sle-module-sap-applications-release

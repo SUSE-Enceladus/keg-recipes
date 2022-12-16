@@ -1,0 +1,63 @@
+config:
+  files:
+    sysconfig-mouse:
+      - path: /etc/sysconfig/mouse
+        apppend: True
+        content: |-
+          # The full name of the attached mouse.
+          #
+          FULLNAME=""
+          
+          # The YaST-internal identifier of the attached mouse.
+          #
+          YAST_MOUSE="none"
+          
+          # Mouse device used for the X11 system.
+          #
+          XMOUSEDEVICE=""
+          
+          # The number of buttons of the attached mouse.
+          #
+          BUTTONS="0"
+          
+          # The number of wheels of the attached mouse.
+          #
+          WHEELS="0"
+  sysconfig:
+    suse-firewall-rules:
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_LOAD_MODULES
+        value: nf_conntrack_netbios_ns
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_DEV_EXT
+        value: "any eth0"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_LOG_DROP_CRIT
+        value: "yes"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_LOG_DROP_ALL
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_LOG_ACCEPT_CRIT
+        value: "yes"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_LOG_ACCEPT_ALL
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_ALLOW_FW_BROADCAST_EXT
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_ALLOW_FW_BROADCAST_INT
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_ALLOW_FW_BROADCAST_DMZ
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_IGNORE_FW_BROADCAST_INT
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_IGNORE_FW_BROADCAST_DMZ
+        value: "no"
+      - file: /etc/sysconfig/SuSEfirewall2
+        name: FW_IPSEC_TRUST
+        value: "no"

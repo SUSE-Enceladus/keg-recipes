@@ -1,0 +1,10 @@
+If you desire in place updates of the host and have not yet registered
+the instance, please register this instance using your existing SUSE
+entitlement.
+
+As "root" (sudo or sudo -i) use the following command:
+SUSEConnect --url=https://scc.suse.com  -e company@example.com -r YOUR_CODE
+
+Without registration this instance does not have access to updates and
+security fixes.
+
