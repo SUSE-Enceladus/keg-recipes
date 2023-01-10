@@ -16,6 +16,9 @@ image:
       - _attributes:
           name: OpenStack
           description: OpenStack configuration
+      - _attributes:
+          name: SAP Converged Cloud
+          description: SAP Converged Cloud configuration
   preferences:
     - _include:
         - base/common
@@ -44,9 +47,14 @@ image:
       _include:
         - csp/openstack/settings/chost
         - products/chost
+    - _attributes:
+        profiles: [SAP Converged Cloud]
+      _include:
+        - csp/sap-converged-cloud/settings/chost
+        - products/chost
   packages:
     - _attributes:
-       type: bootstrap
+        type: bootstrap
       _include:
         - base/bootstrap
     - _attributes:
@@ -91,6 +99,11 @@ image:
         profiles: [OpenStack]
       _include:
         - csp/openstack/settings/chost
+    - _attributes:
+        type: image
+        profiles: [SAP Converged Cloud]
+      _include:
+        - csp/sap-converged-cloud/settings/chost
 config:
   - _include:
       - base/common
@@ -110,6 +123,9 @@ config:
   - profiles: [OpenStack]
     _include:
       - csp/openstack/settings/chost
+  - profiles: [SAP Converged Cloud]
+    _include:
+      - csp/sap-converged-cloud/settings/chost
 archive:
   - name: root.tar.gz
     _include:
