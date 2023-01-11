@@ -1,11 +1,7 @@
 packages:
   _namespace_default_bootloader: Null
   _namespace_default_shim: Null
-  _namespace_openstack_bootloader:
-    package:
-      - _attributes:
-          name: grub2-arm64-efi
-          arch: aarch64
+  _namespace_openstack_bootloader: Null
   _namespace_openstack_init:
     package:
       - cloud-init
