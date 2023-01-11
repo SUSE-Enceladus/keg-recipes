@@ -41,7 +41,6 @@ packages:
       - transactional-update
       - transactional-update-zypp-config
       - vim-small
-      - vlan
       - yast2-logs
       - zypper-needs-restarting
   _namespace_sle_micro_network_mgmt:
