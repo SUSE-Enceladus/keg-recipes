@@ -8,4 +8,4 @@ image:
     name: SLES15-SP3-Micro-5-2-BYOS
     displayname: SLES15-SP3-Micro-5-2-BYOS
   description:
-    specification: SUSE Linux Enterprise Micro 5.2 guest image
+    specification: SUSE Linux Enterprise Micro 5.2 BYOS guest image
