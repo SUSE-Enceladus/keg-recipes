@@ -40,3 +40,4 @@ packages:
       - sle-module-containers-release
       - sle-module-public-cloud-release
       - sles-release
+  _namespace_yast2_schema: Null
