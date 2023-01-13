@@ -1,7 +1,4 @@
 packages:
-  _namespace_default_bootloader: Null
-  _namespace_default_shim: Null
-  _namespace_openstack_bootloader: Null
   _namespace_openstack_init:
     package:
       - cloud-init
