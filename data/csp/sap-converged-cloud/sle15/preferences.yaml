@@ -9,10 +9,10 @@ preferences:
         NON_PERSISTENT_DEVICE_NAMES: 1
         multipath: "off"
       vga: normal
-      machine:
+    machine:
+      _attributes:
+        ovftype: vmware
+        HWversion: 10
+      vmdisk:
         _attributes:
-          ovftype: vmware
-          HWversion: 10
-        vmdisk:
-          _attributes:
-            diskmode: streamOptimized
+          diskmode: streamOptimized
