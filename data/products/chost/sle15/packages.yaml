@@ -24,7 +24,6 @@ packages:
       - supportutils-plugin-suse-public-cloud
       - tcpdump
       - vim
-      - vlan
       - wget
       - wicked
   _namespace_chost_btrfsprogs:
