@@ -5,6 +5,9 @@ image:
           name: Azure
           description: Azure configuration
       - _attributes:
+          name: Azure-CVM
+          description: Azure confidential VM configuration
+      - _attributes:
           name: EC2
           description: EC2 configuration
       - _attributes:
@@ -16,6 +19,11 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
+        - csp/azure/settings/sap/ondemand
+    - _attributes:
+        profiles: [Azure-CVM]
+      _include:
+        - csp/azure/settings/cvm
         - csp/azure/settings/sap/ondemand
     - _attributes:
         profiles: [EC2]
