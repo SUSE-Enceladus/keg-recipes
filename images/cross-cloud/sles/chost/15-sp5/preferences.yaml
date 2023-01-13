@@ -36,7 +36,7 @@ image:
         - csp/openstack/settings/chost
         - products/chost
     - _attributes:
-        profiles: [SAP Converged Cloud]
+        profiles: [SAP-CCloud]
       _include:
         - csp/sap-converged-cloud/settings/chost
         - products/chost
