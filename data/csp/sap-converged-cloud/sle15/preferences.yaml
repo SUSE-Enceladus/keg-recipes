@@ -1,0 +1,18 @@
+preferences:
+  type:
+    _attributes:
+      devicepersistency: Null
+      format: vmdk
+      firmware: uefi
+      kernelcmdline:
+        console: ["ttyS0,115200n8", "tty0"]
+        NON_PERSISTENT_DEVICE_NAMES: 1
+        multipath: "off"
+      vga: normal
+    machine:
+      _attributes:
+        ovftype: vmware
+        HWversion: 10
+      vmdisk:
+        _attributes:
+          diskmode: streamOptimized

@@ -1,0 +1,5 @@
+packages:
+  _namespace_openstack_init:
+    package:
+      - cloud-init
+      - open-vm-tools
