@@ -36,7 +36,6 @@ image:
         type: image
       _include:
         - base/common
-        - base/ondemand
         - products/sle-micro
     - _attributes:
         type: image
