@@ -6,7 +6,3 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigEC2
       - regionServiceCertsEC2
-  _namespace_ec2_imgutils:
-    package:
-      - python3-ec2imgutils
-      - sle-module-public-cloud-release
