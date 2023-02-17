@@ -10,7 +10,6 @@ packages:
       - binutils
       - blktrace
       - cifs-utils
-      - command-not-found
       - crash
       - cronie
       - curl
@@ -118,3 +117,6 @@ packages:
   _namespace_sle_common_yast2_trans:
     package:
       - yast2-trans-en_US
+  _namespace_sle_cnf:
+    package:
+      - command-not-found

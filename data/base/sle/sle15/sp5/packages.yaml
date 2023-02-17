@@ -1,0 +1,4 @@
+packages:
+  _namespace_sle_cnf:
+    package:
+      - scout-command-not-found
