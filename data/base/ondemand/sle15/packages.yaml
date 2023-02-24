@@ -5,9 +5,11 @@ packages:
       - sle-module-containers-release
       - sle-module-desktop-applications-release
       - sle-module-development-tools-release
-      - sle-module-legacy-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release
   _namespace_sle_module_cap_tools:
     package:
       - sle-module-cap-tools-release
+  _namespace_sle_module_legacy:
+    package:
+      - sle-module-legacy-release
