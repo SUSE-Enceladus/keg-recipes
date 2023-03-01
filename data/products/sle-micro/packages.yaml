@@ -47,3 +47,6 @@ packages:
     package:
       - cockpit-wicked
       - wicked
+  _namespace_suseconnect:
+    package:
+      - suseconnect-ng

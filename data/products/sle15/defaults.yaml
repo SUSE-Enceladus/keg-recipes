@@ -3,6 +3,9 @@ archive:
     _include_overlays:
       - motd-default
 packages:
+  _namespace_suseconnect:
+    package:
+      - SUSEConnect
   _namespace_yast2_schema:
     package:
       - yast2-schema
