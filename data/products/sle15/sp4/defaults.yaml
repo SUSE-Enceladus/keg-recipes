@@ -1,4 +1,7 @@
 packages:
+  _namespace_suseconnect:
+    package:
+      - suseconnect-ng
   _namespace_yast2_schema:
     package:
       - yast2-schema-default

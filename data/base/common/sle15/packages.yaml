@@ -15,7 +15,6 @@ packages:
       - sudo
       - supportutils
       - suse-build-key
-      - SUSEConnect
       - system-group-hardware
       - system-group-wheel
       - system-user-nobody

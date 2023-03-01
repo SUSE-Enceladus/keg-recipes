@@ -11,6 +11,7 @@ packages:
       - cpupower
       - docker
       - fipscheck
+      - hwdata
       - hwinfo
       - jq
       - less
