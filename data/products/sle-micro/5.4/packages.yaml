@@ -1,0 +1,4 @@
+packages:
+  _namespace_sle_micro_pwd_check:
+    package:
+      - libpwquality-tools
