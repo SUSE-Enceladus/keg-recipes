@@ -12,7 +12,6 @@ preferences:
       spare_part_is_last: "true"
       spare_part_fs_attributes: no-copy-on-write
       kernelcmdline:
-        cgroup_enable: memory
         swapaccount: 1
         ip: dhcp
         rd.neednet: 1
