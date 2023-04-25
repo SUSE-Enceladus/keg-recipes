@@ -23,13 +23,11 @@ packages:
           name: libodbc2
           arch: x86_64
       - _attributes:
-          name: libopenssl1_0_0
-          arch: x86_64
-      - _attributes:
           name: unixODBC
           arch: x86_64
-  _namespace_sapcal_legacy: Null
-  _namespace_sapcal_java_legacy:
+  _namespace_sapcal_libopenssl_old:
     package:
-      # java-1_8_0-ibm moved to legacy module in SP3
-      - sle-module-legacy-release
+      - _attributes:
+          name: libopenssl1_0_0
+          arch: x86_64
+  _namespace_sapcal_legacy: Null
