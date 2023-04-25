@@ -2,11 +2,18 @@ image:
   profiles:
     profile:
       - _attributes:
+          name: Azure
+          description: Azure configuration
+      - _attributes:
           name: EC2
           description: EC2 configuration
   preferences:
     - _include:
         - base/common
+    - _attributes:
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/rancher-setup
     - _attributes:
         profiles: [EC2]
       _include:
@@ -23,6 +30,14 @@ image:
         - products/rancher-setup
     - _attributes:
         type: image
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/rancher-setup
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
         profiles: [EC2]
       _include:
         - csp/ec2/settings/rancher-setup
@@ -34,6 +49,9 @@ config:
       - base/common
       - base/sle
       - products/rancher-setup
+  - profiles: [Azure]
+    _include:
+      - csp/azure/settings/rancher-setup
   - profiles: [EC2]
     _include:
       - csp/ec2
@@ -43,6 +61,9 @@ archive:
       - base/common
       - base/sle
       - products/rancher-setup
+  - name: azure.tar.gz
+    _include:
+      - csp/azure
   - name: ec2.tar.gz
     _include:
       - csp/ec2

@@ -35,9 +35,11 @@ packages:
       - rollback-helper
       - selinux-policy-targeted
       - selinux-tools
+      - supportutils-plugin-suse-public-cloud
       - systemd-presets-branding-SMO
       - systemd-default-settings-branding-SLE-Micro
       - SUSE-MicroOS-release
+      - toolbox
       - transactional-update
       - transactional-update-zypp-config
       - vim-small

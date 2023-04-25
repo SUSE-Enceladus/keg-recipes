@@ -37,3 +37,5 @@ config:
       - google-shutdown-scripts
       - google-startup-scripts
       - rootgrow
+    gce-cloud-netconfig:
+      - cloud-netconfig.timer

@@ -1,0 +1,4 @@
+config:
+  services:
+    gce-sap-agent:
+      - google-cloud-sap-agent.service

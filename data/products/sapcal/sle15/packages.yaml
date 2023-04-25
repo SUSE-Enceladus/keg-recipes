@@ -39,27 +39,19 @@ packages:
       - libssh2-1
       - libtool
       - libxml2-devel
-      - opie
-      - python2-pycrypto
-      - python-pyOpenSSL
       - readline-devel
       - rpm-build
       - samba
       - samba-client
-      - _attributes:
-          name: samba-client-32bit
-          arch: x86_64
       - sapconf
       - sysstat
       - tack
       - tuned
       - unrar
       - uuidd
-      - uuid-runtime
       - x11-tools
       - xauth
       - xorg-x11-devel
-      - xorg-x11-driver-input
       - xorg-x11-driver-video
       - xorg-x11-fonts
       - xorg-x11-server
@@ -68,9 +60,6 @@ packages:
           arch: x86_64
       - _attributes:
           name: xorg-x11-libXau-32bit
-          arch: x86_64
-      - _attributes:
-          name: xorg-x11-libXdmcp-32bit
           arch: x86_64
       - _attributes:
           name: xorg-x11-libXext-32bit
@@ -82,3 +71,13 @@ packages:
       - _attributes:
           name: zlib-32bit
           arch: x86_64
+  _namespace_sapcal_legacy:
+    package:
+      - _attributes:
+          name: glibc-32bit
+          arch: x86_64
+      - _attributes:
+          name: samba-client-32bit
+          arch: x86_64
+      - python2-pycrypto
+      - python-pyOpenSSL

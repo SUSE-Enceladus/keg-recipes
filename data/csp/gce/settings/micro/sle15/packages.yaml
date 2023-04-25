@@ -3,3 +3,6 @@ packages:
   _namespace_gce_patch: Null
   _namespace_gce_tools: Null
   _namespace_gce_registration: Null
+  _namespace_gce_micro:
+    package:
+      - python3-gcemetadata
