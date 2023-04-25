@@ -21,6 +21,7 @@ packages:
       - open-iscsi
       - pciutils
       - rsyslog
+      - rsyslog-module-relp
       - runc
       - socat
       - supportutils-plugin-suse-public-cloud
