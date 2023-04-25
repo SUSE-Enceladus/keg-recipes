@@ -39,6 +39,7 @@ packages:
       - systemd-presets-branding-SMO
       - systemd-default-settings-branding-SLE-Micro
       - SUSE-MicroOS-release
+      - toolbox
       - transactional-update
       - transactional-update-zypp-config
       - vim-small
