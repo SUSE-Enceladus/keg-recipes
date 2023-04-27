@@ -3,6 +3,7 @@ include-paths:
   - sle15/sp2
   - sle15/sp3
   - sle15/sp4
+  - "5.3"
   - "5.4"
 image:
   _attributes:
