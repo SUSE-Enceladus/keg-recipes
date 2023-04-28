@@ -10,6 +10,9 @@ packages:
       - fence-agents
       - findutils-locate
       - gfs2-kmp-default
+      - _attributes:
+          name: glibc-32bit
+          arch: x86_64
       - HANA-Firewall
       - hawk2
       - ipmitool
