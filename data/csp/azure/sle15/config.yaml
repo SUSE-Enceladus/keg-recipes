@@ -3,6 +3,7 @@ config:
     azure-scripts:
       - set-password-policy
       - ssh-enable-keep-alive
+      - sudo-disable-targetpw
     azure-default-kernel-log-level:
       - keep-default-kernel-log-level
     azure-dhclient-timeout:
