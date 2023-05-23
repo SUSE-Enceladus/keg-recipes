@@ -1,0 +1,90 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure
+          description: Azure configuration
+      - _attributes:
+          name: EC2-HVM
+          description: EC2 configuration
+      - _attributes:
+          name: GCE
+          description: GCE configuration
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/sap/byos
+    - _attributes:
+        profiles: [EC2-HVM]
+      _include:
+        - csp/ec2/settings/sap/byos
+    - _attributes:
+        profiles: [GCE]
+      _include: csp/gce/settings/sap/byos
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - products/sap/byos
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/sap/byos
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2-HVM]
+      _include:
+        - csp/ec2/settings/sap/byos
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce/settings/sap/byos
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - products/sap/byos
+  - profiles: [Azure]
+    _include:
+      - csp/azure/settings/sap/byos
+  - profiles: [EC2-HVM]
+    _include:
+      - csp/ec2/settings/sap/byos
+  - profiles: [GCE]
+    _include:
+      - csp/gce/settings/sap/byos
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - products/sap/byos
+  - name: azure.tar.gz
+    _include:
+      - csp/azure/settings/sap/byos
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2/settings/sap/byos
+  - name: gce.tar.gz
+    _include:
+      - csp/gce/settings/sap/byos
