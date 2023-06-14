@@ -3,6 +3,7 @@ config:
     sle-micro-scripts:
       - chost-strip-image
       - microos-add-variant
+      - selinux-enforce
       - snapper-microos-config
       - zypp-disable-multiversion
       - zypp-set-excludedocs
@@ -16,7 +17,7 @@ config:
       - boot.device-mapper
       - docker
   sysconfig:
-    sle-micro-sysconig:
+    sle-micro-sysconfig:
       - file: /etc/sysconfig/network/config
         name: WICKED_DEBUG
         value: "ifconfig,dhcp,autoip,ipv4,ipv6"
