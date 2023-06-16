@@ -1,10 +1,11 @@
-prodfiles=(`grep -l '<codestream>' /etc/products.d/*prod`)
-for p in $prodfiles ; do
-  grep -q '<flavor>extension</flavor>' $p || prodfile="$prodfile $p"
+readarray -t prodfiles < <(grep -l '<codestream>' /etc/products.d/*prod)
+base_prodfiles=()
+for p in "${prodfiles[@]}" ; do
+    grep -q '<flavor>' "$p" || base_prodfiles+=("$p")
 done
-if [[ ${#prodfile[*]} -ne 1 ]]; then
+if [[ ${#base_prodfiles[*]} -ne 1 ]]; then
     echo "No base product package installed or base product ambiguous." >&2
     false
 else
-    ln -sf `basename "${prodfile[0]}"` /etc/products.d/baseproduct
+    ln -sf `basename "${base_prodfiles[0]}"` /etc/products.d/baseproduct
 fi
