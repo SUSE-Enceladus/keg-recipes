@@ -1,3 +1,4 @@
+# NOTE: This needs to be adapted to ALP
 readarray -t prodfiles < <(grep -l '<codestream>' /etc/products.d/*prod)
 base_prodfiles=()
 for p in "${prodfiles[@]}" ; do
