@@ -16,6 +16,8 @@ preferences:
         ip: dhcp
         rd.neednet: 1
         "\\$ignition_firstboot": []
+        security: "selinux"
+        selinux: 1
     systemdisk:
       volume:
         - _attributes:
