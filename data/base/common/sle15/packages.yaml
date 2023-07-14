@@ -8,6 +8,7 @@ packages:
       - dracut
       - grub2
       - haveged
+      - hostname
       - iputils
       - kdump
       - openssh
