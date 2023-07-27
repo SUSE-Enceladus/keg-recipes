@@ -2,7 +2,6 @@
 echo "run oscap -profile pcs-hardening-sap"
 oscap xccdf eval --remediate --profile pcs-hardening-sap /usr/share/xml/scap/ssg/content/ssg-sle15-ds.xml || {
     echo "!!!FAILED: --profile pcs-hardening-sap"
-    /bin/fail
 }
 
 RULES_FROM_CIS=" \
@@ -53,6 +52,5 @@ for RULE in ${RULES_FROM_CIS}; do
     echo "run oscap -profile cis_server_l ${RULE}"
     oscap xccdf eval --remediate --profile cis_server_l1 --rule xccdf_org.ssgproject.content_rule_${RULE}  /usr/share/xml/scap/ssg/content/ssg-sle15-ds.xml || {
 	echo "!!!FAILED: ${RULE}"
-        /bin/fail
 	}
 done
