@@ -24,6 +24,7 @@ packages:
       - parted
       - patterns-sles-Minimal
       - procinfo
+      - python-instance-billing-flavor-check
       - rpm
       - rsyslog
       - sg3_utils
