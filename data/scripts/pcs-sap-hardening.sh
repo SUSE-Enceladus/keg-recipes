@@ -53,11 +53,9 @@ sshd_use_strong_kex \
 # sysctl_net_ipv4_conf_default_send_redirects
 # sysctl_net_ipv4_ip_forward
 
-# remediate selected rules
 for RULE in ${RULES_FROM_CIS}; do
-    echo "run oscap -profile cis_server_l ${RULE}"
-    oscap xccdf eval --remediate --profile cis_server_l1 --rule xccdf_org.ssgproject.content_rule_${RULE} $ssg_file || {
-        echo "!!!FAILED: ${RULE}"
-        /bin/false
-    }
+    RULE_ARGS="$RULE_ARGS --rule xccdf_org.ssgproject.content_rule_$RULE"
 done
+
+# remediate selected rules
+oscap xccdf eval --remediate $RULE_ARGS $ssg_file
