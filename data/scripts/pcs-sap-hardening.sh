@@ -11,14 +11,11 @@ RULES_FROM_CIS=" \
 banner_etc_issue_net \
 account_disable_post_pw_expiration \
 accounts_set_post_pw_existing \
-accounts_users_home_files_permissions \
 file_permissions_home_directories \
 rsyslog_files_permissions \
 journald_forward_to_syslog \
 rsyslog_remote_loghost \
 package_nftables_removed \
-permissions_local_var_log \
-mount_option_dev_shm_noexec \
 file_at_deny_not_exist \
 file_cron_deny_not_exist \
 package_rpcbind_removed \
@@ -30,7 +27,7 @@ sshd_disable_rhosts \
 sshd_do_not_permit_user_env \
 sshd_set_max_auth_tries \
 sshd_use_strong_kex \
-"
+accounts_umask_etc_login_defs"
 # NOTE: the following were disabled because they try to read from /proc/sys
 # and potentially call sysctl which does not work or make sense in chroot.
 #
@@ -52,6 +49,12 @@ sshd_use_strong_kex \
 # sysctl_net_ipv4_conf_all_send_redirects
 # sysctl_net_ipv4_conf_default_send_redirects
 # sysctl_net_ipv4_ip_forward
+#
+# NOTE: Disabled permissions_local_var_log, some log files will be created world-readable
+#
+# NOTE: Disabled mount_option_dev_shm_noexec because we cannot alter /etc/fstab in build
+#
+# NOTE: Disabled accounts_users_home_files_permissions, not really enforcable
 
 for RULE in ${RULES_FROM_CIS}; do
     RULE_ARGS="$RULE_ARGS --rule xccdf_org.ssgproject.content_rule_$RULE"
