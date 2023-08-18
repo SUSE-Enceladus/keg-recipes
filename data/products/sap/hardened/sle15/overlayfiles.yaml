@@ -1,0 +1,4 @@
+archive:
+  _namespace_sap_hardened:
+    _include_overlays:
+      - pcs-hardening-sap
