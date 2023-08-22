@@ -1,0 +1,36 @@
+image:
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - csp/azure/settings/suma-server/ondemand
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/suma-server/ondemand
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - csp/gce/settings/suma-server/ondemand
+      archive:
+        - _attributes:
+            name: gce.tar.gz

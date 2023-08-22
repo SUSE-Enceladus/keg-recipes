@@ -1,0 +1,6 @@
+packages:
+  _namespace_gce_suma_ondemand:
+    package:
+      - python3-csp-billing-adapter-google
+      - suma-google-adapter-config-llc
+      - suma-google-adapter-config-ltd

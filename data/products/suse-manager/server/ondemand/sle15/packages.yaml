@@ -1,0 +1,7 @@
+packages:
+  _namespace_manager_server_ondemand:
+    package:
+      - python-instance-billing-flavor-check
+      - python3-csp-billing-adapter
+      - python3-csp-billing-adapter-local
+      - billing-data-service
