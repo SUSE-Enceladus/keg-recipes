@@ -1,0 +1,86 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure-llc
+          description: Azure configuration for Non-EU/Non-UK (LLC) offers
+      - _attributes:
+          name: Azure-ltd
+          description: Azure configuration for EU/UK (Ltd) offers
+      - _attributes:
+          name: EC2-llc
+          description: EC2 configuration for Non-EU/Non-UK (LLC) offers
+      - _attributes:
+          name: EC2-ltd
+          description: EC2 configuration for EU/UK (Ltd) offers
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure-llc,Azure-ltd]
+      _include:
+        - csp/azure/settings/suma-server
+    - _attributes:
+        profiles: [EC2-llc,EC2-ltd]
+      _include:
+        - csp/ec2/settings/suma-server
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/sle
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        type: image
+        profiles: [Azure-llc,Azure-ltd]
+      _include:
+        - csp/azure/settings/suma-server
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2-llc,EC2-ltd]
+      _include:
+        - csp/ec2
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [Azure-llc,EC2-llc]
+      package:
+        - suma-amazon-adapter-config-llc
+    - _attributes:
+        type: image
+        profiles: [Azure-ltd,EC2-ltd]
+      package:
+        - suma-amazon-adapter-config-ltd
+config:
+  - _include:
+      - base/common
+      - base/sle
+      - products/suse-manager/server/ondemand
+  - profiles: [Azure-llc,Azure-ltd]
+    _include:
+      - csp/azure/settings/suma-server
+  - profiles: [EC2-llc,EC2-ltd]
+    _include:
+      - csp/ec2
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/sle
+      - products/suse-manager/server/ondemand
+  - name: azure.tar.gz
+    _include:
+      - csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2

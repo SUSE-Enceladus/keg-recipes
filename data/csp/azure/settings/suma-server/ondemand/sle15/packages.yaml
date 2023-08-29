@@ -2,5 +2,3 @@ packages:
   _namespace_azure_suma_ondemand:
     package:
       - python3-csp-billing-adapter-azure
-      - suma-azure-adapter-config-llc
-      - suma-azure-adapter-config-ltd

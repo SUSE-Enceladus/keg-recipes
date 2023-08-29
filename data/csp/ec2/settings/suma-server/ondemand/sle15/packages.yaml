@@ -2,5 +2,3 @@ packages:
   _namespace_ec2_suma_ondemand:
     package:
       - python3-csp-billing-adapter-amazon
-      - suma-amazon-adapter-config-llc
-      - suma-amazon-adapter-config-ltd
