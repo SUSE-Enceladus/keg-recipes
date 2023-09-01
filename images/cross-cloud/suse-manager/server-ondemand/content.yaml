@@ -33,6 +33,7 @@ image:
         type: image
       _include:
         - base/common
+        - base/ondemand
         - base/sle
         - products/suse-manager/server/ondemand
     - _attributes:
