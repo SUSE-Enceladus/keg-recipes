@@ -55,12 +55,14 @@ image:
         type: image
         profiles: [Azure-llc,EC2-llc]
       package:
-        - suma-amazon-adapter-config-llc
+        - _attributes:
+            name: suma-amazon-adapter-config-llc
     - _attributes:
         type: image
         profiles: [Azure-ltd,EC2-ltd]
       package:
-        - suma-amazon-adapter-config-ltd
+        - _attributes:
+            name: suma-amazon-adapter-config-ltd
 config:
   - _include:
       - base/common
