@@ -53,13 +53,25 @@ image:
             name: ec2.tar.gz
     - _attributes:
         type: image
-        profiles: [Azure-llc,EC2-llc]
+        profiles: [Azure-llc]
+      package:
+        - _attributes:
+            name: suma-azure-adapter-config-llc
+    - _attributes:
+        type: image
+        profiles: [Azure-ltd]
+      package:
+        - _attributes:
+            name: suma-azure-adapter-config-ltd
+    - _attributes:
+        type: image
+        profiles: [EC2-llc]
       package:
         - _attributes:
             name: suma-amazon-adapter-config-llc
     - _attributes:
         type: image
-        profiles: [Azure-ltd,EC2-ltd]
+        profiles: [EC2-ltd]
       package:
         - _attributes:
             name: suma-amazon-adapter-config-ltd
