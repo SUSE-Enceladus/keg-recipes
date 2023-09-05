@@ -3,4 +3,3 @@ archive:
   _namespace_suma_server_motd:
     _include_overlays:
       - motd-manager-server
-      - motd-addon-byos

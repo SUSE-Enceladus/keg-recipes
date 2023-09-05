@@ -1,0 +1,4 @@
+packages:
+  _namespace_ec2_suma_ondemand:
+    package:
+      - python3-csp-billing-adapter-amazon
