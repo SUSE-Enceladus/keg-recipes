@@ -16,7 +16,7 @@ config:
       - boot.device-mapper
       - docker
   sysconfig:
-    sle-micro-sysconig:
+    sle-micro-sysconfig:
       - file: /etc/sysconfig/network/config
         name: WICKED_DEBUG
         value: "ifconfig,dhcp,autoip,ipv4,ipv6"
