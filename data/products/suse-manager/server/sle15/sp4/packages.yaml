@@ -6,3 +6,8 @@ packages:
       - javamail
       # needed but is only recommend
       - libtcnative-1-0
+  _namespace_manager_server_monitoring:
+    package:
+      - prometheus-formula
+      - prometheus-exporters-formula
+      - grafana-formula
