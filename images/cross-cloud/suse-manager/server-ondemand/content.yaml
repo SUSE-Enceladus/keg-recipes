@@ -40,7 +40,7 @@ image:
         type: image
         profiles: [Azure-llc,Azure-ltd]
       _include:
-        - csp/azure/settings/suma-server
+        - csp/azure/settings/suma-server/ondemand
       archive:
         - _attributes:
             name: azure.tar.gz
@@ -48,7 +48,7 @@ image:
         type: image
         profiles: [EC2-llc,EC2-ltd]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/suma-server/ondemand
       archive:
         - _attributes:
             name: ec2.tar.gz
