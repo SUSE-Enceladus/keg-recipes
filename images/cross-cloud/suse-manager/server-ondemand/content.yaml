@@ -79,6 +79,7 @@ image:
 config:
   - _include:
       - base/common
+      - base/ondemand
       - base/sle
       - products/suse-manager/server/ondemand
   - profiles: [Azure-llc,Azure-ltd]
