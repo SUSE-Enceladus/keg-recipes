@@ -6,6 +6,8 @@ packages:
       - patterns-suma_server
       - salt-minion
       - spacecmd
+      - supportutils-plugin-salt
+      - supportutils-plugin-susemanager
       - susemanager-cloud-setup-server
       - release-notes-sles
   _namespace_manager_server_release:
