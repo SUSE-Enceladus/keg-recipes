@@ -7,8 +7,8 @@ SUSE Manager {SUMA_VERSION} Server
    // // @
 
 {INCLUDES}
-Management and Config: https://www.suse.com/suse-in-the-cloud-basics
 Documentation: https://www.suse.com/documentation/suse_manager/
-Community: https://community.suse.com/
+PAYG Guide: https://documentation.suse.com/suma/{SUMA_VERSION}/en/suse-manager/specialized-guides/payg/payg-overview.html
+Community: https://forums.rancher.com/c/suse-manager
 
 Have a lot of fun...
