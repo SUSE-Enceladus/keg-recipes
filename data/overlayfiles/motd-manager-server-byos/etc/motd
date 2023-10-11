@@ -6,8 +6,9 @@ SUSE Manager {SUMA_VERSION} Server
   \/ __ .- |
    // // @
 
-Before setting up SUSE Manager, please make sure the system's host name
-is configured to match its DNS name.
+Before setting up SUSE Manager, please make sure the system's DNS,
+network security, and storage requirements are met.
+Refer to the installation guide of the SUSE Manager documentation for details.
 
 To setup SUSE Manager please execute: sudo /sbin/yast2 susemanager_setup
 
