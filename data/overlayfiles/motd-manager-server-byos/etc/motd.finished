@@ -8,7 +8,7 @@ SUSE Manager {SUMA_VERSION} Server
 
 {INCLUDES}
 Documentation: https://www.suse.com/documentation/suse_manager/
-BYOS Guide: https://documentation.suse.com/suma/{SUMA_VERSION}/en/suse-manager/specialized-guides/qs-publiccloud/overview.html
+BYOS Guide: https://documentation.suse.com/suma/{SUMA_VERSION}/en/suse-manager/specialized-guides/public-cloud-guide/byos/byos-overview.html
 Community: https://forums.rancher.com/c/suse-manager
 
 Have a lot of fun...
