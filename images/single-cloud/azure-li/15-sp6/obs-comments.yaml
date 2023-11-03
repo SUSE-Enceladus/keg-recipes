@@ -1,0 +1,2 @@
+image-config-comments:
+  obs-ignore-rpm: "OBS-IgnorePackage: rpm"
