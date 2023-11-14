@@ -1,6 +1,6 @@
 config:
   files:
-    chost-files-plymouth-lock:
+    sle-files-plymouth-lock:
       - path: /etc/zypp/locks
         append: True
         content: |-
@@ -8,11 +8,3 @@ config:
           match_type: glob
           case_sensitive: on
           solvable_name: plymouth*
-  scripts:
-    chost-scripts:
-      - chost-add-variant
-  services:
-    chost-services:
-      - docker
-    chost-docker-img-store:
-      - docker-img-store-setup

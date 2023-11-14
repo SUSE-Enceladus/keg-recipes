@@ -1,0 +1,3 @@
+config:
+  sysconfig:
+    sle-micro-sysconfig: Null

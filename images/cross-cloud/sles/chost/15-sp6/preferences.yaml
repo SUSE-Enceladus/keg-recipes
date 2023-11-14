@@ -1,0 +1,42 @@
+image:
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Aliyun]
+      _include:
+        - csp/aliyun/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [Azure]
+        arch: x86_64
+      _include:
+        - csp/azure/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [Azure]
+        arch: aarch64
+      _include:
+        - csp/azure/settings/aarch64
+        - csp/azure/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - csp/ec2/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [GCE]
+      _include:
+        - csp/gce/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [OpenStack]
+      _include:
+        - csp/openstack/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [SAP-CCloud]
+      _include:
+        - csp/sap-converged-cloud/settings/chost
+        - products/chost
