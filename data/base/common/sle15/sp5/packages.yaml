@@ -1,0 +1,4 @@
+packages:
+  _namespace_common_tpm:
+    package:
+      - tpm2.0-tools
