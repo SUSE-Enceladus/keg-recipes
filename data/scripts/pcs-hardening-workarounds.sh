@@ -32,6 +32,7 @@ xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_shadow
 xccdf_org.ssgproject.content_rule_accounts_users_home_files_permissions
 xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec
 xccdf_org.ssgproject.content_rule_permissions_local_var_log
+xccdf_org.ssgproject.content_rule_aide_periodic_checking_systemd_timer
 xccdf_org.ssgproject.content_rule_.*sysctl"
 
 ssg_file="/usr/share/xml/scap/ssg/content/ssg-sle15-ds.xml"
