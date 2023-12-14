@@ -1,2 +1,2 @@
-BOOTPROTO='dhcp'
+BOOTPROTO='dhcp+autoip'
 STARTMODE='auto'
