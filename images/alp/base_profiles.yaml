@@ -1,0 +1,79 @@
+image:
+  profiles:
+    _namespace_base_profiles:
+      profile:
+        # Platforms - support profiles
+        - _attributes:
+            name: baremetal
+            description: Support for running on real hardware
+        - _attributes:
+            name: byos
+            description: BYOS settings for Public Cloud
+        - _attributes:
+            name: payg
+            description: PAYG settings for Public Cloud
+        # Platforms
+        - _attributes:
+            name: x86
+            description: Raw disk for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            _attributes:
+              profile: baremetal
+        - _attributes:
+            name: azure-byos
+            description: Raw disk for Azure BYOS
+        - _attributes:
+            name: azure-payg
+            description: Raw disk for Azure PAYG
+  preferences:
+    - _include: base/common
+    - _attributes:
+        profiles: [x86]
+      _include:
+        - platforms/x86
+    - _attributes:
+        profiles: [azure-byos]
+      _include:
+        - platforms/azure/byos
+        - products
+    - _attributes:
+        profiles: [azure-payg]
+      _include:
+        - platforms/azure/payg
+        - products
+  _namespace_base_profiles_packages:
+    packages:
+      - _attributes:
+         type: bootstrap
+        _include:
+          - base/bootstrap
+      - _attributes:
+         type: image
+        _include:
+          - base/baremetal
+      - _attributes:
+          type: image
+        _include:
+          - base/common
+      - _attributes:
+          type: image
+          profiles: [full]
+        _include:
+          - base/kvm_host
+      - _attributes:
+          type: image
+          profiles: [x86]
+        _include:
+          - platforms/x86
+        archive:
+          - _attributes:
+              name: azure.tar.gz
+      - _attributes:
+          type: image
+          profiles: [azure-byos,azure-payg]
+        _include:
+          - platforms/azure
+        archive:
+          - _attributes:
+              name: azure.tar.gz
