@@ -1,0 +1,77 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Default
+          description: SLE Micro with Podman and KVM as raw image with uEFI boot
+          arch: x86_64
+        requires:
+          _attributes:
+            profile: full
+            profile: x86
+      - _attributes:
+          name: Base
+          description: SLE Micro with Podman as raw image with uEFI boot
+          arch: x86_64
+        requires:
+          _attributes:
+            profile: container-host
+            profile: x86
+      - _attributes:
+          name: Base-Azure-BYOS
+          description: SLE Micro BYOS with Podman as Azure image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: azure-byos
+      - _attributes:
+          name: Base-Azure-PAYG
+          description: SLE Micro PAYG with Podman as Azure image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: azure-payg
+  packages:
+    - _attributes:
+        type: image
+        profiles: [Base,Default,Base-Azure-BYOS,Base-Azure-PAYG]
+      _include:
+        - products
+config:
+  - _include:
+      - base/common
+  - profiles: [azure-byos,azure-payg]
+    _include:
+      - platforms/azure
+  - profiles: [Base,Default,Base-Azure-BYOS,Base-Azure-PAYG]
+    _include:
+      - products
+archive:
+  - name: root.tar.gz
+    _include:
+      - products
+  - name: azure.tar.gz
+    _include:
+      - platforms/azure
+xmlfiles:
+  - name: _multibuild
+    content:
+      multibuild:
+        flavor:
+          - Default
+          - Base
+          - Base-Azure-BYOS
+          - Base-Azure-PAYG
+  - name: _constraints
+    content:
+      constraints:
+        hardware:
+          disk:
+            size:
+              _attributes:
+                unit: G
+              _text: 40
+        hostlabel:
+          _attributes:
+            exclude: "true"
+          _text: SLOW_CPU

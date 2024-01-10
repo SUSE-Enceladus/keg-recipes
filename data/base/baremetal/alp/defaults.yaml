@@ -1,0 +1,7 @@
+packages:
+  _namespace_common_baremetal:
+    namedCollection:
+      - alp_hardware
+    package:
+      - patterns-alp-hardware
+      - ignition

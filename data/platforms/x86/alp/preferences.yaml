@@ -1,0 +1,19 @@
+preferences:
+  bootsplash-theme: SLE
+  bootloader-theme: SLE
+  type:
+    _attributes:
+      image: oem
+      devicepersistency: by-uuid
+      efipartsize: 512
+      format: vhd-fixed
+      formatoptions: force_size
+      kernelcmdline:
+        ignition.platform.id: metal
+        quiet: []
+    systemdisk:
+      _namespace_platform_x86:
+        volume:
+          - _attributes:
+              name: boot/grub2/x86_64-efi
+              mountpoint: boot/grub2/x86_64-efi

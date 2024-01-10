@@ -1,0 +1,5 @@
+preferences:
+  locale: en_US
+  packagemanager: zypper
+  rpm-excludedocs: "true"
+  version: 0.9.0
