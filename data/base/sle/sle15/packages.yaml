@@ -55,7 +55,6 @@ packages:
       - strace
       - supportutils-plugin-suse-public-cloud
       - system-user-mail
-      - systemd-sysvinit
       - tcpd
       - tcpdump
       - tcsh
@@ -120,3 +119,6 @@ packages:
   _namespace_sle_cnf:
     package:
       - command-not-found
+  _namespace_sle_sysvcompat:
+    package:
+      - systemd-sysvinit
