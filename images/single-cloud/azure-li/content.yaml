@@ -10,6 +10,7 @@ image:
   preferences:
     - _include:
         - base/common
+        - base/sle
     - _attributes:
         profiles: [Devel]
       _include:
@@ -33,11 +34,13 @@ image:
 config:
   - _include:
       - base/common
+      - base/sle
       - csp/azure-baremetal/li
       - products/sap
 archive:
   - name: root.tar.gz
     _include:
       - base/common
+      - base/sle
       - csp/azure-baremetal/li
       - products/sap
