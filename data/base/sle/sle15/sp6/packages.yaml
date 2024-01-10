@@ -1,0 +1,4 @@
+packages:
+  _namespace_sle_sysvcompat:
+    package:
+      - systemd-sysvcompat
