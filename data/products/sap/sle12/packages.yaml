@@ -29,6 +29,8 @@ packages:
       - patterns-ha-ha_sles
       - patterns-sles-base
       - patterns-sles-sap_server
+      - python-azure-identity
+      - python-azure-mgmt-compute
       - release-notes-sles-for-sap
       - SAPHanaSR
       - SAPHanaSR-doc
