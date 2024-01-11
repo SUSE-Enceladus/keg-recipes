@@ -1,0 +1,5 @@
+packages:
+  _namespace_azure_sap:
+    package:
+      - python-azure-mgmt-compute
+      - python-azure-identity
