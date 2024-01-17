@@ -32,7 +32,7 @@ packages:
       - supportutils
       - supportutils-plugin-suse-public-cloud
       - suse-build-key
-      - SUSEConnect
+      - suseconnect-ng
       - systemd
       - tcpdump
       - timezone
