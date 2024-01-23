@@ -1,8 +1,6 @@
 config:
   scripts:
     sle-micro-scripts:
-      - chost-strip-image
-      - microos-add-variant
       - zypp-disable-multiversion
       - zypp-set-excludedocs
       - zypp-set-onlyrequires
