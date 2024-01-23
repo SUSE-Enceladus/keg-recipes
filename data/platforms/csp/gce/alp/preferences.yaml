@@ -1,0 +1,20 @@
+preferences:
+  type:
+    _attributes:
+      devicepersistency: by-label
+      firmware: uefi
+      format: gce
+      image: vmx
+      kernelcmdline:
+        console: ttyS0,38400n8
+        dis_ucode_ldr: []
+        net.ifnames: 0
+        multipath: "off"
+    bootloader:
+      _attributes:
+        console: serial
+        timeout: 1
+    size:
+      _attributes:
+        unit: M
+      _text: 10240

@@ -15,6 +15,3 @@ archive:
   _namespace_azure_motd_waagent:
     _include_overlays:
       - motd-addon-waagent
-  _namespace_azure_sysconfig_network:
-    _include_overlays:
-      - sysconfig-network-plain

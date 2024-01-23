@@ -1,0 +1,8 @@
+archive:
+  _namespace_gce_base:
+    _include_overlays:
+      - chrony-gce-ntp
+      - hosts-metadata-google
+  _namespace_gce_virtio_net:
+    _include_overlays:
+      - module-virtio-net
