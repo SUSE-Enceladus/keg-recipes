@@ -26,21 +26,53 @@ image:
         - _attributes:
             name: azure-payg
             description: Raw disk for Azure PAYG
+        - _attributes:
+            name: ec2-byos
+            description: Raw disk for EC2 BYOS
+        - _attributes:
+            name: ec2-payg
+            description: Raw disk for EC2 PAYG
+        - _attributes:
+            name: gce-byos
+            description: Raw disk for GCE BYOS
+        - _attributes:
+            name: gce-payg
+            description: Raw disk for GCE PAYG
   preferences:
     - _include: base/common
     - _attributes:
         profiles: [x86]
       _include:
-        - platforms/x86
+        - platforms/baremetal/x86
     - _attributes:
         profiles: [azure-byos]
       _include:
-        - platforms/azure/byos
+        - platforms/csp/azure/byos
         - products
     - _attributes:
         profiles: [azure-payg]
       _include:
-        - platforms/azure/payg
+        - platforms/csp/azure/payg
+        - products
+    - _attributes:
+        profiles: [ec2-byos]
+      _include:
+        - platforms/csp/ec2/byos
+        - products
+    - _attributes:
+        profiles: [ec2-payg]
+      _include:
+        - platforms/csp/ec2/payg
+        - products
+    - _attributes:
+        profiles: [gce-byos]
+      _include:
+        - platforms/csp/gce/byos
+        - products
+    - _attributes:
+        profiles: [gce-payg]
+      _include:
+        - platforms/csp/gce/payg
         - products
   _namespace_base_profiles_packages:
     packages:
@@ -48,10 +80,6 @@ image:
          type: bootstrap
         _include:
           - base/bootstrap
-      - _attributes:
-         type: image
-        _include:
-          - base/baremetal
       - _attributes:
           type: image
         _include:
@@ -65,15 +93,54 @@ image:
           type: image
           profiles: [x86]
         _include:
-          - platforms/x86
+          - platforms/baremetal/x86
+      - _attributes:
+          type: image
+          profiles: [azure-byos,azure-payg]
+        _include:
+          - platforms/csp/azure
         archive:
           - _attributes:
               name: azure.tar.gz
       - _attributes:
           type: image
-          profiles: [azure-byos,azure-payg]
+          profiles: [ec2-byos,ec2-payg]
         _include:
-          - platforms/azure
+          - platforms/csp/ec2
         archive:
           - _attributes:
-              name: azure.tar.gz
+              name: ec2.tar.gz
+      - _attributes:
+          type: image
+          profiles: [gce-byos,gce-payg]
+        _include:
+          - platforms/csp/gce
+        archive:
+          - _attributes:
+              name: gce.tar.gz
+config:
+  _namespace_base_profiles_config:
+    - _include:
+        - base/common
+    - profiles: [azure-byos,azure-payg]
+      _include:
+        - platforms/csp/azure
+    - profiles: [ec2-byos,ec2-payg]
+      _include:
+        - platforms/csp/ec2
+    - profiles: [gce-byos,gce-payg]
+      _include:
+        - platforms/csp/gce
+archive:
+  - name: root.tar.gz
+    _include:
+      - products
+  - name: azure.tar.gz
+    _include:
+      - platforms/csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - platforms/csp/ec2
+  - name: gce.tar.gz
+    _include:
+      - platforms/csp/gce

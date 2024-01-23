@@ -1,12 +1,12 @@
 packages:
   _namespace_common_alp:
     namedCollection:
-      - alp_base_zypper
+      - alp_base
       - alp_containers_podman
       - alp_defaults
       - alp_selinux
     package:
-      - patterns-alp-base-zypper
+      - patterns-alp-base
       - patterns-alp-containers-podman
       - patterns-alp-defaults
       - patterns-alp-selinux

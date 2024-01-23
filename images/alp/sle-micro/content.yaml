@@ -31,28 +31,61 @@ image:
           _attributes:
             profile: container-host
             profile: azure-payg
+      - _attributes:
+          name: Base-EC2-BYOS
+          description: SLE Micro BYOS with Podman as EC2 image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: ec2-byos
+      - _attributes:
+          name: Base-EC2-PAYG
+          description: SLE Micro PAYG with Podman as EC2 image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: ec2-payg
+      - _attributes:
+          name: Base-GCE-BYOS
+          description: SLE Micro BYOS with Podman as GCE image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: gce-byos
+      - _attributes:
+          name: Base-GCE-PAYG
+          description: SLE Micro PAYG with Podman as GCE image with uEFI boot
+        requires:
+          _attributes:
+            profile: container-host
+            profile: gce-payg
   packages:
     - _attributes:
         type: image
-        profiles: [Base,Default,Base-Azure-BYOS,Base-Azure-PAYG]
+        profiles:
+          - Base
+          - Default
+          - Base-Azure-BYOS
+          - Base-Azure-PAYG
+          - Base-EC2-BYOS
+          - Base-EC2-PAYG
+          - Base-GCE-BYOS
+          - Base-GCE-PAYG
       _include:
         - products
 config:
-  - _include:
-      - base/common
-  - profiles: [azure-byos,azure-payg]
-    _include:
-      - platforms/azure
-  - profiles: [Base,Default,Base-Azure-BYOS,Base-Azure-PAYG]
+ _namespace_test:
+  - profiles:
+    - Base
+    - Default
+    - Base-Azure-BYOS
+    - Base-Azure-PAYG
+    - Base-EC2-BYOS
+    - Base-EC2-PAYG
+    - Base-GCE-BYOS
+    - Base-GCE-PAYG
     _include:
       - products
-archive:
-  - name: root.tar.gz
-    _include:
-      - products
-  - name: azure.tar.gz
-    _include:
-      - platforms/azure
 xmlfiles:
   - name: _multibuild
     content:
@@ -62,6 +95,10 @@ xmlfiles:
           - Base
           - Base-Azure-BYOS
           - Base-Azure-PAYG
+          - Base-EC2-BYOS
+          - Base-EC2-PAYG
+          - Base-GCE-BYOS
+          - Base-GCE-PAYG
   - name: _constraints
     content:
       constraints:

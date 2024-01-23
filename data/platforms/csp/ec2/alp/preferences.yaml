@@ -1,0 +1,24 @@
+preferences:
+  type:
+    _attributes:
+      devicepersistency: by-label
+      firmware: uefi
+      image: vmx
+      kernelcmdline:
+        8250.nr_uarts: 4
+        console: ttyS0
+        dis_ucode_ldr: []
+        multipath: "off"
+        net.ifnames: 0
+        nvme_core.admin_timeout: 4294967295
+        nvme_core.io_timeout: 4294967295
+    bootloader:
+      _attributes:
+        timeout: 1
+    machine:
+      _attributes:
+        xen_loader: hvmloader
+    size:
+      _attributes:
+        unit: M
+      _text: 10240

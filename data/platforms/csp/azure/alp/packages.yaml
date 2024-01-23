@@ -3,6 +3,7 @@ packages:
     package:
       - cloud-init
       - cloud-init-config-suse
+      - cloud-netconfig-azure
       - cryptsetup
       - hyper-v
       - python-azure-agent

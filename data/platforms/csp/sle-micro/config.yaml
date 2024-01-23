@@ -1,0 +1,4 @@
+config:
+  scripts:
+    sle-micro-pubcloud-scripts:
+      - microos-add-variant

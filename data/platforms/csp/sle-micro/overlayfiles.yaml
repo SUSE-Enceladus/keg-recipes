@@ -1,0 +1,9 @@
+archive:
+  _namespace_platforms_csp_sle_micro_motd:
+    _include_overlays:
+      - motd-addon-byos-chost
+      - motd-sle-micro
+  _namespace_platforms_csp_sle_micro_base:
+    _include_overlays:
+      - sysctl-enable-ip-forward
+      - sysctl-enable-rp-filter
