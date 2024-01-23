@@ -3,15 +3,11 @@ packages:
     namedCollection:
       - alp_base_transactional
       - alp_containers_podman
-      - alp_cockpit
-      - alp_salt_minion
-      - alp_kvm_host
+      - alp_selinux
     package:
       - patterns-alp-base-transactional
       - patterns-alp-containers-podman
-      - patterns-alp-cockpit
-      - patterns-alp-salt-minion
-      - patterns-alp-kvm_host
+      - patterns-alp-selinux
       - cockpit
       - cockpit-networkmanager
       - cockpit-podman
@@ -24,4 +20,3 @@ packages:
       - libudisks2-0_lvm2
       - libudisks2-0_btrfs
       - libpwquality-tools
-      - k3s-install

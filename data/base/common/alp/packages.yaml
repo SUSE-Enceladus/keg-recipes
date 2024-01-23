@@ -1,38 +1,20 @@
 packages:
   _namespace_common_alp:
     namedCollection:
-      - alp_base
-      - alp_containers_podman
+      - alp_base_transactional
       - alp_defaults
-      - alp_selinux
     package:
-      - patterns-alp-base
-      - patterns-alp-containers-podman
+      - patterns-alp-base-transactional
       - patterns-alp-defaults
-      - patterns-alp-selinux
       - ca-certificates
-      - cockpit
-      - cockpit-networkmanager
-      - cockpit-podman
-      - cockpit-selinux
-      - cockpit-storaged
-      - cockpit-system
-      - cockpit-tukit
-      - cockpit-ws
-      - combustion
       - glibc-locale-base
       - growpart-generator
       - grub2-branding-SLE
       - less
-      - libpwquality-tools
-      - libudisks2-0_lvm2
-      - libudisks2-0_btrfs
       - NetworkManager
       - NetworkManager-tui
       - suse-build-key
       - suseconnect-ng
-      - systemd-presets-branding-ALP
-      - jeos-firstboot
       - parted
       - vim-small
   _namespace_base_bootloader:

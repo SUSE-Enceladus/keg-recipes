@@ -4,6 +4,5 @@ packages:
     package:
       - NetworkManager-branding-SLE
       - SLE-Micro-release
-      - firewalld
       - systemd-default-settings-branding-SLE-Micro
   _namespace_sle_micro_network_mgmt: Null
