@@ -4,4 +4,8 @@ packages:
       - alp_hardware
     package:
       - patterns-alp-hardware
+      - combustion
       - ignition
+      - jeos-firstboot
+      - ModemManager
+      - wpa_supplicant

@@ -2,24 +2,18 @@ image:
   profiles:
     _namespace_base_profiles:
       profile:
-        # Platforms - support profiles
+        # Roles
         - _attributes:
-            name: baremetal
-            description: Support for running on real hardware
+            name: full
+            description: KVM and Container host
         - _attributes:
-            name: byos
-            description: BYOS settings for Public Cloud
-        - _attributes:
-            name: payg
-            description: PAYG settings for Public Cloud
+            name: container-host
+            description: Container host
         # Platforms
         - _attributes:
             name: x86
             description: Raw disk for x86_64 - uEFI
             arch: x86_64
-          requires:
-            _attributes:
-              profile: baremetal
         - _attributes:
             name: azure-byos
             description: Raw disk for Azure BYOS
@@ -89,6 +83,11 @@ image:
           profiles: [full]
         _include:
           - base/kvm_host
+      - _attributes:
+          type: image
+          profiles: [container-host]
+        _include:
+          - base/container_host
       - _attributes:
           type: image
           profiles: [x86]
