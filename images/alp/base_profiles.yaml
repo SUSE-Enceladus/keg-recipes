@@ -121,6 +121,7 @@ config:
   _namespace_base_profiles_config:
     - _include:
         - base/common
+        - products
     - profiles: [azure-byos,azure-payg]
       _include:
         - platforms/csp/azure
