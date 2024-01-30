@@ -63,7 +63,7 @@ image:
       _include:
         - base/common
         - base/sle
-        - csp/azure
+        - csp/azure/settings/sap
     - _attributes:
         type: image
         profiles:
