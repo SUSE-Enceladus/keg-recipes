@@ -33,7 +33,8 @@ image:
             name: gce-payg
             description: Raw disk for GCE PAYG
   preferences:
-    - _include: base/common
+    - _include:
+        - base/common
     - _attributes:
         profiles: [x86]
       _include:
@@ -42,95 +43,95 @@ image:
         profiles: [azure-byos]
       _include:
         - platforms/csp/azure/byos
-        - products
     - _attributes:
         profiles: [azure-payg]
+        arch: x86_64
       _include:
         - platforms/csp/azure/payg
-        - products
+    - _attributes:
+        profiles: [azure-payg]
+        arch: aarch64
+      _include:
+        - platforms/csp/azure/payg
+        - platforms/csp/azure/aarch64
     - _attributes:
         profiles: [ec2-byos]
       _include:
         - platforms/csp/ec2/byos
-        - products
     - _attributes:
         profiles: [ec2-payg]
       _include:
         - platforms/csp/ec2/payg
-        - products
     - _attributes:
         profiles: [gce-byos]
       _include:
         - platforms/csp/gce/byos
-        - products
     - _attributes:
         profiles: [gce-payg]
       _include:
         - platforms/csp/gce/payg
-        - products
-  _namespace_base_profiles_packages:
-    packages:
-      - _attributes:
-         type: bootstrap
-        _include:
-          - base/bootstrap
-      - _attributes:
-          type: image
-        _include:
-          - base/common
-      - _attributes:
-          type: image
-          profiles: [full]
-        _include:
-          - base/kvm_host
-      - _attributes:
-          type: image
-          profiles: [container-host]
-        _include:
-          - base/container_host
-      - _attributes:
-          type: image
-          profiles: [x86]
-        _include:
-          - platforms/baremetal/x86
-      - _attributes:
-          type: image
-          profiles: [azure-byos,azure-payg]
-        _include:
-          - platforms/csp/azure
-        archive:
-          - _attributes:
-              name: azure.tar.gz
-      - _attributes:
-          type: image
-          profiles: [ec2-byos,ec2-payg]
-        _include:
-          - platforms/csp/ec2
-        archive:
-          - _attributes:
-              name: ec2.tar.gz
-      - _attributes:
-          type: image
-          profiles: [gce-byos,gce-payg]
-        _include:
-          - platforms/csp/gce
-        archive:
-          - _attributes:
-              name: gce.tar.gz
-config:
-  _namespace_base_profiles_config:
-    - _include:
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
         - base/common
         - products
-    - profiles: [azure-byos,azure-payg]
+    - _attributes:
+        type: image
+        profiles: [full]
+      _include:
+        - base/kvm_host
+    - _attributes:
+        type: image
+        profiles: [container-host]
+      _include:
+        - base/container_host
+    - _attributes:
+        type: image
+        profiles: [x86]
+      _include:
+        - platforms/baremetal/x86
+    - _attributes:
+        type: image
+        profiles: [azure-byos,azure-payg]
       _include:
         - platforms/csp/azure
-    - profiles: [ec2-byos,ec2-payg]
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [ec2-byos,ec2-payg]
       _include:
         - platforms/csp/ec2
-    - profiles: [gce-byos,gce-payg]
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [gce-byos,gce-payg]
       _include:
         - platforms/csp/gce
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - products
+  - profiles: [azure-byos,azure-payg]
+    _include:
+      - platforms/csp/azure
+  - profiles: [ec2-byos,ec2-payg]
+    _include:
+      - platforms/csp/ec2
+  - profiles: [gce-byos,gce-payg]
+    _include:
+      - platforms/csp/gce
 archive:
   - name: root.tar.gz
     _include:

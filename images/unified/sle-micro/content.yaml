@@ -59,20 +59,6 @@ image:
           _attributes:
             profile: container-host
             profile: gce-payg
-  packages:
-    - _attributes:
-        type: image
-        profiles:
-          - Base
-          - Default
-          - Base-Azure-BYOS
-          - Base-Azure-PAYG
-          - Base-EC2-BYOS
-          - Base-EC2-PAYG
-          - Base-GCE-BYOS
-          - Base-GCE-PAYG
-      _include:
-        - products
 xmlfiles:
   - name: _multibuild
     content:
