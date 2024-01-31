@@ -1,6 +1,6 @@
 include-paths:
-  - alp/1.0
-  - sle-micro/6.0
+  - _alp/1.0
+  - _sle-micro/6.0
 image:
   _attributes:
     schemaversion: "7.2"

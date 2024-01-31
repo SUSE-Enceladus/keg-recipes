@@ -1,5 +1,5 @@
 packages:
-  _namespace_full_alp:
+  _namespace_base_container_host:
     namedCollection:
       - alp_base_transactional
       - alp_containers_podman
