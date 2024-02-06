@@ -1,0 +1,21 @@
+config:
+  scripts:
+    azure-scripts:
+      - set-password-policy
+      - ssh-enable-keep-alive
+      - sudo-disable-targetpw
+    azure-dhclient-timeout:
+      - dhclient-increase-timeout
+    azure-sshd-config:
+      - ssh-disable-challenge-response-auth
+  services:
+    azure-cloud-netconfig:
+      - cloud-netconfig.timer
+    azure-services:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - waagent
+    azure-regionsrv-timer:
+      - regionsrv-enabler-azure.timer
