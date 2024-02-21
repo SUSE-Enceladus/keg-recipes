@@ -3,7 +3,7 @@ preferences:
     _attributes:
       format: gce
       kernelcmdline:
-        console: ttyS0,38400n8
+        console: ttyS0,115200
         dis_ucode_ldr: []
         multipath: "off"
     bootloader:
