@@ -6,7 +6,7 @@ image-config-comments:
 image:
   _attributes:
     schemaversion: "7.2"
-    name: SLES15-SP5-Micro-6-0
-    displayname: SLES15-SP5-Micro-6-0
+    name: SLE-Micro-6-0
+    displayname: SLE-Micro-6-0
   description:
     specification: SUSE Linux Enterprise Micro 6.0 guest image
