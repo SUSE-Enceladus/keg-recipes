@@ -31,4 +31,4 @@ preferences:
             name: usr/local
         - _attributes:
             name: var
-            copy_on_write: false
+            copy_on_write: "false"
