@@ -1,0 +1,8 @@
+config:
+  scripts:
+    sle-micro-scripts:
+      - zypp-disable-multiversion
+      - zypp-set-excludedocs
+      - zypp-set-onlyrequires
+  services: Null
+  sysconfig: Null

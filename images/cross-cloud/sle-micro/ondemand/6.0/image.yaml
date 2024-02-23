@@ -1,0 +1,12 @@
+include-paths:
+  - alp/1.0
+  - "6.0"
+image-config-comments:
+  obs-ignore-rpm: Null
+image:
+  _attributes:
+    schemaversion: "7.2"
+    name: SLE-Micro-6-0
+    displayname: SLE-Micro-6-0
+  description:
+    specification: SUSE Linux Enterprise Micro 6.0 guest image
