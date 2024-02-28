@@ -8,9 +8,6 @@ preferences:
       filesystem: btrfs
       kernelcmdline:
         swapaccount: 1
-        ip: dhcp
-        rd.neednet: 1
-        "\\$ignition_firstboot": []
         security: "selinux"
         selinux: 1
     systemdisk:
