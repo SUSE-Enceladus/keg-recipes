@@ -1,0 +1,5 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        nvme_core.io_timeout: 240
