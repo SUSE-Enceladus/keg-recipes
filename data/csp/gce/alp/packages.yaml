@@ -11,11 +11,6 @@ packages:
       - growpart
       - growpart-rootgrow
       - kernel-default
-  _namespace_gce_patch:
-    package:
-      - _comment: bsc#1165960
-        _attributes:
-          name: patch
   _namespace_gce_tools:
     package:
       - python3-gcemetadata
