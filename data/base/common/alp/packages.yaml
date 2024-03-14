@@ -1,0 +1,17 @@
+packages:
+  _namespace_common_alp:
+    namedCollection:
+      - alp_base_transactional
+      - alp_defaults
+    package:
+      - patterns-alp-base-transactional
+      - patterns-alp-defaults
+      - ca-certificates
+      - glibc-locale-base
+      - grub2-branding-SLE
+      - less
+      - NetworkManager-tui
+      - suse-build-key
+      - suseconnect-ng
+      - parted
+      - vim-small

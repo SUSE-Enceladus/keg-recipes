@@ -1,0 +1,42 @@
+packages:
+  _namespace_default_kernel: Null
+  _namespace_default_shim: Null
+  _namespace_azure_base:
+    package:
+      - hyper-v
+      - _attributes:
+          name: kernel-default
+          arch: aarch64
+      - _attributes:
+          name: shim
+          arch: x86_64
+  _namespace_azure_cryptsetup:
+    package:
+      - cryptsetup
+  _namespace_azure_init:
+    package:
+      - cloud-init
+      - cloud-init-config-suse
+      - python-azure-agent
+  _namespace_azure_kernel:
+    package:
+      - _attributes:
+         name: kernel-default
+         arch: x86_64
+  _namespace_azure_cloud_netconfig:
+    package:
+      - cloud-netconfig-azure
+  _namespace_azure_tools:
+    package:
+      - lsscsi
+      - python3-azuremetadata
+  _namespace_azure_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-azure
+      - regionsrv-certs
+      - regionServiceClientConfigAzure
+      - regionServiceCertsAzure
+  _namespace_azure_regionsrv_client_addon:
+    package:
+      - cloud-regionsrv-client-addon-azure

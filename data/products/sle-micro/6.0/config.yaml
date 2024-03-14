@@ -1,0 +1,9 @@
+config:
+  scripts:
+    sle-micro-scripts:
+      - snapper-microos-config
+      - zypp-disable-multiversion
+      - zypp-set-excludedocs
+      - zypp-set-onlyrequires
+  services: Null
+  sysconfig: Null
