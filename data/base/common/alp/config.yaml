@@ -26,6 +26,7 @@ config:
     common-services:
       - boot.device-mapper
       - haveged
+      - NetworkManager
       - sshd
       - name: boot.efivars
         enable: False
