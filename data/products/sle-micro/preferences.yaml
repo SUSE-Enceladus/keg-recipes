@@ -7,7 +7,6 @@ preferences:
       btrfs_root_is_readonly_snapshot: "true"
       filesystem: btrfs
       kernelcmdline:
-        swapaccount: 1
         security: "selinux"
         selinux: 1
     systemdisk:
