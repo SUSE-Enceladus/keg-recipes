@@ -27,6 +27,7 @@ config:
       - boot.device-mapper
       - haveged
       - NetworkManager
+      - transactional-update-cleanup.timer
       - sshd
       - name: boot.efivars
         enable: False
