@@ -5,5 +5,7 @@ config:
       - zypp-disable-multiversion
       - zypp-set-excludedocs
       - zypp-set-onlyrequires
-  services: Null
-  sysconfig: Null
+  services:
+    sle-micro-services: Null
+  sysconfig:
+    sle-micro-sysconfig: Null
