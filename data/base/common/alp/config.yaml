@@ -1,7 +1,7 @@
 config:
   scripts:
     common-config:
-      - generate-motd
+      - expand-motd-vars
       - polkit-set-default-privs
       - remove-iscsi-config
       - remove-root-pw
