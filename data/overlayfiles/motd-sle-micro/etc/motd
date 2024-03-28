@@ -3,7 +3,7 @@
 
 {INCLUDES}
 
-Documentation: https://www.suse.com/documentation/sle-micro/{VERSION}
+Documentation: https://www.suse.com/documentation/sle-micro/{OS_VERSION}
 Community: https://community.suse.com/
 
 Have a lot of fun...

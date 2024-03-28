@@ -4,6 +4,7 @@ source /etc/os-release
 
 OS_PRETTY_NAME="$PRETTY_NAME"
 OS_VERSION_MAJOR="${VERSION_ID%.*}"
+OS_VERSION="${VERSION_ID}"
 ARCH="`uname -m`"
 
 for suma_prod in /etc/products.d/SUSE-Manager-Server.prod /etc/products.d/SUSE-Manager-Proxy.prod
@@ -30,6 +31,7 @@ test -f /etc/motd-caption && cap_replace="r /etc/motd-caption"
 motd_func="\
 s/{OS_PRETTY_NAME}/$OS_PRETTY_NAME/g
 s/{OS_VERSION_MAJOR}/$OS_VERSION_MAJOR/g
+s/{OS_VERSION}/$OS_VERSION/g
 s/{ARCH}/$ARCH/g
 s/{SUMA_VERSION}/$SUMA_VERSION/g
 /{CAPTION}/{
