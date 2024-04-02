@@ -1,0 +1,5 @@
+archive:
+  _namespace_suma_server_motd:
+    _include_overlays:
+      - motd-manager-server-5-byos
+      - motd-addon-byos
