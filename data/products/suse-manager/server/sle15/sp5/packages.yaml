@@ -1,0 +1,15 @@
+packages:
+  _namespace_manager_server_base:
+    package:
+      - netavark
+      - mgradm
+      - mgradm-bash-completion
+      - mgrctl
+      - mgrctl-bash-completion
+      - podman
+      - suse-manager-5.0-x86_64-server-image
+  _namespace_manager_server_modules:
+    package:
+      - sle-module-containers-release
+  _namespace_manager_server_deps: Null
+  _namespace_manager_server_monitoring: Null
