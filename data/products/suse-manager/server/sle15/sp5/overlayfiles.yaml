@@ -1,4 +1,5 @@
 archive:
+  _namespace_sle_micro_motd: Null
   _namespace_suma_server_motd:
     _include_overlays:
       - motd-manager-server-5-byos

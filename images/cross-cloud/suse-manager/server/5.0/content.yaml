@@ -16,15 +16,18 @@ image:
     - _attributes:
         profiles: [Azure]
       _include:
-        - csp/azure/settings/suma-server
+        - csp/azure/settings/micro
+        - products/sle-micro
     - _attributes:
         profiles: [EC2]
       _include:
-        - csp/ec2/settings/suma-server
+        - csp/ec2/settings/micro
+        - products/sle-micro
     - _attributes:
         profiles: [GCE]
       _include:
-        - csp/gce/settings/suma-server
+        - csp/gce/settings/micro
+        - products/sle-micro
   packages:
     - _attributes:
        type: bootstrap
@@ -34,13 +37,13 @@ image:
         type: image
       _include:
         - base/common
-        - base/sle
+        - products/sle-micro
         - products/suse-manager/server
     - _attributes:
         type: image
         profiles: [Azure]
       _include:
-        - csp/azure/settings/suma-server
+        - csp/azure/settings/micro
       archive:
         - _attributes:
             name: azure.tar.gz
@@ -48,7 +51,7 @@ image:
         type: image
         profiles: [EC2]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/micro
       archive:
         - _attributes:
             name: ec2.tar.gz
@@ -56,36 +59,36 @@ image:
         type: image
         profiles: [GCE]
       _include:
-        - csp/gce
+        - csp/gce/settings/micro
       archive:
         - _attributes:
             name: gce.tar.gz
 config:
   - _include:
       - base/common
-      - base/sle
+      - products/sle-micro
       - products/suse-manager/server
   - profiles: [Azure]
     _include:
-      - csp/azure/settings/suma-server
+      - csp/azure/settings/micro
   - profiles: [EC2]
     _include:
-      - csp/ec2
+      - csp/ec2/settings/micro
   - profiles: [GCE]
     _include:
-      - csp/gce
+      - csp/gce/settings/micro
 archive:
   - name: root.tar.gz
     _include:
       - base/common
-      - base/sle
+      - products/sle-micro
       - products/suse-manager/server
   - name: azure.tar.gz
     _include:
-      - csp/azure
+      - csp/azure/settings/micro
   - name: ec2.tar.gz
     _include:
-      - csp/ec2
+      - csp/ec2/settings/micro
   - name: gce.tar.gz
     _include:
-      - csp/gce
+      - csp/gce/settings/micro
