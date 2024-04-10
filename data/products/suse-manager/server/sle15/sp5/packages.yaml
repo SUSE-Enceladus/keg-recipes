@@ -1,6 +1,7 @@
 packages:
   _namespace_manager_server_base:
     package:
+      - jq
       - netavark
       - mgradm
       - mgradm-bash-completion
