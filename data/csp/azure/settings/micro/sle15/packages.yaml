@@ -4,6 +4,7 @@ packages:
   _namespace_azure_tools: Null
   _namespace_azure_regionsrv_client_addon: Null
   _namespace_azure_registration: Null
+  _namespace_azure_waagent_config: Null
   _namespace_azure_micro:
     package:
       - afterburn-dracut

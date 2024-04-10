@@ -10,10 +10,6 @@ config:
       - dhclient-increase-timeout
     azure-sshd-config:
       - ssh-disable-challenge-response-auth
-    azure-waagent:
-      - waagent-disable-auto-update
-      - waagent-enable-all-ssh-host-key-types
-      - waagent-disable-ephemeral-disk-handling
   sysconfig:
     azure-cloud-netconfig:
       - file: /etc/sysconfig/network/config
