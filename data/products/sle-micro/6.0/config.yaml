@@ -1,6 +1,7 @@
 config:
   scripts:
     sle-micro-scripts:
+      - selinux-enforce
       - snapper-microos-config
       - zypp-disable-multiversion
       - zypp-set-excludedocs
