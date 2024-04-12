@@ -1,0 +1,48 @@
+packages:
+  _namespace_sle_micro:
+    namedCollection:
+      - _attributes:
+          name: microos-salt_minion
+    package:
+      - btrfsmaintenance
+      - btrfsprogs
+      - ca-certificates
+      - ca-certificates-mozilla
+      - cockpit-system
+      - cockpit-ws
+      - cockpit
+      - conntrack-tools
+      - container-selinux
+      - cracklib-dict-small
+      - distribution-release
+      - docker
+      - glibc-locale-base
+      - issue-generator
+      - health-checker
+      - health-checker-plugins-MicroOS
+      - hwinfo
+      - less
+      - libnss_usrfiles2
+      - microos-tools
+      - NetworkManager
+      - NetworkManager-branding-SLE
+      - parted
+      - pkgconfig
+      - policycoreutils
+      - rebootmgr
+      - rollback-helper
+      - selinux-policy-targeted
+      - selinux-tools
+      - supportutils-plugin-suse-public-cloud
+      - systemd-presets-branding-SMO
+      - systemd-default-settings-branding-SLE-Micro
+      - SUSE-MicroOS-release
+      - toolbox
+      - transactional-update
+      - transactional-update-zypp-config
+      - vim-small
+      - yast2-logs
+      - zypper-needs-restarting
+  _namespace_yast2_schema:
+    package:
+      - yast2-schema-micro

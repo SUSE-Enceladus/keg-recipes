@@ -1,0 +1,10 @@
+config:
+  scripts:
+    sle-micro-scripts:
+      - chost-strip-image
+      - microos-add-variant
+      - selinux-enforce
+      - snapper-microos-config
+      - zypp-disable-multiversion
+      - zypp-set-excludedocs
+      - zypp-set-onlyrequires
