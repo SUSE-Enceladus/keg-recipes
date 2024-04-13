@@ -23,6 +23,7 @@ packages:
       - hwinfo
       - less
       - libnss_usrfiles2
+      - libpwquality-tools
       - microos-tools
       - NetworkManager
       - NetworkManager-branding-SLE
