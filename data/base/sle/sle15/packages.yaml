@@ -39,7 +39,6 @@ packages:
       - man-pages
       - mozilla-nss-certs
       - netcat-openbsd
-      - nfsidmap
       - nfs-client
       - nfs-kernel-server
       - nscd
@@ -122,3 +121,6 @@ packages:
   _namespace_sle_sysvcompat:
     package:
       - systemd-sysvinit
+  _namespace_sle_nfsidmap:
+    package:
+      - nfsidmap
