@@ -8,7 +8,12 @@ packages:
       - mgrctl
       - mgrctl-bash-completion
       - podman
-      - suse-manager-5.0-x86_64-server-image
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-image
+          arch: aarch64
   _namespace_manager_server_modules:
     package:
       - sle-module-containers-release

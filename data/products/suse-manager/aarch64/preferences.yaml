@@ -1,0 +1,8 @@
+preferences:
+  type:
+    systemdisk:
+      _namespace_micro_aarch64:
+        volume:
+          - _attributes:
+              name: boot/grub2/arm64-efi
+              mountpoint: boot/grub2/arm64-efi
