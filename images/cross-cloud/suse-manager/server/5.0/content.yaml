@@ -15,18 +15,46 @@ image:
         - base/common
     - _attributes:
         profiles: [Azure]
+        arch: x86_64
       _include:
         - csp/azure/settings/suma-server
+        - products/suse-manager/x86_64
+        - products/suse-manager/server
+    - _attributes:
+        profiles: [Azure]
+        arch: aarch64
+      _include:
+        - csp/azure/settings/aarch64
+        - csp/azure/settings/suma-server
+        - products/suse-manager/aarch64
         - products/suse-manager/server
     - _attributes:
         profiles: [EC2]
+        arch: x86_64
       _include:
         - csp/ec2/settings/suma-server
+        - products/suse-manager/x86_64
+        - products/suse-manager/server
+    - _attributes:
+        profiles: [EC2]
+        arch: aarch64
+      _include:
+        - csp/ec2/settings/suma-server
+        - products/suse-manager/aarch64
         - products/suse-manager/server
     - _attributes:
         profiles: [GCE]
+        arch: x86_64
       _include:
         - csp/gce/settings/suma-server
+        - products/suse-manager/x86_64
+        - products/suse-manager/server
+    - _attributes:
+        profiles: [GCE]
+        arch: aarch64
+      _include:
+        - csp/gce/settings/suma-server
+        - products/suse-manager/aarch64
         - products/suse-manager/server
   packages:
     - _attributes:
