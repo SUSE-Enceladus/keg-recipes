@@ -1,0 +1,5 @@
+packages:
+  _namespace_sle_micro_cryptsetup:
+    package:
+      - cryptsetup
+      - device-mapper
