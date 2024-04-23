@@ -1,0 +1,30 @@
+preferences:
+  type:
+    _attributes:
+      bootpartsize: Null
+      btrfs_quota_groups: "true"
+      btrfs_root_is_snapshot: "true"
+      btrfs_root_is_readonly_snapshot: "true"
+      filesystem: btrfs
+      kernelcmdline:
+        security: "selinux"
+        selinux: 1
+    systemdisk:
+      volume:
+        - _attributes:
+            name: home
+        - _attributes:
+            name: root
+        - _attributes:
+            name: opt
+        - _attributes:
+            name: srv
+        - _attributes:
+            name: boot/grub2/i386-pc
+        - _attributes:
+            name: boot/writable
+        - _attributes:
+            name: usr/local
+        - _attributes:
+            name: var
+            copy_on_write: "false"

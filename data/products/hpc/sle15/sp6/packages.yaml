@@ -1,0 +1,4 @@
+packages:
+  _namespace_hpc_release:
+    package:
+      - sles-release

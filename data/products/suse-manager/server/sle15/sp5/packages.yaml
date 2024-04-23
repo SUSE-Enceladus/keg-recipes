@@ -1,0 +1,21 @@
+packages:
+  _namespace_manager_server_base:
+    package:
+      - jq
+      - netavark
+      - mgradm
+      - mgradm-bash-completion
+      - mgrctl
+      - mgrctl-bash-completion
+      - podman
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-image
+          arch: aarch64
+  _namespace_manager_server_modules:
+    package:
+      - sle-module-containers-release
+  _namespace_manager_server_deps: Null
+  _namespace_manager_server_monitoring: Null

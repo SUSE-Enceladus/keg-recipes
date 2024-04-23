@@ -1,0 +1,22 @@
+SUSE Manager {SUMA_VERSION} Server
+{OS_PRETTY_NAME} {ARCH} (64-bit)
+
+    ____
+  /@    ~-.
+  \/ __ .- |
+   // // @
+
+Before setting up SUSE Manager, please make sure the system's DNS,
+network security, and storage requirements are met.
+Refer to the installation guide of the SUSE Manager documentation for details.
+
+If SUSE Manager has not been set up yet, please execute:
+
+mgradm install podman --image localhost/suse/manager/{SUMA_VERSION}/x86_64/server
+
+{INCLUDES}
+Documentation: https://www.suse.com/documentation/suse_manager/
+BYOS Guide: https://documentation.suse.com/suma/{SUMA_VERSION}/en/suse-manager/specialized-guides/public-cloud-guide/byos/byos-overview.html
+Community: https://forums.rancher.com/c/suse-manager
+
+Have a lot of fun...

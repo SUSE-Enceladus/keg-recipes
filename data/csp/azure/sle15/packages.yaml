@@ -39,3 +39,6 @@ packages:
   _namespace_azure_regionsrv_client_addon:
     package:
       - cloud-regionsrv-client-addon-azure
+  _namespace_azure_waagent_config:
+    package:
+      - python-azure-agent-config-server

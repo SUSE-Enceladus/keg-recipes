@@ -1,4 +1,0 @@
-packages:
-  _namespace_sle_micro_cockpit_dashboard:
-    package:
-      - cockpit-dashboard

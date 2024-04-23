@@ -1,5 +1,5 @@
 preferences:
-  keytable: us.map.gz
+  keytable: us
   locale: en_US
   packagemanager: zypper
   rpm-check-signatures: "false"

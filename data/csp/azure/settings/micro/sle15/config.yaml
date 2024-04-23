@@ -1,6 +1,5 @@
 config:
   scripts:
-    azure-waagent: Null
     azure-default-kernel-log-level: Null
     azure-dhclient-timeout: Null
     azure-sshd-config: Null
