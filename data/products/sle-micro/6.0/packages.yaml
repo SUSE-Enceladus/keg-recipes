@@ -6,3 +6,11 @@ packages:
       - SLE-Micro-release
       - systemd-default-settings-branding-SLE-Micro
   _namespace_sle_micro_network_mgmt: Null
+  _namespace_sle_micro_cockpit:
+    package:
+      - cockpit-kdump
+      - cockpit-podman
+      - cockpit-selinux
+      - cockpit-system
+      - cockpit-tukit
+      - cockpit-ws
