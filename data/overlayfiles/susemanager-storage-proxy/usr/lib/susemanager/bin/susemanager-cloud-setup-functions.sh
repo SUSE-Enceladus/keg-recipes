@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2019 SUSE Linux GmbH
+# Copyright (c) 2019--2024 SUSE Linux GmbH
 #
 # This file is part of susemanager-cloud-setup.
 #
@@ -111,15 +111,30 @@ mount_storage() {
     fi
 }
 
+remount_storage() {
+    test -z "$3" && die "remount_storage called without arguments"
+    local device=$1
+    local tmp_mount_point=$2
+    local mount_point=$3
+    local result=$(umount $tmp_mount_point)
+    if [ $? != 0 ]; then
+        die "Umount $tmp_mount_point failed"
+    fi
+    if [ ! -d $mount_point ]; then
+        mkdir -p $mount_point
+    fi
+    mount_storage $device $mount_point
+    rmdir $tmp_mount_point
+}
+
 move_storage() {
     test -z "$2" && die "move_storage called without arguments"
     source="$1"
     destination="$2"
-    result=$(rsync -a $source $destination 2>&1)
+    result=$(rsync -aXA $source $destination 2>&1)
     if [ $? != 0 ]; then
         die "Syncing $source failed with: $result"
     fi
     dname=$(basename $source)
-    rm -rf $source
-    ln -s $destination/$dname $source
+    rm -rf $source/*
 }
