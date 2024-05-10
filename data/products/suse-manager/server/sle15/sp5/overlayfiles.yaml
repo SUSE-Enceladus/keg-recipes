@@ -4,3 +4,6 @@ archive:
     _include_overlays:
       - motd-manager-server-5-byos
       - motd-addon-byos
+  _namespace_suma_server_storage:
+    _include_overlays:
+      - susemanager-storage-server
