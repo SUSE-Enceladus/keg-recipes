@@ -1,0 +1,7 @@
+packages:
+  _namespace_azure_tools:
+    package:
+      - azure-cli
+      - lsscsi
+      - python311-azure-sdk
+      - python3-azuremetadata
