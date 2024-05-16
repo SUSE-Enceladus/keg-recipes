@@ -1,0 +1,5 @@
+config:
+  scripts:
+    azure-default-kernel-log-level: Null
+  sysconfig:
+    azure-set-hostname: Null
