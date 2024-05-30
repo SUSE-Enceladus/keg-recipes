@@ -1,5 +1,0 @@
-packages:
-  _namespace_azure_tools:
-    package:
-      - lsscsi
-      - python3-azuremetadata
