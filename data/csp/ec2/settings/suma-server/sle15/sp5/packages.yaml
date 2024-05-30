@@ -1,0 +1,8 @@
+packages:
+  _namespace_ec2_tools:
+    package:
+      - amazon-ssm-agent
+      - python3-ec2metadata
+  _namespace_ec2_image_utils:
+    package:
+      - python3-ec2imgutils
