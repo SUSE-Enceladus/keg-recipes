@@ -48,7 +48,7 @@ image:
         type: image
         profiles: [EC2]
       _include:
-        - csp/ec2
+        - csp/ec2/settings/suma-server
       archive:
         - _attributes:
             name: ec2.tar.gz
