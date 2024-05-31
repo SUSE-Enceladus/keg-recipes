@@ -1,0 +1,4 @@
+archive:
+  _namespace_suma_proxy:
+    _include_overlays:
+      - susemanager-storage-proxy

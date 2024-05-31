@@ -15,15 +15,47 @@ image:
         - base/common
     - _attributes:
         profiles: [Azure]
+        arch: x86_64
       _include:
+        - csp/azure/settings/suma
+        - products/suse-manager/x86_64
+        - products/suse-manager/proxy
+    - _attributes:
+        profiles: [Azure]
+        arch: aarch64
+      _include:
+        - csp/azure/settings/aarch64
         - csp/azure/settings/suma-proxy
+        - products/suse-manager/aarch64
+        - products/suse-manager/proxy
     - _attributes:
         profiles: [EC2]
+        arch: x86_64
       _include:
         - csp/ec2/settings/suma-proxy
+        - products/suse-manager/x86_64
+        - products/suse-manager/proxy
+    - _attributes:
+        profiles: [EC2]
+        arch: aarch64
+      _include:
+        - csp/ec2/settings/suma-proxy
+        - products/suse-manager/aarch64
+        - products/suse-manager/proxy
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/suma-proxy
+        arch: x86_64
+      _include:
+        - csp/gce/settings/suma-proxy
+        - products/suse-manager/x86_64
+        - products/suse-manager/proxy
+    - _attributes:
+        profiles: [GCE]
+        arch: aarch64
+      _include:
+        - csp/gce/settings/suma-proxy
+        - products/suse-manager/aarch64
+        - products/suse-manager/proxy
   packages:
     - _attributes:
        type: bootstrap
@@ -33,7 +65,6 @@ image:
         type: image
       _include:
         - base/common
-        - base/sle
         - products/suse-manager/proxy
     - _attributes:
         type: image
@@ -55,36 +86,34 @@ image:
         type: image
         profiles: [GCE]
       _include:
-        - csp/gce
+        - csp/gce/settings/suma-proxy
       archive:
         - _attributes:
             name: gce.tar.gz
 config:
   - _include:
       - base/common
-      - base/sle
       - products/suse-manager/proxy
   - profiles: [Azure]
     _include:
       - csp/azure/settings/suma-proxy
   - profiles: [EC2]
     _include:
-      - csp/ec2
+      - csp/ec2/settings/suma-proxy
   - profiles: [GCE]
     _include:
-      - csp/gce
+      - csp/gce/settings/suma-proxy
 archive:
   - name: root.tar.gz
     _include:
       - base/common
-      - base/sle
       - products/suse-manager/proxy
   - name: azure.tar.gz
     _include:
-      - csp/azure
+      - csp/azure/settings/suma-proxy
   - name: ec2.tar.gz
     _include:
-      - csp/ec2
+      - csp/ec2/settings/suma-proxy
   - name: gce.tar.gz
     _include:
-      - csp/gce
+      - csp/gce/settings/suma-proxy

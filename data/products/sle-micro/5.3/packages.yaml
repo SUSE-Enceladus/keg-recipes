@@ -6,3 +6,7 @@ packages:
   _namespace_yast2_schema:
     package:
       - yast2-schema-micro
+  _namespace_sle_micro_cryptsetup:
+    package:
+      - cryptsetup
+      - device-mapper
