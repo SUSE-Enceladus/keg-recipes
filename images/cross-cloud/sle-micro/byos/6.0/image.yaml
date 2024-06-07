@@ -6,7 +6,7 @@ image-config-comments:
 image:
   _attributes:
     schemaversion: "7.2"
-    name: SL-Micro-6-0-BYOS
-    displayname: SL-Micro-6-0-BYOS
+    name: SLE-Micro-6-0-BYOS
+    displayname: SLE-Micro-6-0-BYOS
   description:
-    specification: SUSE Linux Micro 6.0 BYOS guest image
+    specification: SUSE Linux Enterprise Micro 6.0 BYOS guest image
