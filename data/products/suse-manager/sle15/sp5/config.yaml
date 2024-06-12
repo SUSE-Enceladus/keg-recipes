@@ -8,3 +8,7 @@ config:
       - zypp-disable-multiversion
       - zypp-set-excludedocs
       - zypp-set-onlyrequires
+  services:
+    suma-services:
+      - name: transactional-update.timer
+        enable: False
