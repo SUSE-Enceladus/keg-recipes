@@ -1,6 +1,7 @@
 preferences:
   type:
     _attributes:
+      image: oem
       kernelcmdline:
         ip: dhcp
         rd.neednet: 1

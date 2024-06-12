@@ -1,0 +1,4 @@
+archive:
+  _namespace_sle_micro_kiwi_resize:
+    _include_overlays:
+      - dracut-kiwi-resize
