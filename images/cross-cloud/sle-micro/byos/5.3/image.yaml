@@ -6,7 +6,7 @@ include-paths:
   - "5.3"
 image:
   _attributes:
-    schemaversion: "7.2"
+    schemaversion: "7.5"
     name: SLES15-SP4-Micro-5-3-BYOS
     displayname: SLES15-SP4-Micro-5-3-BYOS
   description:
