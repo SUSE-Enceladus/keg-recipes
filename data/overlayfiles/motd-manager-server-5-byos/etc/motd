@@ -12,7 +12,7 @@ Refer to the installation guide of the SUSE Manager documentation for details.
 
 If SUSE Manager has not been set up yet, please execute:
 
-mgradm install podman --image localhost/suse/manager/{SUMA_VERSION}/x86_64/server
+mgradm install podman
 
 {INCLUDES}
 Documentation: https://www.suse.com/documentation/suse_manager/
