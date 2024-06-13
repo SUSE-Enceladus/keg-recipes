@@ -6,8 +6,7 @@
 #
 # susemanager-cloud-setup is free software: you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or (at your
-# option) any later version.
+# the Free Software Foundation; either version 3 of the License.
 #
 # susemanager-cloud-setup is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -16,7 +15,7 @@
 #
 # You should have received a copy of the GNU General Public License
 
-. /usr/lib/susemanager/bin/susemanager-cloud-setup-functions.sh || exit 1
+. /usr/lib/susemanager/susemanager-storage-setup-functions.sh || exit 1
 
 usage() {
     echo "Usage: $0 <storage-disk-device> [<database-disk-device>]"
@@ -51,6 +50,11 @@ if [ -z "$storage_disk" ] || [ ! -b "$storage_disk" ]; then
     usage
     die "Given storage disk does not exist or is not a block device."
 fi
+check_device_empty $storage_disk
+if is_btrfs_subvolume $storage_location; then
+    umount_subvolume $storage_location
+fi
+check_mountpoint $storage_location
 
 if [ -n "$2" ]; then
     database_disk=$(linux_device $2)
@@ -60,11 +64,16 @@ if [ -n "$2" ]; then
     fi
     database_location="/var/lib/containers/storage/volumes/var-pgsql"
     database_location_tmp="/var/lib/containers/storage/pgsql_storage_tmp"
+    check_device_empty $database_disk
+    if is_btrfs_subvolume $database_location; then
+        umount_subvolume $database_location
+    fi
+    check_mountpoint $database_location
 else
     database_disk=$storage_disk
 fi
 
-if systemctl status uyuni-server.service >/dev/null ; then
+if systemctl -q is-active uyuni-server.service >/dev/null ; then
     spacewalk_running=yes
     info "Stop spacewalk services"
     mgradm stop

@@ -6,8 +6,7 @@
 #
 # susemanager-cloud-setup is free software: you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or (at your
-# option) any later version.
+# the Free Software Foundation; version 3 of the License.
 #
 # susemanager-cloud-setup is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -16,7 +15,7 @@
 #
 # You should have received a copy of the GNU General Public License
 
-. /usr/lib/susemanager/bin/susemanager-cloud-setup-functions.sh || exit 1
+. /usr/lib/susemanager/susemanager-storage-setup-functions.sh || exit 1
 
 
 usage() {
@@ -48,6 +47,11 @@ if [ -z "$storage_disk" ] || [ ! -b "$storage_disk" ];then
     usage
     die "Given storage disk does not exist or is not a block device."
 fi
+check_device_empty $storage_disk
+if is_btrfs_subvolume $storage_location; then
+    umount_subvolume $storage_location
+fi
+check_mountpoint $storage_location
 
 info "Checking disk for content signature"
 check_content_signature $storage_disk
@@ -61,7 +65,7 @@ create_filesystem $storage_disk $storage_fs
 info "Mounting storage at $storage_location_tmp"
 mount_storage $storage_disk $storage_location_tmp
 
-if systemctl status uyuni-proxy-httpd.service >/dev/null ; then
+if systemctl -q is-active uyuni-proxy-httpd.service >/dev/null ; then
     proxy_running=yes
     info "Stopping proxy service"
     mgrpxy stop
