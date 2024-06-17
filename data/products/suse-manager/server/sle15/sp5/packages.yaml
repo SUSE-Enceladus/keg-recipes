@@ -1,18 +1,39 @@
 packages:
   _namespace_manager_server_base:
     package:
+      - dracut-kiwi-oem-repart
       - jq
       - netavark
       - mgradm
       - mgradm-bash-completion
+      - mgradm-lang
       - mgrctl
       - mgrctl-bash-completion
+      - mgrctl-lang
       - podman
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-attestation-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-attestation-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-hub-xmlrpc-api-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-hub-xmlrpc-api-image
+          arch: aarch64
       - _attributes:
           name: suse-manager-5.0-x86_64-server-image
           arch: x86_64
       - _attributes:
           name: suse-manager-5.0-aarch64-server-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-migration-14-16-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-migration-14-16-image
           arch: aarch64
   _namespace_manager_server_modules: Null
   _namespace_manager_server_deps: Null
