@@ -1,2 +1,5 @@
 packages:
   _namespace_manager_server_ondemand_billing_service: Null
+  _namespace_manager_server_ondemand_timer:
+    package:
+      - uyuni-payg-timer

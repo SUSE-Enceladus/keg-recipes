@@ -1,4 +1,0 @@
-config:
-  scripts:
-    suse-manager-podman-load:
-      - podman-load-images

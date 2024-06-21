@@ -6,8 +6,7 @@
 #
 # susemanager-cloud-setup is free software: you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or (at your
-# option) any later version.
+# the Free Software Foundation; version 3 of the License.
 #
 # susemanager-cloud-setup is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -43,6 +42,43 @@ check_content_signature() {
     local signature=$(blkid $device -s TYPE -o value 2>/dev/null)
     if [ ! -z "$signature" ];then
         die "Found filesystem signature $signature on $device"
+    fi
+}
+
+check_device_empty() {
+    test -z "$1" && die "check_device_empty called without argument"
+    local device=$(linux_device $1)
+    local part=$(get_first_partition_device $1)
+    if [ -b "$part" ]; then
+        check_content_signature $part
+    fi
+}
+
+is_btrfs_subvolume() {
+    test -z "$1" && die "is_btrfs_subvolume called without argument"
+    local mountpoint=${1%/}
+    if grep -qi "subvol=@$mountpoint" /etc/fstab; then
+        return 0
+    fi
+    return 1
+}
+
+
+
+check_mountpoint() {
+    test -z "$1" && die "check_mountpoint called without argument"
+    local mount_point=${1%/}
+    [[ $mount_point == /* ]] || die "Mountpoint $mount_point is not an absolute path"
+    if grep -qi "$mount_point" /etc/fstab; then
+        die "$mount_point already in /etc/fstab"
+    fi
+    # check if mount_point exists
+    if [ ! -d $mount_point ]; then
+        mkdir $mount_point || die "Unable to create $mount_point"
+	chmod 0700 $mount_point
+	if /usr/sbin/selinuxenabled; then
+            chcon --reference=$mount_point/.. $mount_point || die "Unable to set selinux context to $mount_point"
+	fi
     fi
 }
 
@@ -105,10 +141,28 @@ mount_storage() {
     local part=$(get_first_partition_device $1)
     local mount_point=$2
     mkdir -p $mount_point
+    chmod 0700 $mount_point
+    if /usr/sbin/selinuxenabled; then
+        chcon --reference=$mount_point/.. $mount_point || die "Unable to set selinux context to $mount_point"
+    fi
     local result=$(mount $part $mount_point 2>&1)
     if [ $? != 0 ]; then
         die "Mounting $part failed with $result"
     fi
+}
+
+umount_subvolume() {
+    test -z "$1" && die "umount_subvolume called without arguments"
+    local mount_point=$1
+    if ! is_btrfs_subvolume $mount_point ; then
+        die "$mount_point is not a btrfs subvolume"
+    fi
+    local result=$(umount $mount_point 2>&1)
+    if [ $? != 0 ]; then
+        die "Unmounting $mount_point failed with $result"
+    fi
+    cp /etc/fstab /etc/fstab.$(date +"%Y%m%d%H%M%S")
+    sed -i 's|.*subvol=@/var/lib/containers/storage/volumes/\?[[:space:],]\+.*||' /etc/fstab
 }
 
 remount_storage() {
@@ -122,6 +176,10 @@ remount_storage() {
     fi
     if [ ! -d $mount_point ]; then
         mkdir -p $mount_point
+        chmod 0700 $mount_point
+        if /usr/sbin/selinuxenabled; then
+            chcon --reference=$mount_point/.. $mount_point || die "Unable to set selinux context to $mount_point"
+        fi
     fi
     mount_storage $device $mount_point
     rmdir $tmp_mount_point

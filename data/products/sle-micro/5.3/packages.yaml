@@ -10,3 +10,6 @@ packages:
     package:
       - cryptsetup
       - device-mapper
+  _namespace_sle_micro_kiwi_resize:
+    package:
+      - dracut-kiwi-oem-repart
