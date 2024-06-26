@@ -1,0 +1,4 @@
+config:
+  services:
+    suse-manager-guestregister:
+      - guestregister
