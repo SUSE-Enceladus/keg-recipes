@@ -1,4 +1,4 @@
 packages:
   _namespace_azure_waagent_config:
     package:
-      - python-azure-agent-config-micro
+      - python-azure-agent-config-server
