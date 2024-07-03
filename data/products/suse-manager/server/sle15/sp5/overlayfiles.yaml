@@ -7,3 +7,6 @@ archive:
   _namespace_suma_server_storage:
     _include_overlays:
       - susemanager-storage-server
+  _namespace_suma_server_rebootmgr:
+    _include_overlays:
+      - susemanager-rebootmgr-config
