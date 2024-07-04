@@ -10,7 +10,8 @@ Before setting up SUSE Manager, please make sure the system's DNS,
 network security, and storage requirements are met.
 Refer to the installation guide of the SUSE Manager documentation for details.
 
-If SUSE Manager has not been set up yet, please execute:
+If SUSE Manager has not been set up yet, please run a system update to get the
+latest version and execute:
 
 sudo mgradm install podman
 
