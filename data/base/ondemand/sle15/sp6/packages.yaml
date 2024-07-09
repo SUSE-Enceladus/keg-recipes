@@ -1,0 +1,4 @@
+packages:
+  _namespace_sle_module_confidential_computing:
+    package:
+      - sle-module-confidential-computing-release
