@@ -7,7 +7,6 @@ packages:
       - dosfstools
       - dracut
       - grub2
-      - haveged
       - hostname
       - iputils
       - kdump
@@ -26,6 +25,9 @@ packages:
       - udev
       - which
       - xfsprogs
+  _namespace_common_haveged:
+    package:
+      - haveged
   _namespace_common_rpm:
     package:
       - rpm
