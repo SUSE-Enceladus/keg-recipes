@@ -77,7 +77,7 @@ config:
 archive:
   - name: root.tar.gz
     _include:
-      - products/sle-micro
+      - products/sle-micro/byos
   - name: azure.tar.gz
     _include:
       - csp/azure/settings/micro
