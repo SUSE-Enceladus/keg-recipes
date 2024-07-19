@@ -25,7 +25,6 @@ config:
   services:
     common-services:
       - boot.device-mapper
-      - haveged
       - NetworkManager
       - transactional-update-cleanup.timer
       - sshd
