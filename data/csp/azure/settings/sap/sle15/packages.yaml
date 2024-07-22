@@ -1,4 +1,4 @@
 packages:
   _namespace_azure_sap:
     package:
-      - fence-agent-azure-arm
+      - fence-agents-azure-arm
