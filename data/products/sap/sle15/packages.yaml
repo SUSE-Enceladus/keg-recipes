@@ -44,6 +44,8 @@ packages:
       - yast2-sap-ha
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
+  _namespace_sap_yast2_saptune:
+    package:
       - yast2-saptune
   _namespace_sap_release:
     package:
