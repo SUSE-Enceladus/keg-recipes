@@ -75,6 +75,9 @@ config:
   - profiles: [GCE]
     _include:
       - csp/gce/settings/micro
+setup:
+  - _include:
+    - products/sle-micro
 archive:
   - name: root.tar.gz
     _include:
