@@ -1,0 +1,24 @@
+SUSE Manager {SUMA_VERSION} Proxy
+{OS_PRETTY_NAME} {ARCH} (64-bit)
+
+   ____
+  /@    ~-.
+  \/ __ .- |
+   // // @
+
+To set up SUSE Manager 5.0 Proxy, follow the instructions at
+https://documentation.suse.com/suma/5.0/en/suse-manager/installation-and-upgrade/container-deployment/suma/proxy-deployment-vm-suma.html.
+
+They will guide you through the registration of this system with a SUSE Manager
+server, the generation of a Proxy configuration and the setup of the SUSE
+Manager 5.0 Proxy using the mgrpxy CLI.
+
+Without registration this instance does not have access to updates and
+security fixes.
+
+{INCLUDES}
+Documentation: https://documentation.suse.com/suma/5.0/
+BYOS Guide: https://documentation.suse.com/suma/5.0/en/suse-manager/specialized-guides/public-cloud-guide/byos/byos-overview.html
+Community: https://forums.rancher.com/c/suse-manager
+
+Have a lot of fun...
