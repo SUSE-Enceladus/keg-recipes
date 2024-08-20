@@ -1,0 +1,13 @@
+include-paths:
+  - alp/1.0
+  - "6.0"
+  - "6.1"
+image-config-comments:
+  obs-ignore-rpm: Null
+image:
+  _attributes:
+    schemaversion: "7.5"
+    name: SLE-Micro-6-1-BYOS
+    displayname: SLE-Micro-6-1-BYOS
+  description:
+    specification: SUSE Linux Enterprise Micro 6.1 BYOS guest image

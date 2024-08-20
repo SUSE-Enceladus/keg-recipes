@@ -2,3 +2,6 @@ archive:
   _namespace_suma_proxy:
     _include_overlays:
       - susemanager-storage-proxy
+  _namespace_suma_proxy_motd:
+    _include_overlays:
+      - motd-manager-proxy-5

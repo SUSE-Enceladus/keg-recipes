@@ -25,7 +25,6 @@ config:
   services:
     common-services:
       - boot.device-mapper
-      - haveged
       - sshd
       - name: boot.efivars
         enable: False
@@ -39,6 +38,8 @@ config:
         enable: False
       - name: kbd
         enable: False
+    common-services-haveged:
+      - haveged
   sysconfig:
     common-sysconfig:
       - file: /etc/sysconfig/keyboard

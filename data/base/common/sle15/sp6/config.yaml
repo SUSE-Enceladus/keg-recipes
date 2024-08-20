@@ -1,0 +1,3 @@
+config:
+  services:
+    common-services-haveged: Null

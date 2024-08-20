@@ -26,6 +26,7 @@ packages:
       - health-checker-plugins-MicroOS
       - hwinfo
       - less
+      - libcontainers-sles-mounts
       - libnss_usrfiles2
       - microos-tools
       - parted
