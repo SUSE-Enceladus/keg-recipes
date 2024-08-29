@@ -35,6 +35,7 @@ packages:
       - _attributes:
           name: suse-manager-5.0-aarch64-server-migration-14-16-image
           arch: aarch64
+      - uyuni-storage-setup-server
   _namespace_manager_server_modules: Null
   _namespace_manager_server_deps: Null
   _namespace_manager_server_monitoring: Null
