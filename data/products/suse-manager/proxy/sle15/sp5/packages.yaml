@@ -36,4 +36,5 @@ packages:
       - _attributes:
           name: suse-manager-5.0-aarch64-proxy-tftpd-image
           arch: aarch64
+      - uyuni-storage-setup-proxy
   _namespace_manager_proxy_modules: Null
