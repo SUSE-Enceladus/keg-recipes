@@ -1,0 +1,4 @@
+preferences:
+  type:
+    _attributes:
+      luks: ""
