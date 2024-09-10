@@ -4,7 +4,6 @@ include-paths:
   - sle15/sp3
   - sle15/sp4
   - sle15/sp5
-  - sle15/sp6
   - "5.3"
   - "5.4"
   - "5.5"
