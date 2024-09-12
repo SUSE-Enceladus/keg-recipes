@@ -19,6 +19,9 @@ image:
       - _attributes:
           name: SAP-CCloud
           description: SAP Converged Cloud configuration
+      - _attributes:
+          name: GDC
+          description: Google Distributed Cloud configuration
   preferences:
     - _include:
         - base/common
@@ -51,6 +54,11 @@ image:
         profiles: [SAP-CCloud]
       _include:
         - csp/sap-converged-cloud/settings/chost
+        - products/chost
+    - _attributes:
+        profiles: [GDC]
+      _include:
+        - csp/gdc/settings/chost
         - products/chost
   packages:
     - _attributes:
@@ -104,6 +112,14 @@ image:
         profiles: [SAP-CCloud]
       _include:
         - csp/sap-converged-cloud/settings/chost
+    - _attributes:
+        type: image
+        profiles: [GDC]
+      _include:
+        - csp/gdc/settings/chost
+      archive:
+        - _attributes:
+            name: gdc.tar.gz
 config:
   - _include:
       - base/common
@@ -126,6 +142,9 @@ config:
   - profiles: [SAP-CCloud]
     _include:
       - csp/sap-converged-cloud/settings/chost
+  - profiles: [GDC]
+    _include:
+      - csp/gdc/settings/chost
 archive:
   - name: root.tar.gz
     _include:
@@ -144,3 +163,6 @@ archive:
   - name: gce.tar.gz
     _include:
       - csp/gce/settings/chost
+  - name: gdc.tar.gz
+    _include:
+      - csp/gdc/settings/chost
