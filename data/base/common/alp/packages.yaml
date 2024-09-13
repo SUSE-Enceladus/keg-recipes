@@ -13,5 +13,6 @@ packages:
       - NetworkManager-tui
       - suse-build-key
       - suseconnect-ng
+      - tpm2.0-tools
       - parted
       - vim-small
