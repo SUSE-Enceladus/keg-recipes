@@ -1,0 +1,4 @@
+packages:
+  _namespace_gdc_init:
+    package:
+      - cloud-init

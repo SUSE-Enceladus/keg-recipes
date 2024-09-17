@@ -40,3 +40,8 @@ image:
       _include:
         - csp/sap-converged-cloud/settings/chost
         - products/chost
+    - _attributes:
+        profiles: [GDC]
+      _include:
+        - csp/gdc/settings/chost
+        - products/chost

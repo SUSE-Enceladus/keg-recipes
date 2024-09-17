@@ -1,0 +1,10 @@
+archive:
+  _namespace_gdc_base:
+    _include_overlays:
+      - chrony-gdc-ntp
+      - sysconfig-network-plain1
+      - dracut-xfs
+  _namespace_gdc_cloud_init_cfg:
+    _include_overlays:
+      - cloud-cfg-gdc
+      - cloud-cfg-disable-network-config
