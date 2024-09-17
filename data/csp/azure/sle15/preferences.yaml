@@ -16,6 +16,7 @@ preferences:
         rootdelay: 300
         scsi_mod.use_blk_mq: 1
         USE_BY_UUID_DEVICE_NAMES: 1
+        systemd.unified_cgroup_hierarchy: 1
     size:
       _attributes:
         unit: M

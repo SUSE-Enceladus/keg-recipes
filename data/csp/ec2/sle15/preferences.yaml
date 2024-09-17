@@ -8,6 +8,7 @@ preferences:
         multipath: "off"
         nvme_core.admin_timeout: 4294967295
         nvme_core.io_timeout: 4294967295
+        systemd.unified_cgroup_hierarchy: 1
     machine:
       _attributes:
         xen_loader: hvmloader

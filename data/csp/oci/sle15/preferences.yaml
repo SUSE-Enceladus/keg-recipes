@@ -18,3 +18,4 @@ preferences:
         transparent_hugepage: never
         multipath: off
         root: /dev/sda3
+        systemd.unified_cgroup_hierarchy: 1
