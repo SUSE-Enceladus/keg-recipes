@@ -1,7 +1,7 @@
 preferences:
   type:
     _attributes:
-      firmware: Null
+      firmware: uefi
       format: qcow2
       vga: normal
       kernelcmdline:
