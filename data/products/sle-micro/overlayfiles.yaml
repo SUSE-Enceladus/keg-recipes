@@ -6,6 +6,8 @@ archive:
   _namespace_sle_micro_base:
     _include_overlays:
       - dracut-growfs
-      - ignition-user-config
       - sysctl-enable-ip-forward
       - sysctl-enable-rp-filter
+  _namespace_sle_micro_ignition_config:
+    _include_overlays:
+      - ignition-user-config
