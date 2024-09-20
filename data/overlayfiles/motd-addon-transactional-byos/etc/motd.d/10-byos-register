@@ -1,0 +1,16 @@
+
+If the instance is not already registered, please register this instance
+using your existing SUSE entitlement.
+
+As "root" (sudo or sudo -i) use either one of the following commands:
+
+ - transactional-update register -e company@example.com -r YOUR_CODE
+
+to register the instance with SCC
+
+ - registercloudguest -r YOUR_CODE
+
+to register the instance against the SUSE update infrastructure.
+
+Without registration this instance does not have access to updates and
+security fixes.
