@@ -1,4 +1,4 @@
 archive:
   _namespace_sle_micro_motd_byos:
     _include_overlays:
-      - motd-addon-byos-chost
+      - motd-addon-transactional-byos
