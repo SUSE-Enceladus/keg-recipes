@@ -1,0 +1,7 @@
+packages:
+  _namespace_gce_init_micro:
+    package:
+      - google-guest-agent
+      - google-guest-configs
+      - google-guest-oslogin
+      - google-osconfig-agent

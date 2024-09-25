@@ -1,0 +1,7 @@
+config:
+  services:
+    ec2-services-micro:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local

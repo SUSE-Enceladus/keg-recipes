@@ -1,0 +1,5 @@
+archive:
+  _namespace_ec2_cloud_init_cfg:
+    _include_overlays:
+      - cloud-cfg-ec2
+      - cloud-cfg-disable-network-config

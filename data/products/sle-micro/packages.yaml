@@ -4,7 +4,6 @@ packages:
       - _attributes:
           name: microos-salt_minion
     package:
-      - afterburn
       - btrfsmaintenance
       - btrfsprogs
       - ca-certificates
@@ -19,8 +18,6 @@ packages:
       - docker
       - glibc-locale-base
       - growpart-generator
-      - ignition
-      - ignition-dracut-grub2
       - issue-generator
       - health-checker
       - health-checker-plugins-MicroOS
@@ -50,3 +47,8 @@ packages:
     package:
       - cockpit-wicked
       - wicked
+  _namespace_sle_micro_init:
+    package:
+      - afterburn
+      - ignition
+      - ignition-dracut-grub2
