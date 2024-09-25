@@ -1,0 +1,5 @@
+archive:
+  _namespace_azure_cloud_init_cfg:
+    _include_overlays:
+      - cloud-cfg-azure
+      - cloud-cfg-disable-network-config
