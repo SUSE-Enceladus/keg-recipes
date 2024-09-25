@@ -2,6 +2,7 @@ archive:
   _namespace_gdc_base:
     _include_overlays:
       - chrony-gdc-ntp
+      - sysconfig-network-plain  
       - sysconfig-network-plain1
       - dracut-xfs
   _namespace_gdc_cloud_init_cfg:
