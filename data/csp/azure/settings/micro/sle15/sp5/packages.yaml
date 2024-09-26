@@ -1,0 +1,8 @@
+packages:
+  _namespace_azure_micro:
+    package:
+      - cloud-init
+      - cloud-init-config-suse
+      - python-azure-agent
+      - python-azure-agent-config-micro
+      - python3-azuremetadata

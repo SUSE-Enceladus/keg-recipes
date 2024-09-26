@@ -1,0 +1,5 @@
+config:
+  services:
+    sle-micro-services:
+      - boot.device-mapper
+      - docker

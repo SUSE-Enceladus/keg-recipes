@@ -1,0 +1,6 @@
+packages:
+  _namespace_ec2_micro_init:
+    package:
+      - cloud-init
+      - cloud-init-config-suse
+      - python3-ec2metadata

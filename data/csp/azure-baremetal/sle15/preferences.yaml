@@ -16,6 +16,7 @@ preferences:
         processor.max_cstate: 1
         transparent_hugepage: never
         splash: verbose
+        systemd.unified_cgroup_hierarchy: 1
       image: oem
     bootloader: Null
     size: Null
