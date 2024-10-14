@@ -5,6 +5,7 @@ packages:
       - NetworkManager-branding-SLE
       - SLE-Micro-release
       - systemd-default-settings-branding-SLE-Micro
+  _namespace_sle_micro_init: Null
   _namespace_sle_micro_network_mgmt: Null
   _namespace_sle_micro_cockpit:
     package:
