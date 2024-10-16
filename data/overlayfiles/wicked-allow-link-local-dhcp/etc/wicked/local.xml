@@ -1,0 +1,9 @@
+<config>
+  <addrconf>
+    <dhcp4>
+      <!-- device name="eth0" -->
+        <ignore-rfc3927-1-6>true</ignore-rfc3927-1-6>
+      <!-- /device -->
+    </dhcp4>
+  </addrconf>
+</config>
