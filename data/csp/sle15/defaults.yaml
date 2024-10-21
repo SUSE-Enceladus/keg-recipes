@@ -16,7 +16,9 @@ packages:
       - kernel-default
   _namespace_default_shim:
     package:
-      - shim
+      - _attributes:
+          name: shim
+          arch: x86_64
 preferences:
   type:
     _attributes:
