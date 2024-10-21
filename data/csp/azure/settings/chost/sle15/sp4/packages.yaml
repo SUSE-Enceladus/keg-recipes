@@ -1,0 +1,5 @@
+packages:
+  _namespace_azure_shim:
+    package:
+      - _attributes:
+          name: shim
