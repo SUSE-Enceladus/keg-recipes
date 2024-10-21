@@ -9,3 +9,4 @@ archive:
       - dracut-growfs
       - sysctl-enable-ip-forward
       - sysctl-enable-rp-filter
+  _namespace_sle_micro_ignition_config: Null
