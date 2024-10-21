@@ -5,7 +5,3 @@ packages:
       - lsscsi
       - python311-azure-sdk
       - python3-azuremetadata
-  _namespace_azure_shim:
-    package:
-      - _attributes:
-          name: shim
