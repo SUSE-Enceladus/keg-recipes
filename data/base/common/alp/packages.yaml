@@ -11,6 +11,7 @@ packages:
       - grub2-branding-SLE
       - less
       - NetworkManager-tui
+      - python-instance-billing-flavor-check
       - suse-build-key
       - suseconnect-ng
       - tpm2.0-tools
