@@ -1,5 +1,4 @@
 packages:
-  _namespace_default_shim: Null
   _namespace_ec2_ecs:
     package:
       - aaa_base-extras
