@@ -18,6 +18,3 @@ archive:
   _namespace_azure_sysconfig_network:
     _include_overlays:
       - sysconfig-network-cloud-netconfig
-  _namespace_azure_sysctl_sockbuf:
-    _include_overlays:
-      - sysctl-large-socket-buffer

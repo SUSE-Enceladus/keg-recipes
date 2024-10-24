@@ -1,0 +1,4 @@
+archive:
+  _namespace_azure_sap_sockbuf:
+    _include_overlays:
+      - sysctl-large-socket-buffer
