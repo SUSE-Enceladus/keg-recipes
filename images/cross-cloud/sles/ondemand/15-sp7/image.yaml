@@ -1,0 +1,15 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+  - sle15/sp5
+  - sle15/sp6
+  - sle15/sp7
+image:
+  _attributes:
+    schemaversion: "7.5"
+    name: SLES15-SP7
+    displayname: SLES15-SP7
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP7 guest image"
