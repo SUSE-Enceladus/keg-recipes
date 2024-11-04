@@ -1,7 +1,2 @@
 packages:
   _namespace_azure_regionsrv_client_addon: Null
-  _namespace_azure_shim:
-    package:
-      - _attributes:
-          name: shim
-          arch: x86_64

@@ -3,6 +3,7 @@ packages:
     namedCollection: Null
     package:
       - NetworkManager-branding-SLE
+      - podman
       - SLE-Micro-release
       - systemd-default-settings-branding-SLE-Micro
   _namespace_sle_micro_init: Null

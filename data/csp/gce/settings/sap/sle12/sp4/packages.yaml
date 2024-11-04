@@ -1,4 +1,7 @@
 packages:
- _namespace_gce_sap_agent:
-   package:
+  _namespace_gce_sap_agent:
+    package:
      - google-cloud-sap-agent
+  _namespace_gce_sap_fence_agent_deps:
+    package:
+     - python-httplib2
