@@ -23,4 +23,5 @@ image:
         - csp/ec2/settings/sles/ondemand
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/sles/ondemand
+      _include:
+        - csp/gce/settings/sles/ondemand

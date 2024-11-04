@@ -19,4 +19,5 @@ image:
         - csp/ec2/settings/hpc/ondemand
     - _attributes:
         profiles: [GCE]
-      _include: csp/gce/settings/hpc/ondemand
+      _include:
+        - csp/gce/settings/hpc/ondemand
