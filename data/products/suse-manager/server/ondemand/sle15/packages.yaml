@@ -3,8 +3,8 @@ packages:
     package:
       - csp-billing-adapter-service
       - python-instance-billing-flavor-check
-      - python3-csp-billing-adapter
-      - python3-csp-billing-adapter-local
+      - python311-csp-billing-adapter
+      - python311-csp-billing-adapter-local
   _namespace_manager_server_ondemand_billing_service:
     package:
       - billing-data-service
