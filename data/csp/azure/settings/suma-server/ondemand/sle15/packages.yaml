@@ -1,4 +1,4 @@
 packages:
   _namespace_azure_suma_ondemand:
     package:
-      - python3-csp-billing-adapter-microsoft
+      - python311-csp-billing-adapter-microsoft
