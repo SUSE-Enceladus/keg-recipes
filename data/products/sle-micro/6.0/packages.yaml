@@ -2,6 +2,7 @@ packages:
   _namespace_sle_micro:
     namedCollection: Null
     package:
+      - acl
       - libcontainers-sles-mounts
       - NetworkManager-branding-SLE
       - podman
