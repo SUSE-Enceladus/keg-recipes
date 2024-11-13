@@ -2,4 +2,5 @@ packages:
   _namespace_sle_micro_init: Null
   _namespace_sle_micro_podman:
     package:
+      - acl
       - podman

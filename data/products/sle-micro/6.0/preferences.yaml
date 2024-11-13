@@ -2,7 +2,4 @@ preferences:
   type:
     _attributes:
       kernelcmdline:
-        ip: Null
-        rd.neednet: Null
-        "\\$ignition_firstboot": Null
         systemd.unified_cgroup_hierarchy: 1
