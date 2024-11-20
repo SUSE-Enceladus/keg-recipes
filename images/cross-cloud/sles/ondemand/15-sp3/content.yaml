@@ -8,9 +8,6 @@ image:
           name: Azure-Standard
           description: Azure configuration
       - _attributes:
-          name: Azure-CVM
-          description: Azure configuration
-      - _attributes:
           name: EC2
           description: EC2 configuration
       - _attributes:
@@ -25,27 +22,7 @@ image:
         - csp/azure/settings/sles/basic
     - _attributes:
         profiles: [Azure-Standard]
-        arch: x86_64
       _include:
-        - csp/azure/settings/sles/ondemand
-    - _attributes:
-        profiles: [Azure-Standard]
-        arch: aarch64
-      _include:
-        - csp/azure/settings/aarch64
-        - csp/azure/settings/sles/ondemand
-    - _attributes:
-        profiles: [Azure-CVM]
-        arch: x86_64
-      _include:
-        - csp/azure/settings/cvm
-        - csp/azure/settings/sles/ondemand
-    - _attributes:
-        profiles: [Azure-CVM]
-        arch: aarch64
-      _include:
-        - csp/azure/settings/aarch64
-        - csp/azure/settings/cvm
         - csp/azure/settings/sles/ondemand
     - _attributes:
         profiles: [EC2]
@@ -68,7 +45,7 @@ image:
         - products/sles/ondemand
     - _attributes:
         type: image
-        profiles: [Azure-Basic,Azure-Standard,Azure-CVM]
+        profiles: [Azure-Basic,Azure-Standard]
       _include:
         - csp/azure/settings/sles/ondemand
       archive:
@@ -99,7 +76,7 @@ config:
   - profiles: [Azure-Basic]
     _include:
       - csp/azure/settings/sles/basic
-  - profiles: [Azure-Standard,Azure-CVM]
+  - profiles: [Azure-Standard]
     _include:
       - csp/azure/settings/sles/ondemand
   - profiles: [EC2]
