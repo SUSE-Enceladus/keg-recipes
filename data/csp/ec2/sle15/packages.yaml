@@ -34,3 +34,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigEC2
       - regionServiceCertsEC2
+  _namepsace_ec2_dracut_config:
+    package:
+      - amazon-dracut-config
