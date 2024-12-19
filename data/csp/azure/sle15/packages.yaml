@@ -41,6 +41,6 @@ packages:
   _namespace_azure_waagent_config:
     package:
       - python-azure-agent-config-server
-  _namepsace_azure_dracut_config:
+  _namespace_azure_dracut_config:
     package:
       - microsoft-dracut-config
