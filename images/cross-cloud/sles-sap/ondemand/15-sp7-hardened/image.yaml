@@ -1,0 +1,19 @@
+include-paths:
+  - sle15/sp1
+  - sle15/sp2
+  - sle15/sp3
+  - sle15/sp4
+  - sle15/sp5
+  - sle15/sp6
+  - sle15/sp7
+  - hardened/sle15/sp4
+  - hardened/sle15/sp5
+  - hardened/sle15/sp6
+  - hardened/sle15/sp7
+image:
+  _attributes:
+    schemaversion: "7.5"
+    name: SLES15-SP7-SAP-Hardened
+    displayname: SLES15-SP7-SAP-Hardened
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP7 hardened guest image"

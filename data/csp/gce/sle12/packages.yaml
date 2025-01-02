@@ -22,3 +22,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
+  _namespace_gce_dracut_config:
+    package:
+      - google-dracut-config

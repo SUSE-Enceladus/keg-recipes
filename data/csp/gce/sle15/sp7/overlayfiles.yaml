@@ -1,0 +1,4 @@
+archive:
+  _namespace_gce_growpart:
+    _include_overlays:
+      - dracut-kiwi-resize

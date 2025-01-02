@@ -1,0 +1,5 @@
+archive:
+  _namespace_azure_growpart:
+    _include_overlays:
+      - cloud-cfg-disable-growpart
+      - dracut-kiwi-resize

@@ -1,0 +1,8 @@
+preferences:
+  type:
+    _attributes:
+      image: oem
+packages:
+  _namespace_default_oem_repart:
+    package:
+      - dracut-kiwi-oem-repart

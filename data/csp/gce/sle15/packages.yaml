@@ -8,9 +8,11 @@ packages:
       - google-guest-configs
       - google-guest-oslogin
       - google-osconfig-agent
+      - kernel-default
+  _namespace_gce_rootgrow:
+    package:
       - growpart
       - growpart-rootgrow
-      - kernel-default
   _namespace_gce_patch:
     package:
       - _comment: bsc#1165960
@@ -26,3 +28,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
+  _namespace_gce_dracut_config:
+    package:
+      - google-dracut-config
