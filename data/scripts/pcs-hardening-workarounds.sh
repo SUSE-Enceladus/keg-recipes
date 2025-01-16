@@ -49,3 +49,8 @@ while IFS= read -r -d '' link; do
     target=$(readlink -f "$link")
     cp -p --remove-destination "$target" "$link"
 done
+
+# create empty /etc/security/opasswd file, otherwise mitigation for
+# xccdf_org.ssgproject.content_rule_file_etc_security_opasswd will fail
+touch /etc/security/opasswd
+chmod 600 /etc/security/opasswd
