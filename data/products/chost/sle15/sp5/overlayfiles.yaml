@@ -1,4 +1,0 @@
-archive:
-  _namespace_chost_ipv6_forward:
-    _include_overlays:
-      - sysctl-enable-ipv6-forward
