@@ -1,0 +1,7 @@
+config:
+  sysconfig:
+    common-kbd-numlock:
+      # work-around for bsc#1230336
+      - file: /etc/sysconfig/keyboard
+        name: KBD_NUMLOCK
+        value: "no"
