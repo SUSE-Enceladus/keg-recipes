@@ -5,6 +5,9 @@ image:
           name: Azure
           description: Azure configuration
       - _attributes:
+          name: Azure-3P
+          description: Azure configuration
+      - _attributes:
           name: EC2
           description: EC2 configuration
       - _attributes:
@@ -17,6 +20,10 @@ image:
         profiles: [Azure]
       _include:
         - csp/azure/settings/sap/ondemand
+    - _attributes:
+        profiles: [Azure-3P]
+      _include:
+        - csp/azure/settings/sap
     - _attributes:
         profiles: [EC2]
       _include:
@@ -38,7 +45,7 @@ image:
         - products/sap/ondemand
     - _attributes:
         type: image
-        profiles: [Azure]
+        profiles: [Azure,Azure-3P]
       _include:
         - csp/azure/settings/sap/ondemand
       archive:
@@ -66,7 +73,7 @@ config:
       - base/ondemand
       - base/sle
       - products/sap/ondemand
-  - profiles: [Azure]
+  - profiles: [Azure,Azure-3P]
     _include:
       - csp/azure/settings/sap/ondemand
   - profiles: [EC2]
