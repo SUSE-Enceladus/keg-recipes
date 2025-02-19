@@ -18,6 +18,7 @@ packages:
       - docker
       - glibc-locale-base
       - growpart-generator
+      - grub2-snapper-plugin
       - issue-generator
       - health-checker
       - health-checker-plugins-MicroOS

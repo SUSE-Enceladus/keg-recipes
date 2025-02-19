@@ -17,6 +17,7 @@ packages:
       - distribution-release
       - docker
       - glibc-locale-base
+      - grub2-snapper-plugin
       - issue-generator
       - health-checker
       - health-checker-plugins-MicroOS
