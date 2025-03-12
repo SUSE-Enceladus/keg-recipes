@@ -12,7 +12,6 @@ packages:
       - kdump
       - openssh
       - parted
-      - python-instance-billing-flavor-check
       - sudo
       - supportutils
       - suse-build-key
