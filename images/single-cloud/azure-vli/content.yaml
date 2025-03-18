@@ -30,7 +30,7 @@ image:
         - base/common
         - base/sle
         - csp/azure-baremetal/vli
-        - products/sap
+        - products/sap/azure-baremetal
 config:
   - _include:
       - base/common
