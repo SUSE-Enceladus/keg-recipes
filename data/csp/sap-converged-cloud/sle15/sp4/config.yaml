@@ -1,9 +1,9 @@
 config:
   services:
-    ec2-services-micro:
+    openstack-cloud-init:
+      - cloud-init-local
+      - cloud-init
       - cloud-config
       - cloud-final
-      - cloud-init
-      - cloud-init-local
       - cloud-init-main
       - cloud-init-network

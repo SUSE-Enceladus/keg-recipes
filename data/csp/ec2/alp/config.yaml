@@ -10,5 +10,7 @@ config:
       - cloud-final
       - cloud-init
       - cloud-init-local
+      - cloud-init-main
+      - cloud-init-network
     ec2-cloud-netconfig:
       - cloud-netconfig.timer

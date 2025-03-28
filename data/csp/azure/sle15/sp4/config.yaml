@@ -1,7 +1,6 @@
 config:
   services:
-    azure-afterburn-checkin: Null
-    azure-micro-init:
+    azure-services:
       - cloud-config
       - cloud-final
       - cloud-init
