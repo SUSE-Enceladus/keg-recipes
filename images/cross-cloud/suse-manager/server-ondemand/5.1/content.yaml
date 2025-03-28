@@ -1,0 +1,121 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure-llc
+          description: Azure configuration for Non-EU/Non-UK (LLC) offers
+      - _attributes:
+          name: Azure-ltd
+          description: Azure configuration for EU/UK (Ltd) offers
+      - _attributes:
+          name: EC2-llc
+          description: EC2 configuration for Non-EU/Non-UK (LLC) offers
+      - _attributes:
+          name: EC2-ltd
+          description: EC2 configuration for EU/UK (Ltd) offers
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure-llc,Azure-ltd]
+        arch: x86_64
+      _include:
+        - csp/azure/settings/suma-server/ondemand
+        - products/suse-manager/x86_64
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        profiles: [Azure-llc,Azure-ltd]
+        arch: aarch64
+      _include:
+        - csp/azure/settings/aarch64
+        - csp/azure/settings/suma-server/ondemand
+        - products/suse-manager/aarch64
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        profiles: [EC2-llc,EC2-ltd]
+        arch: x86_64
+      _include:
+        - csp/ec2/settings/suma-server
+        - products/suse-manager/x86_64
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        profiles: [EC2-llc,EC2-ltd]
+        arch: aarch64
+      _include:
+        - csp/ec2/settings/suma-server
+        - products/suse-manager/aarch64
+        - products/suse-manager/server/ondemand
+  packages:
+    - _attributes:
+       type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - products/suse-manager/server/ondemand
+    - _attributes:
+        type: image
+        profiles: [Azure-llc,Azure-ltd]
+      _include:
+        - csp/azure/settings/suma-server/ondemand
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2-llc,EC2-ltd]
+      _include:
+        - csp/ec2/settings/suma-server/ondemand
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [Azure-llc]
+      package:
+        - _attributes:
+            name: suma-azure-adapter-config-llc
+    - _attributes:
+        type: image
+        profiles: [Azure-ltd]
+      package:
+        - _attributes:
+            name: suma-azure-adapter-config-ltd
+    - _attributes:
+        type: image
+        profiles: [EC2-llc]
+      package:
+        - _attributes:
+            name: suma-amazon-adapter-config-llc
+    - _attributes:
+        type: image
+        profiles: [EC2-ltd]
+      package:
+        - _attributes:
+            name: suma-amazon-adapter-config-ltd
+config:
+  - _include:
+      - base/common
+      - products/suse-manager/server/ondemand
+  - profiles: [Azure-llc,Azure-ltd]
+    _include:
+      - csp/azure/settings/suma-server/ondemand
+  - profiles: [EC2-llc,EC2-ltd]
+    _include:
+      - csp/ec2/settings/suma-server/ondemand
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - products/suse-manager/server/ondemand
+  - name: azure.tar.gz
+    _include:
+      - csp/azure/settings/suma-server/ondemand
+  - name: ec2.tar.gz
+    _include:
+      - csp/ec2/settings/suma-server/ondemand
+  - name: gce.tar.gz
+    _include:
+      - csp/gce/settings/suma-server/ondemand

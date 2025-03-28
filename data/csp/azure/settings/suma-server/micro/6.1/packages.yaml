@@ -1,0 +1,9 @@
+packages:
+  _namespace_azure_regionsrv_client_addon: Null
+  _namespace_azure_tools:
+    package:
+      - lsscsi
+      - python3-azuremetadata
+  _namespace_azure_waagent_config:
+    package:
+      - python-azure-agent-config-micro
