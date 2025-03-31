@@ -1,11 +1,9 @@
 config:
   services:
-    azure-afterburn-checkin: Null
-    azure-micro-init:
+    ec2-services:
       - cloud-config
       - cloud-final
       - cloud-init
       - cloud-init-local
       - cloud-init-main
       - cloud-init-network
-      - waagent
