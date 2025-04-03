@@ -1,0 +1,16 @@
+packages:
+  _namespace_sle_micro:
+    namedCollection:
+      - _attributes:
+          name: salt_minion
+    package:
+      - patterns-base-salt_minion
+      - docker
+      - dracut-kiwi-oem-repart
+      - libcontainers-sles-mounts
+      - podman
+      - NetworkManager
+      - NetworkManager-branding-SLE
+      - supportutils-plugin-suse-public-cloud
+      - systemd-default-settings-branding-SLE-Micro
+      - SL-Micro-release
