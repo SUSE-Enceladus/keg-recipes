@@ -1,0 +1,4 @@
+packages:
+  _namespace_no_ssh_pwd_root_login:
+    package:
+      - openssh-server-config-disallow-rootlogin
