@@ -9,4 +9,3 @@ preferences:
         ci.datasource: NoCloud
         multipath: "off"
         NON_PERSISTENT_DEVICE_NAMES: 1
-        systemd.unified_cgroup_hierarchy: 1
