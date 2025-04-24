@@ -8,7 +8,6 @@ preferences:
         console: ["ttyS0,115200n8", "tty0"]
         NON_PERSISTENT_DEVICE_NAMES: 1
         multipath: "off"
-        systemd.unified_cgroup_hierarchy: 1
       vga: normal
     machine:
       _attributes:
