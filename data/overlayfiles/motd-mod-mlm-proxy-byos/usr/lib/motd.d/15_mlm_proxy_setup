@@ -1,0 +1,16 @@
+
+   ____
+  /@    ~-.
+  \/ __ .- |
+   // // @
+
+To set up SUSE Multi-Linux Manager Proxy {EXTENSION_VERSION}, follow the
+instructions at https://documentation.suse.com/.
+
+They will guide you through the registration of this system with a SUSE
+Multi-Linux Manager Server, the generation of a Proxy configuration and the
+setup of the SUSE Multi-Linux Manager Proxy {EXTENSION_VERSION} using the mgrpxy
+CLI.
+
+Without registration this instance does not have access to updates and
+security fixes.

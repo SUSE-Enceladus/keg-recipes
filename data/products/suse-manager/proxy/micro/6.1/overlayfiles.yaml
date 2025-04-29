@@ -1,6 +1,4 @@
 archive:
-  _namespace_default_motd: Null
-archive:
   _namespace_mlm_proxy_motd:
     _include_overlays:
-      - motd-mlm-proxy-5
+      - motd-mod-mlm-proxy-byos

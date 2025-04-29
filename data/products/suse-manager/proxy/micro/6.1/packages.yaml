@@ -2,7 +2,6 @@ packages:
   _namespace_mlm_proxy_release:
     package:
       - Multi-Linux-Manager-Proxy-release
-packages:
   _namespace_mlm_proxy_base:
     package:
       - jq
