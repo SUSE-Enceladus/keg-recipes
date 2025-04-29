@@ -6,3 +6,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
+  _namespace_flexible_licenses:
+    package:
+      - cloud-regionsrv-client-license-watcher

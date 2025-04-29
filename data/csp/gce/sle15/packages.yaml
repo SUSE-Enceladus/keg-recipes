@@ -28,6 +28,9 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
+  _namespace_flexible_licenses:
+    package:
+      - cloud-regionsrv-client-license-watcher
   _namespace_gce_dracut_config:
     package:
       - google-dracut-config

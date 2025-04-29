@@ -1,4 +1,3 @@
 config:
   services:
-    azure-regionsrv-timer:
-      - regionsrv-enabler-azure.timer
+    flex-license-timer: Null

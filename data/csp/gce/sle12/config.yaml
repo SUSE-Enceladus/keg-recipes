@@ -42,3 +42,5 @@ config:
       - rootgrow
     gce-cloud-netconfig:
       - cloud-netconfig.timer
+    flex-license-timer:
+      - guestregister-lic-watcher.timer

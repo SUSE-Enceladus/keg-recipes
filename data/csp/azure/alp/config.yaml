@@ -19,5 +19,5 @@ config:
       - cloud-init-main
       - cloud-init-network
       - waagent
-    azure-regionsrv-timer:
-      - regionsrv-enabler-azure.timer
+    flex-license-timer:
+      - guestregister-lic-watcher.timer
