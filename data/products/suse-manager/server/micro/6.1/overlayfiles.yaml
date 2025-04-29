@@ -1,8 +1,8 @@
 archive:
-  _namespace_suma_server_motd:
+  _namespace_motd_mlm_server:
     _include_overlays:
-      - motd-mlm-server-5-byos
-      - motd-addon-transactional-byos
+      - motd-mod-mlm-server-byos
+      - motd-mod-transactional-byos
   _namespace_suma_server_rebootmgr:
     _include_overlays:
       - susemanager-rebootmgr-config
