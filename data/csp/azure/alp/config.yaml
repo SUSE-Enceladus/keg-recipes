@@ -16,6 +16,8 @@ config:
       - cloud-final
       - cloud-init
       - cloud-init-local
+      - cloud-init-main
+      - cloud-init-network
       - waagent
     azure-regionsrv-timer:
       - regionsrv-enabler-azure.timer

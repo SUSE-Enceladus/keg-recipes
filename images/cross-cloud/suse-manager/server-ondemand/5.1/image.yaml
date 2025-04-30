@@ -1,0 +1,13 @@
+include-paths:
+  - alp/1.1
+  - micro/6.0
+  - micro/6.1
+image:
+  _attributes:
+    schemaversion: "7.5"
+    name: SUSE-Multi-Linux-Manager-Server-5-1
+    displayname: SUSE-Multi-Linux-Manager-Server-5-1
+  description:
+    specification: "SUSE Multi-Linux Manager Server 5.1 PAYG guest image"
+image-config-comments:
+  obs-ignore-rpm: Null

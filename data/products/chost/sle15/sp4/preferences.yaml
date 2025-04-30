@@ -3,3 +3,4 @@ preferences:
     _attributes:
       kernelcmdline:
         cgroup.memory: Null
+        systemd.unified_cgroup_hierarchy: Null

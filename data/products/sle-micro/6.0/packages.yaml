@@ -3,6 +3,7 @@ packages:
     namedCollection: Null
     package:
       - acl
+      - docker
       - libcontainers-sles-mounts
       - NetworkManager-branding-SLE
       - podman

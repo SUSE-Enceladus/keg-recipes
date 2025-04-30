@@ -1,0 +1,13 @@
+include-paths:
+  - alp/1.0
+  - micro/6.0
+  - micro/6.1
+image:
+  _attributes:
+    schemaversion: "7.5"
+    name: SUSE-Multi-Linux-Manager-Server-5-1-BYOS
+    displayname: SUSE-Multi-Linux-Manager-Server-5-1-BYOS
+  description:
+    specification: "SUSE Multi-Linux Manager Server 5.1 BYOS guest image"
+image-config-comments:
+  obs-ignore-rpm: Null
