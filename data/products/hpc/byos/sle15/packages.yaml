@@ -6,6 +6,7 @@ packages:
       - sle-module-development-tools-release
       - sle-module-hpc-release
       - sle-module-server-applications-release
+      - sle-module-web-scripting-release
   _namespace_hpc_salt_minion:
     package:
       - salt-minion
