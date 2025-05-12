@@ -1,5 +1,8 @@
 preferences:
   type:
     _attributes:
+      image: oem
       kernelcmdline:
         systemd.unified_cgroup_hierarchy: 1
+    oemconfig:
+      oem-resize: "false"
