@@ -1,6 +1,6 @@
 config:
   services:
-    azure-regionsrv-timer: Null
+    flex-license-timer: Null
   scripts:
     azure-default-kernel-log-level: Null
   sysconfig:

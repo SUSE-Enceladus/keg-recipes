@@ -35,9 +35,9 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigAzure
       - regionServiceCertsAzure
-  _namespace_azure_regionsrv_client_addon:
+  _namespace_flexible_licenses:
     package:
-      - cloud-regionsrv-client-addon-azure
+      - cloud-regionsrv-client-license-watcher
   _namespace_azure_waagent_config:
     package:
       - python-azure-agent-config-server

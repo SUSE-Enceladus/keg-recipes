@@ -6,6 +6,6 @@ config:
       - waagent-enable-custom-data
   services:
     azure-cloud-netconfig: Null
-    azure-regionsrv-timer: Null
+    flex-license-timer: Null
   sysconfig:
     azure-cloud-netconfig: Null

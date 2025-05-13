@@ -33,9 +33,9 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigAzure
       - regionServiceCertsAzure
-  _namespace_azure_regionsrv_client_addon:
+  _namespace_flexible_licenses:
     package:
-      - cloud-regionsrv-client-addon-azure
+      - cloud-regionsrv-client-license-watcher
   _namespace_azure_dracut_config:
     package:
       - microsoft-dracut-config
