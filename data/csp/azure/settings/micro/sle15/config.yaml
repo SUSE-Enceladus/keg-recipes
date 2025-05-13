@@ -7,7 +7,6 @@ config:
     azure-afterburn-checkin:
       - afterburn-checkin
     azure-services: Null
-    flex-license-timer: Null
   sysconfig:
     azure-set-hostname:
       - file: /etc/sysconfig/network/dhcp

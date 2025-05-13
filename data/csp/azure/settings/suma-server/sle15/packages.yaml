@@ -4,3 +4,4 @@ packages:
     package:
       - lsscsi
       - python3-azuremetadata
+  _namespace_flexible_licenses: Null
