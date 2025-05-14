@@ -5,6 +5,7 @@ packages:
   _namespace_manager_server_base:
     package:
       - aardvark-dns
+      - bind-utils
       - jq
       - netavark
       - mgradm
@@ -15,39 +16,39 @@ packages:
       - mgrctl-lang
       - podman
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-attestation-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-attestation-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-attestation-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-attestation-image
           arch: aarch64
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-hub-xmlrpc-api-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-hub-xmlrpc-api-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-hub-xmlrpc-api-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-hub-xmlrpc-api-image
           arch: aarch64
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-image
           arch: aarch64
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-migration-14-16-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-migration-14-16-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-migration-14-16-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-migration-14-16-image
           arch: aarch64
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-postgresql-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-postgresql-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-postgresql-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-postgresql-image
           arch: aarch64
       - _attributes:
-          name: multi-linux-manager-5.1-x86_64-server-saline-image
+          name: suse-multi-linux-manager-5.1-x86_64-server-saline-image
           arch: x86_64
       - _attributes:
-          name: multi-linux-manager-5.1-aarch64-server-saline-image
+          name: suse-multi-linux-manager-5.1-aarch64-server-saline-image
           arch: aarch64
       - uyuni-storage-setup-server
