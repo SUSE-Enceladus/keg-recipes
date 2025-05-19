@@ -12,7 +12,6 @@ config:
     suma-services:
       - name: transactional-update.timer
         enable: False
-
     suma-services-guestregister:
       - guestregister
 
