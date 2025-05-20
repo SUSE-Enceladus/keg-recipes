@@ -19,3 +19,6 @@ packages:
       - cockpit-system
       - cockpit-tukit
       - cockpit-ws
+  _namespace_sle_micro_kiwi_resize:
+    package:
+      - dracut-kiwi-oem-repart
