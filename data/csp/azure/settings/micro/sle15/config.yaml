@@ -7,7 +7,6 @@ config:
     azure-afterburn-checkin:
       - afterburn-checkin
     azure-services: Null
-    azure-regionsrv-timer: Null
   sysconfig:
     azure-set-hostname:
       - file: /etc/sysconfig/network/dhcp

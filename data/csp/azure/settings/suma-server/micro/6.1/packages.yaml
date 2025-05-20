@@ -7,3 +7,4 @@ packages:
   _namespace_azure_waagent_config:
     package:
       - python-azure-agent-config-micro
+  _namespace_flexible_licenses: Null
