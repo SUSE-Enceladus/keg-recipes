@@ -5,7 +5,7 @@ image-config-comments:
   obs-ignore-rpm: Null
 image:
   _attributes:
-    schemaversion: "7.2"
+    schemaversion: "7.5"
     name: SLE-Micro-6-0
     displayname: SLE-Micro-6-0
   description:

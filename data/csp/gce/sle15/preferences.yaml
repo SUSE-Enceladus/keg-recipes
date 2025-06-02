@@ -1,10 +1,13 @@
 preferences:
   type:
     _attributes:
-      bootloader_console: serial
       format: gce
       kernelcmdline:
         console: ttyS0,115200
         dis_ucode_ldr: []
         multipath: "off"
         systemd.unified_cgroup_hierarchy: 1
+    bootloader:
+      _attributes:
+        console: serial
+        serial_line: serial --unit=0
