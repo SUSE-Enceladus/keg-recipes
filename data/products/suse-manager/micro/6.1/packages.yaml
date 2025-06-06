@@ -1,10 +1,6 @@
 packages:
   _namespace_sle_micro:
-    namedCollection:
-      - _attributes:
-          name: salt_minion
     package:
-      - patterns-base-salt_minion
       - docker
       - dracut-kiwi-oem-repart
       - libcontainers-sles-mounts
