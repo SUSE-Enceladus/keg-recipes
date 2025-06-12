@@ -1,8 +1,6 @@
 include-paths:
   - _sle15/sp4
-  - _sles/15-sp3
   - _sles/15-sp4
-  - _sles/byos/15-sp3
   - _sles/byos/15-sp4
 image:
   _attributes:

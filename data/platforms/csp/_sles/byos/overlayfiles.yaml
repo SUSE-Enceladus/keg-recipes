@@ -1,4 +1,0 @@
-archive:
-  _namespace_azure_motd_byos:
-    _include_overlays:
-      - motd-addon-byos
