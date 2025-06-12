@@ -1,0 +1,7 @@
+archive:
+  _namespace_platforms_csp_sshd_disable_password:
+    _include_overlays:
+      - sshd-disable-password-authentication
+  _namespace_platforms_csp_sshd_disable_kbd:
+    _include_overlays:
+      - sshd-disable-kbd-authentication

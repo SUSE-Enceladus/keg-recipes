@@ -1,0 +1,12 @@
+include-paths:
+  - _sle15/sp4
+  - _sl-micro/5.3
+  - _sl-micro/5.4
+  - _sl-micro/payg/5.3
+  - _sl-micro/payg/5.4
+image:
+  _attributes:
+    name: SLES15-SP4-Micro-5-4
+    displayname: SLES15-SP4-Micro-5-4
+  description:
+    specification: SUSE Linux Enterprise Micro 5.4 guest image

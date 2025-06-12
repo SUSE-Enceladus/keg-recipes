@@ -1,0 +1,26 @@
+packages:
+  _namespace_base_pubcloud_extra: Null
+  _namespace_base_pubcloud_rancher_setup:
+    package:
+      - attr
+      - autofs
+      - binutils
+      - cronie
+      - curl
+      - dhcp-client
+      - ethtool
+      - fontconfig
+      - fonts-config
+      - glibc-i18ndata
+      - iproute2
+      - irqbalance
+      - mozilla-nss-certs
+      - nscd
+      - polkit-default-privs
+      - psmisc
+      - strace
+      - systemd-sysvinit
+      - tar
+      - tcpd
+      - tcpdump
+      - zip

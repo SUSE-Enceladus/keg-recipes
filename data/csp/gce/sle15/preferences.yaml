@@ -1,9 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      bootloader_console: serial
-      format: gce
-      kernelcmdline:
-        console: ttyS0,115200
-        dis_ucode_ldr: []
-        multipath: "off"

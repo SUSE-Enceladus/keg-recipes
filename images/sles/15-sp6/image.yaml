@@ -1,0 +1,13 @@
+include-paths:
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/payg/15-sp5
+  - _sles/payg/15-sp6
+image:
+  _attributes:
+    name: SLES15-SP6
+    displayname: SLES15-SP6
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP6 guest image"

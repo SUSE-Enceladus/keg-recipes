@@ -1,0 +1,36 @@
+packages:
+  _namespace_products_mlm_proxy_release:
+    package:
+      - SUSE-Manager-Proxy-release
+  _namespace_products_mlm_proxy_images:
+    package:
+      - _attributes:
+          name: suse-manager-5.0-x86_64-proxy-httpd-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-proxy-salt-broker-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-proxy-squid-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-proxy-ssh-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-proxy-tftpd-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-proxy-httpd-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-proxy-salt-broker-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-proxy-squid-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-proxy-ssh-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-proxy-tftpd-image
+          arch: aarch64

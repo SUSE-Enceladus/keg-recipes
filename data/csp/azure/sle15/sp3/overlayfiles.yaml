@@ -1,4 +1,0 @@
-archive:
-  _namespace_azure_emergency_shell:
-    _include_overlays:
-      - rescue-force-systemd-sulogin

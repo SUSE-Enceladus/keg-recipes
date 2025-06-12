@@ -1,6 +1,0 @@
-packages:
-  _namespace_azure_baremetal_firewall: Null
-  _namespace_azure_baremetal_java_legacy:
-    package:
-      # java-1_8_0-ibm moved to legacy module in SP3
-      - sle-module-legacy-release

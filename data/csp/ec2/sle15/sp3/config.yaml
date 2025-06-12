@@ -1,8 +1,0 @@
-config:
-  files:
-    grub-root-label-workaround-bsc#1197616:
-      - path: /etc/default/grub
-        append: True
-        content: |-
-          GRUB_CMDLINE_LINUX="root=LABEL=ROOT"
-          SUSE_REMOVE_LINUX_ROOT_PARAM=true

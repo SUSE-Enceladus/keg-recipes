@@ -1,0 +1,5 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        ignition.platform.id: azure

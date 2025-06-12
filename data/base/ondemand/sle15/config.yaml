@@ -1,4 +1,0 @@
-config:
-  services:
-    guestregister:
-      - guestregister

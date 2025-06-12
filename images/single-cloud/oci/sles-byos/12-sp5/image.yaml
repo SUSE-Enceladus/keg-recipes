@@ -1,9 +1,0 @@
-include-paths:
-  - sle12/sp4
-  - sle12/sp5
-image:
-  _attributes:
-    name: SLES12-SP5-OCI-BYOS
-    displayname: SLES12-SP5-OCI-BYOS
-  description:
-    specification: "SUSE Linux Enterprise Server 12 SP5 BYOS guest image for Oracle Cloud"

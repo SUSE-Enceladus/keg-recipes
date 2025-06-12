@@ -1,0 +1,28 @@
+packages:
+  _namespace_platforms_azure:
+    package:
+      - cloud-netconfig-azure
+      - hyper-v
+      - python-azure-agent
+      - python-azuremetadata
+      - shim
+  _namespace_platforms_azure_cloud_init:
+    package:
+      - cloud-init
+      - cloud-init-config-suse
+  _namespace_platforms_azure_cryptsetup:
+    package:
+      - cryptsetup
+  _namespace_platforms_azure_tools:
+    package:
+      - azure-cli
+      - lsscsi
+      - python3-azure-sdk
+  _namespace_platforms_azure_registration:
+    package:
+      - cloud-regionsrv-client
+      - cloud-regionsrv-client-plugin-azure
+      - regionsrv-certs
+      - regionServiceClientConfigAzure
+      - regionServiceCertsAzure
+      - cloud-regionsrv-client-addon-azure

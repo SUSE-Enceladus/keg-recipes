@@ -1,0 +1,12 @@
+packages:
+  _namespace_platforms_baremetal:
+    namedCollection:
+      - micro_hardware
+    package:
+      - patterns-micro-hardware
+      - combustion
+      - growpart-generator
+      - ignition
+      - jeos-firstboot
+      - ModemManager
+      - wpa_supplicant

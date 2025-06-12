@@ -1,0 +1,6 @@
+packages:
+  _namespace_platforms_csp_sle_micro:
+    package:
+      - afterburn
+      - ignition
+      - ignition-dracut-grub2

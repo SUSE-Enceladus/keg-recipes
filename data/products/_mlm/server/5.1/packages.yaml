@@ -1,0 +1,42 @@
+packages:
+  _namespace_products_mlm_server_release:
+    package:
+      - Multi-Linux-Manager-Server-release
+  _namespace_products_mlm_server_images:
+    package:
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-attestation-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-attestation-image
+          arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-hub-xmlrpc-api-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-hub-xmlrpc-api-image
+          arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-image
+          arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-migration-14-16-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-migration-14-16-image
+          arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-postgresql-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-postgresql-image
+          arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-x86_64-server-saline-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.1-aarch64-server-saline-image
+          arch: aarch64

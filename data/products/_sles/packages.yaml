@@ -1,0 +1,5 @@
+packages:
+  _namespace_products_sles:
+    package:
+      - release-notes-sles
+      - sles-release

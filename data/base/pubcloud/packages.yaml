@@ -1,0 +1,80 @@
+packages:
+  _namespace_base_pubcloud_common:
+    package:
+      - python-instance-billing-flavor-check
+      - supportutils-plugin-suse-public-cloud
+  _namespace_base_pubcloud_extra:
+    package:
+      - aaa_base-extras
+      - at-spi2-core
+      - attr
+      - autofs
+      - bc
+      - binutils
+      - blktrace
+      - cifs-utils
+      - crash
+      - curl
+      - cyrus-sasl
+      - cyrus-sasl-digestmd5
+      - cyrus-sasl-gssapi
+      - cyrus-sasl-plain
+      - cyrus-sasl-saslauthd
+      - dhcp-client
+      - dos2unix
+      - ethtool
+      - expect
+      - fping
+      - glibc-i18ndata
+      - iproute2
+      - irqbalance
+      - krb5-client
+      - libyui-ncurses-pkg
+      - lvm2
+      - man
+      - man-pages
+      - mozilla-nss-certs
+      - nfs-client
+      - nfs-kernel-server
+      - openldap2-client
+      - polkit-default-privs
+      - psmisc
+      - quota
+      - rsync
+      - rsyslog
+      - screen
+      - strace
+      - system-user-mail
+      - tcsh
+      - telnet
+      - wget
+      - yast2
+      - yast2-add-on
+      - yast2-audit-laf
+      - yast2-bootloader
+      - yast2-core
+      - yast2-country
+      - yast2-country-data
+      - yast2-firewall
+      - yast2-hardware-detection
+      - yast2-iscsi-client
+      - yast2-kdump
+      - yast2-ldap
+      - yast2-network
+      - yast2-ntp-client
+      - yast2-packager
+      - yast2-pam
+      - yast2-registration
+      - yast2-security
+      - yast2-transfer
+      - yast2-trans-stats
+      - yast2-update
+      - yast2-users
+      - yast2-xml
+      - yast2-ycp-ui-bindings
+      - zip
+      - zsh
+      - zypper-lifecycle-plugin
+  _namespace_base_pubcloud_kiwi_repart:
+    package:
+      - dracut-kiwi-oem-repart

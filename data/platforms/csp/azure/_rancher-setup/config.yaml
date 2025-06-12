@@ -1,0 +1,5 @@
+config:
+  scripts:
+    _platforms_azure_default_kernel_log_level: Null
+  services:
+    _platforms_azure_regionsrv_timer: Null

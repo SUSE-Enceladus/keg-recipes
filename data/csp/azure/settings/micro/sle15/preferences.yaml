@@ -1,8 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      bootpartition: Null
-      bootpartsize: Null
-      filesystem: btrfs
-      kernelcmdline:
-        ignition.platform.id: azure

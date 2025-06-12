@@ -1,6 +1,6 @@
 image:
   _attributes:
-    schemaversion: "6.2"
+    schemaversion: "7.5"
   description:
     _attributes:
       type: system

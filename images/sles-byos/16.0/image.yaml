@@ -1,0 +1,10 @@
+include-paths:
+  - _slfo/1.1
+  - _sles/16.0
+  - _sles/byos/16.0
+image:
+  _attributes:
+    name: SLES
+    displayname: SLES
+  description:
+    specification: "SUSE Linux Enterprise Server 16.0 BYOS guest image"

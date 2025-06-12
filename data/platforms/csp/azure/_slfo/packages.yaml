@@ -1,0 +1,3 @@
+packages:
+  # disabled until SDK available in SLFO
+  _namespace_platforms_azure_tools: Null

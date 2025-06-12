@@ -1,0 +1,5 @@
+archive:
+  _namespace_platforms_azure_sysconfig_network:
+    _include_overlays:
+      - sysconfig-network-cloud-netconfig
+  _namespace_platforms_azure_sshd_keep_alive: Null

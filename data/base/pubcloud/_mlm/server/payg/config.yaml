@@ -1,0 +1,5 @@
+config:
+  services:
+    _namespace_base_pubcloud_mlm_server_payg:
+      - csp-billing-adapter
+      - guestregister

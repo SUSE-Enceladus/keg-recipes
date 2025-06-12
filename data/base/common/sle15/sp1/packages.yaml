@@ -1,5 +1,0 @@
-packages:
-  _namespace_common_suse_connect:
-    package:
-      - suseconnect-ng
-  _namespace_common_zypper_migration: Null

@@ -1,0 +1,4 @@
+packages:
+  _namespace_product_sl_micro_release:
+    package:
+      - SL-Micro-release

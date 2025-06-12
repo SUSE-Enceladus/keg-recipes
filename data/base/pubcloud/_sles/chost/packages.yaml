@@ -1,0 +1,33 @@
+packages:
+  _namespace_base_pubcloud_extra: Null
+  _namespace_base_pubcloud_cnf: Null
+  _namespace_base_pubcloud_chost:
+    package:
+      - apparmor-abstractions
+      - apparmor-parser
+      - bind-utils
+      - ca-certificates
+      - ca-certificates-mozilla
+      - conntrack-tools
+      - containerd
+      - containerd-ctr
+      - cpupower
+      - docker
+      - fipscheck
+      - hwdata
+      - hwinfo
+      - jq
+      - libnss_usrfiles2
+      - librelp0
+      - nfs-client
+      - open-iscsi
+      - pciutils
+      - rsyslog
+      - rsyslog-module-relp
+      - runc
+      - socat
+      - tcpdump
+      - wget
+  _namespace_base_pubcloud_chost_modrel:
+    package:
+      - sle-module-containers-release

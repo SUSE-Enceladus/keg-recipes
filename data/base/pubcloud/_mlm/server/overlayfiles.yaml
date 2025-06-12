@@ -1,0 +1,8 @@
+archive:
+  _namespace_base_pubcloud_mlm_server_motd:
+    _include_overlays:
+      - motd-mod-mlm-server-byos
+      - motd-mod-transactional-byos
+  _namespace_base_pubcloud_mlm_server_rebootmgr_config:
+    _include_overlays:
+      - susemanager-rebootmgr-config

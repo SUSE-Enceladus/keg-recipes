@@ -1,4 +1,0 @@
-packages:
-  _namespace_gce_shim:
-    package:
-      - shim

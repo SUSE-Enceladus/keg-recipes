@@ -1,4 +1,0 @@
-archive:
-  _namespace_motd_ondemand:
-    _include_overlays:
-      - motd-addon-mgmt

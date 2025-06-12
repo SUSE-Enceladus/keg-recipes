@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubcloud_sles_sap_modules:
+    package:
+      - sle-ha-release
+      - sle-module-sap-applications-release

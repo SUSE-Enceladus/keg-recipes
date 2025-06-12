@@ -1,0 +1,19 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/byos/15-sp4
+  - _sles/byos/15-sp5
+  - _sles/byos/15-sp6
+  - _sles/hardened/15-sp4
+  - _sles/hardened/15-sp5
+  - _sles/hardened/15-sp6
+image:
+  _attributes:
+    name: SLES15-SP6-Hardened-BYOS
+    displayname: SLES15-SP6-Hardended-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP6 BYOS hardened guest image"

@@ -1,6 +1,0 @@
-config:
-  sysconfig:
-    azure-set-hostname:
-      - file: /etc/sysconfig/network/dhcp
-        name: DHCLIENT_SET_HOSTNAME
-        value: "no"

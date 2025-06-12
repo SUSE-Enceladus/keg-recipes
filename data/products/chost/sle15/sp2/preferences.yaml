@@ -1,6 +1,0 @@
-preferences:
-  rpm-excludedocs: "true"
-  type:
-    _attributes:
-      kernelcmdline:
-        cgroup.memory: nokmem

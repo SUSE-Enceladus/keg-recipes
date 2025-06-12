@@ -1,0 +1,6 @@
+config:
+  scripts:
+    product_sl_micro_scripts:
+      - snapper-microos-config
+    product_sl_micro_selinux:
+      - selinux-enforce

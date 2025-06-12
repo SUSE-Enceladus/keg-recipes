@@ -1,0 +1,97 @@
+image:
+  profiles:
+    _namespace_azure_payg_profiles:
+      profile:
+        - _attributes:
+            name: Azure-Basic
+            description: Azure basic configuration
+          requires:
+            _attributes:
+              profile: Azure
+        - _attributes:
+            name: Azure-Standard
+            description: Azure standard configuration
+          requires:
+            _attributes:
+              profile: Azure
+        - _attributes:
+            name: Azure-3P
+            description: Azure third party configuration
+          requires:
+            _attributes:
+              profile: Azure
+  _namespace_preferences_root: Null
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure-Basic]
+      _include:
+        - platforms/csp/azure/basic
+    - _attributes:
+        profiles: [Azure-Standard]
+        arch: x86_64
+      _include:
+        - platforms/csp/azure
+    - _attributes:
+        profiles: [Azure-Standard]
+        arch: aarch64
+      _include:
+        - platforms/csp/azure/aarch64
+    - _attributes:
+        profiles: [Azure-3P]
+        arch: x86_64
+      _include:
+        - platforms/csp/azure/3p
+    - _attributes:
+        profiles: [Azure-3P]
+        arch: aarch64
+      _include:
+        - platforms/csp/azure/aarch64
+        - platforms/csp/azure/3p
+    - _attributes:
+        profiles: [EC2]
+      _include:
+        - platforms/csp/ec2
+    - _attributes:
+        profiles: [GCE]
+      _include: platforms/csp/gce
+config:
+  - _include:
+      - base/common
+      - base/pubcloud
+      - products
+  - profiles: [Azure-Basic]
+    _include:
+      - platforms/csp/azure/basic
+  - profiles: [Azure-Standard]
+    _include:
+      - platforms/csp/azure
+  - profiles: [EC2]
+    _include:
+      - platforms/csp/ec2
+  - profiles: [GCE]
+    _include:
+      - platforms/csp/gce
+xmlfiles:
+  - name: _multibuild
+    content:
+      multibuild:
+        flavor:
+          - Azure-Basic
+          - Azure-Standard
+          - EC2
+          - GCE
+  - name: _constraints
+    content:
+      constraints:
+        hardware:
+          disk:
+            size:
+              _attributes:
+                unit: G
+              _text: 12
+        hostlabel:
+          _attributes:
+            exclude: "true"
+          _text: SLOW_CPU

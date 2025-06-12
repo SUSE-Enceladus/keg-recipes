@@ -1,0 +1,16 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sles-sap/15-sp4
+  - _sles-sap/15-sp5
+  - _sles-sap/15-sp6
+  - _sles-sap/payg/15-sp4
+  - _sles-sap/payg/15-sp5
+  - _sles-sap/payg/15-sp6
+image:
+  _attributes:
+    name: SLES15-SP6-SAP
+    displayname: SLES15-SP6-SAP
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP6 guest image"

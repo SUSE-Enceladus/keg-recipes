@@ -1,6 +1,0 @@
-config:
-  files:
-    hpc-variant:
-      - path: /etc/os-release
-        append: True
-        content: VARIANT_ID="sles-hpc"

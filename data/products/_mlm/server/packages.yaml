@@ -1,0 +1,16 @@
+packages:
+  _namespace_products_mlm_server_base:
+    package:
+      - aardvark-dns
+      - bind-utils
+      - jq
+      - netavark
+      - mgradm
+      - mgradm-bash-completion
+      - mgradm-lang
+      - mgrctl
+      - mgrctl-bash-completion
+      - mgrctl-lang
+      - podman
+      - sle-module-containers-release
+      - uyuni-storage-setup-server

@@ -1,0 +1,6 @@
+packages:
+  _namespace_platforms_azure_kernel:
+    package:
+      - _attributes:
+          name: kernel-azure
+          arch: x86_64

@@ -1,0 +1,17 @@
+packages:
+  _namespace_product_sles_hardened:
+    package:
+      - aide
+      - audit-audispd-plugins
+      - firewalld-lang
+      - mozilla-nss-tools
+      - opensc
+      - openscap
+      - openscap-utils
+      - pam_pkcs11
+      - pcsc-ccid
+      - pcsc-lite
+      - pcsc-tools
+      - perl-pcsc
+      - scap-security-guide
+      - pcsc-lite

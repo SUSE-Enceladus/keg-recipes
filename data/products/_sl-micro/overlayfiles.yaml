@@ -1,0 +1,4 @@
+archive:
+  _namespace_product_sl_micro_base:
+    _include_overlays:
+      - dracut-growfs

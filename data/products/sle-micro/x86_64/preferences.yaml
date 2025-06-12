@@ -1,8 +1,0 @@
-preferences:
-  type:
-    systemdisk:
-      _namespace_micro_x86_64:
-        volume:
-          - _attributes:
-              name: boot/grub2/x86_64-efi
-              mountpoint: boot/grub2/x86_64-efi

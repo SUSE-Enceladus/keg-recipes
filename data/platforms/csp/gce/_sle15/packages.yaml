@@ -1,0 +1,8 @@
+packages:
+  _namespace_platforms_gce_sle15:
+    package:
+      - growpart
+      - growpart-rootgrow
+  _namespace_platforms_gce_metadata:
+    package:
+      - python3-gcemetadata

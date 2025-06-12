@@ -1,0 +1,4 @@
+config:
+  services:
+    base_common_service_chronyd:
+      - chronyd

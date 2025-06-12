@@ -1,0 +1,11 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _rachner-setup/15-sp4
+  - _rachner-setup/15-sp5
+image:
+  _attributes:
+    name: SLES15-SP5-SUSE-Rancher-Setup-BYOS
+    displayname: SLES15-SP5-SUSE-Rancher-Setup-BYOS
+  description:
+    specification: "SUSE Rancher Setup based on SLES 15 SP5 BYOS guest image"

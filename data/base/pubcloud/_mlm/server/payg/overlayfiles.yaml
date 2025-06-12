@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_mlm_server_payd_motd:
+    _include_overlays:
+      - motd-mod-mlm-server-payg

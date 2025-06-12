@@ -1,4 +1,0 @@
-archive:
-  _namespace_gce_virtio_net:
-    _include_overlays:
-      - module-virtio-net

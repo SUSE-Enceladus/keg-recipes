@@ -1,5 +1,0 @@
-packages:
-  _namespace_bootstrap:
-    package:
-      - filesystem
-      - glibc-locale

@@ -1,0 +1,9 @@
+config:
+  services:
+    sap-converged-cloud-cloud-init:
+      - cloud-init-local
+      - cloud-init
+      - cloud-config
+      - cloud-final
+      - cloud-init-main
+      - cloud-init-network

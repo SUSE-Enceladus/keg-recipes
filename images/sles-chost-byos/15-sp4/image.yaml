@@ -1,0 +1,12 @@
+include-paths:
+  - _sle15/sp4
+  - _sle-chost/15-sp3
+  - _sle-chost/15-sp4
+  - _sles/15-sp3
+  - _sles/15-sp4
+image:
+  _attributes:
+    name: SLES15-SP4-CHOST-BYOS
+    displayname: SLES15-SP4-CHOST-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP4 BYOS guest image optimized as container host"

@@ -1,0 +1,4 @@
+archive:
+  # dummy so empty archive does not break schema validation
+  _namespace_products_default:
+    _include_overlays: []

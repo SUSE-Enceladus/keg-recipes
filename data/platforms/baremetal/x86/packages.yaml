@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_baremetal_x86:
+    package:
+      - dracut-kiwi-oem-dump
+      - dracut-kiwi-oem-repart

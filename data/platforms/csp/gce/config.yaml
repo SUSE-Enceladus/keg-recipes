@@ -1,0 +1,27 @@
+config:
+  files:
+    platforms-gce-config:
+      - path: /etc/boto.cfg
+        append: True
+        content: |-
+          [Boto]
+          ca_certificates_file = system
+      - path: /etc/boto.cfg.template
+        append: True
+        content: |-
+          [Boto]
+          ca_certificates_file = system
+      - path: /etc/default/instance_configs.cfg.distro
+        append: True
+        content: |-
+          [InstanceSetup]
+          set_boto_config = false
+  services:
+    platforms-gce-services:
+      - google-guest-agent
+      - google-osconfig-agent
+      - google-oslogin-cache.timer
+      - google-shutdown-scripts
+      - google-startup-scripts
+    platforms-gce-cloud-netconfig:
+      - cloud-netconfig.timer

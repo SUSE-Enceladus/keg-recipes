@@ -1,0 +1,9 @@
+packages:
+  _namespace_base_pubcloud_sle_hpc_byos_modules:
+    package:
+      - sle-module-basesystem-release
+      - sle-module-containers-release
+      - sle-module-development-tools-release
+      - sle-module-hpc-release
+      - sle-module-server-applications-release
+      - sle-module-web-scripting-release

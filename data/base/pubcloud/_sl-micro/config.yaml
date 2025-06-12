@@ -1,0 +1,9 @@
+config:
+  files:
+    base_pubcloud_plymouth_lock: Null
+  scripts:
+    base_pubcloud_micro:
+      - micro-add-variant
+      - zypp-disable-multiversion
+      - zypp-set-excludedocs
+      - zypp-set-onlyrequires

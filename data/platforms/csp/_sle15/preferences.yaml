@@ -1,0 +1,6 @@
+preferences:
+  type:
+    _attributes:
+      filesystem: xfs
+      kernelcmdline:
+        net.ifnames: 0

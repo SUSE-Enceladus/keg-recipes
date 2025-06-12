@@ -1,7 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      bootloader_console: Null
-    bootloader:
-      _attributes:
-        console: console

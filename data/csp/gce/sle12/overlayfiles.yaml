@@ -1,8 +1,0 @@
-archive:
-  _namespace_gce_base:
-    _include_overlays:
-      - gce-boto-hack
-      - hosts-metadata-google
-  _namespace_gce_sysconfig_network:
-    _include_overlays:
-      - sysconfig-network-cloud-netconfig

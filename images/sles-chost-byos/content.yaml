@@ -1,0 +1,59 @@
+image:
+  profiles:
+    _namespace_chost_extra_profiles:
+      profile:
+        - _attributes:
+            name: Aliyun
+            description: Alibaba Cloud configuration
+        - _attributes:
+            name: GDC
+            description: Google Distributed Cloud configuration
+        - _attributes:
+            name: OpenStack
+            description: OpenStack configuration
+        - _attributes:
+            name: SAP-CCloud
+            description: SAP Converged Cloud configuration
+  _namespace_chost_extra_prefs:
+    preferences:
+      - _attributes:
+          profiles: [OpenStack]
+        _include:
+          - platforms/csp/openstack/settings/chost
+          - products
+      - _attributes:
+          profiles: [SAP-CCloud]
+        _include:
+          - platforms/csp/sap-converged-cloud
+          - products
+  _namespace_chost_extra_pkgs:
+    packages:
+      - _attributes:
+          type: image
+          profiles: [OpenStack]
+        _include:
+          - platforms/openstack
+      - _attributes:
+          type: image
+          profiles: [SAP-CCloud]
+        _include:
+          - platforms/csp/sap-converged-cloud
+config:
+  - _include:
+      - base/common
+      - products
+  - profiles: [Azure]
+    _include:
+      - platforms/csp/azure
+  - profiles: [EC2]
+    _include:
+      - platforms/csp/ec2
+  - profiles: [GCE]
+    _include:
+      - platforms/csp/gce
+  - profiles: [OpenStack]
+    _include:
+      - platforms/openstack
+  - profiles: [SAP-CCloud]
+    _include:
+      - platforms/csp/sap-converged-cloud

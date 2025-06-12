@@ -1,0 +1,40 @@
+packages:
+  _namespace_base_common_bootloader: Null
+  _namespace_base_common:
+    package:
+      - audit
+      - blog
+      - chrony
+      - dosfstools
+      - dracut
+      - grub2
+      - haveged
+      - hostname
+      - iputils
+      - kdump
+      - less
+      - openssh
+      - parted
+      - python-instance-billing-flavor-check
+      - rpm-ndb
+      - sle-module-basesystem-release
+      - sudo
+      - supportutils
+      - suse-build-key
+      - suseconnect-ng
+      - system-group-hardware
+      - system-group-wheel
+      - system-user-nobody
+      - systemd
+      - terminfo
+      - timezone
+      - tpm2.0-tools
+      - udev
+      - which
+      - xfsprogs
+  _namespace_base_common_netsys:
+    package:
+      - wicked
+  _namespace_base_common_vim:
+    package:
+      - vim

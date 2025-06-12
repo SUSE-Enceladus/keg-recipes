@@ -1,0 +1,6 @@
+config:
+  services:
+    base_pubcloud_rancher_setup_services:
+      - suse-rancher-setup
+      - nginx
+      - set-http-basic-credentials

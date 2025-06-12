@@ -1,4 +1,0 @@
-archive:
-  _namespace_azure_sysconfig_network:
-    _include_overlays:
-      - sysconfig-network-plain

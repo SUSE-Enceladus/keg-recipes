@@ -1,6 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      kernelcmdline:
-        skew_tick: 1
-        nosmt: []

@@ -1,0 +1,37 @@
+config:
+  files:
+    base_pubcloud_plymouth_lock:
+      - path: /etc/zypp/locks
+        append: True
+        content: |-
+          type: package
+          match_type: glob
+          case_sensitive: on
+          solvable_name: plymouth*
+  scripts:
+    base_pubcloud_scripts:
+      - expand-motd-vars
+      - polkit-set-default-privs
+      - remove-iscsi-config
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
+      - zypp-disable-multiver-kernel
+  services:
+    base_pubcloud_services:
+      - boot.device-mapper
+      - sshd
+      - name: boot.efivars
+        enable: False
+      - name: boot.lvm
+        enable: False
+      - name: boot.md
+        enable: False
+      - name: boot.multipath
+        enable: False
+      - name: display-manager
+        enable: False
+      - name: kbd
+        enable: False
+    base_pubcloud_guestregister:
+      - guestregister

@@ -1,4 +1,0 @@
-config:
-  scripts:
-    chost-strip-image:
-      - chost-strip-image

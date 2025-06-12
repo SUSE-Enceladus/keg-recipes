@@ -1,8 +1,0 @@
-packages:
-  _namespace_gce_registration:
-    package:
-      - cloud-regionsrv-client
-      - cloud-regionsrv-client-plugin-gce
-      - regionsrv-certs
-      - regionServiceClientConfigGCE
-      - regionServiceCertsGCE

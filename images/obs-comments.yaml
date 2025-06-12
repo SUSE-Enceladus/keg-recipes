@@ -1,0 +1,4 @@
+image-config-comments:
+  obs-multibuild: "OBS-Profiles: @BUILD_FLAVOR@"
+  _include:
+    - base/pubcloud

@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_sles_sap_motd_byos:
+    _include_overlays:
+      - motd-mod-byos

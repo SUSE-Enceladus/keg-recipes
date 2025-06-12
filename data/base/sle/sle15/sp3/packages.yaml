@@ -1,4 +1,0 @@
-packages:
-  _namespace_zypper_lifecycle_plugin:
-    package:
-      - zypper-lifecycle-plugin

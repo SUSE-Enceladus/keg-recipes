@@ -1,0 +1,4 @@
+config:
+  scripts:
+    _platforms_azure_waagent_rdma:
+      - waagent-enable-rdma

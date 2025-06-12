@@ -1,0 +1,35 @@
+config:
+  files:
+    base_pubcloud_pam_sshd_motd:
+      - path: /etc/motd.d/sshd
+        append: True
+        content: "session     optional    pam_motd.so"
+  sysconfig:
+    base_pubcloud_sle15_sysvars:
+      - file: /etc/sysconfig/console
+        name: CONSOLE_ENCODING
+        value: "UTF-8"
+      - file: /etc/sysconfig/console
+        name: CONSOLE_FONT
+        value: "lat9w-16.psfu"
+      - file: /etc/sysconfig/console
+        name: CONSOLE_SCREENMAP
+        value: "trivial"
+      - file: /etc/sysconfig/keyboard
+        name: COMPOSETABLE
+        value: "clear latin1.add"
+      - file: /etc/sysconfig/language
+        name: INSTALLED_LANGUAGES
+        value: ""
+      - file: /etc/sysconfig/language
+        name: RC_LANG
+        value: "C.UTF-8"
+      - file: /etc/sysconfig/security
+        name: POLKIT_DEFAULT_PRIVS
+        value: "restrictive"
+      - file: /etc/sysconfig/windowmanager
+        name: DEFAULT_WM
+        value: ""
+      - file: /etc/sysconfig/windowmanager
+        name: INSTALL_DESKTOP_EXTENSIONS
+        value: "no"

@@ -1,0 +1,30 @@
+packages:
+  _namespace_products_mlm_server_release:
+    package:
+      - SUSE-Manager-Server-release
+  _namespace_products_mlm_server_images:
+    package:
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-attestation-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-attestation-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-hub-xmlrpc-api-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-hub-xmlrpc-api-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-image
+          arch: aarch64
+      - _attributes:
+          name: suse-manager-5.0-x86_64-server-migration-14-16-image
+          arch: x86_64
+      - _attributes:
+          name: suse-manager-5.0-aarch64-server-migration-14-16-image
+          arch: aarch64

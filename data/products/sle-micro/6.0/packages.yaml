@@ -1,8 +1,0 @@
-packages:
-  _namespace_sle_micro:
-    namedCollection: Null
-    package:
-      - NetworkManager-branding-SLE
-      - SLE-Micro-release
-      - systemd-default-settings-branding-SLE-Micro
-  _namespace_sle_micro_network_mgmt: Null

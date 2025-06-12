@@ -1,0 +1,50 @@
+packages:
+  _namespace_base_pubcloud_modrel:
+    package:
+      - sle-module-public-cloud-release
+  _namespace_base_pubcloud_sle15:
+    package:
+      - at
+      - cronie
+      - deltarpm
+      - lockdev
+      - netcat-openbsd
+      - nfsidmap
+      - patterns-base-minimal_base
+      - fontconfig
+      - fonts-config
+      - hostinfo
+      - ksh
+      - nscd
+      - tcpd
+      - tcpdump
+      - yast2-dhcp-server
+      - yast2-dns-server
+      - yast2-http-server
+      - yast2-iscsi-lio-server
+      - yast2-mail
+      - yast2-nfs-client
+      - yast2-nfs-common
+      - yast2-nfs-server
+      - yast2-nis-client
+      - yast2-nis-server
+      - yast2-online-update
+      - yast2-online-update-frontend
+      - yast2-perl-bindings
+      - yast2-pkg-bindings
+      - yast2-printer
+      - yast2-samba-client
+      - yast2-samba-server
+      - yast2-squid
+      - yast2-sudo
+      - yast2-support
+      - yast2-sysconfig
+      - yast2-tftp-server
+      - yast2-tune
+      - yp-tools
+  _namespace_base_pubcloud_sle15_cnf:
+    package:
+      - command-not-found
+  _namespace_base_pubcloud_sysvcompat:
+    package:
+      - systemd-sysvinit

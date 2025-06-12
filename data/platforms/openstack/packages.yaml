@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_openstack:
+    package:
+      - cloud-init

@@ -1,0 +1,6 @@
+config:
+  files:
+    base_pubcloud_hpc_variant:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="sles-hpc"

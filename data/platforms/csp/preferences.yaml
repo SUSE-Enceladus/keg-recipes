@@ -1,0 +1,19 @@
+preferences:
+  type:
+    _attributes:
+      bootpartition: "false"
+      devicepersistency: by-label
+      filesystem: xfs
+      firmware: uefi
+      image: oem
+      kernelcmdline:
+        console: ttyS0
+        net.ifnames: 1
+    bootloader:
+      _attributes:
+        name: grub2
+        timeout: 1
+    size:
+      _attributes:
+        unit: M
+      _text: 10240

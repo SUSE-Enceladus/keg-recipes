@@ -1,0 +1,117 @@
+image:
+  profiles:
+    _namespace_platform_profiles:
+      profile:
+        - _attributes:
+            name: Azure
+            description: Configuration for Microsoft Azure
+        - _attributes:
+            name: EC2
+            description: Configuration for Amazon EC2
+        - _attributes:
+            name: GCE
+            description: Configuration for Google Compute
+  _namespace_preferences_root:
+    _namespace_base_preferences:
+      preferences:
+        - _include:
+            - base/common
+        - _attributes:
+            profiles: [Azure]
+            arch: x86_64
+          _include:
+            - platforms/csp/azure
+        - _attributes:
+            profiles: [Azure]
+            arch: aarch64
+          _include:
+            - platforms/csp/azure/aarch64
+        - _attributes:
+            profiles: [EC2]
+          _include:
+            - platforms/csp/ec2
+        - _attributes:
+            profiles: [GCE]
+          _include:
+            - platforms/csp/gce
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - products
+    - _attributes:
+        type: image
+        profiles:
+          - Azure
+          - EC2
+          - GCE
+      _include:
+        - base/pubcloud
+      archive:
+        - _attributes:
+            name: pubcloud.tar.gz
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - platforms/csp/azure
+      archive:
+        - _attributes:
+            name: azure.tar.gz
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - platforms/csp/ec2
+      archive:
+        - _attributes:
+            name: ec2.tar.gz
+    - _attributes:
+        type: image
+        profiles: [GCE]
+      _include:
+        - platforms/csp/gce
+      archive:
+        - _attributes:
+            name: gce.tar.gz
+config:
+  - _include:
+      - base/common
+      - base/pubcloud
+      - products
+  - profiles:
+      - Azure
+      - EC2
+      - GCE
+    _include:
+      - base/pubcloud
+  - profiles: [Azure]
+    _include:
+      - platforms/csp/azure
+  - profiles: [EC2]
+    _include:
+      - platforms/csp/ec2
+  - profiles: [GCE]
+    _include:
+      - platforms/csp/gce
+archive:
+  - name: root.tar.gz
+    _include:
+      - products
+  - name: pubcloud.tar.gz
+    _include:
+      - base/pubcloud
+  - name: azure.tar.gz
+    _include:
+      - platforms/csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - platforms/csp/ec2
+  - name: gce.tar.gz
+    _include:
+      - platforms/csp/gce

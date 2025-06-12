@@ -1,0 +1,8 @@
+config:
+  scripts:
+    _platforms_azure_default_kernel_log_level: Null
+  services:
+    _platforms_azure_cloud_netconfig: Null
+    _platforms_azure_regionsrv_timer: Null
+  sysconfig:
+    _platforms_azure_cloud_netconfig: Null

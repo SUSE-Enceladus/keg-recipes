@@ -1,0 +1,69 @@
+image:
+  profiles:
+    profile:
+      - _attributes:
+          name: Azure
+          description: Configuration for Microsoft Azure
+      - _attributes:
+          name: EC2
+          description: Configuration for Amazon EC2
+  preferences:
+    - _include:
+        - base/common
+    - _attributes:
+        profiles: [Azure]
+        arch: x86_64
+      _include:
+        - platforms/csp/azure
+    - _attributes:
+        profiles: [EC2]
+        arch: x86_64
+      _include:
+        - platforms/csp/ec2
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - products
+    - _attributes:
+        type: image
+        profiles:
+          - Azure
+          - EC2
+      _include:
+        - base/pubcloud
+    - _attributes:
+        type: image
+        profiles: [Azure]
+      _include:
+        - platforms/csp/azure
+    - _attributes:
+        type: image
+        profiles: [EC2]
+      _include:
+        - platforms/csp/ec2
+config:
+  - _include:
+      - base/common
+      - products
+  - profiles: [Azure]
+    _include:
+      - platforms/csp/azure
+  - profiles: [EC2]
+    _include:
+      - platforms/csp/ec2
+archive:
+  - name: root.tar.gz
+    _include:
+      - products
+  - name: azure.tar.gz
+    _include:
+      - platforms/csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - platforms/csp/ec2

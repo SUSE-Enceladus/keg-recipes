@@ -1,0 +1,11 @@
+packages:
+  _namespace_base_pubcloud_sles_sap_byos:
+    package:
+      - drbd-formula
+      - habootstrap-formula
+      - iscsi-formula
+      - python3-shaptools
+      - salt-shaptools
+      - saphanabootstrap-formula
+      - sapnwbootstrap-formula
+      - salt-minion

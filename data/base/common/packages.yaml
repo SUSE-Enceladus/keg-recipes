@@ -1,0 +1,8 @@
+packages:
+  _namespace_base_common:
+    package:
+      - patterns-base-base
+      - patterns-base-bootloader
+      - dracut
+      - grub2-branding-SLE
+      - NetworkManager-branding-SLE

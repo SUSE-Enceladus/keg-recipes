@@ -1,8 +1,0 @@
-packages:
-  _namespace_azure_vli_patch:
-    package:
-      - patch
-  _namespace_azure_vli_libxml:
-     package:
-      - libxml2
-      - libxml2-32bit

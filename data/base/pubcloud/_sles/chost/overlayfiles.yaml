@@ -1,0 +1,6 @@
+archive:
+  _namespace_base_pubcloud_chost:
+    _include_overlays:
+      - motd-mod-caption-chost
+      - motd-mod-byos-opt
+      - sysctl-enable-ip-forward

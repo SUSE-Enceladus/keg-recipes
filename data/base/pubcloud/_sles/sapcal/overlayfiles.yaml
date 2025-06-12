@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_sapcal_motd:
+    _include_overlays:
+      - motd-caption-sapcal

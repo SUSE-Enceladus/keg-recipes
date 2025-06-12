@@ -1,0 +1,10 @@
+include-paths:
+  - _slfo/1.0
+  - _sle-micro/6.0
+  - _sle-micro/payg/6.0
+image:
+  _attributes:
+    name: SL-Micro-BYOS
+    displayname: SL-Micro-BYOS
+  description:
+    specification: SUSE Linux Micro 6.0 BYOS guest image

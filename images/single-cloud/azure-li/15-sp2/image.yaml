@@ -1,9 +1,0 @@
-include-paths:
-  - sle15/sp1
-  - sle15/sp2
-image:
-  _attributes:
-    name: SLES15-SP2-SAP-Azure-LI-BYOS
-    displayname: SLES15-SP2-SAP-Azure-LI-BYOS
-  description:
-    specification: "SUSE Linux Enterprise Server for SAP Applications 15 SP2 Azure LI BYOS guest image"

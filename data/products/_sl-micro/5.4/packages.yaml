@@ -1,0 +1,4 @@
+packages:
+  _namespace_product_sl_micro_pwd_check:
+    package:
+      - libpwquality-tools

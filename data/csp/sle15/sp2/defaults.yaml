@@ -1,9 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      bootloader: Null
-      boottimeout: Null
-    bootloader:
-      _attributes:
-        name: grub2
-        timeout: 1

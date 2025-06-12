@@ -1,8 +1,0 @@
-packages:
-  _namespace_platforms_x86:
-    namedCollection:
-      - alp_hardware
-    package:
-      - patterns-alp-hardware
-      - dracut-kiwi-oem-dump
-      - dracut-kiwi-oem-repart

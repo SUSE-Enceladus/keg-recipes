@@ -1,4 +1,0 @@
-config:
-  scripts:
-    sle-micro-selinux:
-      - selinux-enforce

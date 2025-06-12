@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_azure_rancher_setup:
+    package:
+      - suse-rancher-setup-config-RancherOnAKS
+  _namespace_platforms_azure_registration: Null

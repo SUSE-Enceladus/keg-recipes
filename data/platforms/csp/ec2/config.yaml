@@ -1,0 +1,12 @@
+config:
+  scripts:
+    _platforms_ec2_scripts:
+      - remove-aws-type-switch-conf
+  services:
+    _platforms_ec2_services:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+    _platforms_ec2_cloud_netconfig:
+      - cloud-netconfig.timer

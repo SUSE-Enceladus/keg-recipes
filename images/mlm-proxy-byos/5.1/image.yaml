@@ -1,0 +1,11 @@
+include-paths:
+  - _slfo/1.1
+  - _sle-micro/6.1
+  - _mlm-server/5.1
+  - _mlm-server/byos/5.1
+image:
+  _attributes:
+    name: SUSE-Multi_Linux-Manager
+    displayname: SUSE-Multi_Linux-Manager
+  description:
+    specification: "SUSE Manager Server 5.1 BYOS guest image"

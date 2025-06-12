@@ -1,7 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      bootpartsize: Null
-      filesystem: btrfs
-      kernelcmdline:
-        ignition.platform.id: gcp

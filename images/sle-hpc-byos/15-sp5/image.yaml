@@ -1,0 +1,13 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle-hpc/15-sp4
+  - _sle-hpc/15-sp5
+  - _sle-hpc/byos/15-sp4
+  - _sle-hpc/byos/15-sp5
+image:
+  _attributes:
+    name: SLES15-SP5-HPC-BYOS
+    displayname: SLES15-SP5-HPC-BYOS
+  description:
+    specification: "SUSE Linux Enterprise HPC 15 SP5 BYOS guest image"

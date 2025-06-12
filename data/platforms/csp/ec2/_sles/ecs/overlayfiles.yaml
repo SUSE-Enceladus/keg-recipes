@@ -1,0 +1,4 @@
+archive:
+  _namespace_platforms_ec2_sles_ecs_motd:
+    _include_overlays:
+      - motd-mod-caption-ecs

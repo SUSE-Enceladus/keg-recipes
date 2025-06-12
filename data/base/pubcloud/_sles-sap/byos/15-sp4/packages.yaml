@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubcloud_sles_sap_byos_modules:
+    package:
+      - sle-module-development-tools-release
+      - sle-module-containers-release

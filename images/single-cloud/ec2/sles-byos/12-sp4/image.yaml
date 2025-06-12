@@ -1,9 +1,0 @@
-include-paths:
-  - sle12/sp3
-  - sle12/sp4
-image:
-  _attributes:
-    name: SLES12-SP4-EC2-HVM-BYOS
-    displayname: SLES12-SP4-EC2-HVM-BYOS
-  description:
-    specification: "SUSE Linux Enterprise Server 12 Service Pack 4 guest image for Amazon EC2 using HVM configured for BYOS"

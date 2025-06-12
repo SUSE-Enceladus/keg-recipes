@@ -1,9 +1,0 @@
-config:
-  services:
-    ec2-cloud-netconfig: Null
-    ecs-services:
-      - amazon-ecs
-      - docker
-      - docker-img-store-setup
-  sysconfig:
-    ec2-cloud-netconfig: Null

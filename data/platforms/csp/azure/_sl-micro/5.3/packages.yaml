@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_azure_sle_micro:
+    package:
+      - afterburn-dracut

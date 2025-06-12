@@ -1,0 +1,11 @@
+config:
+  files:
+    products_sle_hpc_memlock_unlimited:
+      - path: /etc/security/limits.d/hpc.conf
+        content: "*               -       memlock         unlimited"
+  services:
+    products_sle_hpc_services:
+      - name: iscsi
+        enable: False
+      - name: iscsid
+        enable: False

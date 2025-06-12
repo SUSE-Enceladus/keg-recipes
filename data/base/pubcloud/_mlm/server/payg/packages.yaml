@@ -1,0 +1,7 @@
+packages:
+  _namespace_base_pubcloud_mlm_server_payg:
+    package:
+      - csp-billing-adapter-service
+      - python311-csp-billing-adapter
+      - python311-csp-billing-adapter-local
+      - uyuni-payg-timer

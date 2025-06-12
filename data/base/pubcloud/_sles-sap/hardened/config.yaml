@@ -1,0 +1,11 @@
+config:
+  files:
+    base_pubcloud_sles_sap_variant:
+      - path: /etc/os-release
+        append: True
+        content: VARIANT_ID="sles-sap-hardened"
+setup:
+  scripts:
+    base_pubcloud_sles_sap_hardened_workarounds:
+      - pcs-hardening-workarounds
+      - pcs-sap-hardening

@@ -1,0 +1,5 @@
+config:
+  scripts:
+    _platforms_azure_default_kernel_log_level: Null
+    _platforms_azure_dhclient_timeout: Null
+    _platforms_azure_sshd_config: Null

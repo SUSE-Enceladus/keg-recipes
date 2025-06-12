@@ -1,7 +1,0 @@
-packages:
-  _namespace_sle_module_release:
-    package:
-      - sle-live-patching-release
-      - sle-live-patching-release-POOL
-      - sle-module-hpc-release
-      - sle-module-hpc-release-POOL

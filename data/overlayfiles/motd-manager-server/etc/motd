@@ -1,0 +1,35 @@
+SUSE Manager {SUMA_VERSION} Server
+{OS_PRETTY_NAME} {ARCH} (64-bit)
+
+    ____
+  /@    ~-.
+  \/ __ .- |
+   // // @
+
+Before setting up SUSE Manager, please make sure the system's host name
+is configured to match its DNS name.
+
+To setup SUSE Manager please execute: sudo /sbin/yast2 susemanager_setup
+
+If the instance is not already registered, please register this instance
+using your existing SUSE entitlement.
+
+As "root" (sudo or sudo -i) use either one of the following commands:
+ - SUSEConnect --url=https://scc.suse.com  -e company@example.com -r YOUR_CODE
+ - yast scc
+
+to register the instance with SCC
+
+ - registercloudguest -r YOUR_CODE
+
+to register the instance against the SUSE update infrastructure.
+
+Without registration this instance does not have access to updates and
+security fixes.
+
+{INCLUDES}
+Management and Config: https://www.suse.com/suse-in-the-cloud-basics
+Documentation: https://www.suse.com/documentation/suse_manager/
+Community: https://community.suse.com/
+
+Have a lot of fun...

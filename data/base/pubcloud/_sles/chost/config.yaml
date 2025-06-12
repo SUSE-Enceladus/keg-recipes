@@ -1,0 +1,8 @@
+config:
+  scripts:
+    base_pubcloud_chost_scripts:
+      - chost-add-variant
+      - chost-strip-image
+  services:
+    base_pubcloud_chost_services:
+      - docker

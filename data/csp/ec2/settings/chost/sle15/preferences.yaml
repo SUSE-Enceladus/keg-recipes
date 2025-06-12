@@ -1,5 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      kernelcmdline:
-        memhp_default_state: offline

@@ -1,4 +1,0 @@
-archive:
-  _namespace_ec2_sap_agent:
-    _include_overlays:
-      - script-install-aws-agent

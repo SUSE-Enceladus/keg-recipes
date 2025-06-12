@@ -1,0 +1,8 @@
+archive:
+  _namespace_base_pubcloud_micro_motd:
+    _include_overlays:
+      - motd-mod-transactional-byos
+  _namespace_base_pubcloud_micro:
+    _include_overlays:
+      - sysctl-enable-ip-forward
+      - sysctl-enable-rp-filter

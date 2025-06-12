@@ -1,0 +1,8 @@
+packages:
+  _namespace_base_pubcloud_sapcal_libopenssl1_0_0: Null
+  _namespace_base_pubcloud_sapcal_extra: Null
+    package:
+      - xmlstarlet
+      - libcap-progs
+      - libicu60_2
+      - jq

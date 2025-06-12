@@ -1,4 +1,0 @@
-packages:
-  _namespace_sle_module_python:
-    package:
-      - sle-module-python2-release

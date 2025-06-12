@@ -1,8 +1,0 @@
-include-paths:
-  - sle15
-image:
-  _attributes:
-    name: SLES15-SAP-EC2
-    displayname: SLES15-SAP-EC2
-  description:
-    specification: "SUSE Linux Enterprise Server for SAP Applications 15 BYOS guest image for Amazon EC2"
