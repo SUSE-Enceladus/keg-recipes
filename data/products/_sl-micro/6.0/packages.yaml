@@ -1,4 +1,18 @@
 packages:
-  _namespace_product_sl_micro_release:
+  _namespace_base_common_sl_micro:
+    namedCollection:
+      - base_transactional
+      - micro_defaults
     package:
-      - SL-Micro-release
+      - patterns-base-transactional
+      - patterns-micro-defaults
+      - ca-certificates
+      - glibc-locale-base
+      - grub2-branding-SLE
+      - less
+      - NetworkManager-tui
+      - suse-build-key
+      - suseconnect-ng
+      - tpm2.0-tools
+      - parted
+      - vim-small

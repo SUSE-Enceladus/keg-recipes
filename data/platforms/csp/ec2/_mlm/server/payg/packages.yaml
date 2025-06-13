@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_ec2_mlm_server_payg:
+    package:
+      - python311-csp-billing-adapter-amazon

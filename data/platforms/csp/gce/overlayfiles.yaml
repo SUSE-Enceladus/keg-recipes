@@ -1,8 +1,12 @@
 archive:
-  _namespace_gce_base:
+  _namespace_platforms_gce_base:
     _include_overlays:
       - chrony-gce-ntp
       - hosts-metadata-google
-  _namespace_gce_virtio_net:
+  _namespace_platforms_gce_virtio_net:
     _include_overlays:
       - module-virtio-net
+  _namespace_platforms_gce_allow_ll_dhcp:
+    _include_overlays:
+      # jira PED-10372 bsc#1229121 (remove when IPv6 IMDS implemented in GCE)
+      - wicked-allow-link-local-dhcp

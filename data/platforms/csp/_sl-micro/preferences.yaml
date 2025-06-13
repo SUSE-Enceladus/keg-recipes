@@ -6,7 +6,6 @@ preferences:
       btrfs_root_is_snapshot: "true"
       btrfs_root_is_readonly_snapshot: "true"
       filesystem: btrfs
-      firmware: uefi
       kernelcmdline:
         console: ["ttyS0,115200", tty0]
         net.ifnames: 0

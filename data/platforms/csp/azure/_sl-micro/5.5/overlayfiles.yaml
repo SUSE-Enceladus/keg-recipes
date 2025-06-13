@@ -1,0 +1,5 @@
+archive:
+  _namespace_platforms_azure_micro_cloud_init:
+    _include_overlays:
+      - cloud-cfg-azure
+      - cloud-cfg-disable-network-config

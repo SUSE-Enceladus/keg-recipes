@@ -1,6 +1,6 @@
 config:
   services:
-    sap-converged-cloud-cloud-init:
+    sap_converged_cloud_cloud_init:
       - cloud-init-local
       - cloud-init
       - cloud-config

@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_azure_himmelblau:
+    package:
+      - himmelblau

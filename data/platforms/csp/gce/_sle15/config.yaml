@@ -1,17 +1,14 @@
 config:
   scripts:
-    platforms-gce-config:
+    platforms_gce_config:
       - ssh-disable-challenge-response-auth
       - ssh-disable-password-login
   sysconfig:
-    platforms-gce-sysconfig-netconfig:
+    platforms_gce_sysconfig_netconfig:
       - file: /etc/sysconfig/network/config
         name: NETCONFIG_MODULES_ORDER
         value: "cloud-netconfig dns-resolver dns-bind dns-dnsmasq nis ntp-runtime"
-    platforms-gce-set-hostname:
+    platforms_gce_set_hostname:
       - file: /etc/sysconfig/network/dhcp
         name: DHCLIENT_SET_HOSTNAME
         value: "yes"
-  services:
-    platforms-gce-rootgrow:
-      - rootgrow

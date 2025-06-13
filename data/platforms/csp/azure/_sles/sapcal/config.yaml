@@ -1,0 +1,3 @@
+config:
+  services:
+    platforms_azure_flexible_licenses_timer: Null

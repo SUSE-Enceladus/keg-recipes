@@ -3,8 +3,9 @@ include-paths:
   - _sle15/sp5
   - _sle-micro/5.4
   - _sle-micro/5.5
-  - _mlm-proxy/5.0
-  - _mlm-proxy/byos/5.0
+  - _mlm/5.0
+  - _mlm/proxy/5.0
+  - _mlm/proxy/byos/5.0
 image:
   _attributes:
     name: SLES15-SP5-Manager-Proxy-5-0-BYOS

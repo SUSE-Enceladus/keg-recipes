@@ -1,0 +1,8 @@
+config:
+  services:
+    platforms_gce_services:
+      - google-guest-agent
+      - google-osconfig-agent
+      - google-oslogin-cache.timer
+      - google-shutdown-scripts
+      - google-startup-scripts

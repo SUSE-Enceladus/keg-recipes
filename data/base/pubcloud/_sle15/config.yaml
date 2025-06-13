@@ -33,3 +33,8 @@ config:
       - file: /etc/sysconfig/windowmanager
         name: INSTALL_DESKTOP_EXTENSIONS
         value: "no"
+    base_common_sle15_kbd_numlock:
+      # work-around for bsc#1230336
+      - file: /etc/sysconfig/keyboard
+        name: KBD_NUMLOCK
+        value: "no"

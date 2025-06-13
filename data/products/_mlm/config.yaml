@@ -1,0 +1,5 @@
+config:
+  services:
+    products_mlm_services:
+      - name: transactional-update.timer
+        enable: False

@@ -45,6 +45,9 @@ packages:
   _namespace_base_pubcloud_sle15_cnf:
     package:
       - command-not-found
-  _namespace_base_pubcloud_sysvcompat:
+  _namespace_base_pubcloud_sle15_haveged:
+    package:
+      - haveged
+  _namespace_base_pubcloud_sle15_sysvcompat:
     package:
       - systemd-sysvinit

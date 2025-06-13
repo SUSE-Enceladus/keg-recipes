@@ -1,8 +1,0 @@
-packages:
-  _namespace_base_common_sle_micro:
-    namedCollection:
-      - micro_defaults
-    package:
-      - patterns-micro-defaults
-      - patterns-base-bootloader
-      - NetworkManager-tui

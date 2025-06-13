@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_gce_sle_hpc:
+    package:
+      - tuned

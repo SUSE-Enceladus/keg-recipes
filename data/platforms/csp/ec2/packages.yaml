@@ -10,6 +10,7 @@ packages:
       - _attributes:
           name: xen-tools-domU
           arch: x86_64
+      - amazon-dracut-config
       - cloud-init
       - cloud-init-config-suse
       - cloud-netconfig-ec2
@@ -24,5 +25,5 @@ packages:
     package:
       - amazon-ssm-agent
       - aws-cli
-      - python3-ec2imgutils
+      - python311-ec2imgutils
       - python3-ec2metadata

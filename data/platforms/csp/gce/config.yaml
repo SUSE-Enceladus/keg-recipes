@@ -1,6 +1,6 @@
 config:
   files:
-    platforms-gce-config:
+    platforms_gce_config:
       - path: /etc/boto.cfg
         append: True
         content: |-
@@ -17,11 +17,13 @@ config:
           [InstanceSetup]
           set_boto_config = false
   services:
-    platforms-gce-services:
+    platforms_gce_services:
       - google-guest-agent
       - google-osconfig-agent
       - google-oslogin-cache.timer
       - google-shutdown-scripts
       - google-startup-scripts
-    platforms-gce-cloud-netconfig:
+    platforms_gce_cloud_netconfig:
       - cloud-netconfig.timer
+    platforms_gce_flexible_licenses_timer:
+      - guestregister-lic-watcher.timer

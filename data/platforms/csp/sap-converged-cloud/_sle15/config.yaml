@@ -1,5 +1,5 @@
 config:
   scripts:
-    sap-converged-cloud-config-sle15:
+    sap_converged_cloud_config_sle15:
       - ssh-disable-challenge-response-auth
       - ssh-disable-password-login

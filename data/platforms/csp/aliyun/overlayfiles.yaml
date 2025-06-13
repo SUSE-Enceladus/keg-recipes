@@ -1,0 +1,7 @@
+archive:
+  _namespace_platforms_aliyun_base:
+    _include_overlays:
+      - chrony-aliyun-ntp
+      - cloud-cfg-aliyun
+      - cloud-cfg-disable-growpart
+      - cloud-cfg-disable-network-config

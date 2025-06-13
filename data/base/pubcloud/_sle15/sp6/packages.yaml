@@ -1,2 +1,3 @@
 packages:
-  _namespace_base_pubcloud_sysvcompat: Null
+  _namespace_base_pubcloud_sle15_haveged: Null
+  _namespace_base_pubcloud_sle15_sysvcompat: Null

@@ -1,11 +1,16 @@
 include-paths:
   - _slfo/1.1
+  - _sle-micro/6.0
   - _sle-micro/6.1
-  - _mlm-server/5.1
-  - _mlm-server/byos/5.1
+  - _mlm/5.0
+  - _mlm/5.1
+  - _mlm/proxy/5.0
+  - _mlm/proxy/5.1
+  - _mlm/proxy/byos/5.0
+  - _mlm/proxy/byos/5.1
 image:
   _attributes:
-    name: SUSE-Multi_Linux-Manager
-    displayname: SUSE-Multi_Linux-Manager
+    name: SUSE-Multi_Linux-Manager-Proxy-5-1-BYOS
+    displayname: SUSE-Multi_Linux-Manager-Proxy-5-1-BYOS
   description:
-    specification: "SUSE Manager Server 5.1 BYOS guest image"
+    specification: "SUSE Multi-Linux Manager Proxy 5.1 BYOS guest image"

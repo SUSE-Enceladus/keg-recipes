@@ -1,0 +1,3 @@
+config:
+  sysconfig:
+    platforms_gce_sysconfig_netconfig: Null

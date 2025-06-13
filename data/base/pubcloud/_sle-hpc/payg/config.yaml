@@ -1,0 +1,4 @@
+config:
+  services:
+    base_pubcloud_sle_hpc_payg_services:
+      - guestregister

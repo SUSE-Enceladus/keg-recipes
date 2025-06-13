@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_azure_insserv_compat:
+    package:
+      # required by AzureMonitorLinuxAgent extension (bsc#1231279)
+      - insserv-compat

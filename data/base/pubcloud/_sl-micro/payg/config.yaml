@@ -1,0 +1,4 @@
+config:
+  services:
+    base_pubcloud_sl_micro_payg_services:
+      - guestregister

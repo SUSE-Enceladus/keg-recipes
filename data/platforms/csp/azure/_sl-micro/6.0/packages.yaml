@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_azure_micro:
+    package:
+      - python-azure-agent-config-micro

@@ -1,0 +1,9 @@
+config:
+  services:
+    platforms_azure_micro_afterburn_checkin: Null
+    platforms_azure_micro_services:
+      - cloud-config
+      - cloud-final
+      - cloud-init
+      - cloud-init-local
+      - waagent

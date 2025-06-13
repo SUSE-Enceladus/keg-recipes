@@ -3,3 +3,4 @@ packages:
     package:
       - suse-rancher-setup-config-RancherOnAKS
   _namespace_platforms_azure_registration: Null
+  _namespace_platforms_azure_flexible_licenses: Null

@@ -3,6 +3,7 @@ packages:
     package:
       - cloud-netconfig-azure
       - hyper-v
+      - microsoft-dracut-config
       - python-azure-agent
       - python-azuremetadata
       - shim
@@ -26,3 +27,6 @@ packages:
       - regionServiceClientConfigAzure
       - regionServiceCertsAzure
       - cloud-regionsrv-client-addon-azure
+  _namespace_platforms_azure_flexible_licenses:
+    package:
+      - cloud-regionsrv-client-license-watcher

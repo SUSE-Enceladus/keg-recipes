@@ -33,5 +33,3 @@ config:
         enable: False
       - name: kbd
         enable: False
-    base_pubcloud_guestregister:
-      - guestregister

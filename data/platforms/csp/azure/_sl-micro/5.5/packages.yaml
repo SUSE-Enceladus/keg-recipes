@@ -1,0 +1,9 @@
+packages:
+  _namespace_platforms_csp_micro_ignition: Null
+  _namespace_platforms_azure_micro:
+    package:
+      - cloud-init
+      - cloud-init-config-suse
+      - python-azure-agent
+      - python-azure-agent-config-micro
+      - python3-azuremetadata

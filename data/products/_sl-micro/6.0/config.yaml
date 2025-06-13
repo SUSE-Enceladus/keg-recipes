@@ -1,0 +1,4 @@
+config:
+  services:
+    products_sl_micro_services:
+      - transactional-update-cleanup.timer

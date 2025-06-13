@@ -8,7 +8,6 @@ packages:
       - dosfstools
       - dracut
       - grub2
-      - haveged
       - hostname
       - iputils
       - kdump

@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_ec2_disallow_root_ssh:
+    package:
+      - openssh-server-config-disallow-rootlogin

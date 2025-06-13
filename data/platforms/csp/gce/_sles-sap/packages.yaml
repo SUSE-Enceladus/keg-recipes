@@ -1,0 +1,15 @@
+packages:
+  _namespace_platforms_gce_sles_sap:
+    package:
+      - google-cloud-sap-agent
+      - python3-google-api-python-client
+      - python3-google-auth
+      - python3-google-auth-httplib2
+      - python3-pyroute2
+  _namespace_platforms_gce_sles_sap_fence_agent_deps:
+    package:
+      - python3-fasteners
+      - python3-monotonic
+      - python3-oauth2client
+      - python3-oauth2client-gce
+      - python3-pycryptodome

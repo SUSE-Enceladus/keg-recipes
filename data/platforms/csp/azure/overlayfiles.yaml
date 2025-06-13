@@ -9,13 +9,14 @@ archive:
   _namespace_platforms_azure_cloud_init_cfg:
     _include_overlays:
       - cloud-cfg-azure
+      - cloud-cfg-disable-growpart
       - cloud-cfg-disable-network-config
   _namespace_platforms_azure_emergency_shell:
     _include_overlays:
       - rescue-force-systemd-sulogin
   _namespace_platforms_azure_motd_waagent:
     _include_overlays:
-      - motd-addon-waagent
+      - motd-mod-waagent
   _namespace_platforms_azure_sshd_keep_alive:
     _include_overlays:
       - sshd-enable-keepalive

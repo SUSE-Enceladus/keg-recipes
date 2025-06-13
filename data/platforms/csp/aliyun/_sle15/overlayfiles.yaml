@@ -1,0 +1,4 @@
+archive:
+  _namespace_platforms_aliyun_sle15:
+    _include_overlays:
+      - sysconfig-network-plain

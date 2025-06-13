@@ -2,6 +2,5 @@ packages:
   _namespace_platforms_ec2_rancher_setup:
     package:
       - suse-rancher-setup-config-RancherOnEKS
-  _namespace_platforms_ec2_image_utils: Null
   _namespace_platforms_ec2_registration: Null
   _namespace_platforms_ec2_tools: Null

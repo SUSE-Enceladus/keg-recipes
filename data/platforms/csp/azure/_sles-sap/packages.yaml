@@ -1,0 +1,4 @@
+packages:
+  _namespace_plaforms_azure_sles_sap:
+    package:
+      - fence-agents-azure-arm

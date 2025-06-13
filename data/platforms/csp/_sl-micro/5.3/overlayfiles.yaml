@@ -1,4 +1,4 @@
 archive:
-  _namespace_platforms_csp_sl_micro_ignition:
+  _namespace_platforms_csp_micro_ignition:
     _include_overlays:
       - ignition-user-config

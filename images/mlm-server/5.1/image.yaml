@@ -1,0 +1,16 @@
+include-paths:
+  - _slfo/1.1
+  - _sle-micro/6.0
+  - _sle-micro/6.1
+  - _mlm/5.0
+  - _mlm/5.1
+  - _mlm/server/5.0
+  - _mlm/server/5.1
+  - _mlm/server/payg/5.0
+  - _mlm/server/payg/5.1
+image:
+  _attributes:
+    name: SUSE-Multi_Linux-Manager-5-1
+    displayname: SUSE-Multi_Linux-Manager-5-1
+  description:
+    specification: "SUSE Multi-Linux Manager Server 5.1 PAYG guest image"

@@ -1,23 +1,23 @@
 config:
   scripts:
-    _platforms_azure_scripts:
+    platforms_azure_scripts:
       - set-password-policy
-    _platforms_azure_default_kernel_log_level:
+    platforms_azure_default_kernel_log_level:
       - keep-default-kernel-log-level
-    _platforms_azure_dhclient_timeout:
+    platforms_azure_dhclient_timeout:
       - dhclient-increase-timeout
-    _platforms_azure_waagent:
+    platforms_azure_waagent:
       - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
       - waagent-disable-ephemeral-disk-handling
   services:
-    _platforms_azure_services:
+    platforms_azure_services:
       - cloud-config
       - cloud-final
       - cloud-init
       - cloud-init-local
       - waagent
-    _platforms_azure_regionsrv-timer:
-      - regionsrv-enabler-azure.timer
-    _platforms_azure_could_netconfig:
+    platforms_azure_flexible_licenses_timer:
+      - guestregister-lic-watcher.timer
+    platforms_azure_could_netconfig:
       - cloud-netconfig.timer

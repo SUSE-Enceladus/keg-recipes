@@ -1,0 +1,9 @@
+config:
+  scripts:
+    platforms_aliyun_sle15_scripts:
+      - ssh-disable-password-login
+  sysconfig:
+    platforms_aliyun_sle15_sysconfig:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "no"

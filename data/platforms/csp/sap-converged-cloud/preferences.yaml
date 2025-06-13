@@ -3,7 +3,6 @@ preferences:
     _attributes:
       devicepersistency: Null
       format: vmdk
-      firmware: uefi
       kernelcmdline:
         console: ["ttyS0,115200n8", "tty0"]
         NON_PERSISTENT_DEVICE_NAMES: 1

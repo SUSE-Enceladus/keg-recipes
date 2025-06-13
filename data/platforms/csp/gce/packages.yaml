@@ -1,7 +1,9 @@
 packages:
-  _namespace_plaforms_csp_gce_init:
+  _namespace_plaforms_csp_gce:
     package:
       - cloud-netconfig-gce
+  _namespace_plaforms_csp_gce_init:
+    package:
       - google-guest-agent
       - google-guest-configs
       - google-guest-oslogin
@@ -16,3 +18,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigGCE
       - regionServiceCertsGCE
+  _namespace_platforms_gce_flexible_licenses:
+    package:
+      - cloud-regionsrv-client-license-watcher

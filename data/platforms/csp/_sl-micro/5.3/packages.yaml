@@ -1,5 +1,5 @@
 packages:
-  _namespace_platforms_csp_sle_micro:
+  _namespace_platforms_csp_micro_ignition:
     package:
       - afterburn
       - ignition
