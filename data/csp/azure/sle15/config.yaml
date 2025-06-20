@@ -10,6 +10,9 @@ config:
       - dhclient-increase-timeout
     azure-sshd-config:
       - ssh-disable-challenge-response-auth
+    azure-waagent-disable-auto-update:
+      # work-around for bsc#1244933 (remove once MU is done)
+      - waagent-disable-auto-update
   sysconfig:
     azure-cloud-netconfig:
       - file: /etc/sysconfig/network/config
