@@ -8,11 +8,9 @@ packages:
       - patterns-micro-defaults
       - ca-certificates
       - glibc-locale-base
-      - grub2-branding-SLE
       - less
       - NetworkManager-tui
       - suse-build-key
       - suseconnect-ng
-      - tpm2.0-tools
+      - systemd-default-settings-branding-SLE-Micro
       - parted
-      - vim-small

@@ -6,3 +6,6 @@ packages:
       - dracut
       - grub2-branding-SLE
       - NetworkManager-branding-SLE
+  _namespace_base_common_vim:
+    package:
+      - vim

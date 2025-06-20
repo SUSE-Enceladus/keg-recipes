@@ -34,6 +34,7 @@ packages:
       - man
       - man-pages
       - mozilla-nss-certs
+      - netcat-openbsd
       - nfs-client
       - nfs-kernel-server
       - openldap2-client
@@ -78,3 +79,6 @@ packages:
   _namespace_base_pubcloud_kiwi_repart:
     package:
       - dracut-kiwi-oem-repart
+  _namespace_base_pubcloud_debug:
+    package:
+      - tcpdump

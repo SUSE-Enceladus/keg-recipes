@@ -1,5 +1,5 @@
 packages:
-  _namespace_products_sle_micro:
+  _namespace_products_sl_micro:
     namedCollection:
       - _attributes:
           name: microos-salt_minion
@@ -36,7 +36,6 @@ packages:
       - selinux-policy-targeted
       - selinux-tools
       - supportutils-plugin-suse-public-cloud
-      - systemd-default-settings-branding-SLE-Micro
       - systemd-presets-branding-SMO
       - SUSE-MicroOS-release
       - toolbox

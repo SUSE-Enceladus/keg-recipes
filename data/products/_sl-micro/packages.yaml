@@ -1,0 +1,4 @@
+packages:
+  _namespace_products_systemd_branding:
+    package:
+      - systemd-default-settings-branding-SLE-Micro

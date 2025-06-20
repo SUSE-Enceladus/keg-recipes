@@ -2,3 +2,7 @@ archive:
   # dummy so empty archive does not break schema validation
   _namespace_products_default:
     _include_overlays: []
+packages:
+  _namespace_products_systemd_branding:
+    package:
+      - systemd-default-settings-branding-SLE
