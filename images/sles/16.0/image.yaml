@@ -5,7 +5,7 @@ include-paths:
   - _sles/payg/16.0
 image:
   _attributes:
-    name: SLES-16-0
-    displayname: SLES-16-0
+    name: SLES-16.0
+    displayname: SLES-16.0
   description:
     specification: "SUSE Linux Enterprise Server 16.0 guest image"

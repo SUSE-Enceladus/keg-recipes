@@ -4,7 +4,7 @@ include-paths:
   - _sles/byos/16.0
 image:
   _attributes:
-    name: SLES
-    displayname: SLES
+    name: SLES-16.0-BYOS
+    displayname: SLES-16.0-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 16.0 BYOS guest image"
