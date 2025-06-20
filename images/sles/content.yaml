@@ -80,6 +80,7 @@ xmlfiles:
         flavor:
           - Azure-Basic
           - Azure-Standard
+          - Azure-3P
           - EC2
           - GCE
   - name: _constraints
