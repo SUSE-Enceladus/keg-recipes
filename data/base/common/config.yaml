@@ -1,4 +1,5 @@
 config:
   services:
-    base_common_service_chronyd:
+    base_common_services:
       - chronyd
+      - NetworkManager

@@ -5,6 +5,7 @@ packages:
       - patterns-base-bootloader
       - dracut
       - grub2-branding-SLE
+      - NetworkManager
       - NetworkManager-branding-SLE
   _namespace_base_common_vim:
     package:
