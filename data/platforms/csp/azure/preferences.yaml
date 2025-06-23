@@ -1,8 +1,6 @@
 preferences:
   type:
     _attributes:
-      bootpartition: "true"
-      bootpartsize: 1024
       devicepersistency: by-uuid
       efipartsize: 512
       format: vhd-fixed

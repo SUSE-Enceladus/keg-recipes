@@ -1,0 +1,5 @@
+preferences:
+  type:
+    _attributes:
+      bootpartition: "true"
+      bootpartsize: 1024
