@@ -2,3 +2,4 @@ config:
   services:
     suma-payg-services:
       - csp-billing-adapter
+      - guestregister
