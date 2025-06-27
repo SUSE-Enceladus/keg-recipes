@@ -1,0 +1,3 @@
+config:
+  scripts:
+    azure-waagent-disable-auto-update: Null
