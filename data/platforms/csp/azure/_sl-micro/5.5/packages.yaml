@@ -6,4 +6,3 @@ packages:
       - cloud-init-config-suse
       - python-azure-agent
       - python-azure-agent-config-micro
-      - python3-azuremetadata

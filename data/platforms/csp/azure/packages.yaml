@@ -5,7 +5,6 @@ packages:
       - hyper-v
       - microsoft-dracut-config
       - python-azure-agent
-      - python-azuremetadata
       - shim
   _namespace_platforms_azure_cloud_init:
     package:
@@ -14,6 +13,9 @@ packages:
   _namespace_platforms_azure_cryptsetup:
     package:
       - cryptsetup
+  _namespace_platforms_azure_metadata:
+    package:
+      - python3-azuremetadata
   _namespace_platforms_azure_tools:
     package:
       - azure-cli

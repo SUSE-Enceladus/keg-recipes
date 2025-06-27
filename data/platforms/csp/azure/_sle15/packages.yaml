@@ -1,4 +1,0 @@
-packages:
-  _namespace_platforms_azure_metadata:
-    package:
-      - python3-azuremetadata

@@ -1,7 +1,6 @@
 preferences:
   type:
     _attributes:
-      bootpartition: "false"
       btrfs_quota_groups: "true"
       btrfs_root_is_snapshot: "true"
       btrfs_root_is_readonly_snapshot: "true"

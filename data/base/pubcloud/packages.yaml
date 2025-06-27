@@ -8,10 +8,8 @@ packages:
       - aaa_base-extras
       - at-spi2-core
       - attr
-      - autofs
       - bc
       - binutils
-      - blktrace
       - cifs-utils
       - crash
       - curl
@@ -42,7 +40,6 @@ packages:
       - psmisc
       - quota
       - rsync
-      - rsyslog
       - screen
       - strace
       - system-user-mail
@@ -75,7 +72,6 @@ packages:
       - yast2-ycp-ui-bindings
       - zip
       - zsh
-      - zypper-lifecycle-plugin
   _namespace_base_pubcloud_kiwi_repart:
     package:
       - dracut-kiwi-oem-repart

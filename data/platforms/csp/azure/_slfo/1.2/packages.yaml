@@ -2,3 +2,6 @@ packages:
   _namespace_platforms_azure_himmelblau:
     package:
       - himmelblau
+  _namespace_platforms_azure_metadata:
+    package:
+      - python-azuremetadata

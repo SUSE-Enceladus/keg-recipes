@@ -5,6 +5,8 @@ packages:
   _namespace_base_pubcloud_sle15:
     package:
       - at
+      - autofs
+      - blktrace
       - cronie
       - deltarpm
       - lockdev
@@ -16,6 +18,7 @@ packages:
       - hostinfo
       - ksh
       - nscd
+      - rsyslog
       - tcpd
       - tcpdump
       - yast2-dhcp-server
@@ -42,6 +45,7 @@ packages:
       - yast2-tftp-server
       - yast2-tune
       - yp-tools
+      - zypper-lifecycle-plugin
   _namespace_base_pubcloud_sle15_cnf:
     package:
       - command-not-found
