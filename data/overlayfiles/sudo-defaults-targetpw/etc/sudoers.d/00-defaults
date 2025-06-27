@@ -1,0 +1,2 @@
+Defaults !targetpw
+ALL   ALL=(ALL) !ALL
