@@ -4,3 +4,4 @@ packages:
       - docker
       # needed for fence_virsh of fence-agents
       - libvirt-client
+      - rsyslog

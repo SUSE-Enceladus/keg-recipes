@@ -2,8 +2,6 @@ config:
   scripts:
     platforms_azure_scripts:
       - set-password-policy
-    platforms_azure_default_kernel_log_level:
-      - keep-default-kernel-log-level
     platforms_azure_dhclient_timeout:
       - dhclient-increase-timeout
     platforms_azure_waagent:

@@ -1,0 +1,4 @@
+config:
+  scripts:
+    platforms_azure_sles_default_kernel_log_level:
+      - keep-default-kernel-log-level

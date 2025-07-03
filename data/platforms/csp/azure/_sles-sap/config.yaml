@@ -1,0 +1,4 @@
+config:
+  scripts:
+    platforms_azure_sles_sap_default_kernel_log_level:
+      - keep-default-kernel-log-level
