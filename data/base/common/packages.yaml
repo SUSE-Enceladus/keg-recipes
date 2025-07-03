@@ -1,9 +1,39 @@
 packages:
   _namespace_base_common:
     package:
-      - patterns-base-base
-      - patterns-base-bootloader
+      - aaa_base
+      - bash
+      - build-key
+      - ca-certificates-mozilla
+      - coreutils
+      - coreutils-systemd
       - dracut
+      - glibc
+      - glibc-locale-base
+      - libnss_usrfiles2
+      - ntp-daemon
+      - pam
+      - pam-config
+      - procps
+      - rpm
+      - shadow
+      - systemd
+      - terminfo-base
+      - timezone
+      - user(nobody)
+      - util-linux
+      - wtmpdb
+  _namespace_base_common_bootloader:
+    package:
+      - grub2
+      - _attributes:
+          name: grub2-arm64-efi
+          arch: aarch64
+      - _attributes:
+          name: grub2-x86_64-efi
+          arch: x86_64
+      - mokutil
+      - shim
   _namespace_base_common_netsys:
     package:
       - NetworkManager
