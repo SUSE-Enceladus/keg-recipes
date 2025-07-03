@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_common_netsys:
+    package:
+      - NetworkManager
+      - NetworkManager-branding-SLE

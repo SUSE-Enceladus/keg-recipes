@@ -1,7 +1,4 @@
 packages:
-  _namespace_base_common_netsys:
-    package:
-      - NetworkManager
   _namespace_base_common_vim:
     package:
       - vim-small
