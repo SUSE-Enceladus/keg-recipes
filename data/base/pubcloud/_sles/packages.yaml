@@ -2,3 +2,4 @@ packages:
   _namespace_base_pubclod_sles:
     package:
       - rsyslog
+      - tcpdump

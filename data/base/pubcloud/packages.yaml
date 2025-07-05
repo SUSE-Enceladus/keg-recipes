@@ -44,7 +44,6 @@ packages:
       - strace
       - system-user-mail
       - tcsh
-      - telnet
       - wget
       - yast2
       - yast2-add-on
@@ -75,6 +74,3 @@ packages:
   _namespace_base_pubcloud_kiwi_repart:
     package:
       - dracut-kiwi-oem-repart
-  _namespace_base_pubcloud_debug:
-    package:
-      - tcpdump

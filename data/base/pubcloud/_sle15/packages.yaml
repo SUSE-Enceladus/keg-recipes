@@ -20,6 +20,7 @@ packages:
       - nscd
       - tcpd
       - tcpdump
+      - telnet
       - yast2-dhcp-server
       - yast2-dns-server
       - yast2-http-server
