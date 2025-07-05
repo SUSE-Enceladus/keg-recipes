@@ -1,10 +1,10 @@
 include-paths:
   - _slfo/1.0
   - _slfo/1.1
-  - _sle-micro/6.0
-  - _sle-micro/6.1
-  - _sle-micro/payg/6.0
-  - _sle-micro/payg/6.1
+  - _sl-micro/6.0
+  - _sl-micro/6.1
+  - _sl-micro/byos/6.0
+  - _sl-micro/byos/6.1
 image:
   _attributes:
     name: SL-Micro-BYOS
