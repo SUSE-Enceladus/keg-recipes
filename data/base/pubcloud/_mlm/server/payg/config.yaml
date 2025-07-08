@@ -1,5 +1,8 @@
 config:
+  scripts:
+    base_pubcloud_mlm_payg_zypp_max_connections:
+      - zypp-limit-concurrent-downloads
   services:
-    _namespace_base_pubcloud_mlm_server_payg:
+    base_pubcloud_mlm_server_payg:
       - csp-billing-adapter
       - guestregister
