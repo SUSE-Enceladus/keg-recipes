@@ -1,0 +1,4 @@
+config:
+  scripts:
+    base_pubcloud_sles_sap_payg_zypp_max_connections:
+      - zypp-limit-concurrent-downloads

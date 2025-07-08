@@ -3,7 +3,7 @@ config:
     base_pubcloud_sles_sap_variant:
       - path: /etc/os-release
         append: True
-        content: VARIANT_ID="sles-sap"
+        content: IMAGE_ID="sles-sap"
   services:
     base_pubcloud_sles_sap_payg_services:
       - guestregister

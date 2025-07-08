@@ -1,0 +1,8 @@
+config:
+  files:
+    base_pubcloud_sles_chost_image_id:
+      - path: /etc/os-release
+        append: True
+        content: |
+          VARIANT_ID="chost"
+          VARIANT_VERSION="`date +'%Y%m%d'`"

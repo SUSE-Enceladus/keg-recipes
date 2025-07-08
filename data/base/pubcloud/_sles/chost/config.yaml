@@ -1,7 +1,13 @@
 config:
+  files:
+    base_pubcloud_sles_chost_image_id:
+      - path: /etc/os-release
+        append: True
+        content: |
+          IMAGE_ID="chost"
+          IMAGE_VERSION="`date +'%Y%m%d'`"
   scripts:
     base_pubcloud_chost_scripts:
-      - chost-add-variant
       - chost-strip-image
   services:
     base_pubcloud_chost_services:
