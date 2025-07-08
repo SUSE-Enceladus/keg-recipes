@@ -1,4 +1,7 @@
 config:
+  scripts:
+    ondemand-config:
+      - zypp-limit-concurrent-downloads
   services:
     guestregister:
       - guestregister

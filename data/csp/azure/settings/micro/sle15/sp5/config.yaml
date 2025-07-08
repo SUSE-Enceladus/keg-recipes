@@ -1,4 +1,8 @@
 config:
+  scripts:
+    azure-waagent-disable-auto-update:
+      # work-around for bsc#1244933 (remove once MU is done)
+      - waagent-disable-auto-update
   services:
     azure-afterburn-checkin: Null
     azure-micro-init:
