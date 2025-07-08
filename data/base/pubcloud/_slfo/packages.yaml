@@ -1,5 +1,4 @@
 packages:
   _namespace_base_pubcloud_slfo:
     package:
-      - sssd-cifs-idmap-plugin
       - tpm2.0-tools

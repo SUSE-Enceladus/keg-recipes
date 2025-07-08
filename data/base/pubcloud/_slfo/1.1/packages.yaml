@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubcloud_slfo_cifs:
+    package:
+      # dependecy of cifs-utils
+      - sssd-cifs-idmap-plugin
