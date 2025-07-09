@@ -17,6 +17,7 @@ packages:
       - fonts-config
       - hostinfo
       - ksh
+      - libyui-ncurses-pkg
       - nscd
       - tcpd
       - tcpdump

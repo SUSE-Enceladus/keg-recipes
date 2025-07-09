@@ -27,7 +27,6 @@ packages:
       - iproute2
       - irqbalance
       - krb5-client
-      - libyui-ncurses-pkg
       - lvm2
       - man
       - man-pages
