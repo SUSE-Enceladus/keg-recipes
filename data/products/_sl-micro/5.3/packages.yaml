@@ -35,7 +35,6 @@ packages:
       - rollback-helper
       - selinux-policy-targeted
       - selinux-tools
-      - supportutils-plugin-suse-public-cloud
       - systemd-presets-branding-SMO
       - SUSE-MicroOS-release
       - toolbox
