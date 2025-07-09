@@ -8,6 +8,7 @@ packages:
       - NetworkManager-branding-SLE
       - podman
       - SLE-Micro-release
+      - supportutils-plugin-suse-public-cloud
       - systemd-default-settings-branding-SLE-Micro
   _namespace_sle_micro_init: Null
   _namespace_sle_micro_network_mgmt: Null
