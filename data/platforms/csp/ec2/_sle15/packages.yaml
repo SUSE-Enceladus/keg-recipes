@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_ec2_sle15:
+    package:
+      - python311-ec2imgutils

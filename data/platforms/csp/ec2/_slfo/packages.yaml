@@ -1,8 +1,3 @@
 packages:
-  _namespace_platforms_ec2_tools:
-    package:
-      # not available yet
-      #- amazon-ssm-agent
-      #- aws-cli
-      #- python-ec2imgutils
-      - python-ec2metadata
+  # not available yet
+  _namespace_platforms_ec2_ssm_agent: Null

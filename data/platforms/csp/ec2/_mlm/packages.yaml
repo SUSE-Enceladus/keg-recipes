@@ -1,5 +1,0 @@
-packages:
-  _namespace_platforms_ec2_tools:
-    package:
-      - amazon-ssm-agent
-      - python3-ec2metadata
