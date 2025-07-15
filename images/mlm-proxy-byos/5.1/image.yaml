@@ -1,7 +1,7 @@
 include-paths:
   - _slfo/1.1
-  - _sle-micro/6.0
-  - _sle-micro/6.1
+  - _sl-micro/6.0
+  - _sl-micro/6.1
   - _mlm/5.0
   - _mlm/5.1
   - _mlm/proxy/5.0

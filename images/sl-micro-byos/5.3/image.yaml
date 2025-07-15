@@ -1,7 +1,7 @@
 include-paths:
   - _sle15/sp4
-  - _sle-micro/5.3
-  - _sle-micro/byos/5.3
+  - _sl-micro/5.3
+  - _sl-micro/byos/5.3
 image:
   _attributes:
     name: SLES15-SP4-Micro-5-3-BYOS
