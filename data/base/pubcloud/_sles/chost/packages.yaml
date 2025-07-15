@@ -28,6 +28,3 @@ packages:
       - socat
       - tcpdump
       - wget
-  _namespace_base_pubcloud_chost_modrel:
-    package:
-      - sle-module-containers-release

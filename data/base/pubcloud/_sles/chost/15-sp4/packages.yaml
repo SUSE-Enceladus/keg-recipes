@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubcloud_chost_modrel:
+    package:
+      - sle-module-containers-release

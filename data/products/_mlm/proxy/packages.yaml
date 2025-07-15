@@ -7,5 +7,4 @@ packages:
       - mgrpxy-bash-completion
       - netavark
       - podman
-      - sle-module-containers-release
       - uyuni-storage-setup-proxy

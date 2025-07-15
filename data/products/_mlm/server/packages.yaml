@@ -12,5 +12,4 @@ packages:
       - mgrctl-bash-completion
       - mgrctl-lang
       - podman
-      - sle-module-containers-release
       - uyuni-storage-setup-server
