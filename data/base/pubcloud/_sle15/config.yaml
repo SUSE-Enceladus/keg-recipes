@@ -1,7 +1,7 @@
 config:
   files:
     base_pubcloud_pam_sshd_motd:
-      - path: /etc/motd.d/sshd
+      - path: /etc/pam.d/sshd
         append: True
         content: "session     optional    pam_motd.so"
   sysconfig:
