@@ -20,7 +20,7 @@ packages:
     package:
       - azure-cli
       - lsscsi
-      - python3-azure-sdk
+      - python311-azure-sdk
   _namespace_platforms_azure_registration:
     package:
       - cloud-regionsrv-client
