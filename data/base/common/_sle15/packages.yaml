@@ -1,5 +1,4 @@
 packages:
-  _namespace_base_common_bootloader: Null
   _namespace_base_common:
     package:
       - audit
