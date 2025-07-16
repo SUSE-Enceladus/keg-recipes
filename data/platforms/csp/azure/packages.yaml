@@ -28,7 +28,6 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigAzure
       - regionServiceCertsAzure
-      - cloud-regionsrv-client-addon-azure
   _namespace_platforms_azure_flexible_licenses:
     package:
       - cloud-regionsrv-client-license-watcher
