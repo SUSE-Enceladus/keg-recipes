@@ -1,0 +1,19 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sle15/sp7
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/15-sp7
+  - _sles/payg/15-sp4
+  - _sles/payg/15-sp5
+  - _sles/payg/15-sp6
+  - _sles/payg/15-sp7
+image:
+  _attributes:
+    name: SLES15-SP7
+    displayname: SLES15-SP7
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP7 guest image"
