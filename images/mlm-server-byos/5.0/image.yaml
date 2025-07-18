@@ -1,6 +1,7 @@
 include-paths:
   - _sle15/sp4
   - _sle15/sp5
+  - _sl-micro/5.3
   - _sl-micro/5.4
   - _sl-micro/5.5
   - _mlm/5.0

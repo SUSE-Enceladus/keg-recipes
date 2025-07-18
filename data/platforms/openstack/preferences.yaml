@@ -1,11 +1,20 @@
 preferences:
   type:
     _attributes:
-      devicepersistency: Null
+      filesystem: xfs
       format: qcow2
-      firmware: Null
+      image: oem
       kernelcmdline:
         console: ["ttyS0,115200n8", "tty0"]
         NON_PERSISTENT_DEVICE_NAMES: 1
         multipath: "off"
+        net.ifnames: 1
       vga: normal
+    bootloader:
+      _attributes:
+        name: grub2
+        timeout: 1
+    size:
+      _attributes:
+        unit: M
+      _text: 10240

@@ -1,9 +1,3 @@
-config:
-  files:
-    sles_hardened_variant_id:
-      - path: /etc/os-release
-        append: True
-        content: VARIANT_ID="sles-hardened"
 setup:
   scripts:
     hardened_config:

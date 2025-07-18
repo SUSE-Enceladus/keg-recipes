@@ -8,6 +8,7 @@ image:
     contact: public-cloud-dev@susecloud.net
   profiles: {}
   preferences: {}
+  packages: []
   users:
     user:
       - _attributes:

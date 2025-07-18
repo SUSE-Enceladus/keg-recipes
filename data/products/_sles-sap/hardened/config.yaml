@@ -1,0 +1,5 @@
+setup:
+  scripts:
+    base_pubcloud_sles_sap_hardened_workarounds:
+      - pcs-hardening-workarounds
+      - pcs-sap-hardening

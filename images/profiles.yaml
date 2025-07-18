@@ -11,11 +11,12 @@ image:
         - _attributes:
             name: GCE
             description: Configuration for Google Compute
+  preferences:
+    - _include:
+        - base/common
   _namespace_preferences_root:
     _namespace_base_preferences:
       preferences:
-        - _include:
-            - base/common
         - _attributes:
             profiles: [Azure]
             arch: x86_64
@@ -34,51 +35,53 @@ image:
             profiles: [GCE]
           _include:
             - platforms/csp/gce
-  packages:
-    - _attributes:
-        type: bootstrap
-      _include:
-        - base/bootstrap
-    - _attributes:
-        type: image
-      _include:
-        - base/common
-        - products
-    - _attributes:
-        type: image
-        profiles:
-          - Azure
-          - EC2
-          - GCE
-      _include:
-        - base/pubcloud
-      archive:
+  _namespace_packages_root:
+    _namespace_packages_base:
+      packages:
         - _attributes:
-            name: pubcloud.tar.gz
-    - _attributes:
-        type: image
-        profiles: [Azure]
-      _include:
-        - platforms/csp/azure
-      archive:
+            type: bootstrap
+          _include:
+            - base/bootstrap
         - _attributes:
-            name: azure.tar.gz
-    - _attributes:
-        type: image
-        profiles: [EC2]
-      _include:
-        - platforms/csp/ec2
-      archive:
+            type: image
+          _include:
+            - base/common
+            - products
         - _attributes:
-            name: ec2.tar.gz
-    - _attributes:
-        type: image
-        profiles: [GCE]
-      _include:
-        - platforms/csp/gce
-      archive:
+            type: image
+            profiles:
+              - Azure
+              - EC2
+              - GCE
+          _include:
+            - base/pubcloud
+          archive:
+            - _attributes:
+                name: pubcloud.tar.gz
         - _attributes:
-            name: gce.tar.gz
+            type: image
+            profiles: [Azure]
+          _include:
+            - platforms/csp/azure
+          archive:
+            - _attributes:
+                name: azure.tar.gz
+        - _attributes:
+            type: image
+            profiles: [EC2]
+          _include:
+            - platforms/csp/ec2
+          archive:
+            - _attributes:
+                name: ec2.tar.gz
+        - _attributes:
+            type: image
+            profiles: [GCE]
+          _include:
+            - platforms/csp/gce
+          archive:
+            - _attributes:
+                name: gce.tar.gz
 config:
   - _include:
       - base/common

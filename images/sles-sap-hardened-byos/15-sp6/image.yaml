@@ -2,17 +2,15 @@ include-paths:
   - _sle15/sp4
   - _sle15/sp5
   - _sle15/sp6
-  - _sles-sap/15-sp3
   - _sles-sap/15-sp4
   - _sles-sap/15-sp5
   - _sles-sap/15-sp6
-  - _sles-sap/byos/15-sp3
   - _sles-sap/byos/15-sp4
   - _sles-sap/byos/15-sp5
   - _sles-sap/byos/15-sp6
-  - _sles-sap-hardened/15-sp4
-  - _sles-sap-hardened/15-sp5
-  - _sles-sap-hardened/15-sp6
+  - _sles-sap/hardened/15-sp4
+  - _sles-sap/hardened/15-sp5
+  - _sles-sap/hardened/15-sp6
 image:
   _attributes:
     name: SLES15-SP6-SAP-Hardened-BYOS

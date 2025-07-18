@@ -1,10 +1,8 @@
 include-paths:
   - _sle15/sp4
-  - _sles-sap/15-sp3
   - _sles-sap/15-sp4
-  - _sles-sap/byos/15-sp3
   - _sles-sap/byos/15-sp4
-  - _sles-sap-hardened/15-sp4
+  - _sles-sap/hardened/15-sp4
 image:
   _attributes:
     name: SLES15-SP4-SAP-Hardened-BYOS
