@@ -42,18 +42,18 @@ config:
   - _include:
       - base/common
       - products
-  - profiles: [Azure]
+  - profiles:
+      - azure-base
+      - ec2-base
+      - gce-base
+    _include:
+      - base/pubcloud
+  - profiles: [azure-base]
     _include:
       - platforms/csp/azure
-  - profiles: [EC2]
+  - profiles: [ec2-base]
     _include:
       - platforms/csp/ec2
-  - profiles: [GCE]
+  - profiles: [gce-base]
     _include:
       - platforms/csp/gce
-  - profiles: [OpenStack]
-    _include:
-      - platforms/openstack
-  - profiles: [SAP-CCloud]
-    _include:
-      - platforms/csp/sap-converged-cloud

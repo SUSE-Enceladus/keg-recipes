@@ -1,43 +1,21 @@
 image:
   profiles:
-    _namespace_profiles_base:
-      profile:
-        - _attributes:
-            name: azure-base
-            description: Base profile for Microsoft Azure
-        - _attributes:
-            name: ec2-base
-            description: Base profile for Amazon EC2
-        - _attributes:
-            name: gce-base
-            description: Base profile for Google Compute
-    _namespace_profiles_azure:
+    _namespace_platform_profiles:
       profile:
         - _attributes:
             name: Azure
             description: Configuration for Microsoft Azure
-          requires:
-            _attributes:
-              profile: azure-base
-    _namespace_profiles_standard:
-      profile:
         - _attributes:
             name: EC2
             description: Configuration for Amazon EC2
-          requires:
-            _attributes:
-              profile: ec2-base
         - _attributes:
             name: GCE
             description: Configuration for Google Compute
-          requires:
-            _attributes:
-              profile: gce-base
   preferences:
     - _include:
         - base/common
   _namespace_preferences_root:
-    _namespace_preferences_azure:
+    _namespace_base_preferences:
       preferences:
         - _attributes:
             profiles: [Azure]
@@ -49,8 +27,6 @@ image:
             arch: aarch64
           _include:
             - platforms/csp/azure/aarch64
-    _namespace_preferences_standard:
-      preferences:
         - _attributes:
             profiles: [EC2]
           _include:
@@ -74,9 +50,9 @@ image:
         - _attributes:
             type: image
             profiles:
-              - azure-base
-              - ec2-base
-              - gce-base
+              - Azure
+              - EC2
+              - GCE
           _include:
             - base/pubcloud
           archive:
@@ -84,7 +60,7 @@ image:
                 name: pubcloud.tar.gz
         - _attributes:
             type: image
-            profiles: [azure-base]
+            profiles: [Azure]
           _include:
             - platforms/csp/azure
           archive:
@@ -92,7 +68,7 @@ image:
                 name: azure.tar.gz
         - _attributes:
             type: image
-            profiles: [ec2-base]
+            profiles: [EC2]
           _include:
             - platforms/csp/ec2
           archive:
@@ -100,7 +76,7 @@ image:
                 name: ec2.tar.gz
         - _attributes:
             type: image
-            profiles: [gce-base]
+            profiles: [GCE]
           _include:
             - platforms/csp/gce
           archive:
@@ -109,20 +85,21 @@ image:
 config:
   - _include:
       - base/common
+      - base/pubcloud
       - products
   - profiles:
-      - azure-base
-      - ec2-base
-      - gce-base
+      - Azure
+      - EC2
+      - GCE
     _include:
       - base/pubcloud
-  - profiles: [azure-base]
+  - profiles: [Azure]
     _include:
       - platforms/csp/azure
-  - profiles: [ec2-base]
+  - profiles: [EC2]
     _include:
       - platforms/csp/ec2
-  - profiles: [gce-base]
+  - profiles: [GCE]
     _include:
       - platforms/csp/gce
 archive:
