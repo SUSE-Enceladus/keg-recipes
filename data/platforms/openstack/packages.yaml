@@ -2,3 +2,4 @@ packages:
   _namespace_platforms_openstack:
     package:
       - cloud-init
+      - dracut-kiwi-oem-repart

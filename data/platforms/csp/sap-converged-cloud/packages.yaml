@@ -2,4 +2,5 @@ packages:
   _namespace_openstack_init:
     package:
       - cloud-init
+      - dracut-kiwi-oem-repart
       - open-vm-tools
