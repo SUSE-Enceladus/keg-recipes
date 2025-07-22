@@ -1,7 +1,6 @@
 packages:
   _namespace_base_pubcloud_common:
     package:
-      - python-instance-billing-flavor-check
       - supportutils
       - supportutils-plugin-suse-public-cloud
   _namespace_base_pubcloud_extra:
@@ -72,6 +71,9 @@ packages:
       - yast2-ycp-ui-bindings
       - zip
       - zsh
+  _namespace_base_pubcloud_billing_flavor_check:
+    package:
+      - python-instance-billing-flavor-check
   _namespace_base_pubcloud_kiwi_repart:
     package:
       - dracut-kiwi-oem-repart
