@@ -42,6 +42,14 @@ for rule in $rules_to_disable ; do
     sed -i -e "/$rule/ s/selected=\"true\"/selected=\"false\"/" $ssg_file
 done
 
+# temp fix for missing filepath in limit password reuse rule (bsc#1241615)
+sed -i -e \
+   '/textfilecontent54_object id="oval:ssg-object_accounts_password_pam_pwhistory_remember/{ :n N;
+        /<\/ind:textfilecontent54_object>/ { /<ind:filepath\/>/ {
+            s;<ind:filepath/>;<ind:filepath>/etc/pam.d/common-password</ind:filepath>; } ;b
+        }; bn
+    }' $ssg_file
+
 # run pam_disable_automatic_configuration remediation directly, to
 # mitigate disabling of the rule
 find /etc/pam.d/ -type l -iname "common-*" -print0 | \
@@ -49,3 +57,8 @@ while IFS= read -r -d '' link; do
     target=$(readlink -f "$link")
     cp -p --remove-destination "$target" "$link"
 done
+
+# create empty /etc/security/opasswd file, otherwise mitigation for
+# xccdf_org.ssgproject.content_rule_file_etc_security_opasswd will fail
+touch /etc/security/opasswd
+chmod 600 /etc/security/opasswd
