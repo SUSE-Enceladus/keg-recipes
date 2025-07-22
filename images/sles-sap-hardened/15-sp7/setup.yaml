@@ -1,0 +1,3 @@
+setup:
+  - _include:
+      - products/sap

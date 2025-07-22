@@ -2,15 +2,18 @@ include-paths:
   - _sle15/sp4
   - _sle15/sp5
   - _sle15/sp6
+  - _sle15/sp7
   - _sle-hpc/15-sp4
   - _sle-hpc/15-sp5
   - _sle-hpc/15-sp6
+  - _sle-hpc/15-sp7
   - _sle-hpc/payg/15-sp4
   - _sle-hpc/payg/15-sp5
   - _sle-hpc/payg/15-sp6
+  - _sle-hpc/payg/15-sp7
 image:
   _attributes:
-    name: SLES15-SP6-HPC
-    displayname: SLES15-SP6-HPC
+    name: SLES15-SP7-HPC
+    displayname: SLES15-SP7-HPC
   description:
-    specification: "SUSE Linux Enterprise HPC 15 SP6 guest image"
+    specification: "SUSE Linux Enterprise HPC 15 SP7 guest image"

@@ -1,0 +1,19 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sle15/sp7
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/15-sp7
+  - _sles/sapcal/15-sp4
+  - _sles/sapcal/15-sp5
+  - _sles/sapcal/15-sp6
+  - _sles/sapcal/15-sp7
+image:
+  _attributes:
+    name: SLES15-SP7-SAPCAL
+    displayname: SLES15-SP7-SAPCAL
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP7 BYOS guest image for SAP Cloud Appliance Library"
