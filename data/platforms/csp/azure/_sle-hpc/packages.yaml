@@ -1,4 +1,4 @@
 packages:
-  _namespace_platforms_azure_waagent_config:
+  _namespace_platforms_azure_agent_config:
     package:
       - python-azure-agent-config-hpc

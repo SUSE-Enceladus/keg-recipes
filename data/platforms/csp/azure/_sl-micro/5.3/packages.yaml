@@ -1,4 +1,5 @@
 packages:
+  _namespace_platforms_azure_agent_config: Null
   _namespace_platforms_azure_cloud_init: Null
   _namespace_platforms_azure_cryptsetup: Null
   _namespace_platforms_azure_tools: Null
