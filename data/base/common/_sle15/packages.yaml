@@ -6,6 +6,7 @@ packages:
       - chrony
       - dosfstools
       - dracut
+      - glibc-locale-base
       - grub2
       - hostname
       - iputils
