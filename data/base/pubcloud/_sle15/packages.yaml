@@ -9,9 +9,9 @@ packages:
       - blktrace
       - cronie
       - deltarpm
+      - docker
       - lockdev
       - netcat-openbsd
-      - nfsidmap
       - patterns-base-minimal_base
       - fontconfig
       - fonts-config
@@ -24,6 +24,7 @@ packages:
       - telnet
       - yast2-dhcp-server
       - yast2-dns-server
+      - yast2-ftp-server
       - yast2-http-server
       - yast2-iscsi-lio-server
       - yast2-mail
@@ -53,6 +54,12 @@ packages:
   _namespace_base_pubcloud_sle15_haveged:
     package:
       - haveged
+  _namespace_base_pubcloud_sle15_nfsidmap:
+    package:
+      - nfsidmap
   _namespace_base_pubcloud_sle15_sysvcompat:
     package:
       - systemd-sysvinit
+  _namespace_base_pubcloud_sle15_yast_schema:
+    package:
+      - yast2-schema-default

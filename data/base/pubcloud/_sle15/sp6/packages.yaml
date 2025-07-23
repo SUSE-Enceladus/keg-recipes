@@ -1,3 +1,8 @@
 packages:
   _namespace_base_pubcloud_sle15_haveged: Null
-  _namespace_base_pubcloud_sle15_sysvcompat: Null
+  _namespace_base_pubcloud_sle15_nfsidmap:
+    package:
+      - libnfsidmap1
+  _namespace_base_pubcloud_sle15_sysvcompat:
+    package:
+      - systemd-sysvcompat

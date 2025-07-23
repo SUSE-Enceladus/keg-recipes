@@ -7,10 +7,10 @@ packages:
       - patterns-base-transactional
       - patterns-micro-defaults
       - ca-certificates
-      - glibc-locale-base
       - less
       - NetworkManager-tui
+      - parted
+      - podman
       - suse-build-key
       - suseconnect-ng
       - systemd-default-settings-branding-SLE-Micro
-      - parted

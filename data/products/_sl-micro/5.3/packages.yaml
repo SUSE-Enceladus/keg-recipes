@@ -16,8 +16,6 @@ packages:
       - container-selinux
       - cracklib-dict-small
       - distribution-release
-      - docker
-      - glibc-locale-base
       - growpart-generator
       - ignition
       - ignition-dracut-grub2

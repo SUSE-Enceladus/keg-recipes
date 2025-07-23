@@ -3,7 +3,6 @@ packages:
     package:
       - dapl
       - dapl-devel
-      - docker
       - gnu11-compilers-hpc-devel
       - ibacm
       - ibutils
