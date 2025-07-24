@@ -1,0 +1,16 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/ecs/15-sp4
+  - _sles/ecs/15-sp5
+  - _sles/ecs/15-sp6
+image:
+  _attributes:
+    name: SLES15-SP6-EC2-ECS-HVM
+    displayname: SLES15-SP6-EC2-ECS-HVM
+  description:
+    specification: "SUSE Linux Enterprise Server 15 SP6 ECS guest image for Amazon EC2"

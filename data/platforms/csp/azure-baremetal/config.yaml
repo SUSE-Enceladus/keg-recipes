@@ -1,0 +1,71 @@
+config:
+  files:
+    platforms_azure_baremetal_config:
+      - path: /etc/modprobe.d/sunrpc.conf
+        content: |-
+          # Module for sunrpc
+          
+          options sunrpc tcp_max_slot_table_entries=128
+      - path: /etc/security/limits.conf
+        append: True
+        content: |-
+          * soft nofile 32768
+          * hard nofile 65536
+      - path: /etc/zypp/locks
+        append: True
+        content: |-
+          type: package
+          match_type: glob
+          case_sensitive: on
+          solvable_name: plymouth*
+  scripts:
+    platforms_azure_baremetal_scripts:
+      - azure-li-create-service-triggers
+      - increase-idmapd-verbosity
+      - ssh-enable-keep-alive
+      - sudo-disable-targetpw
+      - systemd-set-default-target-multi-user
+    platforms_azure_baremetal_scripts_base:
+      - expand-motd-vars
+      - polkit-set-default-privs
+      - remove-iscsi-config
+      - remove-root-pw
+      - set-prodlink
+      - zypp-disable-delta-rpms
+      - zypp-disable-multiver-kernel
+  services:
+    platforms_azure_baremetal_services_base:
+      - boot.device-mapper
+      - sshd
+      - name: boot.efivars
+        enable: False
+      - name: boot.lvm
+        enable: False
+      - name: boot.md
+        enable: False
+      - name: boot.multipath
+        enable: False
+      - name: display-manager
+        enable: False
+      - name: kbd
+        enable: False
+    platforms_azure_baremetal_services:
+      - azure-li-call
+      - azure-li-cleanup
+      - azure-li-config-lookup
+      - azure-li-install
+      - azure-li-machine-constraints
+      - azure-li-network
+      - azure-li-storage
+      - azure-li-system-setup
+      - azure-li-report
+      - azure-li-user
+      - name: nscd
+        enable: False
+      - kdump
+      - multipathd
+  sysconfig:
+    platforms_azure_baremetal_set_hostname:
+      - file: /etc/sysconfig/network/dhcp
+        name: DHCLIENT_SET_HOSTNAME
+        value: "yes"

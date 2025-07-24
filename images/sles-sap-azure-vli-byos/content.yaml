@@ -1,0 +1,33 @@
+image:
+  profiles: Null
+  _namespace_preferences_root: Null
+  preferences:
+    - _include:
+        - base/common
+        - base/pubcloud
+        - platforms/csp/azure-baremetal/vli
+  packages:
+    - _attributes:
+        type: bootstrap
+      _include:
+        - base/bootstrap
+    - _attributes:
+        type: image
+      _include:
+        - base/common
+        - base/pubcloud
+        - platforms/csp/azure-baremetal/vli
+        - products
+config:
+  - _include:
+      - base/common
+      - base/pubcloud
+      - platforms/csp/azure-baremetal/vli
+      - products
+archive:
+  - name: root.tar.gz
+    _include:
+      - base/common
+      - base/pubcloud
+      - platforms/csp/azure-baremetal/vli
+      - products

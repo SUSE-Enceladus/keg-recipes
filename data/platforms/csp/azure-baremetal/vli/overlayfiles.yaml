@@ -1,0 +1,8 @@
+archive:
+  _namespace_azure_vli:
+    _include_overlays:
+      - efi-startup
+      - modprobe-blacklist-azure-vli
+  _namespace_azure_baremetal_linkpol:
+    _include_overlays:
+      - systemd-network-persistent-link-policy-path
