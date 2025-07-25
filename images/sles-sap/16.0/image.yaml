@@ -1,8 +1,10 @@
 include-paths:
   - _slfo/1.1
   - _slfo/1.2
-  - _sles/16.0
-  - _sles/payg/16.0
+  - _sles-sap/16.0
+  - _sles-sap/payg/16.0
+  - _sles-sap/hardened/16.0
+
 image:
   _attributes:
     name: SLES-SAP-16.0
