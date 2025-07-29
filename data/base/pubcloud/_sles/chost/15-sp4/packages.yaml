@@ -1,4 +1,7 @@
 packages:
+  _namespace_base_pubcloud_chost_bind_utils:
+    package:
+      - bind-utils
   _namespace_base_pubcloud_chost_modrel:
     package:
       - sle-module-containers-release
