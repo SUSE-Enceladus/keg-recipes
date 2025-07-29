@@ -7,9 +7,6 @@ packages:
       - _attributes:
           name: xen-libs
           arch: x86_64
-      - _attributes:
-          name: xen-tools-domU
-          arch: x86_64
       - amazon-dracut-config
       - cloud-init
       - cloud-init-config-suse
@@ -21,12 +18,14 @@ packages:
       - regionsrv-certs
       - regionServiceClientConfigEC2
       - regionServiceCertsEC2
-  _namespace_platforms_ec2_aws_cli:
-    package:
-      - aws-cli
   _namespace_platforms_ec2_metadata:
     package:
       - python3-ec2metadata
   _namespace_platforms_ec2_ssm_agent:
     package:
       - amazon-ssm-agent
+  _namespace_platforms_ec2_xen_tools:
+    package:
+      - _attributes:
+          name: xen-tools-domU
+          arch: x86_64
