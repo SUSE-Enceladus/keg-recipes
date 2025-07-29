@@ -5,7 +5,6 @@ packages:
   _namespace_manager_server_base:
     package:
       - aardvark-dns
-      - bind-utils
       - jq
       - netavark
       - mgradm
