@@ -28,3 +28,6 @@ packages:
       - _attributes:
           name: suse-manager-5.0-aarch64-server-migration-14-16-image
           arch: aarch64
+  _namespace_products_mlm_server_bind_utils:
+    package:
+      - bind-utils

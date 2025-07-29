@@ -2,7 +2,6 @@ packages:
   _namespace_products_mlm_server_base:
     package:
       - aardvark-dns
-      - bind-utils
       - jq
       - netavark
       - mgradm

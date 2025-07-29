@@ -1,7 +1,6 @@
 packages:
   _namespace_mlm_proxy_base:
     package:
-      - bind-utils
       - jq
       - mgrpxy
       - mgrpxy-bash-completion

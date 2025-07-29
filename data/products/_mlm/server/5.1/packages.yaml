@@ -40,3 +40,4 @@ packages:
       - _attributes:
           name: suse-multi-linux-manager-5.1-aarch64-server-saline-image
           arch: aarch64
+  _namespace_products_mlm_server_bind_utils: Null

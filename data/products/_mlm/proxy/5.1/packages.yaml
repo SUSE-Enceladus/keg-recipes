@@ -34,3 +34,4 @@ packages:
       - _attributes:
           name: suse-multi-linux-manager-5.1-aarch64-proxy-tftpd-image
           arch: aarch64
+  _namespace_products_mlm_proxy_bind_utils: Null
