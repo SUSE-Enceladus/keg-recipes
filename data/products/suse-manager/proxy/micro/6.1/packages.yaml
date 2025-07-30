@@ -4,7 +4,6 @@ packages:
       - Multi-Linux-Manager-Proxy-release
   _namespace_mlm_proxy_base:
     package:
-      - bind-utils
       - jq
       - mgrpxy
       - mgrpxy-bash-completion
