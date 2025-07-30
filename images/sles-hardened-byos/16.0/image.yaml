@@ -1,0 +1,12 @@
+include-paths:
+  - _slfo/1.1
+  - _slfo/1.2
+  - _sles/16.0
+  - _sles/byos/16.0
+  - _sles/hardened/16.0
+image:
+  _attributes:
+    name: SLES-Hardened-BYOS
+    displayname: SLES-Hardended-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server 16.0 BYOS hardened guest image"

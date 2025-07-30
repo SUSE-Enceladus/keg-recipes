@@ -1,0 +1,11 @@
+include-paths:
+  - _slfo/1.1
+  - _slfo/1.2
+  - _sles-sap/16.0
+  - _sles-sap/byos/16.0
+image:
+  _attributes:
+    name: SLES-SAP-Azure-VLI-BYOS
+    displayname: SLES-SAP-Azure-VLI-BYOS
+  description:
+    specification: "SUSE Linux Enterprise Server for SAP Applications 16.0 Azure VLI BYOS guest image"
