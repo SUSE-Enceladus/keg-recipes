@@ -13,11 +13,6 @@ packages:
           arch: x86_64
       - glibc-devel
       - icewm
-      - insserv-compat
-      - java-1_8_0-ibm
-      - java-1_8_0-ibm-devel
-      - java-1_8_0-ibm-fonts
-      - java-1_8_0-ibm-plugin
       - _attributes:
           name: krb5-32bit
           arch: x86_64
@@ -28,11 +23,7 @@ packages:
           name: libcurl4-32bit
           arch: x86_64
       - libcurl-devel
-      - _attributes:
-          name: libidn11-32bit
-          arch: x86_64
       - libidn-tools
-      - libpng12-0
       - libgcc_s1
       - _attributes:
           name: libgcc_s1-32bit
@@ -75,7 +66,6 @@ packages:
       - uuidd
       - x11-tools
       - xauth
-      - xorg-x11-devel
       - xorg-x11-driver-video
       - xorg-x11-fonts
       - xorg-x11-server
@@ -91,12 +81,6 @@ packages:
       - _attributes:
           name: xorg-x11-libxcb-32bit
           arch: x86_64
-      - xrdp
       - _attributes:
           name: zlib-32bit
-          arch: x86_64
-  _namespace_base_pubcloud_sapcal_libopenssl1_0_0:
-    package:
-      - _attributes:
-          name: libopenssl1_0_0
           arch: x86_64

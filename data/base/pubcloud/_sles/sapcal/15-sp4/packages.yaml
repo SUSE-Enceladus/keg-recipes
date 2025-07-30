@@ -1,2 +1,14 @@
 packages:
-  _namespace_base_pubcloud_sapcal_libopenssl1_0_0: Null
+  _namespace_base_pubcloud_sapcal_sle15:
+    package:
+      - insserv-compat
+      - java-1_8_0-ibm
+      - java-1_8_0-ibm-devel
+      - java-1_8_0-ibm-fonts
+      - java-1_8_0-ibm-plugin
+      - _attributes:
+          name: libidn11-32bit
+          arch: x86_64
+      - libpng12-0
+      - xorg-x11-devel
+      - xrdp
