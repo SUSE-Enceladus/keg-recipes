@@ -10,5 +10,6 @@ packages:
           name: libidn11-32bit
           arch: x86_64
       - libpng12-0
+      - sapconf
       - xorg-x11-devel
       - xrdp

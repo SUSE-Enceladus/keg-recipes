@@ -55,7 +55,6 @@ packages:
       - rpm-build
       - samba
       - samba-client
-      - sapconf
       - sysstat
       - tack
       - tuned
