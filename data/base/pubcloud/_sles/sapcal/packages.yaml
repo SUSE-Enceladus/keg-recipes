@@ -13,9 +13,11 @@ packages:
           arch: x86_64
       - glibc-devel
       - icewm
+      - jq
       - _attributes:
           name: krb5-32bit
           arch: x86_64
+      - libcap-progs
       - _attributes:
           name: libcom_err2-32bit
           arch: x86_64
@@ -23,6 +25,7 @@ packages:
           name: libcurl4-32bit
           arch: x86_64
       - libcurl-devel
+      - libicu60_2
       - libidn-tools
       - libgcc_s1
       - _attributes:
@@ -65,6 +68,7 @@ packages:
       - uuidd
       - x11-tools
       - xauth
+      - xmlstarlet
       - xorg-x11-driver-video
       - xorg-x11-fonts
       - xorg-x11-server

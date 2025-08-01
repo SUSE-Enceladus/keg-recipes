@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubclod_sle_hpc:
+    package:
+      - rsyslog

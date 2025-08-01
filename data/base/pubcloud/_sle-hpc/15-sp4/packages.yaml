@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubcloud_sle_hpc_byos_modules:
+  _namespace_base_pubcloud_sle_hpc_modules:
     package:
       - sle-module-basesystem-release
       - sle-module-containers-release

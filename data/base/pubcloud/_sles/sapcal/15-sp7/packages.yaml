@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubcloud_sapcal_module_systems_management:
+    package:
+      - sle-module-systems-management-release
