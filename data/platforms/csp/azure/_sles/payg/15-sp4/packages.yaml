@@ -1,5 +1,9 @@
 packages:
-  _namespace_platforms_default_kernel: Null
+  _namespace_platforms_default_kernel:
+    package:
+      - _attributes:
+          name: kernel-default
+          arch: aarch64
   _namespace_platforms_azure_kernel:
     package:
       - _attributes:
