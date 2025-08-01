@@ -1,4 +1,5 @@
 packages:
+  _namespace_platforms_default_kernel: Null
   _namespace_platforms_azure_kernel:
     package:
       - _attributes:
