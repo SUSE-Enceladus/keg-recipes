@@ -5,3 +5,9 @@ packages:
   _namespace_base_pubcloud_chost_modrel:
     package:
       - sle-module-containers-release
+  _namespace_base_pubcloud_sle15: Null
+  _namespace_base_pubcloud_sle15_cnf: Null
+  _namespace_base_pubcloud_sle15_haveged: Null
+  _namespace_base_pubcloud_sle15_nfsidmap: Null
+  _namespace_base_pubcloud_sle15_sysvcompat: Null
+  _namespace_base_pubcloud_sle15_yast_schema: Null
