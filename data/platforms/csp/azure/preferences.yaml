@@ -14,8 +14,9 @@ preferences:
         scsi_mod.use_blk_mq: 1
         USE_BY_UUID_DEVICE_NAMES: 1
     bootloader:
-      console: serial
-      timeout_style: countdown
+      _attributes:
+        console: serial
+        timeout_style: countdown
     size:
       _attributes:
         unit: M
