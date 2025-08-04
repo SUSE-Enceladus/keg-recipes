@@ -1,0 +1,3 @@
+config:
+  files:
+    platforms_azure_baremetal_pam_sshd_motd: Null

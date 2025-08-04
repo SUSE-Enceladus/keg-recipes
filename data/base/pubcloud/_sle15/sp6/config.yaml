@@ -1,0 +1,3 @@
+config:
+  files:
+    base_pubcloud_pam_sshd_motd: Null
