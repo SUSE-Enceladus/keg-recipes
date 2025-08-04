@@ -9,9 +9,13 @@ preferences:
         dis_ucode_ldr: []
         earlyprintk: ttyS0
         multipath: "off"
+        nvme_core.io_timeout: 240
         rootdelay: 300
         scsi_mod.use_blk_mq: 1
         USE_BY_UUID_DEVICE_NAMES: 1
+    bootloader:
+      console: serial
+      timeout_style: countdown
     size:
       _attributes:
         unit: M
