@@ -5,7 +5,6 @@ packages:
       - hyper-v
       - microsoft-dracut-config
       - python-azure-agent
-      - shim
   _namespace_platforms_azure_agent_config:
     package:
       - python-azure-agent-config-server
