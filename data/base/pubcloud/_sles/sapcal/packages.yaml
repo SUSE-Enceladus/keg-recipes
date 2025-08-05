@@ -25,7 +25,6 @@ packages:
           name: libcurl4-32bit
           arch: x86_64
       - libcurl-devel
-      - libicu60_2
       - libidn-tools
       - libgcc_s1
       - _attributes:

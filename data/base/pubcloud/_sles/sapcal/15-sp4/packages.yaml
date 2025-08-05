@@ -9,6 +9,7 @@ packages:
       - _attributes:
           name: libidn11-32bit
           arch: x86_64
+      - libicu60_2
       - libpng12-0
       - sapconf
       - xorg-x11-devel
