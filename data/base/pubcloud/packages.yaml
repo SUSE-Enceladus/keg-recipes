@@ -18,7 +18,6 @@ packages:
       - cyrus-sasl-gssapi
       - cyrus-sasl-plain
       - cyrus-sasl-saslauthd
-      - dhcp-client
       - dos2unix
       - ethtool
       - expect
@@ -72,6 +71,9 @@ packages:
       - yast2-ycp-ui-bindings
       - zip
       - zsh
+  _namespace_base_pubcloud_dhcp_client:
+    package:
+      - dhcpcd
   _namespace_base_pubcloud_billing_flavor_check:
     package:
       - python-instance-billing-flavor-check
