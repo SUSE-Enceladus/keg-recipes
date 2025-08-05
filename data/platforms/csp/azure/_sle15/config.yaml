@@ -3,6 +3,8 @@ config:
     platforms_azure_sle15_scripts:
       - ssh-disable-challenge-response-auth
       - ssh-enable-keep-alive
+    platforms_azure_dhcp_timeout:
+      - dhclient-increase-timeout
   sysconfig:
     platforms_azure_sle15_cloud_netconfig:
       - file: /etc/sysconfig/network/config
