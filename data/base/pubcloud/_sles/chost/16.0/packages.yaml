@@ -3,3 +3,4 @@ packages:
   _namespace_base_pubcloud_chost_docker:
     package:
       - docker
+      - docker-buildx

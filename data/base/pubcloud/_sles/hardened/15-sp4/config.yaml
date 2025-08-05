@@ -3,4 +3,4 @@ config:
     sles_hardened_variant_id:
       - path: /etc/os-release
         append: True
-        content: IMAGE_ID="sles-hardened"
+        content: VARIANT_ID="sles-hardened"
