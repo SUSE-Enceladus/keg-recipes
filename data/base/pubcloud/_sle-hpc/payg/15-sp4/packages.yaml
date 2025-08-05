@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubcloud_sle_hpc_modules:
+    package:
+      - sle-module-python3-release

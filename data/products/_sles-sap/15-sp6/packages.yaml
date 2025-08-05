@@ -1,0 +1,4 @@
+packages:
+  _namespace_products_sles_sap_libnsl1:
+    package:
+      - libnsl1

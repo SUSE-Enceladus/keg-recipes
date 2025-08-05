@@ -10,7 +10,6 @@ preferences:
         console: ["tty0", "ttyS0,115200n8"]
         multipath: "off"
         NON_PERSISTENT_DEVICE_NAMES: 1
-        systemd.unified_cgroup_hierarchy: 1
     size:
       _attributes:
         unit: M

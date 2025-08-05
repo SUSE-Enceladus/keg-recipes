@@ -2,3 +2,6 @@ archive:
   _namespace_base_pubcloud_motd_default:
     _include_overlays:
       - motd-mod-os-header
+  _namespace_base_pubcloud_dracut_resize:
+    _include_overlays:
+      - dracut-kiwi-resize

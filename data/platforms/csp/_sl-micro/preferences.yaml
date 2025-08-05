@@ -10,6 +10,7 @@ preferences:
         net.ifnames: 0
         security: selinux
         selinux: 1
+        systemd.unified_cgroup_hierarchy: 1
     bootloader:
       _attributes:
         name: grub2

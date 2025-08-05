@@ -1,4 +1,9 @@
 packages:
   _namespace_base_pubcloud_sles_sap_payg_modules:
     package:
+      - sle-module-containers-release
+      - sle-module-desktop-applications-release
+      - sle-module-development-tools-release
       - sle-module-live-patching-release
+      - sle-module-python3-release
+      - sle-module-web-scripting-release

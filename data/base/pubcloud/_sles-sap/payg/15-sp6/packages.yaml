@@ -1,0 +1,6 @@
+packages:
+  _namespace_base_pubcloud_sles_sap_payg_module_confidential_computing:
+    package:
+      - _attributes:
+          name: sle-module-confidential-computing-release
+          arch: x86_64

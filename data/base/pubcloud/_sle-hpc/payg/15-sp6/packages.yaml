@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubcloud_sle_hpc_module_cc:
+    package:
+      - sle-module-confidential-computing-release

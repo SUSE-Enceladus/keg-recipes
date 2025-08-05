@@ -4,3 +4,9 @@ config:
       - path: /etc/os-release
         append: True
         content: VARIANT_ID="sles-sapcal"
+  scripts:
+    base_pubcloud_sapcal_zypp_max_connections:
+      - zypp-limit-concurrent-downloads
+  service:
+    base_pubcloud_sapcal_services:
+      - guestregister

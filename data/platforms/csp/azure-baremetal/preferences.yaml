@@ -14,7 +14,6 @@ preferences:
         processor.max_cstate: 1
         transparent_hugepage: never
         splash: verbose
-        systemd.unified_cgroup_hierarchy: 1
     bootloader:
       _attributes:
         name: grub2

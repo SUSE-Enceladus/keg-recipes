@@ -2,10 +2,6 @@ archive:
   _namespace_ec2_base:
     _include_overlays:
       - chrony-ec2-ntp
-      - dracut-aws-type-switch
-      - dracut-ext4
-      - dracut-resume
-      - dracut-xfs
       - modprobe-nvme-options
       - udev-nvme-timeout
   _namespace_ec2_cloud_init_cfg:

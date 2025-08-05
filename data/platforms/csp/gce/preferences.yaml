@@ -6,7 +6,6 @@ preferences:
         console: ttyS0,115200
         dis_ucode_ldr: []
         multipath: "off"
-        systemd.unified_cgroup_hierarchy: 1
     bootloader:
       _attributes:
         console: serial
