@@ -2,3 +2,6 @@ packages:
   _namespace_base_pubcloud_slfo:
     package:
       - tpm2.0-tools
+  _namespace_base_pubcloud_slfo_podman:
+    package:
+      - podman

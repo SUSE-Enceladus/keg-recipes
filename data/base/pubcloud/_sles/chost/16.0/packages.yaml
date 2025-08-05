@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubcloud_slfo_podman: Null
+  _namespace_base_pubcloud_chost_docker:
+    package:
+      - docker
