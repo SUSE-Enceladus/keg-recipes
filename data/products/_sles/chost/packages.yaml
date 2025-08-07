@@ -2,4 +2,4 @@ packages:
   _namespace_products_sles: Null
   _namespace_products_sles_chost:
     package:
-      - release-notes-sles
+      - sles-release
