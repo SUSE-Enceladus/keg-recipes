@@ -11,8 +11,3 @@ config:
   scripts:
     chost-scripts:
       - chost-add-variant
-  services:
-    chost-services:
-      - docker
-    chost-docker-img-store:
-      - docker-img-store-setup

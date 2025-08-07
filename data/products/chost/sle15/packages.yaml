@@ -9,7 +9,6 @@ packages:
       - containerd
       - containerd-ctr
       - cpupower
-      - docker
       - fipscheck
       - hwdata
       - hwinfo
