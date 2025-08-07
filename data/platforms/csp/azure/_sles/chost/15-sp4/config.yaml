@@ -1,0 +1,3 @@
+config:
+  sysconfig:
+    platforms_azure_sle15_cloud_netconfig: Null

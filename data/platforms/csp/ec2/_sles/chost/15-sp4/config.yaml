@@ -1,0 +1,3 @@
+config:
+  sysconfig:
+    platforms_ec2_cloud_netconfig: Null
