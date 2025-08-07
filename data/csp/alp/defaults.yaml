@@ -26,6 +26,7 @@ preferences:
       image: vmx
       kernelcmdline:
         console: ttyS0
+        iommu.passthrough: 1
         net.ifnames: 0
     bootloader:
       _attributes:

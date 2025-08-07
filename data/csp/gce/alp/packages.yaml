@@ -8,8 +8,6 @@ packages:
       - google-guest-configs
       - google-guest-oslogin
       - google-osconfig-agent
-      - growpart
-      - growpart-rootgrow
       - kernel-default
   _namespace_gce_tools:
     package:

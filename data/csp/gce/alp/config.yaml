@@ -27,7 +27,6 @@ config:
       - google-oslogin-cache.timer
       - google-shutdown-scripts
       - google-startup-scripts
-      - rootgrow
     gce-cloud-netconfig:
       - cloud-netconfig.timer
     flex-license-timer:
