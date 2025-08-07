@@ -1,4 +1,4 @@
 packages:
-  _namespace_platforms_gce_tools: Null
-  _namespace_platforms_gce_registration: Null
   _namespace_platforms_gce_flexible_licenses: Null
+  _namespace_platforms_gce_metadata: Null
+  _namespace_platforms_gce_registration: Null

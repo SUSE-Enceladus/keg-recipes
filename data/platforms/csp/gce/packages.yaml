@@ -9,7 +9,7 @@ packages:
       - google-guest-configs
       - google-guest-oslogin
       - google-osconfig-agent
-  _namespace_platforms_gce_tools:
+  _namespace_platforms_gce_metadata:
     package:
       - python-gcemetadata
   _namespace_platforms_gce_registration:
