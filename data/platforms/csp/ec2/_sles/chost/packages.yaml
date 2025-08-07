@@ -1,3 +1,4 @@
 packages:
+  _namespace_platforms_ec2_metadata: Null
   _namespace_platforms_ec2_registration: Null
   _namespace_platforms_ec2_tools: Null
