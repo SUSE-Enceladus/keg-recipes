@@ -25,13 +25,21 @@ image:
       preferences:
         - _attributes:
             profiles: [Azure-Basic]
+            arch: x86_64
           _include:
+            - platforms/csp/azure/x86_64
+            - platforms/csp/azure/basic
+        - _attributes:
+            profiles: [Azure-Basic]
+            arch: aarch64
+          _include:
+            - platforms/csp/azure/aarch64
             - platforms/csp/azure/basic
         - _attributes:
             profiles: [Azure-Standard]
             arch: x86_64
           _include:
-            - platforms/csp/azure
+            - platforms/csp/azure/x86_64
         - _attributes:
             profiles: [Azure-Standard]
             arch: aarch64
@@ -41,6 +49,7 @@ image:
             profiles: [Azure-3P]
             arch: x86_64
           _include:
+            - platforms/csp/azure/x86_64
             - platforms/csp/azure/3p
         - _attributes:
             profiles: [Azure-3P]

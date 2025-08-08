@@ -1,0 +1,24 @@
+preferences:
+  type:
+    _attributes:
+      btrfs_quota_groups: "true"
+      btrfs_root_is_snapshot: "true"
+      filesystem: btrfs
+    systemdisk:
+      volume:
+        - _attributes:
+            name: home
+        - _attributes:
+            name: root
+        - _attributes:
+            name: opt
+        - _attributes:
+            name: srv
+        - _attributes:
+            name: boot/grub2/i386-pc
+        - _attributes:
+            name: boot/writable
+        - _attributes:
+            name: usr/local
+        - _attributes:
+            name: var

@@ -43,7 +43,7 @@ image:
             profiles: [Azure]
             arch: x86_64
           _include:
-            - platforms/csp/azure
+            - platforms/csp/azure/x86_64
         - _attributes:
             profiles: [Azure]
             arch: aarch64
@@ -53,12 +53,24 @@ image:
       preferences:
         - _attributes:
             profiles: [EC2]
+            arch: x86_64
           _include:
-            - platforms/csp/ec2
+            - platforms/csp/ec2/x86_64
+        - _attributes:
+            profiles: [EC2]
+            arch: aarch64
+          _include:
+            - platforms/csp/ec2/aarch64
         - _attributes:
             profiles: [GCE]
+            arch: x86_64
           _include:
-            - platforms/csp/gce
+            - platforms/csp/gce/x86_64
+        - _attributes:
+            profiles: [GCE]
+            arch: aarch64
+          _include:
+            - platforms/csp/gce/aarch64
   _namespace_packages_root:
     _namespace_packages_base:
       packages:
