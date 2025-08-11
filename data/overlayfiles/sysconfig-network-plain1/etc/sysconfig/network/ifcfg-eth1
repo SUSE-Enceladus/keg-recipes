@@ -1,0 +1,2 @@
+BOOTPROTO='dhcp+autoip'
+STARTMODE='auto'

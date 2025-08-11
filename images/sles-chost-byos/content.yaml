@@ -30,6 +30,31 @@ image:
       packages:
         - _attributes:
             type: image
+            profiles: [Aliyun,GCE,OpenStack,SAP-CCloud]
+          _include:
+            - base/common
+            - base/pubcloud
+          archive:
+            - _attributes:
+                name: pubcloud.tar.gz
+        - _attributes:
+            type: image
+            profiles: [Aliyun]
+          _include:
+            - platforms/csp/aliyun
+          archive:
+            - _attributes:
+                name: aliyun.tar.gz
+        - _attributes:
+            type: image
+            profiles: [GDC]
+          _include:
+            - platforms/csp/gdc
+          archive:
+            - _attributes:
+                name: gce.tar.gz
+        - _attributes:
+            type: image
             profiles: [OpenStack]
           _include:
             - platforms/openstack
@@ -41,13 +66,8 @@ image:
 config:
   - _include:
       - base/common
-      - products
-  - profiles:
-      - azure-base
-      - ec2-base
-      - gce-base
-    _include:
       - base/pubcloud
+      - products
   - profiles: [azure-base]
     _include:
       - platforms/csp/azure
@@ -57,3 +77,37 @@ config:
   - profiles: [gce-base]
     _include:
       - platforms/csp/gce
+  - profiles: [Aliyun]
+    _include:
+      - platforms/csp/aliyun
+  - profiles: [GDC]
+    _include:
+      - platforms/csp/gdc
+  - profiles: [OpenStack]
+    _include:
+      - platforms/openstack
+  - profiles: [SAP-CCloud]
+    _include:
+      - platforms/csp/sap-converged-cloud
+archive:
+  - name: root.tar.gz
+    _include:
+      - products
+  - name: pubcloud.tar.gz
+    _include:
+      - base/pubcloud
+  - name: azure.tar.gz
+    _include:
+      - platforms/csp/azure
+  - name: ec2.tar.gz
+    _include:
+      - platforms/csp/ec2
+  - name: gce.tar.gz
+    _include:
+      - platforms/csp/gce
+  - name: aliyun.tar.gz
+    _include:
+      - platforms/csp/aliyun
+  - name: gdc.tar.gz
+    _include:
+      - platforms/csp/gdc

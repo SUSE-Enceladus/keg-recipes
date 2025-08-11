@@ -1,0 +1,11 @@
+preferences:
+  type:
+    _attributes:
+      firmware: uefi
+      format: qcow2
+      vga: normal
+      kernelcmdline:
+        console: ["tty1", "ttyS0"]
+        ci.datasource: NoCloud
+        multipath: "off"
+        NON_PERSISTENT_DEVICE_NAMES: 1
