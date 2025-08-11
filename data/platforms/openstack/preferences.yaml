@@ -1,6 +1,7 @@
 preferences:
   type:
     _attributes:
+      bootpartition: "false"
       filesystem: xfs
       format: qcow2
       image: oem
@@ -8,7 +9,9 @@ preferences:
         console: ["ttyS0,115200n8", "tty0"]
         NON_PERSISTENT_DEVICE_NAMES: 1
         multipath: "off"
-        net.ifnames: 1
+        net.ifnames: 0
+        swapaccount: 1
+        systemd.unified_cgroup_hierarchy: 0
       vga: normal
     bootloader:
       _attributes:
