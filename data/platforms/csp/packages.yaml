@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_csp_kiwi_repart:
+    package:
+      - dracut-kiwi-oem-repart

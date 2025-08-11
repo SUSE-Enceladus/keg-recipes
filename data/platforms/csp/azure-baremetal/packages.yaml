@@ -3,7 +3,6 @@ packages:
     package:
       - acl
       - azure-li-services
-      - dracut-kiwi-oem-repart
       - gconf2
       - hyper-v
       - icmpinfo

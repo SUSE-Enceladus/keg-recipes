@@ -77,6 +77,3 @@ packages:
   _namespace_base_pubcloud_billing_flavor_check:
     package:
       - python-instance-billing-flavor-check
-  _namespace_base_pubcloud_kiwi_repart:
-    package:
-      - dracut-kiwi-oem-repart
