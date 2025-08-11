@@ -18,6 +18,14 @@ image:
     _namespace_preferences_chost_extra:
       preferences:
         - _attributes:
+            profiles: [Aliyun]
+          _include:
+            - platforms/openstack
+        - _attributes:
+            profiles: [GDC]
+          _include:
+            - platforms/csp/sap-converged-cloud
+        - _attributes:
             profiles: [OpenStack]
           _include:
             - platforms/openstack
