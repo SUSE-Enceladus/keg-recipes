@@ -7,7 +7,7 @@ preferences:
       image: oem
       kernelcmdline:
         console: ttyS0
-        net.ifnames: 1
+        net.ifnames: 0
     bootloader:
       _attributes:
         name: grub2
