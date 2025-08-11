@@ -1,0 +1,5 @@
+config:
+  scripts:
+    platforms_openstack_config:
+      - ssh-disable-challenge-response-auth
+      - ssh-disable-password-login

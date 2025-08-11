@@ -1,8 +1,4 @@
 config:
-  scripts:
-    platforms_openstack_config:
-      - ssh-disable-challenge-response-auth
-      - ssh-disable-password-login
   services:
     plaforms_openstack_cloud_init:
       - cloud-init-local
