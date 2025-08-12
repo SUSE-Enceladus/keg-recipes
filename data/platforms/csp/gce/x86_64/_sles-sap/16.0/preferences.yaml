@@ -1,0 +1,8 @@
+preferences:
+  type:
+    systemdisk:
+      _namespace_platforms_gce_x86_volume:
+        volume:
+          - _attributes:
+              name: boot/grub2/x86_64-efi
+              mountpoint: boot/grub2/x86_64-efi
