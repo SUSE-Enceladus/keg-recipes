@@ -48,9 +48,6 @@ packages:
       - yast2-tune
       - yp-tools
       - zypper-lifecycle-plugin
-  _namespace_base_pubcloud_dhcp_client:
-    package:
-      - dhcp-client
   _namespace_base_pubcloud_sle15_cnf:
     package:
       - command-not-found

@@ -1,4 +1,7 @@
 packages:
+  _namespace_base_pubcloud_dhcp_client:
+    package:
+      - dhcpcd
   _namespace_base_pubcloud_slfo_cifs:
     package:
       # dependecy of cifs-utils

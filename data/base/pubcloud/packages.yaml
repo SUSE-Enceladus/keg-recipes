@@ -73,7 +73,7 @@ packages:
       - zsh
   _namespace_base_pubcloud_dhcp_client:
     package:
-      - dhcpcd
+      - dhcp-client
   _namespace_base_pubcloud_billing_flavor_check:
     package:
       - python-instance-billing-flavor-check
