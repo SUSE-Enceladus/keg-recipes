@@ -5,7 +5,7 @@ include-paths:
   - _sles/ecs/16.0
 image:
   _attributes:
-    name: SLES-EC2-ECS
-    displayname: SLES-EC2-ECS
+    name: SLES-16.0-EC2-ECS
+    displayname: SLES-16.0-EC2-ECS
   description:
     specification: "SUSE Linux Enterprise Server 16.0 ECS guest image for Amazon EC2"

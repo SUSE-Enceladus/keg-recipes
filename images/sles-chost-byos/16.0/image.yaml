@@ -5,7 +5,7 @@ include-paths:
   - _sles/chost/16.0
 image:
   _attributes:
-    name: SLES-CHOST-BYOS
-    displayname: SLES-CHOST-BYOS
+    name: SLES-16.0-CHOST-BYOS
+    displayname: SLES-16.0-CHOST-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 16.0 BYOS guest image optimized as container host"

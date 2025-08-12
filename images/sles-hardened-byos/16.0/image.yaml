@@ -6,7 +6,7 @@ include-paths:
   - _sles/hardened/16.0
 image:
   _attributes:
-    name: SLES-Hardened-BYOS
-    displayname: SLES-Hardended-BYOS
+    name: SLES-16.0-Hardened-BYOS
+    displayname: SLES-16.0-Hardended-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 16.0 BYOS hardened guest image"

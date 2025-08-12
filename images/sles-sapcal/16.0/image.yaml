@@ -5,7 +5,7 @@ include-paths:
   - _sles/sapcal/16.0
 image:
   _attributes:
-    name: SLES-SAPCAL
-    displayname: SLES-SAPCAL
+    name: SLES-16.0-SAPCAL
+    displayname: SLES-16.0-SAPCAL
   description:
     specification: "SUSE Linux Enterprise Server 16.0 BYOS guest image for SAP Cloud Appliance Library"
