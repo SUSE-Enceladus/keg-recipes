@@ -13,4 +13,3 @@ packages:
       - podman
       - suse-build-key
       - suseconnect-ng
-      - systemd-default-settings-branding-SLE-Micro
