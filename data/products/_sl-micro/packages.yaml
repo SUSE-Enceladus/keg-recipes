@@ -1,4 +1,5 @@
 packages:
-  _namespace_products_systemd_branding:
+  _namespace_products_micro:
     package:
+      - grub2-snapper-plugin
       - systemd-default-settings-branding-SLE-Micro
