@@ -23,6 +23,7 @@ packages:
       - user(nobody)
       - util-linux
       - wtmpdb
+      - xfsprogs
   _namespace_base_common_bootloader:
     package:
       - grub2
