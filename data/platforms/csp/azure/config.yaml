@@ -5,7 +5,6 @@ config:
     platforms_azure_dhcp_timeout:
       - dhcpcd-increase-timeout
     platforms_azure_waagent:
-      - waagent-disable-auto-update
       - waagent-enable-all-ssh-host-key-types
       - waagent-disable-ephemeral-disk-handling
   services:
