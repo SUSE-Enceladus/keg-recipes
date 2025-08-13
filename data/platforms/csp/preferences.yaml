@@ -1,6 +1,7 @@
 preferences:
   type:
     _attributes:
+      bootpartition: "false"
       devicepersistency: by-label
       filesystem: xfs
       firmware: uefi

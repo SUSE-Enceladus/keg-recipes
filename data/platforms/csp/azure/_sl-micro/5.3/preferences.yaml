@@ -1,7 +1,7 @@
 preferences:
   type:
     _attributes:
-      bootpartition: Null
+      bootpartition: "false"
       bootpartsize: Null
       kernelcmdline:
         ignition.platform.id: azure
