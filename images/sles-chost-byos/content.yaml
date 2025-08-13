@@ -24,7 +24,7 @@ image:
         - _attributes:
             profiles: [GDC]
           _include:
-            - platforms/csp/sap-converged-cloud
+            - platforms/csp/gdc
         - _attributes:
             profiles: [OpenStack]
           _include:
