@@ -38,7 +38,7 @@ image:
       packages:
         - _attributes:
             type: image
-            profiles: [Aliyun,GCE,OpenStack,SAP-CCloud]
+            profiles: [Aliyun,GCE,OpenStack,GDC,SAP-CCloud]
           _include:
             - base/common
             - base/pubcloud
