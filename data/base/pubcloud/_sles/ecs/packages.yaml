@@ -1,2 +1,16 @@
 packages:
   _namespace_base_pubcloud_extra: Null
+  _namespace_base_pubcloud_ecs:
+    package:
+      - aaa_base-extras
+      - cifs-utils
+      - crash
+      - irqbalance
+      - krb5-client
+      - mozilla-nss-certs
+      - nfs-client
+      - nfs-kernel-server
+      - openldap2-client
+      - polkit-default-privs
+      - quota
+      - rsync

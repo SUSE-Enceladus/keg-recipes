@@ -8,3 +8,8 @@ packages:
       - sle-module-python3-release
       - sle-module-server-applications-release
       - sle-module-web-scripting-release
+  _namespace_base_pubcloud_sle15: Null
+  _namespace_base_pubcloud_sle15_cnf: Null
+  _namespace_base_pubcloud_sle15_haveged: Null
+  _namespace_base_pubcloud_sle15_sysvcompat: Null
+  _namespace_base_pubcloud_sle15_yast_schema: Null
