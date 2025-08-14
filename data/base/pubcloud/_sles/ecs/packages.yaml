@@ -1,6 +1,2 @@
 packages:
   _namespace_base_pubcloud_extra: Null
-  _namespace_base_pubcloud_billing_flavor_check: Null
-  _namespace_base_pubcloud_ecs:
-    package:
-      - guestrest
