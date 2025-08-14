@@ -1,7 +1,9 @@
 config:
   scripts:
-    base_pubcloud_sles_payg_zypp_max_connections:
+    base_pubcloud_sles_ecs_zypp_max_connections:
       - zypp-limit-concurrent-downloads
   services:
-    base_pubcloud_sles_payg_services:
+    base_pubcloud_sles_ecs_services:
+      - docker
+      - docker-img-store-setup
       - guestregister

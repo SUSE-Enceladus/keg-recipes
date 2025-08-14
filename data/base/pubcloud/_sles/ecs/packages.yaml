@@ -3,14 +3,22 @@ packages:
   _namespace_base_pubcloud_ecs:
     package:
       - aaa_base-extras
+      - blktrace
       - cifs-utils
       - crash
+      - cronie
+      - docker
+      - docker-img-store-setup
       - irqbalance
       - krb5-client
+      - less
+      - lockdev
       - mozilla-nss-certs
       - nfs-client
       - nfs-kernel-server
       - openldap2-client
       - polkit-default-privs
+      - psmisc
       - quota
       - rsync
+      - tcpd

@@ -2,4 +2,3 @@ packages:
   _namespace_platforms_ec2_sles_ecs:
     package:
       - amazon-ecs-init
-      - docker-img-store-setup

@@ -2,5 +2,3 @@ config:
   services:
     platforms_ec2_sles_ecs_services:
       - amazon-ecs
-      - docker
-      - docker-img-store-setup
