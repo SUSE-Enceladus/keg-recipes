@@ -9,6 +9,8 @@ packages:
       - cronie
       - docker
       - docker-img-store-setup
+      - glibc-locale
+      - hostinfo
       - irqbalance
       - krb5-client
       - less
@@ -16,7 +18,9 @@ packages:
       - mozilla-nss-certs
       - nfs-client
       - nfs-kernel-server
+      - nscd
       - openldap2-client
+      - patterns-base-minimal_base
       - polkit-default-privs
       - psmisc
       - quota
