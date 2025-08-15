@@ -1,8 +1,11 @@
 include-paths:
+  - _sle15/sp4
   - _sle15/sp5
   - _sle15/sp6
+  - _sles/15-sp4
   - _sles/15-sp5
   - _sles/15-sp6
+  - _sles/payg/15-sp4
   - _sles/payg/15-sp5
   - _sles/payg/15-sp6
 image:

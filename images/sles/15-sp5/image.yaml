@@ -1,9 +1,10 @@
 include-paths:
   - _sle15/sp4
   - _sle15/sp5
-  - _sles/15-sp3
   - _sles/15-sp4
   - _sles/15-sp5
+  - _sles/payg/15-sp4
+  - _sles/payg/15-sp5
 image:
   _attributes:
     name: SLES15-SP5
