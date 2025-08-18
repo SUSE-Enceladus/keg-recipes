@@ -1,6 +1,9 @@
+image-config-comments:
+  obs-multibuild: Null
 image:
   profiles: Null
   _namespace_preferences_root: Null
+  _namespace_packages_root: Null
   preferences:
     - _include:
         - base/common
