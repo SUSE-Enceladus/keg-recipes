@@ -33,3 +33,7 @@ config:
         enable: False
       - name: kbd
         enable: False
+      - name: mdadm
+        enable: False
+      - name: lvm2-monitor
+        enable: False
