@@ -44,12 +44,14 @@ packages:
       - expect
       - fping
       - glibc-i18ndata
+      - glibc-locale
       - iproute2
       - irqbalance
       - krb5-client
       - libnfsidmap1
       - libnsl1
       - lvm2
+      - man
       - man-pages
       - mozilla-nss-certs
       - nfs-kernel-server

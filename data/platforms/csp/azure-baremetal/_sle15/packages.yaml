@@ -7,9 +7,9 @@ packages:
       - at
       - autofs
       - blktrace
+      - crash
       - cronie
       - deltarpm
-      - docker
       - lockdev
       - netcat-openbsd
       - patterns-base-minimal_base
