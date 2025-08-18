@@ -7,7 +7,6 @@ image:
   preferences:
     - _include:
         - base/common
-        - base/pubcloud
         - platforms/csp/azure-baremetal/vli
   packages:
     - _attributes:
@@ -18,19 +17,16 @@ image:
         type: image
       _include:
         - base/common
-        - base/pubcloud
         - platforms/csp/azure-baremetal/vli
         - products
 config:
   - _include:
       - base/common
-      - base/pubcloud
       - platforms/csp/azure-baremetal/vli
       - products
 archive:
   - name: root.tar.gz
     _include:
       - base/common
-      - base/pubcloud
       - platforms/csp/azure-baremetal/vli
       - products
