@@ -7,7 +7,6 @@ packages:
       - at
       - autofs
       - blktrace
-      - crash
       - cronie
       - deltarpm
       - lockdev

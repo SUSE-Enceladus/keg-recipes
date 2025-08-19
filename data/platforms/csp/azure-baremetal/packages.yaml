@@ -3,7 +3,9 @@ packages:
     package:
       - acl
       - azure-li-services
+      - crash
       - gconf2
+      - glibc-locale
       - hyper-v
       - icmpinfo
       - kernel-default
