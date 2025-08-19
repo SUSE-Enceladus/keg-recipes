@@ -50,8 +50,6 @@ packages:
       - iproute2
       - irqbalance
       - krb5-client
-      - libnfsidmap1
-      - libnsl1
       - lvm2
       - man
       - man-pages
@@ -67,7 +65,6 @@ packages:
       - screen
       - strace
       - supportutils-plugin-suse-public-cloud
-      - systemd-sysvcompat
       - system-user-mail
       - tcsh
       - wget
