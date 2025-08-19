@@ -17,6 +17,5 @@ config:
   scripts:
     products_sl_micro_scripts:
       - snapper-config
-      - snapper-microos-config
     products_sl_micro_selinux:
       - selinux-enforce

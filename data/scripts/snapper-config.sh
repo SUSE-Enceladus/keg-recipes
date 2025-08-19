@@ -3,7 +3,9 @@
 #-------------------------------------
 if [ "${kiwi_btrfs_root_is_snapshot-false}" = 'true' ]; then
         echo "creating initial snapper config ..."
-        cp /usr/share/snapper/config-templates/default /etc/snapper/configs/root
+        snapper_templ=/usr/share/snapper/config-templates/default
+        test -f $snapper_templ || snapper_templ=/etc/snapper/config-templates/default
+        cp $snapper_templ /etc/snapper/configs/root
         baseUpdateSysConfig /etc/sysconfig/snapper SNAPPER_CONFIGS root
 
         # Adjust parameters
