@@ -61,7 +61,6 @@ packages:
       - quota
       - rsync
       - rsyslog
-      - scout-command-not-found
       - screen
       - strace
       - supportutils-plugin-suse-public-cloud
