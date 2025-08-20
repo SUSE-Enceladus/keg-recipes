@@ -1,21 +1,7 @@
 config:
-  files:
-    base_common_files_fstab_overlaysfs:
-      - path: /etc/fstab.script
-        permissions: a+x
-        content: |-
-          #!/bin/sh
-          # The %post script can't edit /etc/fstab sys due to https://github.com/OSInside/kiwi/issues/945
-          # so use the kiwi custom hack
-          set -eux
-          /usr/sbin/setup-fstab-for-overlayfs
-          # If /var is on a different partition than /...
-          if [ "$(findmnt -snT / -o SOURCE)" != "$(findmnt -snT /var -o SOURCE)" ]; then
-            # ... set options for autoexpanding /var
-            gawk -i inplace '$2 == "/var" { $4 = $4",x-growpart.grow,x-systemd.growfs" } { print $0 }' /etc/fstab
-          fi
   scripts:
     products_sl_micro_scripts:
       - snapper-config
+      - setup-fstab-overlayfs
     products_sl_micro_selinux:
       - selinux-enforce
