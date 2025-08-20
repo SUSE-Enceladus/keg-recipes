@@ -4,7 +4,7 @@ include-paths:
   - _sl-micro/payg/6.0
 image:
   _attributes:
-    name: SL-Micro
-    displayname: SL-Micro
+    name: SL-Micro-6-0
+    displayname: SL-Micro-6-0
   description:
     specification: SUSE Linux Micro 6.0 guest image
