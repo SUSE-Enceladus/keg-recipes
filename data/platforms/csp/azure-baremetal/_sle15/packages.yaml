@@ -62,3 +62,7 @@ packages:
   _namespace_base_pubcloud_sle15_yast_schema:
     package:
       - yast2-schema-default
+  _namespace_platforms_csp_azure_baremetal_fuse:
+    package:
+      # required to fulfil depenency on /usr/bin/fusermount of xdg-desktop-portal in SP3
+      - fuse
