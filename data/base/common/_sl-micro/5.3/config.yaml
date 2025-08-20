@@ -1,7 +1,8 @@
 config:
   services:
-    base_common_micro_netsys:
+    base_common_services:
       # work around wicked being pulled in (bsc#1248284)
+      - chronyd
       - name: wicked
         enable: False
       - NetworkManager
