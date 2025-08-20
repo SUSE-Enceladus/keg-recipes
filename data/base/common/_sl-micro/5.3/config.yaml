@@ -1,0 +1,7 @@
+config:
+  services:
+    base_common_micro_netsys:
+      # work around wicked being pulled in (bsc#1248284)
+      - name: wicked
+        enable: False
+      - NetworkManager
