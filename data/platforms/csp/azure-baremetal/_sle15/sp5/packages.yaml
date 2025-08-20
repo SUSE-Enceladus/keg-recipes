@@ -5,3 +5,4 @@ packages:
   _namespace_base_pubcloud_sle15_tpm:
     package:
       - tpm2.0-tools
+  _namespace_platforms_csp_azure_baremetal_fuse: Null
