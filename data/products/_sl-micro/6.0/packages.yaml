@@ -6,8 +6,16 @@ packages:
     package:
       - patterns-base-transactional
       - patterns-micro-defaults
+      - acl
       - ca-certificates
+      - cockpit-kdump
+      - cockpit-podman
+      - cockpit-selinux
+      - cockpit-system
+      - cockpit-tukit
+      - cockpit-ws
       - less
+      - libcontainers-sles-mounts
       - NetworkManager-tui
       - parted
       - podman
