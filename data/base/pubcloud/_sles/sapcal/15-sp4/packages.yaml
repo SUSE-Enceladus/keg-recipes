@@ -7,6 +7,9 @@ packages:
       - java-1_8_0-ibm-fonts
       - java-1_8_0-ibm-plugin
       - _attributes:
+          name: libcurl4-32bit
+          arch: x86_64
+      - _attributes:
           name: libidn11-32bit
           arch: x86_64
       - libicu60_2

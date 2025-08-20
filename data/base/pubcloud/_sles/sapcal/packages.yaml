@@ -21,9 +21,6 @@ packages:
       - _attributes:
           name: libcom_err2-32bit
           arch: x86_64
-      - _attributes:
-          name: libcurl4-32bit
-          arch: x86_64
       - libcurl-devel
       - libidn-tools
       - libgcc_s1
