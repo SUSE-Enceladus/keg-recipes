@@ -1,0 +1,8 @@
+config:
+  scripts:
+    base_pubcloud_sles_tomcat_zypp_max_connections:
+      - zypp-limit-concurrent-downloads
+  services:
+    base_pubcloud_sles_tomcat_services:
+      - guestregister
+      - tomcat

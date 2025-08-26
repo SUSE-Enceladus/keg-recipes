@@ -1,0 +1,11 @@
+include-paths:
+  - _slfo/1.1
+  - _slfo/1.2
+  - _sles/16.0
+  - _sles/tomcat/16.0
+image:
+  _attributes:
+    name: SLES-16.0-Tomcat
+    displayname: SLES-16.0-Tomcet
+  description:
+    specification: "SUSE Linux Enterprise Server 16.0 guest image with Tomcat"

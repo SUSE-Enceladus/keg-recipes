@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubclod_sles_tomcat:
+    package:
+      - tomcat
