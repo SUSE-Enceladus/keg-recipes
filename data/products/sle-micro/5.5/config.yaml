@@ -3,3 +3,4 @@ config:
     sle-micro-services:
       - boot.device-mapper
       - docker
+      - wicked

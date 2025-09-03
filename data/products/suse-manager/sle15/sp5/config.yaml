@@ -12,3 +12,4 @@ config:
     suma-services:
       - name: transactional-update.timer
         enable: False
+      - wicked
