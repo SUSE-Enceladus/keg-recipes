@@ -1,9 +1,0 @@
-{OS_PRETTY_NAME} {ARCH} (64-bit)
-{CAPTION}
-
-{INCLUDES}
-Management and Config: https://www.suse.com/suse-in-the-cloud-basics
-Documentation: https://www.suse.com/documentation/sles-{OS_VERSION_MAJOR}/
-Community: https://community.suse.com/
-
-Have a lot of fun...
