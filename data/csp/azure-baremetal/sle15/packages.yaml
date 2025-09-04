@@ -53,3 +53,7 @@ packages:
   _namespace_azure_baremetal_firewall:
     package:
       - SuSEfirewall2
+  _namespace_azure_baremetal_fuse:
+    package:
+      # dependency of xdg-desktop-portal <=SP4 that cannot be auto-resolved
+      - fuse

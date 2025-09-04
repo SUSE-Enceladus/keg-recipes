@@ -6,6 +6,7 @@ packages:
       - ca-certificates
       - ca-certificates-mozilla
       - cockpit-system
+      - cockpit-wicked
       - cockpit-ws
       - cockpit
       - conntrack-tools
@@ -23,8 +24,6 @@ packages:
       - libnss_usrfiles2
       - libpwquality-tools
       - microos-tools
-      - NetworkManager
-      - NetworkManager-branding-SLE
       - parted
       - pkgconfig
       - policycoreutils
@@ -40,6 +39,7 @@ packages:
       - transactional-update
       - transactional-update-zypp-config
       - vim-small
+      - wicked
       - yast2-logs
       - zypper-needs-restarting
   _namespace_yast2_schema:
