@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_micro_motd_byos:
+    _include_overlays:
+      - motd-mod-transactional-byos
