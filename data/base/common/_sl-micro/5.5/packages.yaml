@@ -1,0 +1,4 @@
+packages:
+  # no common default network system for SL Micro 5.5, because public cloud
+  # uses wicked instead of NetworkManager
+  _namespace_base_common_netsys: Null

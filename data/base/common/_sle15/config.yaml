@@ -2,4 +2,4 @@ config:
   services:
     base_common_services:
       - chronyd
-      - NetworkManager
+      - wicked

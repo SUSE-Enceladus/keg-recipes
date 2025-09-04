@@ -1,0 +1,5 @@
+config:
+  services:
+    base_pubcloud_common_services:
+      - chronyd
+      - wicked

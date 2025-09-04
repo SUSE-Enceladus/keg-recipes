@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubcloud_micro_netsys:
+    package:
+      - cockpit-wicked
+      - wicked
