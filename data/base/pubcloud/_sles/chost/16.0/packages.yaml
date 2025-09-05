@@ -4,3 +4,7 @@ packages:
     package:
       - docker
       - docker-buildx
+  _namespace_base_pubcloud_chost_fips:
+    package:
+      - patterns-base-fips
+      - apparmor-utils

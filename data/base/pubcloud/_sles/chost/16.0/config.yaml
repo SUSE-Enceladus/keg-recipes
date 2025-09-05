@@ -1,0 +1,4 @@
+config:
+  scripts:
+    base_pubcloud_chost_scripts_fips:
+      - apparmor-enable-complain
