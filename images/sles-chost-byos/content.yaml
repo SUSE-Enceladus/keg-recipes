@@ -40,7 +40,6 @@ image:
             type: image
             profiles: [Aliyun,GCE,OpenStack,GDC,SAP-CCloud]
           _include:
-            - base/common
             - base/pubcloud
           archive:
             - _attributes:
