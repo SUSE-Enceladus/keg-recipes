@@ -1,8 +1,10 @@
 preferences:
   type:
-    # CHOST stays on btrfs for time beeing
+    # CHOST stays on btrfs for time being
     _attributes:
       btrfs_quota_groups: Null
       btrfs_root_is_snapshot: Null
       filesystem: xfs
+      kernelcmdline:
+        fips: 1
     systemdisk: Null
