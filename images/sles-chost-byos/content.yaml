@@ -20,7 +20,7 @@ image:
         - _attributes:
             profiles: [Aliyun]
           _include:
-            - platforms/openstack
+            - platforms/csp/aliyun
         - _attributes:
             profiles: [GDC]
           _include:
