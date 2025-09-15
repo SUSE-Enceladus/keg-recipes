@@ -26,7 +26,6 @@ packages:
       - systemd
       - terminfo
       - timezone
-      - tpm2.0-tools
       - udev
       - which
       - xfsprogs
