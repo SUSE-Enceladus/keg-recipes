@@ -4,6 +4,3 @@ config:
       - path: /etc/os-release
         append: True
         content: IMAGE_ID="sles-sap"
-  services:
-    base_pubcloud_sles_sap_payg_services:
-      - guestregister

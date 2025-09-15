@@ -2,3 +2,6 @@ config:
   scripts:
     base_pubcloud_sles_sap_payg_zypp_max_connections:
       - zypp-limit-concurrent-downloads
+  services:
+    base_pubcloud_sles_sap_payg_services:
+      - guestregister
