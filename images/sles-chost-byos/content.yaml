@@ -59,7 +59,7 @@ image:
             - platforms/csp/gdc
           archive:
             - _attributes:
-                name: gce.tar.gz
+                name: gdc.tar.gz
         - _attributes:
             type: image
             profiles: [OpenStack]
