@@ -1,7 +1,6 @@
 packages:
   _namespace_base_pubcloud_sles_payg_modrel:
     package:
-      - sle-module-basesystem-release
       - sle-module-containers-release
       - sle-module-desktop-applications-release
       - sle-module-development-tools-release

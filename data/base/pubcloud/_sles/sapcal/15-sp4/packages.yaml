@@ -19,7 +19,6 @@ packages:
       - xrdp
   _namespace_base_pubcloud_sapcal_modules:
     package:
-      - sle-module-basesystem-release
       - sle-module-containers-release
       - sle-module-desktop-applications-release
       - sle-module-development-tools-release
