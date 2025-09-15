@@ -7,6 +7,6 @@ config:
   scripts:
     base_pubcloud_sapcal_zypp_max_connections:
       - zypp-limit-concurrent-downloads
-  service:
+  services:
     base_pubcloud_sapcal_services:
       - guestregister
