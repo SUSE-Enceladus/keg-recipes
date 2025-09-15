@@ -11,4 +11,4 @@ config:
       - chost-strip-image
   services:
     base_pubcloud_chost_services:
-      - docker
+      - containerd
