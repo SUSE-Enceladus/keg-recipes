@@ -1,5 +1,0 @@
-packages:
-  _namespace_platforms_csp_sles_btrfs:
-    package:
-      - btrfsprogs
-      - btrfsmaintenance

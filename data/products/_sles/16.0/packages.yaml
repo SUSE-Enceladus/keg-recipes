@@ -3,3 +3,6 @@ packages:
     package:
       - release-notes-sles-160
       - SLES-release
+  _namespace_products_sles_selinux:
+    package:
+      - selinux-policy-targeted

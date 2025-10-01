@@ -1,0 +1,3 @@
+config:
+  scripts:
+    products_sles_selinux: Null

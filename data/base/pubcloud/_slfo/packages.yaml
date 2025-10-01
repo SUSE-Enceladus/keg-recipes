@@ -1,6 +1,8 @@
 packages:
   _namespace_base_pubcloud_slfo:
     package:
+      - btrfsprogs
+      - btrfsmaintenance
       - tpm2.0-tools
   _namespace_base_pubcloud_slfo_podman:
     package:

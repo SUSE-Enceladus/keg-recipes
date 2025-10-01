@@ -1,0 +1,4 @@
+packages:
+  _namespace_products_sles_sap_selinux:
+    package:
+      - selinux-policy-sapenablement

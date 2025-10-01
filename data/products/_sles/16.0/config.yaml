@@ -1,0 +1,4 @@
+config:
+  scripts:
+    products_sles_selinux:
+      - selinux-enforce

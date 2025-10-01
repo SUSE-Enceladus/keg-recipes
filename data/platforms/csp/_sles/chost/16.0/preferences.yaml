@@ -1,10 +1,12 @@
 preferences:
   type:
-    # CHOST stays on btrfs for time being
+    # CHOST stays on xfs for time being
     _attributes:
       btrfs_quota_groups: Null
       btrfs_root_is_snapshot: Null
       filesystem: xfs
       kernelcmdline:
         fips: 1
+        security: Null
+        selinux: Null
     systemdisk: Null

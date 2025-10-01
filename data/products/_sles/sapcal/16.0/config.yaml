@@ -1,0 +1,4 @@
+config:
+  scripts:
+    products_sles_sap_selinux:
+      - selinux-permissive

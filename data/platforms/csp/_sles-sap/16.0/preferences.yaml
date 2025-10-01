@@ -4,6 +4,8 @@ preferences:
       btrfs_quota_groups: "true"
       btrfs_root_is_snapshot: "true"
       filesystem: btrfs
+      kernelcmdline:
+        security: selinux
     systemdisk:
       volume:
         - _attributes:
