@@ -1,4 +1,0 @@
-archive:
-  _namespace_base_pubcloud_sles_motd_ondemand:
-    _include_overlays:
-      - motd-mod-mgmt
