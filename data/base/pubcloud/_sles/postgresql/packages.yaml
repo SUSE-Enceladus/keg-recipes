@@ -3,3 +3,5 @@ packages:
     package:
       - postgresql
       - postgresql-server
+      # include explicitly to avoid postgresql17-devel-mini
+      - libpq
