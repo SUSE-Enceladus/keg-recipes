@@ -1,0 +1,4 @@
+config:
+  services:
+    base_pubcloud_sles_mariadb_services:
+      - mariadb

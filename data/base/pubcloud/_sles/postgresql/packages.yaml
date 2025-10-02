@@ -1,0 +1,5 @@
+packages:
+  _namespace_base_pubclod_sles_postgresql:
+    package:
+      - postgresql
+      - postgresql-server
