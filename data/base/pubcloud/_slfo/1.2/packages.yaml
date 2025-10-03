@@ -1,0 +1,12 @@
+packages:
+  _namespace_base_pubcloud_cockpit:
+    package:
+      - cockpit
+      - cockpit-networkmanager
+      - cockpit-packages
+      - cockpit-podman
+      - cockpit-repos
+      - cockpit-selinux
+      - cockpit-storaged
+      - cockpit-subscriptions
+      - cockpit-ws

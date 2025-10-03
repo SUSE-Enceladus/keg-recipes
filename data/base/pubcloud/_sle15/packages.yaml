@@ -22,30 +22,54 @@ packages:
       - tcpd
       - tcpdump
       - telnet
+      - yast2
+      - yast2-add-on
+      - yast2-audit-laf
+      - yast2-bootloader
+      - yast2-core
+      - yast2-country
+      - yast2-country-data
       - yast2-dhcp-server
       - yast2-dns-server
+      - yast2-firewall
       - yast2-ftp-server
+      - yast2-hardware-detection
       - yast2-http-server
+      - yast2-iscsi-client
       - yast2-iscsi-lio-server
+      - yast2-kdump
+      - yast2-ldap
       - yast2-mail
+      - yast2-network
       - yast2-nfs-client
       - yast2-nfs-common
       - yast2-nfs-server
       - yast2-nis-client
       - yast2-nis-server
+      - yast2-ntp-client
       - yast2-online-update
       - yast2-online-update-frontend
+      - yast2-packager
+      - yast2-pam
       - yast2-perl-bindings
       - yast2-pkg-bindings
       - yast2-printer
+      - yast2-registration
       - yast2-samba-client
       - yast2-samba-server
+      - yast2-security
       - yast2-squid
       - yast2-sudo
       - yast2-support
       - yast2-sysconfig
       - yast2-tftp-server
+      - yast2-transfer
+      - yast2-trans-stats
       - yast2-tune
+      - yast2-update
+      - yast2-users
+      - yast2-xml
+      - yast2-ycp-ui-bindings
       - yp-tools
       - zypper-lifecycle-plugin
   _namespace_base_pubcloud_sle15_cnf:

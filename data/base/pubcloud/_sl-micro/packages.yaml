@@ -1,6 +1,3 @@
 packages:
   _namespace_base_pubcloud_debug: Null
   _namespace_base_pubcloud_extra: Null
-  _namespace_base_pubcloud_sle15_yast_schema:
-    package:
-      - yast2-schema-micro

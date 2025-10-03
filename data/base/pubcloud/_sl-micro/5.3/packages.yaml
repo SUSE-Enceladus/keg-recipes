@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_pubcloud_sle15_yast_schema:
+    package:
+      - yast2-schema-micro
