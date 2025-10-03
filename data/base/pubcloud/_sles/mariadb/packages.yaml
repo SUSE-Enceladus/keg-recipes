@@ -3,3 +3,4 @@ packages:
     package:
       - mariadb
       - mariadb-client
+      - mariadb-tools
