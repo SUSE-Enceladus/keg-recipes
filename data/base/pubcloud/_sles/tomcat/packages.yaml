@@ -1,4 +1,9 @@
 packages:
   _namespace_base_pubclod_sles_tomcat:
     package:
-      - tomcat
+      - tomcat11
+      - tomcat11-admin-webapps
+      - tomcat11-el-6_0-api
+      - tomcat11-jsp-4_0-api
+      - tomcat11-servlet-6_1-api
+      - tomcat11-webapps
