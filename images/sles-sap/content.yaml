@@ -6,14 +6,14 @@ image:
             name: Azure
             description: Configuration for Azure third party
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
         - _attributes:
             name: Azure-3P
             description: Configuration for Azure third party
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
   _namespace_preferences_root:
     _namespace_preferences_azure:
       preferences:

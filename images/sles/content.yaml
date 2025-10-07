@@ -6,20 +6,20 @@ image:
             name: Azure-Basic
             description: Azure basic configuration
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
         - _attributes:
             name: Azure-Standard
             description: Azure standard configuration
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
         - _attributes:
             name: Azure-3P
             description: Azure third party configuration
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
   _namespace_preferences_root:
     _namespace_preferences_azure:
       preferences:

@@ -17,22 +17,22 @@ image:
             name: Azure
             description: Configuration for Microsoft Azure
           requires:
-            _attributes:
-              profile: azure-base
+            - _attributes:
+                profile: azure-base
     _namespace_profiles_standard:
       profile:
         - _attributes:
             name: EC2
             description: Configuration for Amazon EC2
           requires:
-            _attributes:
-              profile: ec2-base
+            - _attributes:
+                profile: ec2-base
         - _attributes:
             name: GCE
             description: Configuration for Google Compute
           requires:
-            _attributes:
-              profile: gce-base
+            - _attributes:
+                profile: gce-base
   preferences:
     - _include:
         - base/common
