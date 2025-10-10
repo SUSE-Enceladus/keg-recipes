@@ -5,4 +5,4 @@ packages:
       - SLES-release
   _namespace_products_sles_selinux:
     package:
-      - selinux-policy-targeted
+      - patterns-base-selinux
