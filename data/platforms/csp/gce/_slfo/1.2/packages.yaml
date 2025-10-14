@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_gce_sdk:
+    package:
+      - google-sdk-image

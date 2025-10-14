@@ -6,3 +6,7 @@ packages:
   _namespace_platforms_azure_metadata:
     package:
       - python-azuremetadata
+  _namespace_platforms_azure_tools:
+    package:
+      - az-cli-cmd
+      - az-sdk-image

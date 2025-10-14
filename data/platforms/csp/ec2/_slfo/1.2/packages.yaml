@@ -2,3 +2,6 @@ packages:
   _namespace_platforms_ec2_metadata:
     package:
       - python-ec2metadata
+  _namespace_platforms_ec2_tools:
+    package:
+      - aws-cli-cmd
