@@ -1,5 +1,5 @@
 packages:
-  _namespace_platforms_ec2_sle15:
+  _namespace_platforms_ec2_tools:
     package:
       - aws-cli
       - python311-ec2imgutils
