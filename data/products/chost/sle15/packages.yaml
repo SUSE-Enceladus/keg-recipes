@@ -32,7 +32,6 @@ packages:
     package:
       - btrfsmaintenance
       - btrfsprogs
-      - docker-img-store-setup
   _namespace_chost_fcoe_utils:
     package:
       - fcoe-utils

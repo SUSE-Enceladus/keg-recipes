@@ -11,3 +11,6 @@ config:
   scripts:
     chost-scripts:
       - chost-add-variant
+  services:
+    chost-services:
+      - containerd
