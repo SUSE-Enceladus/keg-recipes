@@ -1,2 +1,3 @@
 Defaults !targetpw
 ALL   ALL=(ALL) !ALL
+root ALL=(ALL:ALL) ALL
