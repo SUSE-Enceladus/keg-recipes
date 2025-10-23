@@ -12,6 +12,7 @@ packages:
       - kdump
       - openssh
       - parted
+      - procps
       - sudo
       - supportutils
       - suse-build-key
