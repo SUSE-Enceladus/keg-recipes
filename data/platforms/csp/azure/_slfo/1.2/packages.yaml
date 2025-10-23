@@ -1,7 +1,6 @@
 packages:
   _namespace_platforms_azure_slfo:
     package:
-      - azure-vm-utils
       - himmelblau
   _namespace_platforms_azure_metadata:
     package:
