@@ -24,6 +24,7 @@ packages:
       - cloud-netconfig-azure
   _namespace_azure_tools:
     package:
+      - azure-vm-utils
       - lsscsi
       - python3-azuremetadata
   _namespace_azure_registration:
