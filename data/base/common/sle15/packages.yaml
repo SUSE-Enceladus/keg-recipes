@@ -6,6 +6,7 @@ packages:
       - chrony
       - dosfstools
       - dracut
+      - e2fsprogs
       - grub2
       - hostname
       - iputils
