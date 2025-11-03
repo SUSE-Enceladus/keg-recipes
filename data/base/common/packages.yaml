@@ -17,6 +17,7 @@ packages:
       - procps
       - rpm
       - shadow
+      - sudo
       - systemd
       - terminfo-base
       - timezone
