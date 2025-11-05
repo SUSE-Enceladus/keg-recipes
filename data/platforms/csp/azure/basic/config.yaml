@@ -1,6 +1,0 @@
-config:
-  files:
-    platforms_azure_basic:
-      - path: /etc/os-release
-        append: True
-        content: VARIANT_ID="sles-basic"
