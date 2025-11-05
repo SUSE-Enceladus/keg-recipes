@@ -1,4 +1,9 @@
 config:
+  files:
+    base_pubcloud_sles_variant:
+      - path: /etc/os-release
+        append: True
+        content: IMAGE_ID="sles-app-image"
   services:
     base_pubcloud_sles_postgresql_services:
       - postgresql
