@@ -2,6 +2,7 @@ packages:
   _namespace_azure_regionsrv_client_addon: Null
   _namespace_azure_tools:
     package:
+      - azure-vm-utils
       - lsscsi
       - python3-azuremetadata
   _namespace_azure_waagent_config:
