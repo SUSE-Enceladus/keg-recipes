@@ -13,6 +13,9 @@ image:
       - _attributes:
           name: GCE
           description: GCE configuration
+      - _attributes:
+          name: GCE-3P
+          description: GCE third party configuration
   preferences:
     - _include:
         - base/common
@@ -31,6 +34,9 @@ image:
     - _attributes:
         profiles: [GCE]
       _include: csp/gce/settings/sap/ondemand
+    - _attributes:
+        profiles: [GCE-3P]
+      _include: csp/gce/settings/sap
   packages:
     - _attributes:
        type: bootstrap
@@ -61,7 +67,7 @@ image:
             name: ec2.tar.gz
     - _attributes:
         type: image
-        profiles: [GCE]
+        profiles: [GCE,GCE-3P]
       _include:
         - csp/gce/settings/sap/ondemand
       archive:
@@ -79,7 +85,7 @@ config:
   - profiles: [EC2]
     _include:
       - csp/ec2/settings/sap/ondemand
-  - profiles: [GCE]
+  - profiles: [GCE,GCE-3P]
     _include:
       - csp/gce/settings/sap/ondemand
 archive:
