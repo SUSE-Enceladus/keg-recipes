@@ -20,6 +20,14 @@ image:
           requires:
             - _attributes:
                 profile: azure-base
+    _namespace_profiles_standard:
+      profile:
+        - _attributes:
+            name: GCE-3P
+            description: GCE third party configuration
+          requires:
+            - _attributes:
+                profile: gce-base
   _namespace_preferences_root:
     _namespace_preferences_azure:
       preferences:
@@ -57,3 +65,17 @@ image:
           _include:
             - platforms/csp/azure/aarch64
             - platforms/csp/azure/3p
+    _namespace_preferences_standard:
+      preferences:
+        - _attributes:
+            profiles: [GCE-3P]
+            arch: x86_64
+          _include:
+            - platforms/csp/gce/x86_64
+            - platforms/csp/gce/3p
+        - _attributes:
+            profiles: [GCE-3P]
+            arch: aarch64
+          _include:
+            - platforms/csp/gce/aarch64
+            - platforms/csp/gce/3p
