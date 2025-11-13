@@ -20,7 +20,7 @@ image:
           requires:
             - _attributes:
                 profile: azure-base
-    _namespace_profiles_standard:
+    _namespace_profiles_gce_3p:
       profile:
         - _attributes:
             name: GCE-3P
@@ -65,7 +65,7 @@ image:
           _include:
             - platforms/csp/azure/aarch64
             - platforms/csp/azure/3p
-    _namespace_preferences_standard:
+    _namespace_preferences_gce_3p:
       preferences:
         - _attributes:
             profiles: [GCE-3P]
