@@ -9,6 +9,7 @@ packages:
       - e2fsprogs
       - grub2
       - hostname
+      - iptables
       - iputils
       - kdump
       - openssh
@@ -34,7 +35,7 @@ packages:
       - rpm
   _namespace_common_suse_connect:
     package:
-      - SUSEConnect
+      - suseconnect-ng
   _namespace_common_zypper_migration:
     package:
       - zypper-migration-plugin
