@@ -31,6 +31,8 @@ config:
         enable: False
       - name: display-manager
         enable: False
+      - name: firewalld
+        enable: False
       - name: kbd
         enable: False
       - name: mdadm
