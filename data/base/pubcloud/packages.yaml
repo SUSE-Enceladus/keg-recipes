@@ -1,6 +1,7 @@
 packages:
   _namespace_base_pubcloud_common:
     package:
+      - iptables
       - supportutils
       - supportutils-plugin-suse-public-cloud
   _namespace_base_pubcloud_extra:

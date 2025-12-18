@@ -16,7 +16,6 @@ packages:
       - fontconfig
       - fonts-config
       - hostinfo
-      - iptables
       - ksh
       - libyui-ncurses-pkg
       - nscd
