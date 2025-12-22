@@ -28,6 +28,7 @@ config:
       - NetworkManager
       - transactional-update-cleanup.timer
       - sshd
+      - suseconnect-keepalive.timer
       - name: boot.efivars
         enable: False
       - name: boot.lvm
