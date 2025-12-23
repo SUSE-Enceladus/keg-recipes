@@ -35,7 +35,6 @@ image:
             arch: x86_64
           _include:
             - platforms/csp/azure/3p
-  _namespace_preferences_root:
     _namespace_preferences_gce_3p:
       preferences:
         - _attributes:
