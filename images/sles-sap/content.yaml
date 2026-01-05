@@ -29,12 +29,13 @@ image:
             profiles: [Azure]
             arch: x86_64
           _include:
-            - platforms/csp/azure
+            - platforms/csp/azure/x86_64
         - _attributes:
             profiles: [Azure-3P]
             arch: x86_64
           _include:
             - platforms/csp/azure/3p
+            - platforms/csp/azure/x86_64
     _namespace_preferences_gce_3p:
       preferences:
         - _attributes:
@@ -42,3 +43,4 @@ image:
             arch: x86_64
           _include:
             - platforms/csp/gce/3p
+            - platforms/csp/gce/x86_64
