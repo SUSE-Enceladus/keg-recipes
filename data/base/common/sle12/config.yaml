@@ -28,6 +28,7 @@ config:
     common-services:
       - haveged
       - sshd
+      - suseconnect-keepalive.timer
   sysconfig:
     common-sysconfig:
       - file: /etc/sysconfig/console
