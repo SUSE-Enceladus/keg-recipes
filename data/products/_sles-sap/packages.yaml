@@ -1,6 +1,12 @@
 packages:
   _namespace_products_sles_sap_base:
     package:
+      - patterns-base-base
+      - patterns-base-selinux
+      - patterns-sap-base_sap_server
+      - selinux-policy-sapenablement
+  _namespace_products_sles_sap_extra:
+    package:
       - bonnie
       - cluster-md-kmp-default
       - cpupower
@@ -23,8 +29,6 @@ packages:
       - libyui-qt
       - ocfs2-kmp-default
       - patterns-ha-ha_sles
-      - patterns-sles-base
-      - patterns-sles-sap_server
       - sap-suse-cluster-connector
       - saptune
       - SLES_SAP-release

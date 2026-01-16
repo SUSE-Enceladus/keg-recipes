@@ -1,4 +1,8 @@
 packages:
+  _namespace_products_sles_sap_base:
+    package:
+      - patterns-sles-base
+      - patterns-sles-sap_server
   _namespace_products_sles_sap_sle15:
     package:
       - bing

@@ -1,5 +1,0 @@
-packages:
-  _namespace_products_sles_sap_selinux:
-    package:
-      - patterns-base-selinux
-      - selinux-policy-sapenablement
