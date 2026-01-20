@@ -14,3 +14,26 @@ image:
     displayname: SUSE-Multi_Linux-Manager-5-1
   description:
     specification: "SUSE Multi-Linux Manager Server 5.1 PAYG guest image"
+  _namespace_packages_root:
+    _namespace_packages_mlm_adapter_azure:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [Azure-llc]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-1-microsoft-x86-llc
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-1-microsoft-arm64-llc
+                arch: aarch64
+        - _attributes:
+            type: image
+            profiles: [Azure-ltd]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-1-microsoft-x86-ltd
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-1-microsoft-arm64-ltd
+                arch: aarch64

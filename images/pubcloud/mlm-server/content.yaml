@@ -1,0 +1,78 @@
+image:
+  profiles:
+    _namespace_profiles_azure:
+      profile:
+        - _attributes:
+            name: Azure-llc
+            description: Azure configuration for Non-EU/Non-UK (LLC) offers
+          requires:
+            - _attributes:
+                profile: azure-base
+        - _attributes:
+            name: Azure-ltd
+            description: Azure configuration for EU/UK (Ltd) offers
+          requires:
+            - _attributes:
+                profile: azure-base
+    _namespace_profiles_standard:
+      profile:
+        - _attributes:
+            name: EC2-llc
+            description: EC2 configuration for Non-EU/Non-UK (LLC) offers
+          requires:
+            - _attributes:
+                profile: ec2-base
+        - _attributes:
+            name: EC2-ltd
+            description: EC2 configuration for EU/UK (Ltd) offers
+          requires:
+            - _attributes:
+                profile: ec2-base
+  _namespace_preferences_root:
+    _namespace_preferences_azure:
+      preferences:
+        - _attributes:
+            profiles: [Azure-llc,Azure-ltd]
+            arch: x86_64
+          _include:
+            - platforms/csp/azure/x86_64
+        - _attributes:
+            profiles: [Azure-llc,Azure-ltd]
+            arch: x86_64
+          _include:
+            - platforms/csp/azure/aarch64
+    _namespace_preferences_standard:
+      preferences:
+        - _attributes:
+            profiles: [EC2-llc,EC2-ltd]
+            arch: x86_64
+          _include:
+            - platforms/csp/ec2/x86_64
+        - _attributes:
+            profiles: [EC2-llc,EC2-ltd]
+            arch: x86_64
+          _include:
+            - platforms/csp/ec2/aarch64
+  _namespace_packages_root:
+    _namespace_packages_mlm_adapter_ec2:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [EC2-llc]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-amazon-x86-llc
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-amazon-arm64-llc
+                arch: aarch64
+        - _attributes:
+            type: image
+            profiles: [EC2-ltd]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-amazon-x86-ltd
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-amazon-arm64-ltd
+                arch: aarch64
