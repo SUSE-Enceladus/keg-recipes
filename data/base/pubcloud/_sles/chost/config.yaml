@@ -9,6 +9,8 @@ config:
   scripts:
     base_pubcloud_chost_scripts:
       - chost-strip-image
+    base_pubcloud_chost_scripts_fips:
+      - apparmor-enable-complain
   services:
     base_pubcloud_chost_services:
       - containerd

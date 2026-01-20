@@ -28,3 +28,7 @@ packages:
       - socat
       - tcpdump
       - wget
+  _namespace_base_pubcloud_chost_fips:
+    package:
+      - patterns-base-fips
+      - apparmor-utils

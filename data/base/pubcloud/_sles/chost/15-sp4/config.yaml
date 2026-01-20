@@ -6,3 +6,5 @@ config:
         content: |
           VARIANT_ID="chost"
           VARIANT_VERSION="`date +'%Y%m%d'`"
+  scripts:
+    base_pubcloud_chost_scripts_fips: Null
