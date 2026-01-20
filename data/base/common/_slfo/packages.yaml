@@ -1,6 +1,5 @@
 packages:
   _namespace_base_common_slfo:
     package:
-      - grub2-branding-SLE
       - NetworkManager-branding-SLE
       - suseconnect-ng

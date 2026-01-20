@@ -1,0 +1,10 @@
+archive:
+  _namespace_products_mlm_motd:
+    _include_overlays:
+      - motd-mod-os-header
+      - motd-mod-mlm-standard-msg
+  _namespace_products_mlm_server_rebootmgr_config:
+    _include_overlays:
+      - mlm-rebootmgr-config
+      - mlm-tukit-conf
+      - systemd-preset-disable-transaction-update

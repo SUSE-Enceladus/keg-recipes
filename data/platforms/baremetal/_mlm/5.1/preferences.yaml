@@ -1,0 +1,4 @@
+preferences:
+  locale: en_US
+  packagemanager: zypper
+  version: 5.1.0

@@ -1,5 +1,9 @@
 packages:
   _namespace_platforms_baremetal_x86:
     package:
+      - bcm43xx-firmware
       - dracut-kiwi-oem-dump
       - dracut-kiwi-oem-repart
+      - wireless-regdb
+      - wireless-tools
+      - wpa_supplicant

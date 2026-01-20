@@ -1,0 +1,14 @@
+preferences:
+  type:
+    _attributes:
+      format: qcow2
+      kernelcmdline:
+        ignition.platform.id: metal
+    bootloader:
+      _attributes:
+        name: grub2_s390x_emu
+        timeout: 3
+    size:
+      _attributes:
+        unit: G
+      _text: 32

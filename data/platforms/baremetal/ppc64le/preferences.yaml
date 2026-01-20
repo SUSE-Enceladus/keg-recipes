@@ -11,19 +11,17 @@ preferences:
       btrfs_root_is_snapshot: "true"
       devicepersistency: by-uuid
       filesystem: btrfs
-      firmware: uefi
+      firmware: ofw
       kernelcmdline:
-        console: ["ttyS0,115200", tty0]
+        console: "hvc0,115200"
         security: selinux
         selinux: 1
         quiet: []
         systemd.show_status: 1
         net.ifnames: 0
+        ignition.platform.id: metal
     systemdisk:
-      _namespace_platforms_baremetal_x86:
+      _namespace_platforms_baremetal_ppc:
         volume:
           - _attributes:
-              name: boot/grub2/i386-pc
-          - _attributes:
-              name: boot/grub2/x86_64-efi
-              mountpoint: boot/grub2/x86_64-efi
+              name: boot/grub2/powerpc-ieee1275

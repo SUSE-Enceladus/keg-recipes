@@ -1,0 +1,16 @@
+preferences:
+  type:
+    _attributes:
+      bootkernel: custom
+      btrfs_quota_groups: "true"
+      initrd_system: dracut
+      installboot: install
+      installiso: "true"
+      installpxe: "true"
+      install_continue_on_timeout: "false"
+      disk_start_sector: "4096"
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+        timeout: 3

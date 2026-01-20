@@ -1,0 +1,15 @@
+preferences:
+  type:
+    _attributes:
+      initrd_system: dracut
+      installboot: install
+      installiso: "true"
+      installpxe: "true"
+      install_continue_on_timeout: "false"
+      kernelcmdline:
+        console: ["ttyS0,115200", tty0]
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+        timeout: 3

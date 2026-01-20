@@ -1,0 +1,4 @@
+image-config-comments:
+  obs-multibuild: "OBS-Profiles: @BUILD_FLAVOR@"
+  obs-milestone: "OBS-Milestone: %current_milestone"
+  obs-bcntsynctag: "OBS-BcntSyncTag: SL-Micro"

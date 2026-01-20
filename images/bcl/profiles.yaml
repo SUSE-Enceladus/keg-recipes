@@ -1,0 +1,332 @@
+image:
+  profiles:
+    _namespace_profiles_support:
+      profile:
+        - _attributes:
+            name: bootloader
+            description: Bootloader files for x86_64 and aarch64
+        - _attributes:
+            name: self_install
+            description: Self Installing ISO media
+    _namespace_profiles_platforms:
+      profile:
+        - _attributes:
+            name: x86
+            description: Raw disk for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-vmware
+            description: Raw disk for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-encrypted
+            description: Raw disk for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-self_install
+            description: Raw disk for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: aarch64-self_install
+            description: Raw disk for aarch64
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: aarch64-rt
+            description: Raw disk for aarch64 with RT kernel
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: aarch64-rt-self_install
+            description: Raw disk for aarch64 with RT kernel
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-legacy
+            description: Raw disk for x86_64 - legacy boot
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-rt
+            description: Raw disk for x86_64 with RT kernel - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-rt-encrypted
+            description: Raw disk for x86_64 with RT kernel - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-rt-self_install
+            description: Raw disk for x86_64 with RT kernel - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: rpi
+            description: Raw disk for Raspberry Pi
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: x86-qcow
+            description: qcow2 for x86_64 - uEFI
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: aarch64-qcow
+            description: qcow2 for aarch64 - uEFI
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: s390-kvm
+            description: Raw disk for s390 - DASD
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: s390-dasd
+            description: Raw disk for s390 - DASD
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: s390-fba
+            description: Raw disk for s390 - DASD
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: s390-fcp
+            description: Raw disk for s390 - SCSI
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: ppc64le-512ss
+            description: Raw disk for PPc64 - 512 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: ppc64le-4096ss
+            description: Raw disk for PPc64 - 4096 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: ppc64le-512ss-self_install
+            description: Raw disk for PPc64 - 512 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: bootloader
+        - _attributes:
+            name: ppc64le-4096ss-self_install
+            description: Raw disk for PPc64 - 4096 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: bootloader
+    _namespace_profiles_flavors:
+      profile:
+        - _attributes:
+            name: full
+            description: SL Micro as KVM and Container host
+        - _attributes:
+            name: container-host
+            description: SL Micro as Contianer host
+        - _attributes:
+            name: ecs_anywhere
+            description: Amazon ECS Anywhere support
+  _namespace_preferences_root:
+    _namespace_preferences_platforms:
+      preferences:
+        - _attributes:
+            profiles: [x86-encrypted,x86-rt-encrypted]
+          _include:
+            - platforms/baremetal/x86/encrypted
+        - _attributes:
+            profiles: [x86,x86-rt]
+          _include:
+            - platforms/baremetal/x86
+        - _attributes:
+            profiles: [x86-self_install,x86-rt-self_install]
+          _include:
+            - platforms/baremetal/x86/self-install
+        - _attributes:
+            profiles: [rpi,aarch64-rt]
+          _include:
+            - platforms/baremetal/aarch64/rpi
+        - _attributes:
+            profiles: [aarch64-self_install,aarch64-rt-self_install]
+          _include:
+            - platforms/baremetal/aarch64/self-install
+        - _attributes:
+            profiles: [s390-kvm]
+          _include:
+            - platforms/baremetal/s390/kvm
+        - _attributes:
+            profiles: [s390-dasd]
+          _include:
+            - platforms/baremetal/s390/dasd
+        - _attributes:
+            profiles: [s390-fba]
+          _include:
+            - platforms/baremetal/s390/fba
+        - _attributes:
+            profiles: [s390-fcp]
+          _include:
+            - platforms/baremetal/s390/fcp
+        - _attributes:
+            profiles: [x86-vmware]
+          _include:
+            - platforms/baremetal/x86/vmware
+        - _attributes:
+            profiles: [x86-qcow]
+          _include:
+            - platforms/baremetal/x86/qcow
+        - _attributes:
+            profiles: [aarch64-qcow]
+          _include:
+            - platforms/baremetal/aarch64/qcow
+        - _attributes:
+            profiles: [ppc64le-512ss]
+          _include:
+            - platforms/baremetal/ppc64le
+        - _attributes:
+            profiles: [ppc64le-4096ss]
+          _include:
+            - platforms/baremetal/ppc64le/4096ss
+        - _attributes:
+            profiles: [ppc64le-512ss-self_install]
+          _include:
+            - platforms/baremetal/ppc64le/self-install
+        - _attributes:
+            profiles: [ppc64le-4096ss-self_install]
+          _include:
+            - platforms/baremetal/ppc64le/4096ss
+            - platforms/baremetal/ppc64le/self-install
+  _namespace_packages_root:
+    _namespace_packages_base:
+      packages:
+        - _attributes:
+            type: bootstrap
+          _include:
+            - base/bootstrap
+        - _attributes:
+            type: image
+          _include:
+            - base/common
+            - products
+    _namespace_packages_flavors:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [full]
+          _include:
+            - base/container_host
+            - base/kvm_host
+        - _attributes:
+            type: image
+            profiles: [container-host]
+          _include:
+            - base/container_host
+#        - _attributes:
+#            type: image
+#            profiles: [ecs_anywhere]
+#          _include:
+#            - base/ecs_anywhere
+    _namespace_packages_platforms:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [bootloader]
+          _include:
+            - base/bootloader
+        - _attributes:
+            type: image
+            profiles: [x86-qcow, aarch64-qcow]
+          _include:
+            - base/qemu-guest
+        - _attributes:
+            type: image
+            profiles: [x86, x86-encrypted, x86-legacy, x86-self_install, x86-qcow]
+          _include:
+            - platforms/baremetal/x86
+        - _attributes:
+            type: image
+            profiles: [x86-rt, x86-rt-self_install, x86-rt-encrypted]
+          _include:
+            - platforms/baremetal/x86/realtime
+        - _attributes:
+            type: image
+            profiles: [x86-vmware]
+          _include:
+            - platforms/baremetal/x86/vmware
+        - _attributes:
+            type: image
+            profiles: [aarch64-rt, aarch64-rt-self_install]
+          _include:
+            - platforms/baremetal/aarch64/realtime
+        - _attributes:
+            type: image
+            profiles: [aarch64-qcow]
+          _include:
+            - platforms/baremetal/aarch64/qcow
+        - _attributes:
+            type: image
+            profiles: [ppc64le-512ss, ppc64le-4096ss, ppc64le-512ss-self_install, ppc64le-4096ss-self_install]
+          _include:
+            - platforms/baremetal/ppc64le
+        - _attributes:
+            type: image
+            profiles: [s390-kvm, s390-dasd, s390-fba]
+          _include:
+            - platforms/baremetal/s390
+        - _attributes:
+            type: image
+            profiles: [s390-fcp]
+          _include:
+            - platforms/baremetal/s390/fcp
+        - _attributes:
+            type: image
+            profiles: [rpi,aarch64-self_install,aarch64-rt,aarch64-rt-self_install]
+          _include:
+            - platforms/baremetal/aarch64/rpi

@@ -1,0 +1,23 @@
+preferences:
+  type:
+    _attributes:
+      bootpartition: "false"
+      btrfs_root_is_snapshot: "true"
+      btrfs_root_is_readonly_snapshot: "true"
+      devicepersistency: "by-uuid"
+      efipartsize: "128"     
+      filesystem: btrfs
+      firmware: "uefi"
+      image: oem
+      kernelcmdline: 
+        security: selinux
+        selinux: 1
+        quiet: []
+        systemd.show_status: 1
+        net.ifnames: 0
+    systemdisk:
+      _namespace_platforms_baremetal_x86:
+        volume:
+          - _attributes:
+              name: boot/grub2/arm64-efi
+              mountpoint: boot/grub2/arm64-efi

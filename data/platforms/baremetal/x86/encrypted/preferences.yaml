@@ -1,0 +1,27 @@
+preferences:
+  type:
+    _attributes:
+      initrd_system: dracut
+      luks_version: luks2
+      luks: 1234
+      luks_randomize: "false"
+      luks_pbkdf: pbkdf2
+      kernelcmdline:
+        console: ["ttyS0,115200", tty0]
+    luksformat:
+      option:
+        _attributes:
+          name: --cipher
+          value: aes-xts-plain64
+    bootloader:
+      _attributes:
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+        timeout: 3
+        use_disk_password: "true"
+    size:
+      _attributes:
+        unit: G
+      _text: 8

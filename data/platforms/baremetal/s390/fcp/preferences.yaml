@@ -1,0 +1,16 @@
+preferences:
+  type:
+    _attributes:
+      installpxe: "true"
+    bootloader:
+      _attributes:
+        name: grub2_s390x_emu
+        console: serial
+        timeout: 3
+        targettype: SCSI
+    oemconfig:
+      oem-multipath-scan: "true"
+    size:
+      _attributes:
+        unit: G
+      _text: 10

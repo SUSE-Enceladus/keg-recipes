@@ -25,17 +25,6 @@ packages:
       - util-linux
       - wtmpdb
       - xfsprogs
-  _namespace_base_common_bootloader:
-    package:
-      - grub2
-      - _attributes:
-          name: grub2-arm64-efi
-          arch: aarch64
-      - _attributes:
-          name: grub2-x86_64-efi
-          arch: x86_64
-      - mokutil
-      - shim
   _namespace_base_common_netsys:
     package:
       - NetworkManager

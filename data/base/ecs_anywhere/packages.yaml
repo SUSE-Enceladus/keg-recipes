@@ -1,0 +1,7 @@
+packages:
+  _namespace_base_ecs_anywhere:
+    package:
+      - amazon-ecs-init
+      - amazon-ssm-agent
+      - aws-cli
+      - docker

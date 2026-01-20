@@ -1,0 +1,6 @@
+packages:
+  _namespace_platforms_baremetal_ppc64:
+    package:
+      - dracut-kiwi-oem-dump
+      - dracut-kiwi-oem-repart
+      - multipath-tools

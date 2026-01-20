@@ -4,26 +4,26 @@ preferences:
   type:
     _attributes:
       image: oem
-      bootpartition: "false"
+      bootfilesystem: ext4
+      bootpartition: "true"
+      bootpartsize: "300"
       bootkernel: custom
       btrfs_quota_groups: "true"
       btrfs_root_is_readonly_snapshot: "true"
       btrfs_root_is_snapshot: "true"
       devicepersistency: by-uuid
       filesystem: btrfs
-      firmware: uefi
+      initrd_system: dracut
       kernelcmdline:
-        console: ["ttyS0,115200", tty0]
+        hvc_iucv: 8
+        TERM: dumb
         security: selinux
         selinux: 1
         quiet: []
         systemd.show_status: 1
-        net.ifnames: 0
     systemdisk:
-      _namespace_platforms_baremetal_x86:
+      _namespace_platforms_baremetal_s390:
         volume:
           - _attributes:
-              name: boot/grub2/i386-pc
-          - _attributes:
-              name: boot/grub2/x86_64-efi
-              mountpoint: boot/grub2/x86_64-efi
+              name: boot/grub2/s390x-emu
+              mountpoint: boot/grub2/s390x-emu

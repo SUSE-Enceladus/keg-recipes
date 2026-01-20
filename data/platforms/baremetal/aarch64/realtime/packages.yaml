@@ -1,0 +1,6 @@
+packages:
+  _namespace_platforms_default_kernel: Null
+  _namespace_baremetal_x86_realtime:
+    package:
+      - kernel-firmware-all
+      - kernel-rt

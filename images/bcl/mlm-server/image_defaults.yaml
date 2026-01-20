@@ -1,0 +1,7 @@
+image:
+  _attributes:
+    name: SUSE-Multi-Linux-Manager-Server
+    displayname: SUSE-Multi-Linux-Manager-Server
+  description:
+    author: SUSE Multi-Linux Manager Team
+    contact: https://www.suse.com/contact

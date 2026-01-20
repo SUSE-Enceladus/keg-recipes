@@ -1,0 +1,14 @@
+preferences:
+  type:
+    _attributes:
+      target_blocksize: 4096
+    bootloader:
+      _attributes:
+        name: grub2_s390x_emu
+        console: serial
+        timeout: 3
+        targettype: CDL
+    size:
+      _attributes:
+        unit: G
+      _text: 10

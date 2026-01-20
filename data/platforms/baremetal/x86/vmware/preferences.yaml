@@ -1,0 +1,21 @@
+preferences:
+  type:
+    _attributes:
+      format: vmdk
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+    size:
+      _attributes:
+        unit: G
+      _text: 24
+    machine:
+      _attributes:
+        memory: 16384
+        HWversion: 10
+        guestOS: suse-64
+      vmdisk:
+        _attributes:
+          id: 0
+          controller: pvscsi

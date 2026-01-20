@@ -1,0 +1,4 @@
+preferences:
+  type:
+    _attributes:
+      target_blocksize: 4096

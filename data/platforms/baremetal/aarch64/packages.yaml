@@ -1,0 +1,12 @@
+packages:
+  _namespace_platforms_baremetal_aarch64:
+    package:
+      - bcm43xx-firmware
+      - dracut-kiwi-oem-dump
+      - dracut-kiwi-oem-repart
+      - raspberrypi-firmware
+      - raspberrypi-firmware-config
+      - raspberrypi-firmware-dt
+      - wireless-regdb
+      - wireless-tools
+      - u-boot-rpiarm64

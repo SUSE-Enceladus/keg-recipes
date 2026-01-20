@@ -1,0 +1,4 @@
+packages:
+  _namespace_base_qemu_guest:
+    package:
+      - qemu-guest-agent

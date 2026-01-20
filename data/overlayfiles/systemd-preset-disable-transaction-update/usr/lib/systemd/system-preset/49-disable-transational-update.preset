@@ -1,0 +1,2 @@
+disable transactional-update.timer
+disable transactional-update.service

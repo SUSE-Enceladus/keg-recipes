@@ -1,0 +1,11 @@
+preferences:
+  type:
+    _attributes:
+      initrd_system: dracut
+      kernelcmdline:
+        console: ["ttyS0,115200", tty0]
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+        timeout: 3

@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_baremetal_x86_vmware:
+    package:
+      - cloud-init
+      - cloud-init-config-suse

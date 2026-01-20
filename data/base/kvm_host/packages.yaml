@@ -1,27 +1,18 @@
 packages:
   _namespace_full_alp:
     namedCollection:
-      - alp_base_transactional
-      - alp_containers_podman
-      - alp_cockpit
-      - alp_salt_minion
-      - alp_kvm_host
-    package:
-      - patterns-alp-base-transactional
-      - patterns-alp-containers-podman
-      - patterns-alp-cockpit
-      - patterns-alp-salt-minion
-      - patterns-alp-kvm_host
+      - base_transactional
       - cockpit
-      - cockpit-networkmanager
-      - cockpit-podman
-      - cockpit-selinux
-      - cockpit-storaged
-      - cockpit-system
-      - cockpit-tukit
-      - cockpit-ws
+      - container_runtime_podman
+      - kvm_host
+      - selinux
+    package:
+      - patterns-base-transactional
+      - patterns-base-cockpit
+      - patterns-base-kvm_host
+      - patterns-base-selinux
+      - patterns-container-runtime_podman
       - firewalld
-      - libudisks2-0_lvm2
-      - libudisks2-0_btrfs
       - libpwquality-tools
-      - k3s-install
+      - suseconnect-ng
+      - systemd-default-settings-branding-SLE-Micro

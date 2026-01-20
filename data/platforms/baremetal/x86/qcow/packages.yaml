@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_baremetal_x86_qcow:
+    package:
+      - cloud-init
+      - cloud-init-config-suse

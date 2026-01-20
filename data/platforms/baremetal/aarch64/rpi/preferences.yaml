@@ -1,0 +1,17 @@
+preferences:
+  type:
+    _attributes:
+      initrd_system: dracut
+      installiso: "true"
+      installboot: install
+      install_continue_on_timeout: "false"
+      fsmountoptions: noatime
+      editbootinstall: "editbootinstall_rpi.sh"
+      btrfs_root_is_readonly_snapshot: "true"
+      btrfs_quota_groups: "false"
+      disk_start_sector: "4096"
+    bootloader:
+      _attributes:
+        name: grub2
+        console: gfxterm
+        timeout: 3

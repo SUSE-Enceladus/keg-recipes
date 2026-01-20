@@ -1,0 +1,216 @@
+include-paths:
+  - _slfo/1.1
+  - _sl-micro/6.0
+  - _sl-micro/6.1
+  - _mlm/5.0
+  - _mlm/5.1
+  - _mlm/server/5.0
+  - _mlm/server/5.1
+image:
+  description:
+    specification: "SUSE Multi-Linux Manager Server 5.1 based on SL Micro 6.1"
+  profiles:
+    _namespace_profiles_mlm:
+      profile:
+        - _attributes:
+            name: multi_linux_manager_51
+            description: SUSE Multi-Linux Manager 5.1 files and configuration
+          requires:
+            - _attributes:
+                profile: full
+        - _attributes:
+            name: Raw
+            description: SUSE Multi-Linux Manager 5.1 as a raw image with uEFI boot
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: x86
+        - _attributes:
+            name: Raw
+            description: SUSE Multi-Linux Manager 5.1 as a raw image with uEFI boot
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: rpi
+        - _attributes:
+            name: Raw-VMWare
+            description: SUSE Multi-Linux Manager 5.1 as a VDMK image for VMWare
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: x86-vmware
+        - _attributes:
+            name: Raw-encrypted
+            description: SUSE Multi-Linux Manager 5.1 as encrypted raw image with uEFI boot
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: x86-encrypted
+        - _attributes:
+            name: SelfInstall
+            description: SUSE Multi-Linux Manager 5.1 as self install raw image with uEFI boot
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: x86-self_install
+            - _attributes:
+                profile: self_install
+        - _attributes:
+            name: SelfInstall
+            description: SUSE Multi-Linux Manager 5.1 as self install raw image with uEFI boot
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: aarch64-self_install
+            - _attributes:
+                profile: self_install
+        - _attributes:
+            name: Qcow
+            description: SUSE Multi-Linux Manager 5.1 as a qcow image with uEFI boot
+            arch: x86_64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: x86-qcow
+        - _attributes:
+            name: Qcow
+            description: SUSE Multi-Linux Manager 5.1 as a qcow image with uEFI boot
+            arch: aarch64
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: aarch64-qcow
+        - _attributes:
+            name: Qcow
+            description: SUSE Multi-Linux Manager 5.1 as a qcow image for KVM on System z
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: s390-kvm
+        - _attributes:
+            name: Raw-dasd
+            description: SUSE Multi-Linux Manager 5.1 as a raw image for KVM on System z
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: s390-dasd
+        - _attributes:
+            name: Raw-fba
+            description: SUSE Multi-Linux Manager 5.1 as a raw image for KVM on System z
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: s390-fba
+        - _attributes:
+            name: Raw-fcp
+            description: SUSE Multi-Linux Manager 5.1 as a raw image for KVM for zFCP on System z
+            arch: s390x
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: s390-fcp
+        - _attributes:
+            name: Raw-512
+            description: SUSE Multi-Linux Manager 5.1 as a raw image for PowerPC with 512b sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: ppc64le-512ss
+        - _attributes:
+            name: Raw-4096
+            description: SUSE Multi-Linux Manager 5.1 as a raw image for PowerPC with 4096b sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: ppc64le-4096ss
+        - _attributes:
+            name: SelfInstall-512
+            description: SUSE Multi-Linux Manager 5.1 as a self install raw image for PowerPC with 512 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: ppc64le-512ss-self_install
+            - _attributes:
+                profile: self_install
+        - _attributes:
+            name: SelfInstall-4096
+            description: SUSE Multi-Linux Manager 5.1 as a self install raw image for PowerPC with 4096 sector size
+            arch: ppc64le
+          requires:
+            - _attributes:
+                profile: multi_linux_manager_51
+            - _attributes:
+                profile: ppc64le-4096ss-self_install
+            - _attributes:
+                profile: self_install
+  preferences:
+    version: 5.1.0
+  _namespace_packages_root:
+    _namespace_packages_mlm:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [multi_linux_manager_51]
+          _include:
+            - products
+config:
+  - profiles: [multi_linux_manager_51]
+    _include: products
+archive:
+  - name: root.tar.gz
+    _include: 
+      - baremetal
+      - products
+xmlfiles:
+  - name: _multibuild
+    content:
+      multibuild:
+        flavor:
+          - Raw
+          - Raw-VMWare
+          - Raw-encrypted
+          - SelfInstall
+          - Qcow
+          - Raw-dasd
+          - Raw-fba
+          - Raw-fcp
+          - Raw-512
+          - Raw-4096
+          - SelfInstall-512
+          - SelfInstall-4096
+  - name: _contraints
+    content:
+      contraints:
+        hardware:
+          disk:
+            size:
+              _attriutes:
+                unit: G
+              _text: 60

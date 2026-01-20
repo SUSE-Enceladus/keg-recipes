@@ -1,0 +1,11 @@
+preferences:
+  type:
+    _attributes:
+      installiso: "true"
+    installmedia:
+      initrd:
+        _attributes:
+          action: omit
+        dracut:
+          _atttributes:
+            module: drm

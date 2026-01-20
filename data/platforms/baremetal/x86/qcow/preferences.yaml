@@ -1,0 +1,11 @@
+preferences:
+  type:
+    _attributes:
+      format: qcow2
+      kernelcmdline:
+        console: ["ttyS0,115200", tty0]
+        ignition.platform.id: qmeu
+    size:
+      _attributes:
+        unit: G
+      _text: 32
