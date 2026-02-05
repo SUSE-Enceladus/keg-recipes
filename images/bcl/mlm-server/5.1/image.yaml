@@ -171,6 +171,8 @@ image:
             - _attributes:
                 profile: self_install
   preferences:
+    locale: en_US
+    packagemanager: zypper
     version: 5.1.0
   _namespace_packages_root:
     _namespace_packages_mlm:
@@ -182,11 +184,13 @@ image:
             - products
 config:
   - profiles: [multi_linux_manager_51]
-    _include: products
+    _include:
+      - platforms/baremetal
+      - products
 archive:
   - name: root.tar.gz
     _include: 
-      - baremetal
+      - platforms/baremetal
       - products
 xmlfiles:
   - name: _multibuild

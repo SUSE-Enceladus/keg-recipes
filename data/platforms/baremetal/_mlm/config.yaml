@@ -1,0 +1,4 @@
+config:
+  scripts:
+    platforms_baremetal_mlm_scripts:
+      - expand-motd-vars
