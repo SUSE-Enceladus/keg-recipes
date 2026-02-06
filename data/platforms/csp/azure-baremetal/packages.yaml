@@ -47,7 +47,6 @@ packages:
       - fping
       - glibc-i18ndata
       - glibc-locale
-      - iproute2
       - irqbalance
       - krb5-client
       - lvm2
