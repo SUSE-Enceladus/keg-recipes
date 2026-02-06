@@ -12,7 +12,6 @@ packages:
       - fontconfig
       - fonts-config
       - glibc-i18ndata
-      - iproute2
       - irqbalance
       - mozilla-nss-certs
       - nscd
