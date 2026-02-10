@@ -17,6 +17,7 @@ image:
     - _attributes:
         type: image
       _include:
+        - base/bootloader
         - base/common
         - base/pubcloud
         - platforms/csp/ec2

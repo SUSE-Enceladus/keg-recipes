@@ -1,0 +1,2 @@
+preferences:
+  rpm-excludedocs: "true"
