@@ -6,6 +6,8 @@ packages:
       - crash
       - gconf2
       - glibc-locale
+      - grub2
+      - grub2-x86_64-efi
       - hyper-v
       - icmpinfo
       - kernel-default
@@ -18,6 +20,7 @@ packages:
       - procinfo
       - rsh
       # java-1_8_0-ibm moved to legacy module in SP3
+      - shim
       - sle-module-legacy-release
       - syslinux
       - targetcli-fb-common
