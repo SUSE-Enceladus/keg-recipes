@@ -12,3 +12,9 @@ packages:
   _namespace_base_pubcloud_sle15_haveged: Null
   _namespace_base_pubcloud_sle15_sysvcompat: Null
   _namespace_base_pubcloud_sle15_yast_schema: Null
+  _namespace_base_pubcloud_ecs_sle15:
+    package:
+      - docker-img-store-setup
+      - hostinfo
+      - lockdev
+      - nscd

@@ -4,6 +4,6 @@ config:
       - zypp-limit-concurrent-downloads
   services:
     base_pubcloud_sles_ecs_services:
+      - amazon-ecs
       - docker
-      - docker-img-store-setup
       - guestregister
