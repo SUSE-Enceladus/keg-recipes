@@ -1,0 +1,14 @@
+include-paths:
+  - _slfo/1.1
+  - _slfo/1.2
+  - _slfo/1.3
+  - _sles/16.0
+  - _sles/16.1
+  - _sles/ecs/16.0
+  - _sles/ecs/16.1
+image:
+  _attributes:
+    name: SLES-16.1-EC2-ECS
+    displayname: SLES-16.1-EC2-ECS
+  description:
+    specification: "SUSE Linux Enterprise Server 16.1 ECS guest image for Amazon EC2"
