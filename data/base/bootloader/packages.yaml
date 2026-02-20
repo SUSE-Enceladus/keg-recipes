@@ -16,10 +16,6 @@ packages:
       - _attributes:
           name: grub2-powerpc-ieee1275
           arch: ppc64le
-      - _attributes:
-          name: grub2-branding-SLE
-          arch: x86_64,aarch64,ppc64le
-          bootinclude: "true"
       - grub2-snapper-plugin
       - _attributes:
           name: mokutil

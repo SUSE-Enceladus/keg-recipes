@@ -8,9 +8,6 @@ packages:
       - patterns-base-selinux
       - patterns-base-transactional
       - patterns-container-runtime_podman
-      - _attributes:
-          name: grub2-branding-SLE
-          arch: x86_64,aarch64
       - firewalld
       - suseconnect-ng
       - systemd-default-settings-branding-SLE-Micro
