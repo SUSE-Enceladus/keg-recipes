@@ -4,6 +4,7 @@ packages:
       - btrfsprogs
       - btrfsmaintenance
       - tpm2.0-tools
+      - system-user-tss
   _namespace_base_pubcloud_slfo_podman:
     package:
       - podman
