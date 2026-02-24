@@ -11,6 +11,7 @@ packages:
       - glibc
       - glibc-locale-base
       - iproute2
+      - iputils
       - libnss_usrfiles2
       - ntp-daemon
       - pam
