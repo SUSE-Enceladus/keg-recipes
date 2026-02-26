@@ -18,5 +18,6 @@ ff02::2         ipv6-allrouters
 ff02::3         ipv6-allhosts
 
 # Pre-set matadata server shortcut to speed up access image build overlay
-169.254.169.254 metadata.google.internal metadata.google.internal
+169.254.169.254 metadata.google.internal
+fd20:ce::254    metadata.google.internal
 
