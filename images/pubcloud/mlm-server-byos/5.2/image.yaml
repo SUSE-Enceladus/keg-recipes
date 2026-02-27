@@ -1,0 +1,24 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sle15/sp7
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/15-sp7
+  - _mlm/5.0
+  - _mlm/5.1
+  - _mlm/5.2
+  - _mlm/server/5.0
+  - _mlm/server/5.1
+  - _mlm/server/5.2
+  - _mlm/server/byos/5.0
+  - _mlm/server/byos/5.1
+  - _mlm/server/byos/5.2
+image:
+  _attributes:
+    name: SUSE-Multi_Linux-Manager-5-1-BYOS
+    displayname: SUSE-Multi_Linux-Manager-5-1-BYOS
+  description:
+    specification: "SUSE Manager Server 5.1 BYOS guest image"

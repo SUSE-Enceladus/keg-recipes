@@ -1,0 +1,47 @@
+include-paths:
+  - _sle15/sp4
+  - _sle15/sp5
+  - _sle15/sp6
+  - _sle15/sp7
+  - _sles/15-sp4
+  - _sles/15-sp5
+  - _sles/15-sp6
+  - _sles/15-sp7
+  - _mlm/5.0
+  - _mlm/5.1
+  - _mlm/5.2
+  - _mlm/server/5.0
+  - _mlm/server/5.1
+  - _mlm/server/5.2
+  - _mlm/server/payg/5.0
+  - _mlm/server/payg/5.1
+  - _mlm/server/payg/5.1
+image:
+  _attributes:
+    name: SUSE-Multi_Linux-Manager-5-2
+    displayname: SUSE-Multi_Linux-Manager-5-2
+  description:
+    specification: "SUSE Multi-Linux Manager Server 5.2 PAYG guest image"
+  _namespace_packages_root:
+    _namespace_packages_mlm_adapter_azure:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [Azure-llc]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-2-microsoft-x86-llc
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-2-microsoft-arm64-llc
+                arch: aarch64
+        - _attributes:
+            type: image
+            profiles: [Azure-ltd]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-2-microsoft-x86-ltd
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-2-microsoft-arm64-ltd
+                arch: aarch64
