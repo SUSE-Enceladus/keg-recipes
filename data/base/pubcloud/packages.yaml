@@ -20,6 +20,7 @@ packages:
       - cyrus-sasl-plain
       - cyrus-sasl-saslauthd
       - dos2unix
+      - e2fsprogs
       - ethtool
       - expect
       - fping
