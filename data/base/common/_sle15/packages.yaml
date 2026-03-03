@@ -9,6 +9,7 @@ packages:
       - glibc-locale-base
       - grub2
       - hostname
+      - iproute2
       - iputils
       - kdump
       - less
