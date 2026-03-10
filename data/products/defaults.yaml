@@ -3,6 +3,13 @@ archive:
   _namespace_products_default:
     _include_overlays: []
 packages:
+  _namespace_product_bootloader_branding:
+    package:
+      - _attributes:
+          name: grub2-branding-SLE
+          arch: x86_64,aarch64,ppc64le
+          bootinclude: "true"
   _namespace_products_systemd_branding:
     package:
       - systemd-default-settings-branding-SLE
+      - systemd-presets-branding-SLE
