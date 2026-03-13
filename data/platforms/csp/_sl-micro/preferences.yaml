@@ -6,8 +6,6 @@ preferences:
       btrfs_root_is_readonly_snapshot: "true"
       filesystem: btrfs
       kernelcmdline:
-        console: ["ttyS0,115200", tty0]
-        net.ifnames: 0
         security: selinux
         selinux: 1
         systemd.unified_cgroup_hierarchy: 1
