@@ -96,20 +96,20 @@ image:
         profiles: [EC2-llc]
       package:
         - _attributes:
-            name: mlm-adapter-config-amazon-x86-llc
+            name: mlm-adapter-config-5-1-amazon-x86-llc
             arch: x86_64
         - _attributes:
-            name: mlm-adapter-config-amazon-arm64-llc
+            name: mlm-adapter-config-5-1-amazon-arm64-llc
             arch: aarch64
     - _attributes:
         type: image
         profiles: [EC2-ltd]
       package:
         - _attributes:
-            name: mlm-adapter-config-amazon-x86-ltd
+            name: mlm-adapter-config-5-1-amazon-x86-ltd
             arch: x86_64
         - _attributes:
-            name: mlm-adapter-config-amazon-arm64-ltd
+            name: mlm-adapter-config-5-1-amazon-arm64-ltd
             arch: aarch64
 config:
   - _include:
