@@ -37,3 +37,25 @@ image:
             - _attributes:
                 name: mlm-adapter-config-5-1-microsoft-arm64-ltd
                 arch: aarch64
+    _namespace_packages_mlm_adapter_ec2:
+      packages:
+        - _attributes:
+            type: image
+            profiles: [EC2-llc]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-1-amazon-x86-llc
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-1-amazon-arm64-llc
+                arch: aarch64
+        - _attributes:
+            type: image
+            profiles: [EC2-ltd]
+          package:
+            - _attributes:
+                name: mlm-adapter-config-5-1-amazon-x86-ltd
+                arch: x86_64
+            - _attributes:
+                name: mlm-adapter-config-5-1-amazon-arm64-ltd
+                arch: aarch64
