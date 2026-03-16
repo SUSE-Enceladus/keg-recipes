@@ -1,7 +1,8 @@
+# deleted in _sle15, but required in SL Micro 5.3
 preferences:
   type:
     systemdisk:
-      _namespace_platforms_azure_aarch64_volume:
+      _namespace_platforms_gce_aarch64_volume:
         volume:
           - _attributes:
               name: boot/grub2/arm64-efi
