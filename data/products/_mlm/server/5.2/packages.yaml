@@ -23,10 +23,10 @@ packages:
           name: suse-multi-linux-manager-5.2-aarch64-server-image
           arch: aarch64
       - _attributes:
-          name: suse-multi-linux-manager-5.2-x86_64-server-migration-14-16-image
+          name: suse-multi-linux-manager-5.2-x86_64-server-database-migration-image
           arch: x86_64
       - _attributes:
-          name: suse-multi-linux-manager-5.2-aarch64-server-migration-14-16-image
+          name: suse-multi-linux-manager-5.2-aarch64-server-database-migration-image
           arch: aarch64
       - _attributes:
           name: suse-multi-linux-manager-5.2-x86_64-server-postgresql-image
