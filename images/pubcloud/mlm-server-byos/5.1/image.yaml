@@ -10,7 +10,7 @@ include-paths:
   - _mlm/server/byos/5.1
 image:
   _attributes:
-    name: SUSE-Multi_Linux-Manager-5-1-BYOS
-    displayname: SUSE-Multi_Linux-Manager-5-1-BYOS
+    name: SUSE-Multi-Linux-Manager-Server-5-1-BYOS
+    displayname: SUSE-Multi-Linux-Manager-Server-5-1-BYOS
   description:
     specification: "SUSE Manager Server 5.1 BYOS guest image"

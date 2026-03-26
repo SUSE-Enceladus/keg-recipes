@@ -18,7 +18,7 @@ include-paths:
   - _mlm/proxy/byos/5.2
 image:
   _attributes:
-    name: SUSE-Multi_Linux-Manager-Proxy-5-2-BYOS
-    displayname: SUSE-Multi_Linux-Manager-Proxy-5-2-BYOS
+    name: SUSE-Multi-Linux-Manager-Proxy-5-2-BYOS
+    displayname: SUSE-Multi-Linux-Manager-Proxy-5-2-BYOS
   description:
     specification: "SUSE Multi-Linux Manager Proxy 5.2 BYOS guest image"
