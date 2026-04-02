@@ -40,3 +40,9 @@ packages:
       - _attributes:
           name: suse-multi-linux-manager-5.2-aarch64-server-saline-image
           arch: aarch64
+      - _attributes:
+          name: suse-multi-linux-manager-5.2-x86_64-proxy-tftpd-image
+          arch: x86_64
+      - _attributes:
+          name: suse-multi-linux-manager-5.2-aarch64-proxy-tftpd-image
+          arch: aarch64
