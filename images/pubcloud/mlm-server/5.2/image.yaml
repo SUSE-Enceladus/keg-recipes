@@ -18,8 +18,8 @@ include-paths:
   - _mlm/server/payg/5.1
 image:
   _attributes:
-    name: SUSE-Multi-Linux-Manager-Server-5-2
-    displayname: SUSE-Multi-Linux-Manager-Server-5-2
+    name: SLES15-SP7-Multi-Linux-Manager-Server-5-2
+    displayname: SLES15-SP7-Multi-Linux-Manager-Server-5-2
   description:
     specification: "SUSE Multi-Linux Manager Server 5.2 PAYG guest image"
   _namespace_packages_root:

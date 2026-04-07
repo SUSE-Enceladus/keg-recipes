@@ -18,7 +18,7 @@ include-paths:
   - _mlm/server/byos/5.2
 image:
   _attributes:
-    name: SUSE-Multi-Linux-Manager-Server-5-2-BYOS
-    displayname: SUSE-Multi-Linux-Manager-Server-5-2-BYOS
+    name: SLES15-SP7-Multi-Linux-Manager-Server-5-2-BYOS
+    displayname: SLES15-SP7-Multi-Linux-Manager-Server-5-2-BYOS
   description:
-    specification: "SUSE Manager Server 5.2 BYOS guest image"
+    specification: "SUSE Multi-Linux Manager Server 5.2 BYOS guest image"
