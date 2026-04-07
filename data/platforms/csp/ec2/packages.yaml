@@ -1,5 +1,6 @@
 packages:
   _namespace_platforms_ec2:
+    package:
       - amazon-dracut-config
       - cloud-init
       - cloud-init-config-suse
