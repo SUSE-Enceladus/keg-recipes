@@ -1,12 +1,5 @@
 packages:
   _namespace_platforms_ec2:
-    package:
-      - _attributes:
-          name: grub2-x86_64-xen 
-          arch: x86_64
-      - _attributes:
-          name: xen-libs
-          arch: x86_64
       - amazon-dracut-config
       - cloud-init
       - cloud-init-config-suse
@@ -24,8 +17,3 @@ packages:
   _namespace_platforms_ec2_ssm_agent:
     package:
       - amazon-ssm-agent
-  _namespace_platforms_ec2_xen_tools:
-    package:
-      - _attributes:
-          name: xen-tools-domU
-          arch: x86_64
