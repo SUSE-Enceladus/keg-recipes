@@ -15,7 +15,6 @@ config:
       - remove-iscsi-config
       - remove-root-pw
       - set-prodlink
-      - zypp-disable-delta-rpms
       - zypp-disable-multiver-kernel
   services:
     base_pubcloud_services:

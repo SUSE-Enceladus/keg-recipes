@@ -4,6 +4,9 @@ config:
       - path: /etc/pam.d/sshd
         append: True
         content: "session     optional    pam_motd.so"
+  scripts:
+    base_pubcloud_zypp_disable_delta_rpms:
+      - zypp-disable-delta-rpms
   sysconfig:
     base_pubcloud_sle15_sysvars:
       - file: /etc/sysconfig/console
