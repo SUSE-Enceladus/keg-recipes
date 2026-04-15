@@ -5,6 +5,11 @@ packages:
       - cloud-init
       - cloud-init-config-suse
       - cloud-netconfig-ec2
+  _namespace_platforms_ec2_grub_xen:
+    package:
+      - _attributes:
+          name: grub2-x86_64-xen
+          arch: x86_64
   _namespace_platforms_ec2_registration:
     package:
       - cloud-regionsrv-client
