@@ -11,3 +11,4 @@ image:
     displayname: SLES15-SP5-CHOST-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 15 SP5 BYOS guest image optimized as container host"
+setup: Null

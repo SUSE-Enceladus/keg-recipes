@@ -1,0 +1,8 @@
+packages:
+  _namespace_product_sles_chost_hardened:
+    package:
+      - aide
+      - audit-audispd-plugins
+      - openscap
+      - openscap-utils
+      - scap-security-guide

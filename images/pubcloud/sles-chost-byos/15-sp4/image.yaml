@@ -8,3 +8,4 @@ image:
     displayname: SLES15-SP4-CHOST-BYOS
   description:
     specification: "SUSE Linux Enterprise Server 15 SP4 BYOS guest image optimized as container host"
+setup: Null
