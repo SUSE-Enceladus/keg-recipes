@@ -36,7 +36,6 @@ packages:
       - netcat-openbsd
       - nfs-client
       - nfs-kernel-server
-      - openldap2-client
       - polkit-default-privs
       - psmisc
       - quota

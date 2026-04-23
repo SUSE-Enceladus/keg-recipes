@@ -8,3 +8,6 @@ packages:
   _namespace_base_pubcloud_slfo_podman:
     package:
       - podman
+  _namespace_base_pubcloud_slfo_extra:
+    package:
+      - openldap2_6-client
