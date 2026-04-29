@@ -1,0 +1,5 @@
+setup:
+  scripts:
+    base_pubcloud_chost_hardening:
+      - pcs-hardening-workarounds
+      - pcs-hardening
