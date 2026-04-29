@@ -3,6 +3,7 @@ packages:
     package:
       - btrfsprogs
       - btrfsmaintenance
+      - openldap2_6-client
       - tpm2.0-tools
       - system-user-tss
   _namespace_base_pubcloud_slfo_podman:
