@@ -17,7 +17,6 @@ packages:
       - mozilla-nss-certs
       - nfs-client
       - nfs-kernel-server
-      - openldap2-client
       - patterns-base-minimal_base
       - polkit-default-privs
       - psmisc

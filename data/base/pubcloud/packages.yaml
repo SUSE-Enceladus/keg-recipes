@@ -50,6 +50,9 @@ packages:
   _namespace_base_pubcloud_dhcp_client:
     package:
       - dhcp-client
+  _namespace_base_pubcloud_openldap_client:
+    package:
+      - openldap2-client
   _namespace_base_pubcloud_billing_flavor_check:
     package:
       - python-instance-billing-flavor-check

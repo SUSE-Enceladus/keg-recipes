@@ -10,3 +10,6 @@ packages:
       - cockpit-storaged
       - cockpit-subscriptions
       - cockpit-ws
+  _namespace_base_pubcloud_openldap_client:
+    package:
+      - openldap2_6-client
