@@ -1,0 +1,4 @@
+archive:
+  _namespace_platforms_csp_kiwi_lib_old_lsblk:
+    _include_overlays:
+      - dracut-kiwi-lib-old-lsblk
