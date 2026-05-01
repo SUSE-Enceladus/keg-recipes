@@ -1,6 +1,7 @@
 packages:
   _namespace_base_pubcloud_common:
     package:
+      - dracut-kiwi-oem-repart
       - iptables
       - kdump
       - supportutils

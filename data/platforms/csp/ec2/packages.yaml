@@ -2,9 +2,11 @@ packages:
   _namespace_platforms_ec2:
     package:
       - amazon-dracut-config
+      - cloud-netconfig-ec2
+  _namespace_platforms_ec2_cloud_init:
+    package:
       - cloud-init
       - cloud-init-config-suse
-      - cloud-netconfig-ec2
   _namespace_platforms_ec2_grub_xen:
     package:
       - _attributes:

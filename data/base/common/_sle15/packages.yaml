@@ -16,7 +16,6 @@ packages:
       - parted
       - procps
       - rpm-ndb
-      - sle-module-basesystem-release
       - sudo
       - suse-build-key
       - suseconnect-ng
@@ -35,3 +34,6 @@ packages:
   _namespace_base_common_vim:
     package:
       - vim
+  _namespace_base_common_release:
+    package:
+      - sle-module-basesystem-release

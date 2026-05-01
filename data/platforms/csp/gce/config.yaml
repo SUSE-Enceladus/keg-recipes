@@ -17,8 +17,8 @@ config:
           [InstanceSetup]
           set_boto_config = false
   scripts:
-      google_agent_transtion:
-        - google-guest-agent-transition
+    platforms_gce_guest_agent_transition:
+      - google-guest-agent-transition
   services:
     platforms_gce_services:
       - google-osconfig-agent

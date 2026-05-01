@@ -1,0 +1,9 @@
+config:
+  services:
+    base_pubcloud_micro_afterburn:
+      - afterburn-checkin
+      - afterburn-firstboot-checkin
+      - afterburn-sshkeys@
+      - afterburn-sshkeys.target
+    base_pubcloud_micro_services:
+      - docker

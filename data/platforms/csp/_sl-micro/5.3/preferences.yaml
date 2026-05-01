@@ -1,0 +1,8 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        ip: dhcp
+        rd.neednet: 1
+        "\\$ignition_firstboot": []
+        swapaccount: 1

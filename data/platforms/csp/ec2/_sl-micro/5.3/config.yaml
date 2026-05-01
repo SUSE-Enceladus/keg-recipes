@@ -1,0 +1,3 @@
+config:
+  services:
+    platforms_ec2_services: Null
