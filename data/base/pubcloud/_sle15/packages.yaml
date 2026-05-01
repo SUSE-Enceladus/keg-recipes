@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubcloud_modrel:
+  _namespace_base_pubcloud_sle15_release:
     package:
       - sle-module-public-cloud-release
   _namespace_base_pubcloud_sle15:

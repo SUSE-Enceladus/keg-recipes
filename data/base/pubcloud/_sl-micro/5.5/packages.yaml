@@ -1,4 +1,5 @@
 packages:
+  _namespace_platforms_csp_micro_ignition: Null
   _namespace_base_pubcloud_micro_netsys:
     package:
       - cockpit-wicked

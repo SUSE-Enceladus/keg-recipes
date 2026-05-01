@@ -4,7 +4,6 @@ packages:
       - cloud-netconfig-azure
       - hyper-v
       - microsoft-dracut-config
-      - python-azure-agent
   _namespace_platforms_azure_agent_config:
     package:
       - python-azure-agent-config-server
@@ -22,6 +21,7 @@ packages:
     package:
       - azure-cli
       - lsscsi
+      - python-azure-agent
       - python311-azure-sdk
   _namespace_platforms_azure_registration:
     package:

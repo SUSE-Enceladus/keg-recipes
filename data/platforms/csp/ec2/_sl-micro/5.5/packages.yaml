@@ -1,0 +1,5 @@
+packages:
+  _namespace_platforms_ec2_cloud_init:
+    package:
+      - cloud-init
+      - cloud-init-config-suse

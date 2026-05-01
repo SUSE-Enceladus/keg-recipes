@@ -1,3 +1,5 @@
 config:
   services:
     platforms_gce_services: Null
+  scripts:
+    platforms_gce_guest_agent_transition: Null

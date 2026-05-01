@@ -1,4 +1,5 @@
 packages:
+  _namespace_base_common_release: Null
   _namespace_base_common_netsys:
     package:
       - NetworkManager

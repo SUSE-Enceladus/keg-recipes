@@ -3,3 +3,6 @@ preferences:
     _attributes:
       kernelcmdline:
         ignition.platform.id: Null
+        ip: Null
+        rd.neednet: Null
+        "\\$ignition_firstboot": Null

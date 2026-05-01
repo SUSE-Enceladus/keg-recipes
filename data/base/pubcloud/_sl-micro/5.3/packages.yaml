@@ -1,4 +1,16 @@
 packages:
+  _namespace_base_pubcloud_sle15: Null
+  _namespace_base_pubcloud_sle15_cnf: Null
+  _namespace_base_pubcloud_sle15_nfsidmap: Null
+  _namespace_base_pubcloud_sle15_release: Null
   _namespace_base_pubcloud_sle15_yast_schema:
     package:
       - yast2-schema-micro
+  _namespace_base_pubcloud_micro5:
+    package:
+      - docker
+  _namespace_platforms_csp_micro_ignition:
+    package:
+      - afterburn
+      - ignition
+      - ignition-dracut-grub2

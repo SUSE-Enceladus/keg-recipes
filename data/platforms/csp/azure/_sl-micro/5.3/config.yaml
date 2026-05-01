@@ -1,8 +1,5 @@
 config:
   scripts:
     platforms_azure_waagent: Null
-  services:
-    platforms_azure_micro_afterburn_checkin:
-      - afterburn-checkin
   sysconfig:
     platforms_azure_sle15_cloud_netconfig: Null

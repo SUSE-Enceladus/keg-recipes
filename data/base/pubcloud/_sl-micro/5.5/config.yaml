@@ -1,5 +1,6 @@
 config:
   services:
+    base_pubcloud_micro_afterburn: Null
     base_pubcloud_common_services:
       - chronyd
       - wicked
