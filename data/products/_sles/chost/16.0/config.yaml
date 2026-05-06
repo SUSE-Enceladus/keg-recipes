@@ -1,5 +1,3 @@
 config:
   scripts:
     products_sles_selinux: Null
-    fips_kex:
-      - ssh-drop-non-fips-kex-algo
