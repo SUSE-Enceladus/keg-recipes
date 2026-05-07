@@ -1,7 +1,10 @@
 preferences:
   type:
     _attributes:
+      btrfs_quota_groups: Null
+      btrfs_root_is_snapshot: Null
       filesystem: xfs
       kernelcmdline:
         net.ifnames: 0
         systemd.unified_cgroup_hierarchy: 1
+    systemdisk: Null

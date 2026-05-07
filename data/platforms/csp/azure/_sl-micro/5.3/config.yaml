@@ -1,5 +1,7 @@
 config:
   scripts:
     platforms_azure_waagent: Null
+  services:
+    platforms_azure_services: Null
   sysconfig:
     platforms_azure_sle15_cloud_netconfig: Null

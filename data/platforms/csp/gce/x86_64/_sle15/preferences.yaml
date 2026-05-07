@@ -1,0 +1,4 @@
+preferences:
+  type:
+    systemdisk:
+      _namespace_platforms_gce_x86_volume: Null
