@@ -1,0 +1,4 @@
+preferences:
+  type:
+    systemdisk:
+      _namespace_platforms_gce_aarch64_volume: Null
