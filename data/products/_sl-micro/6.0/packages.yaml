@@ -17,7 +17,6 @@ packages:
       - less
       - libcontainers-sles-mounts
       - NetworkManager-tui
-      - parted
       - podman
       - suse-build-key
       - suseconnect-ng

@@ -16,6 +16,7 @@ packages:
       - ntp-daemon
       - pam
       - pam-config
+      - parted
       - procps
       - rpm
       - shadow

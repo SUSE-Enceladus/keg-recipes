@@ -23,7 +23,6 @@ packages:
       - less
       - libnss_usrfiles2
       - microos-tools
-      - parted
       - pkgconfig
       - policycoreutils
       - rebootmgr
