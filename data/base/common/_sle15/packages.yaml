@@ -26,6 +26,7 @@ packages:
       - terminfo
       - timezone
       - udev
+      - which
       - xfsprogs
   _namespace_base_common_netsys:
     package:
