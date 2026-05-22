@@ -26,6 +26,7 @@ packages:
       - timezone
       - user(nobody)
       - util-linux
+      - which
       - wtmpdb
       - xfsprogs
   _namespace_base_common_netsys:
