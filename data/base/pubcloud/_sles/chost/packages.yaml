@@ -5,8 +5,6 @@ packages:
   _namespace_base_pubcloud_openldap_client: Null
   _namespace_base_pubcloud_chost:
     package:
-      - apparmor-abstractions
-      - apparmor-parser
       - ca-certificates
       - ca-certificates-mozilla
       - cifs-utils
@@ -32,4 +30,3 @@ packages:
   _namespace_base_pubcloud_chost_fips:
     package:
       - patterns-base-fips
-      - apparmor-utils

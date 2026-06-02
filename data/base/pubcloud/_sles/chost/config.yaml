@@ -10,7 +10,8 @@ config:
     base_pubcloud_chost_scripts:
       - chost-strip-image
     base_pubcloud_chost_scripts_fips:
-      - apparmor-enable-complain
+      - enable-fips-mode
+      - ssh-drop-non-fips-kex-algo
   services:
     base_pubcloud_chost_services:
       - containerd
