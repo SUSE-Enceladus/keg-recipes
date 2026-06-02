@@ -12,7 +12,6 @@ preferences:
         security: selinux
         selinux: 1
         swapaccount: 1
-        systemd.unified_cgroup_hierarchy: 1
     bootloader:
       _attributes:
         name: grub2
