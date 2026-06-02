@@ -6,5 +6,4 @@ preferences:
       filesystem: xfs
       kernelcmdline:
         swapaccount: 1
-        systemd.unified_cgroup_hierarchy: Null
     systemdisk: Null
