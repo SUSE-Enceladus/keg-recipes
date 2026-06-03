@@ -4,6 +4,7 @@ packages:
       - acl
       - azure-li-services
       - crash
+      - dracut-kiwi-oem-repart
       - gconf2
       - glibc-locale
       - grub2
