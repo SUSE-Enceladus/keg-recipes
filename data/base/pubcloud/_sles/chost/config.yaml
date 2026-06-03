@@ -11,7 +11,6 @@ config:
       - chost-strip-image
     base_pubcloud_chost_scripts_fips:
       - enable-fips-mode
-      - ssh-drop-non-fips-kex-algo
   services:
     base_pubcloud_chost_services:
       - containerd
