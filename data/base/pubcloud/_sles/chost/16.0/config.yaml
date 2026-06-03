@@ -1,4 +1,0 @@
-config:
-  scripts:
-    base_pubcloud_chost_fips_kex:
-      - ssh-drop-non-fips-kex-algo
