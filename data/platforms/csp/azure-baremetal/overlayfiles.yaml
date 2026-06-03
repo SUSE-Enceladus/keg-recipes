@@ -3,6 +3,7 @@ archive:
     _include_overlays:
       - azure-baremetal-firewalld-conf
       - dracut-multipath
+      - dracut-kiwi-resize
       - modprobe-blacklist-azure-li
       - selinux-disable
       - sysctl-hana-basenet
