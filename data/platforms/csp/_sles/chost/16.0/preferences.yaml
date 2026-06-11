@@ -7,6 +7,4 @@ preferences:
       filesystem: xfs
       kernelcmdline:
         fips: 1
-        security: Null
-        selinux: Null
     systemdisk: Null
