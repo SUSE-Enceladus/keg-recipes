@@ -1,4 +1,6 @@
 config:
+  scripts:
+    base_pubcloud_sles_ecs_init_config: Null
   services:
     base_pubcloud_sles_ecs_services_sle15:
       - docker-img-store-setup

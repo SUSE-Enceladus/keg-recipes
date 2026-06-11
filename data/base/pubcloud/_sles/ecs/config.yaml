@@ -2,6 +2,8 @@ config:
   scripts:
     base_pubcloud_sles_ecs_zypp_max_connections:
       - zypp-limit-concurrent-downloads
+    base_pubcloud_sles_ecs_init_config:
+      - ecs-init-config-pid-namespace
   services:
     base_pubcloud_sles_ecs_services:
       - amazon-ecs
