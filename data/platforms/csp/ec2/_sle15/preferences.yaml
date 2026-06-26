@@ -1,0 +1,5 @@
+preferences:
+  type:
+    machine:
+      _attributes:
+        xen_loader: hvmloader
