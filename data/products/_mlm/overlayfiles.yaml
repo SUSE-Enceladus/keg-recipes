@@ -2,7 +2,7 @@ archive:
   _namespace_products_mlm_motd:
     _include_overlays:
       - motd-mod-ext-header
-      - motd-mod-mlm-standard-msg
+      - motd-mod-mlm-doc-links
   _namespace_products_mlm_server_rebootmgr_config:
     _include_overlays:
       - mlm-rebootmgr-config
