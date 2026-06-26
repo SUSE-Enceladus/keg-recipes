@@ -4,5 +4,5 @@ packages:
       - dhcpcd
   _namespace_base_pubcloud_slfo_cifs:
     package:
-      # dependecy of cifs-utils
-      - sssd-cifs-idmap-plugin
+      # dependecy of cifs-utils (conflicts with unreleased sssd-cifs-idmap-plugin)
+      - wb-cifs-idmap-plugin

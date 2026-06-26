@@ -8,9 +8,6 @@ packages:
       - firewalld
       - gcc-c++
       - gcc-fortran
-      - _attributes:
-          name: glibc-32bit
-          arch: x86_64
       - glibc-devel
       - icewm
       - jq
