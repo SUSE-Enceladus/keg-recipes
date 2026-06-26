@@ -1,4 +1,4 @@
 archive:
   _namespace_base_pubcloud_mlm_server_motd:
     _include_overlays:
-      - motd-mod-mlm-server-byos
+      - motd-mod-mlm-server-pubcloud-byos

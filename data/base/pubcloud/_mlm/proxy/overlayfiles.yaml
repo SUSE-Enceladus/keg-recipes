@@ -2,4 +2,4 @@ archive:
   _namespace_base_pubcloud_micro_motd_byos: Null
   _namespace_base_pubcloud_mlm_proxy_motd:
     _include_overlays:
-      - motd-mod-mlm-proxy-byos
+      - motd-mod-mlm-proxy-pubcloud-byos
