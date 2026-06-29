@@ -3,3 +3,6 @@ packages:
     package:
       - sle-module-development-tools-release
       - sle-module-containers-release
+  _namespace_base_pubcloud_sles_byos_salt_minion:
+    package:
+      - salt-minion

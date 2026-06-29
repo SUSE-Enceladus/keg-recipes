@@ -1,0 +1,4 @@
+archive:
+  _namespace_products_mlm_server_motd:
+    _include_overlays:
+      - motd-mod-mlm-server
