@@ -1,4 +1,6 @@
 packages:
-  _namespace_products_sles_sap_selinux:
+  _namespace_base_pubcloud_sapcal_sle16:
     package:
+      - libnsl-stub1
       - selinux-policy-sapenablement
+      
