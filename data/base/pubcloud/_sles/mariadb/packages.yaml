@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubclod_sles_mariadb:
+  _namespace_base_pubcloud_sles_mariadb:
     package:
       - mariadb
       - mariadb-client

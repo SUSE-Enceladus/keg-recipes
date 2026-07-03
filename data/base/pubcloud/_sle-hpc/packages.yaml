@@ -1,4 +1,4 @@
 packages:
-  _namespace_base_pubclod_sle_hpc:
+  _namespace_base_pubcloud_sle_hpc:
     package:
       - rsyslog

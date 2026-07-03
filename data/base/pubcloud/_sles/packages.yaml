@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubclod_sles:
+  _namespace_base_pubcloud_sles:
     package:
       - rsyslog
       - tcpdump
