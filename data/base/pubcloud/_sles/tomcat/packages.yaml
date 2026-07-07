@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubclod_sles_tomcat:
+  _namespace_base_pubcloud_sles_tomcat:
     package:
       - tomcat11
       - tomcat11-admin-webapps

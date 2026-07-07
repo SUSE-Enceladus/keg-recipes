@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubclod_sles_sap:
+  _namespace_base_pubcloud_sles_sap:
     package:
       # needed for fence_virsh of fence-agents
       - libvirt-client

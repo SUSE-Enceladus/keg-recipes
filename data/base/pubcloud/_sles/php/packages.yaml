@@ -1,5 +1,5 @@
 packages:
-  _namespace_base_pubclod_sles_php:
+  _namespace_base_pubcloud_sles_php:
     package:
       - apache2
       - apache2-mod_php8
