@@ -1,0 +1,10 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        add_efi_memmap: []
+        bau: 0
+        mce: 2
+        pci: nobar
+        udev.children-max: 512
+        uv_nmi.action: kdump

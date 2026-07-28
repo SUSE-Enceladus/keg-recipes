@@ -1,0 +1,4 @@
+config:
+  services:
+    platforms_azure_tiertune:
+      - tiertune-azure

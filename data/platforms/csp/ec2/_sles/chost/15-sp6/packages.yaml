@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_ec2_tiertune:
+    package:
+     - tiertune-aws

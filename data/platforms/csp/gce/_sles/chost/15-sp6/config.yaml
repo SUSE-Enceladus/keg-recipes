@@ -1,0 +1,4 @@
+config:
+  services:
+    platforms_gce_tiertune:
+      - tiertune-gce

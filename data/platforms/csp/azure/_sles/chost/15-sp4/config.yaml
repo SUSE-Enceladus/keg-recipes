@@ -1,5 +1,6 @@
 config:
   services:
     platforms_azure_could_netconfig: Null
+    platforms_azure_tiertune: Null
   sysconfig:
     platforms_azure_sle15_cloud_netconfig: Null
