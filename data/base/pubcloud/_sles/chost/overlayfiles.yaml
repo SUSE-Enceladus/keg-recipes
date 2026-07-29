@@ -5,3 +5,6 @@ archive:
       - motd-mod-byos-opt
       - sysctl-enable-ip-forward
       - sysctl-enable-rp-filter
+  _namespace_chost_hardened:
+    _include_overlays:
+      - pcs-hardening-sap

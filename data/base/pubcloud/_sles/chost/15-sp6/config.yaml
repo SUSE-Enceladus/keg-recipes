@@ -21,9 +21,11 @@ setup:
           WantedBy=multi-user.target
   services:
     base_pubcloud_chost_hardening:
-      - aidecheck.service
+      - aidecheck
       - aidecheck.timer
   scripts:
+    base_pubcloud_chost_scripts_fips:
+      - enable-fips-mode
     base_pubcloud_chost_hardening:
       - pcs-hardening-workarounds
       - pcs-hardening-chost

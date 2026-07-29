@@ -6,3 +6,6 @@ packages:
       - openscap
       - openscap-utils
       - scap-security-guide
+  _namespace_base_pubcloud_chost_fips:
+    package:
+      - patterns-base-fips
