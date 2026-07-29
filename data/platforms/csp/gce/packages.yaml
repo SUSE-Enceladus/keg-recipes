@@ -3,7 +3,7 @@ packages:
     package:
       - cloud-netconfig-gce
       - google-dracut-config
-  _namespace_plaforms_csp_gce_init:
+  _namespace_platforms_csp_gce_init:
     package:
       - google-guest-agent
       - google-guest-configs

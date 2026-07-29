@@ -1,0 +1,10 @@
+preferences:
+  type:
+    _attributes:
+      kernelcmdline:
+        add_efi_memmap: Null
+        bau: Null
+        mce: Null
+        pci: Null
+        udev.children-max: Null
+        uv_nmi.action: Null

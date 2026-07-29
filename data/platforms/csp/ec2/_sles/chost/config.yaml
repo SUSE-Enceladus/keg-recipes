@@ -1,5 +1,7 @@
 config:
   services:
     platforms_ec2_cloud_netconfig: Null
+    platforms_ec2_tiertune:
+      - tiertune-aws
   sysconfig:
     platforms_ec2_cloud_netconfig: Null
