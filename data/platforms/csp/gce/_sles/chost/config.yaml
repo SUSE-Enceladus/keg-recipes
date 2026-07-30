@@ -2,5 +2,3 @@ config:
   services:
     platforms_gce_cloud_netconfig: Null
     platforms_gce_flexible_licenses_timer: Null
-    platforms_gce_tiertune:
-      - tiertune-gce

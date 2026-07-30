@@ -4,7 +4,5 @@ config:
   services:
     platforms_azure_cloud_netconfig: Null
     platforms_azure_flexible_licenses_timer: Null
-    platforms_azure_tiertune:
-      - tiertune-azure
   sysconfig:
     platforms_azure_cloud_netconfig: Null
