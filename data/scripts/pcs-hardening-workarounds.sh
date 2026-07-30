@@ -19,6 +19,7 @@ xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers_ordered_stig
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig
+xccdf_org.ssgproject.content_rule_.*smartcard
 xccdf_org.ssgproject.content_rule_.*sysctl"
 
 ssg_file="/usr/share/xml/scap/ssg/content/ssg-sle15-ds.xml"
