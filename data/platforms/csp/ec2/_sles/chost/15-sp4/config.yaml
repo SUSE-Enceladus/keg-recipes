@@ -1,5 +1,3 @@
 config:
-  services:
-    platforms_ec2_tiertune: Null
   sysconfig:
     platforms_ec2_cloud_netconfig: Null
