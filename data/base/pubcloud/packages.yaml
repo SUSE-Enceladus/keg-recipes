@@ -4,6 +4,7 @@ packages:
       - dracut-kiwi-oem-repart
       - iptables
       - kdump
+      - nvme-cli
       - supportutils
       - supportutils-plugin-suse-public-cloud
   _namespace_base_pubcloud_extra:
