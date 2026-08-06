@@ -16,11 +16,10 @@ config:
         content: |-
           [InstanceSetup]
           set_boto_config = false
-  scripts:
-    platforms_gce_guest_agent_transition:
-      - google-guest-agent-transition
   services:
     platforms_gce_services:
+      - google-guest-agent-manager
+      - google-guest-agent
       - google-osconfig-agent
       - google-oslogin-cache.timer
       - google-shutdown-scripts
