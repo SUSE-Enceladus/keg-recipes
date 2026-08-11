@@ -7,3 +7,4 @@ config:
       - google-oslogin-cache.timer
       - google-shutdown-scripts
       - google-startup-scripts
+      - gce-workload-cert-refresh.timer
