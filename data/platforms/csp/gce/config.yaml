@@ -24,7 +24,6 @@ config:
       - google-oslogin-cache.timer
       - google-shutdown-scripts
       - google-startup-scripts
-      - gce-workload-cert-refresh.timer
     platforms_gce_cloud_netconfig:
       - cloud-netconfig.timer
     platforms_gce_flexible_licenses_timer:
