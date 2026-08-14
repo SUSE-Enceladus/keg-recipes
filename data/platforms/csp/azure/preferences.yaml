@@ -1,7 +1,6 @@
 preferences:
   type:
     _attributes:
-      devicepersistency: by-uuid
       efipartsize: 512
       format: vhd-fixed
       formatoptions: force_size
@@ -12,7 +11,6 @@ preferences:
         nvme_core.io_timeout: 240
         rootdelay: 300
         scsi_mod.use_blk_mq: 1
-        USE_BY_UUID_DEVICE_NAMES: 1
     bootloader:
       _attributes:
         console: serial
