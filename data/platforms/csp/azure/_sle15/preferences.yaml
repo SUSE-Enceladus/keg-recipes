@@ -3,3 +3,5 @@ preferences:
     _attributes:
       bootpartition: "true"
       bootpartsize: 1024
+      kernelcmdline:
+        boot: LABEL=BOOT
