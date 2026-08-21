@@ -7,6 +7,9 @@ OS_VERSION_MAJOR="${VERSION_ID%.*}"
 OS_VERSION="${VERSION_ID}"
 ARCH="`uname -m`"
 
+test -f etc/products.d/SLES_SAP.prod && \
+    OS_PRETTY_NAME="$(echo $OS_PRETTY_NAME | sed -e 's/Server/Server for SAP Applications/')"
+
 # get extension info (if installed)
 for prod in /etc/products.d/*prod ; do
     grep -q "<flavor>extension</flavor>" $prod || continue
