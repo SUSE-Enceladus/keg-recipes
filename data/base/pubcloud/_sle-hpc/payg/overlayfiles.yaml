@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_sle_hpc_motd_ondemand:
+    _include_overlays:
+      - motd-mod-mgmt
