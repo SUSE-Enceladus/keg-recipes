@@ -1,0 +1,4 @@
+archive:
+  _namespace_base_pubcloud_sles_hpc_motd_ltss:
+    _include_overlays:
+      - motd-mod-ltss
