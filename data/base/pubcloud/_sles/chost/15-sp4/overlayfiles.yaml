@@ -1,2 +1,5 @@
 archive:
   _namespace_chost_hardened: Null
+  _namespace_base_pubcloud_sles_chost_motd_ltss:
+    _include_overlays:
+      - motd-mod-ltss
