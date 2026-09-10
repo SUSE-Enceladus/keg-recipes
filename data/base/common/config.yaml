@@ -3,3 +3,5 @@ config:
     base_common_services:
       - chronyd
       - NetworkManager
+      - name: wpa_supplicant
+        enable: False
