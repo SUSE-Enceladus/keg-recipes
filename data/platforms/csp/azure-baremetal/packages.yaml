@@ -20,7 +20,6 @@ packages:
       - prctl
       - procinfo
       - rsh
-      # java-1_8_0-ibm moved to legacy module in SP3
       - shim
       - sle-module-legacy-release
       - syslinux
@@ -110,7 +109,6 @@ packages:
   _namespace_azure_baremetal_addon_msft:
     package:
       - golang-github-prometheus-node_exporter
-      - java-1_8_0-ibm
       - perl-TimeDate
       - prometheus-ha_cluster_exporter
       - prometheus-hanadb_exporter
