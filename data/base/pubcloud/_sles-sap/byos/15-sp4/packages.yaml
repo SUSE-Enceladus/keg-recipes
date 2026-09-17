@@ -12,4 +12,3 @@ packages:
       - salt-shaptools
       - saphanabootstrap-formula
       - sapnwbootstrap-formula
-      - salt-minion
