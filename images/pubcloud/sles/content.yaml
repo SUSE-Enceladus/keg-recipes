@@ -72,10 +72,10 @@ image:
             arch: x86_64
           _include:
             - platforms/csp/gce/x86_64
-            - platforms/csp/gce/3p
+            - platforms/csp/gce/nl
         - _attributes:
             profiles: [GCE-3P]
             arch: aarch64
           _include:
             - platforms/csp/gce/aarch64
-            - platforms/csp/gce/3p
+            - platforms/csp/gce/nl

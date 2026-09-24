@@ -33,6 +33,14 @@ image:
           requires:
             - _attributes:
                 profile: gce-base
+    _namespace_profiles_gce_sov:
+      profile:
+        - _attributes:
+            name: GCE-SOV
+            description: GCE SOV configuration
+          requires:
+            - _attributes:
+                profile: gce-base
   preferences:
     - _include:
         - base/common
@@ -71,6 +79,20 @@ image:
             arch: aarch64
           _include:
             - platforms/csp/gce/aarch64
+    _namespace_preferences_gce_sov:
+      preferences:
+        - _attributes:
+            profiles: [GCE-SOV]
+            arch: x86_64
+          _include:
+            - platforms/csp/gce/x86_64
+            - platforms/csp/gce/nl
+        - _attributes:
+            profiles: [GCE-SOV]
+            arch: aarch64
+          _include:
+            - platforms/csp/gce/aarch64
+            - platforms/csp/gce/nl
   _namespace_packages_root:
     _namespace_packages_base:
       packages:
