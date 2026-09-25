@@ -40,3 +40,5 @@ config:
         enable: False
       - name: lvm2-monitor
         enable: False
+      - name: systemd-firstboot
+        enable: False
