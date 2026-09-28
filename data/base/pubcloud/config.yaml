@@ -16,6 +16,7 @@ config:
       - remove-root-pw
       - set-machine-id-uninitialized
       - set-prodlink
+      - mask-systemd-firstboot
       - zypp-disable-multiver-kernel
   services:
     base_pubcloud_services:
@@ -39,6 +40,4 @@ config:
       - name: mdadm
         enable: False
       - name: lvm2-monitor
-        enable: False
-      - name: systemd-firstboot
         enable: False
