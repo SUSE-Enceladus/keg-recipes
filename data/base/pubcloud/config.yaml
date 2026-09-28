@@ -16,6 +16,7 @@ config:
       - remove-root-pw
       - set-machine-id-uninitialized
       - set-prodlink
+      - mask-systemd-firstboot
       - zypp-disable-multiver-kernel
   services:
     base_pubcloud_services:
