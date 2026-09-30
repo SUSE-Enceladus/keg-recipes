@@ -1,8 +1,9 @@
 config:
   scripts:
     platforms_azure_scripts:
-      - set-image-id-azure-basic
       - set-password-policy
+    platforms_azure_image_id:
+      - set-image-id-azure-basic
     platforms_azure_dhcp_timeout:
       - dhcpcd-increase-timeout
     platforms_azure_waagent:
