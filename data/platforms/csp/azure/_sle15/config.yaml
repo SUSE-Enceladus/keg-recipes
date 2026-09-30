@@ -5,6 +5,8 @@ config:
       - ssh-enable-keep-alive
     platforms_azure_dhcp_timeout:
       - dhclient-increase-timeout
+    platforms_azure_image_id:
+      - set-variant-id-azure-basic
   sysconfig:
     platforms_azure_sle15_cloud_netconfig:
       - file: /etc/sysconfig/network/config
