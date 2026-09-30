@@ -1,8 +1,10 @@
 packages:
   _namespace_products_sles:
     package:
-      - release-notes-sles-160
       - SLES-release
+  _namespace_products_sles_release_notes:
+    package:
+      - release-notes-sles-160
   _namespace_products_sles_selinux:
     package:
       - patterns-base-selinux
