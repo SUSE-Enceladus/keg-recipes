@@ -23,7 +23,9 @@ packages:
       - yast2-sap-ha
       - yast2-sap-scp
       - yast2-sap-scp-prodlist
-      - xorg-x11-Xvnc
   _namespace_products_sles_sap_yast2_saptune:
     package:
       - yast2-saptune
+  _namespace_vnc:
+    package:
+      - xorg-x11-Xvnc
