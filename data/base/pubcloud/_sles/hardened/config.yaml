@@ -1,6 +1,11 @@
 config:
   files:
-    sles_hardened_variant_id:
+    base_pubcloud_sles_hardened_variant_id:
       - path: /etc/os-release
         append: True
         content: IMAGE_ID="sles-hardened"
+setup:
+  scripts:
+    base_pubcloud_sles_hardened_config:
+      - pcs-hardening-workarounds
+      - pcs-hardening

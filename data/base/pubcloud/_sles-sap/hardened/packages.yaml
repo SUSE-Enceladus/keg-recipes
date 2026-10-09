@@ -6,3 +6,6 @@ packages:
       - openscap
       - openscap-utils
       - scap-security-guide
+  _namespace_product_sles_sap_hardened_audit:
+    package:
+      - audit
