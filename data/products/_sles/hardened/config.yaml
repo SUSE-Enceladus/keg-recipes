@@ -1,5 +1,0 @@
-setup:
-  scripts:
-    hardened_config:
-      - pcs-hardening-workarounds
-      - pcs-hardening

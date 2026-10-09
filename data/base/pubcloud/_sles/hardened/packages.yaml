@@ -2,7 +2,11 @@ packages:
   _namespace_product_sles_hardened:
     package:
       - aide
+      - audit
       - audit-audispd-plugins
       - openscap
       - openscap-utils
       - scap-security-guide
+  _namespace_product_sles_hardened:
+    package:
+      - audit
