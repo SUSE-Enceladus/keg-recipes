@@ -17,3 +17,5 @@ packages:
   _namespace_base_pubcloud_sle15_yast_schema: Null
   _namespace_base_pubcloud_dhcp_client: Null
   _namespace_base_pubcloud_chost_fips: Null
+  _namespace_base_pubcloud_chost_hardened: Null
+  _namespace_base_pubcloud_chost_hardened_audit: Null
