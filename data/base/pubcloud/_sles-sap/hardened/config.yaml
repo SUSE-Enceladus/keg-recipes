@@ -24,7 +24,7 @@ config:
       - aide-init-db
   services:
     base_pubcloud_sles_hardening:
-      - aidecheck.service
+      - aidecheck
       - aidecheck.timer
 setup:
   scripts:

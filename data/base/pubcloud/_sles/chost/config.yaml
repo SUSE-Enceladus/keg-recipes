@@ -36,7 +36,7 @@ config:
     base_pubcloud_chost_services:
       - containerd
     base_pubcloud_chost_hardening:
-      - aidecheck.service
+      - aidecheck
       - aidecheck.timer
 setup:
   scripts:

@@ -8,7 +8,7 @@ config:
       - enable-fips-mode
   services:
     base_pubcloud_chost_hardening:
-      - aidecheck.service
+      - aidecheck
       - aidecheck.timer
 setup:
   scripts:
