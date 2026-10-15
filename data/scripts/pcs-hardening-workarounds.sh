@@ -11,13 +11,20 @@ xccdf_org.ssgproject.content_rule_aide_periodic_checking_systemd_timer
 xccdf_org.ssgproject.content_rule_service_kdump_disabled
 xccdf_org.ssgproject.content_rule_.*sysctl"
 
-# Some rules are broken and upstream fix is not in v0.1.82 yet. To be dropped
-# once fixed package is available.
+# Some sshd cipher rules are broken and upstream fix is not in v0.1.82 yet. To
+# be dropped once fixed package is available.
+#
+# accounts_users_home_files_permissions removed because we cannot enforce it.
+# User homes created by instance initialization may have undesired permissions.
+# Would need changes in instance initialization code.
+# Similar issue applies to permissions_local_var_log.
 rules_to_disable="\
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers_ordered_stig
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs
-xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig"
+xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig
+xccdf_org.ssgproject.content_rule_accounts_users_home_files_permissions
+xccdf_org.ssgproject.content_rule_permissions_local_var_log"
 
 if [ ! -e /etc/login.defs.d ]; then
     # login_defs rules are broken on systems that do not support /etc/login.defs.d
