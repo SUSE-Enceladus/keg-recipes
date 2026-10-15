@@ -1,11 +1,29 @@
 config:
-  services:
+  files:
     base_pubcloud_chost_hardening:
-      - aidecheck
-      - aidecheck.timer
+     - path: /etc/systemd/system/aidecheck.service
+       content: |-
+         [Unit]
+         Description=Aide Check
+         [Service]
+         Type=simple
+         ExecStart=/usr/bin/aide --check
+         [Install]
+         WantedBy=multi-user.target
+     - path: /etc/systemd/system/aidecheck.timer
+       content: |-
+         [Unit]
+         Description=Aide check every day at 5AM
+         [Timer]
+         OnCalendar=*-*-* 05:00:00
+         Unit=aidecheck.service
+         [Install]
+         WantedBy=multi-user.target
   scripts:
     base_pubcloud_chost_scripts_fips:
       - enable-fips-mode
+    base_pubcloud_chost_hardening:
+      - aide-init-db
   services:
     base_pubcloud_chost_hardening:
       - aidecheck
@@ -13,6 +31,5 @@ config:
 setup:
   scripts:
     base_pubcloud_chost_hardening:
-      - aide-init-db
       - pcs-hardening-workarounds
       - pcs-hardening-chost
