@@ -10,6 +10,7 @@ packages:
       - dracut
       - glibc
       - glibc-locale-base
+      - hostname
       - iproute2
       - iputils
       - libnss_usrfiles2
