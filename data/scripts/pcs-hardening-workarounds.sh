@@ -14,10 +14,9 @@ xccdf_org.ssgproject.content_rule_.*sysctl"
 # Some sshd cipher rules are broken and upstream fix is not in v0.1.82 yet. To
 # be dropped once fixed package is available.
 #
-# accounts_users_home_files_permissions removed because we cannot enforce it.
-# User homes created by instance initialization may have undesired permissions.
-# Would need changes in instance initialization code.
-# Similar issue applies to permissions_local_var_log.
+# permissions_local_var_log
+# Various tools write log files with looser permissions than the rule
+# requires at instant initialization. Cannot be enforce by rule.
 rules_to_disable="\
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers_ordered_stig
