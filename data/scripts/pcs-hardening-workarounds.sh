@@ -17,12 +17,18 @@ xccdf_org.ssgproject.content_rule_.*sysctl"
 # permissions_local_var_log
 # Various tools write log files with looser permissions than the rule
 # requires at instant initialization. Cannot be enforce by rule.
+#
+# audit_rules_time_settimeofday audit_rules_time_stime
+# Those do exactly the same as audit_rules_time_adjtimex, causing duplicate
+# rules (bsc#1250320)
 rules_to_disable="\
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers_ordered_stig
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig
-xccdf_org.ssgproject.content_rule_permissions_local_var_log"
+xccdf_org.ssgproject.content_rule_permissions_local_var_log
+xccdf_org.ssgproject.content_rule_audit_rules_time_settimeofday
+xccdf_org.ssgproject.content_rule_audit_rules_time_stime"
 
 if [ ! -e /etc/login.defs.d ]; then
     # login_defs rules are broken on systems that do not support /etc/login.defs.d
