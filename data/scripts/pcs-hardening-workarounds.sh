@@ -23,7 +23,6 @@ xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers
 xccdf_org.ssgproject.content_rule_sshd_use_approved_ciphers_ordered_stig
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig
-xccdf_org.ssgproject.content_rule_accounts_users_home_files_permissions
 xccdf_org.ssgproject.content_rule_permissions_local_var_log"
 
 if [ ! -e /etc/login.defs.d ]; then
@@ -31,7 +30,20 @@ if [ ! -e /etc/login.defs.d ]; then
     # (see https://github.com/ComplianceAsCode/content/issues/15169)
     # Disable in build and in image until upstream fix is available.
     rules_to_disable="$rules_to_disable xccdf_org.ssgproject.content_rule_.*login_?defs"
+
+    # Distributions that thad /etc/login.defs had loose default permissions of
+    # new home directories. Mitigation of rule
+    # file_permissions_home_directories only fixes home dirs but when new homes
+    # are created with default permissions (as is the case during instance
+    # initialization) this rule will fail evalution.
+    sed -i -r -e 's/^#?HOME_MODE.*/HOME_MODE 0700/' /etc/login.defs
 fi
+
+# Rule accounts_users_home_files_permissions requires all files in homes
+# to be at least 0750 or stricter. Remove any permissions for other from
+# /etc/skel files so new home directories comply. (Note: /usr/etc/skel in
+# SLES 16 is compliant, no mitigation necessary.)
+chmod -R o-rwx /etc/skel
 
 for rule in $rules_to_disable ; do
    sed -i -r -e "/$rule/ s/selected=\"true\"/selected=\"false\"/" $ssg_file
