@@ -36,7 +36,7 @@ if [ ! -e /etc/login.defs.d ]; then
     # Disable in build and in image until upstream fix is available.
     rules_to_disable="$rules_to_disable xccdf_org.ssgproject.content_rule_.*login_?defs"
 
-    # Distributions that thad /etc/login.defs had loose default permissions of
+    # Distributions that had /etc/login.defs had loose default permissions of
     # new home directories. Mitigation of rule
     # file_permissions_home_directories only fixes home dirs but when new homes
     # are created with default permissions (as is the case during instance
