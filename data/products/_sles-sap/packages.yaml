@@ -27,6 +27,5 @@ packages:
       - SLES_SAP-release
       - socat
       - supportutils-plugin-ha-sap
-      - tuned
       - xauth
       - xkbcomp

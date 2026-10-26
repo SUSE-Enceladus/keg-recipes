@@ -3,4 +3,6 @@ packages:
     package:
       - libnsl-stub1
       - selinux-policy-sapenablement
-      
+  _namespace_base_pubcloud_sapcal_tune:
+    package:
+      - saptune
