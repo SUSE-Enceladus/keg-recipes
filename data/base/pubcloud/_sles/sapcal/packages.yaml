@@ -53,7 +53,6 @@ packages:
       - samba-client
       - sysstat
       - tack
-      - tuned
       - unrar
       - _attributes:
           name: unixODBC
@@ -80,3 +79,6 @@ packages:
       - _attributes:
           name: zlib-32bit
           arch: x86_64
+  _namespace_base_pubcloud_sapcal_tune:
+    package:
+      - tuned
