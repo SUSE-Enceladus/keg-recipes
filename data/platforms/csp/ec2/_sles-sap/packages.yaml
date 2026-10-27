@@ -1,0 +1,4 @@
+packages:
+  _namespace_platforms_ec2_sles_sap_fence_agent:
+    package:
+      - fence-agents-aws

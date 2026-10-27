@@ -6,8 +6,12 @@ packages:
       - python3-google-auth
       - python3-google-auth-httplib2
       - python3-pyroute2
-  _namespace_platforms_gce_sles_sap_fence_agent_deps:
+  _namespace_platforms_gce_sles_sap_fence_agent:
     package:
+      - fence-agents
+      # needed for fence_virsh of fence-agents
+      - libvirt-client
+      # fence_gce dependencies
       - python3-fasteners
       - python3-monotonic
       - python3-oauth2client
