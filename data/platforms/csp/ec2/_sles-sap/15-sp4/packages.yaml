@@ -1,0 +1,6 @@
+packages:
+  _namespace_platforms_ec2_sles_sap_fence_agent:
+    package:
+      - fence-agents
+      # needed for fence_virsh of fence-agents
+      - libvirt-client

@@ -4,7 +4,6 @@ packages:
       - google-cloud-sap-agent
       - python313-google-auth
       - python313-google-auth-httplib2
-  _namespace_platforms_gce_sles_sap_fence_agent_deps:
+  _namespace_platforms_gce_sles_sap_fence_agent:
     package:
-      - python313-fasteners
-      - python313-pycryptodome
+      - fence-agents-gce
