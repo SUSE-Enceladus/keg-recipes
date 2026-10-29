@@ -12,6 +12,7 @@ packages:
       - aaa_base-extras
       - at-spi2-core
       - attr
+      - bash-completion
       - bc
       - binutils
       - cifs-utils
