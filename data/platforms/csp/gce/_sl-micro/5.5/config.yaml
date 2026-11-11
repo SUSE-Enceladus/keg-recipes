@@ -1,7 +1,7 @@
 config:
   services:
     platforms_gce_services:
-      - google-guest-agent-manager
+#      - google-guest-agent-manager
       - google-guest-agent
       - google-osconfig-agent
       - google-oslogin-cache.timer
