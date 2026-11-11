@@ -28,7 +28,8 @@ xccdf_org.ssgproject.content_rule_sshd_use_approved_macs
 xccdf_org.ssgproject.content_rule_sshd_use_approved_macs_ordered_stig
 xccdf_org.ssgproject.content_rule_permissions_local_var_log
 xccdf_org.ssgproject.content_rule_audit_rules_time_settimeofday
-xccdf_org.ssgproject.content_rule_audit_rules_time_stime"
+xccdf_org.ssgproject.content_rule_audit_rules_time_stime
+xccdf_org.ssgproject.content_rule_package_nftables_removed"
 
 if [ ! -e /etc/login.defs.d ]; then
     # login_defs rules are broken on systems that do not support /etc/login.defs.d
