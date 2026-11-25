@@ -1,5 +1,0 @@
-preferences:
-  type:
-    _attributes:
-      kernelcmdline:
-        fips: 1

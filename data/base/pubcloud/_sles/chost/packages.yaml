@@ -12,7 +12,6 @@ packages:
       - containerd
       - containerd-ctr
       - cpupower
-      - fipscheck
       - hwdata
       - hwinfo
       - jq
@@ -27,10 +26,6 @@ packages:
       - socat
       - tcpdump
       - wget
-  _namespace_base_pubcloud_chost_fips:
-    package:
-      - patterns-base-fips
-      - crypto-policies-scripts
   _namespace_base_pubcloud_chost_hardened:
     package:
       - aide
